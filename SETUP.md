@@ -73,7 +73,20 @@ CLI parses its arguments, and the shipped dataset loads through the adapter laye
    ok
 ```
 
-`make verify` runs the same thing with a `compileall` pass in front.
+`make verify` runs the same thing with a `compileall` pass and the test suite around it.
+
+## Tests
+
+```bash
+make test          # or: python -m pytest
+```
+
+179 tests, a few seconds, entirely offline — no API key, no downloads, no dependency on
+`results/`. They cover the scorers, the statistics helpers, the adapter contract checked
+against the committed dataset, and a set of structural invariants (`core` never imports
+upward, no module writes into the source tree, every `__file__`-relative root resolves to
+the repository root). That last group exists because a path bug survived the
+reorganization: see the module docstring in `tests/test_repo_structure.py`.
 
 ## First run
 

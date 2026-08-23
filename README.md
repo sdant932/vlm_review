@@ -81,6 +81,11 @@ python -m blindspot.core.runner --datasets svg_localization --limit 20 --max-spe
 
 `setup.sh --conda` creates a conda environment first if you prefer that to a venv.
 
+```bash
+make test      # 179 offline tests, no API key needed
+make verify    # the above, plus compileall and a CLI sweep
+```
+
 The synthetic dataset is committed, so that command works on a fresh clone with no
 downloads. The five public benchmarks are third-party data and are **not** redistributed
 here — `scripts/download/` fetches them. See [docs/DATASETS.md](docs/DATASETS.md).
@@ -120,6 +125,7 @@ the harness can be pointed at a new dataset without pulling in any reporting cod
 | [docs/RESULTS_MANIFEST.md](docs/RESULTS_MANIFEST.md) | Inventory of the raw run files, which are not in git |
 | [data/svg_localization/README.md](data/svg_localization/README.md) | The generated dataset: what it is and what it controls for |
 | [data/svg_localization/EVAL.md](data/svg_localization/EVAL.md) | How to score it, and the traps that make it easy to score wrong |
+| [SETUP.md](SETUP.md) | Install, verify, tests, troubleshooting |
 
 ## Picking this up
 

@@ -29,6 +29,7 @@ Everything else depends on this. Nothing in it imports upward.
 | `taxonomy.py` | 118 | **live** | One perceptual-primitive taxonomy across datasets — the spine that lets a chart finding and a UI finding be compared. |
 | `failure_modes.py` | 148 | **live** | Classifies *why* an answer scored wrong: wrong value, right value wrong format, right items wrong order, and so on. |
 | `stats.py` | 67 | **live** | Wilson intervals, quantile binning, and coarse-grid helpers. Shared by the analysis layer. |
+| `mermaid.py` | 156 | **live** | Parses FlowLearn's Mermaid ground truth into a graph. Golds are re-derived from it rather than trusted from the shipped QA fields — see the note in `adapters.py`. Lives in `core` because `adapters` needs it. |
 | `vendor/charxiv_constants.py` | — | **live** | CharXiv's own prompts and the seven judge rubrics, vendored verbatim. Do not edit to taste. |
 
 ## `blindspot/judging` — grading that costs money
@@ -54,7 +55,6 @@ are independently checkable and a report rebuilds in seconds without re-scoring.
 | `svgloc_eval.py` | 374 | **live** | The generated localization set, following its `EVAL.md`. Produces the precision ladder and the distance bands. |
 | `svgderived_eval.py` | 329 | **live** | The counting and word-presence sets derived from the same scenes. |
 | `svgloc_ablation_eval.py` | 195 | **live** | Scores the prompt/answer-channel ablations against the baseline, paired per item. |
-| `mermaid.py` | 156 | **live** | Parses FlowLearn's Mermaid ground truth into a graph. Golds are re-derived from it rather than trusted from the shipped QA fields — see the note in `adapters.py`. |
 | `annotate.py` | 536 | standalone | A sidecar JSON per evaluated question, plus the image overlays. Feeds `task_pages`. |
 | `tiling.py` | 202 | one-off | Does sending a screenshot as interleaved native-resolution patches restore the accuracy that downscaling destroys? Asked and answered. |
 
@@ -128,6 +128,18 @@ report_data  ->  report_examples  ->  report_tables  ->  report_index  ->  repor
 | `analyse_gtaudit.py` | 93 | Ground-truth quality rates by failure mode and question type. |
 | `annotate_probe.py` | 250 | Draws ground truth against prediction directly onto the screenshots. |
 | `build_datasets_page.py` | 230 | What each dataset is and whether it turned out usable. |
+
+## `tests/`
+
+Offline and deterministic — no API calls, no downloads, no dependency on `results/`.
+179 tests, a few seconds on a fresh clone.
+
+| file | what it pins |
+|---|---|
+| `test_scoring.py` | the scorers, which produce every number in the study: the ANLS threshold boundary, ANLS normalization being deliberately stricter than the general one, token-F1 refusing substring containment, click-in-bbox on realistically tiny targets |
+| `test_stats.py` | Wilson intervals, quantile binning and the coarse grid — pinned because these moved packages during the reorganization |
+| `test_dataset_invariants.py` | the adapter contract, against the committed dataset: gold boxes normalized to `[0,1]` with `x0<x1`, no degenerate targets, resolvable image paths, the registry intact |
+| `test_repo_structure.py` | the class of bug that motivated the suite — `__file__`-relative roots that break when a module changes directory, packages writing into the source tree, the layering direction (`core` never imports upward), `sys.path` shims coming back |
 
 `scripts/verify_install.py` is not a pipeline stage — it checks that every module imports,
 every CLI parses and the shipped dataset loads. `setup.sh` and `make verify` both call it.

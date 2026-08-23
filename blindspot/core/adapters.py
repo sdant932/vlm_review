@@ -253,7 +253,7 @@ def load(dataset: str) -> list[Example]:
 # visible instead of silently corrected.
 # --------------------------------------------------------------------------
 def flowlearn_sim() -> Iterator[Example]:
-    from blindspot.analysis.mermaid import parse_mermaid, has_edge, edge_style, hops
+    from blindspot.core.mermaid import parse_mermaid, has_edge, edge_style, hops
 
     def unconnected_pair(g, stem: str):
         """Pick a genuinely unconnected node pair, deterministically.

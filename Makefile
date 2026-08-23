@@ -5,7 +5,7 @@ PY ?= python
 SPEND ?= 0.10          # USD hard stop for the smoke-test eval
 COUNT ?= 200           # scenes for a full dataset regeneration
 
-.PHONY: help setup verify dataset dataset-verify eval-smoke download clean-pyc
+.PHONY: help setup test verify dataset dataset-verify eval-smoke download clean-pyc
 
 help:
 	@grep -E '^[a-z-]+:.*?##' $(MAKEFILE_LIST) | sed 's/:.*##/\t/' | expand -t22
@@ -13,9 +13,13 @@ help:
 setup:            ## install deps, create runtime dirs, verify the install
 	./setup.sh
 
+test:             ## run the unit tests (offline, no API key needed)
+	$(PY) -m pytest
+
 verify:           ## compile + import every module, check each CLI, load the dataset
 	$(PY) -m compileall -q blindspot scripts
 	$(PY) scripts/verify_install.py
+	$(PY) -m pytest
 
 dataset:          ## regenerate data/svg_localization from scratch (deterministic)
 	$(PY) scripts/generate/gen_svg_localization.py --count $(COUNT) --complexity 4 --seed 17

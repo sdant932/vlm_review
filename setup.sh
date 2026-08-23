@@ -21,7 +21,7 @@ fi
 echo "==> python: $(python -V) at $(command -v python)"
 
 echo "==> installing the package (editable) + download extras"
-python -m pip install -q -e '.[download]'
+python -m pip install -q -e '.[download,dev]'
 
 echo "==> creating the runtime directories git does not track"
 mkdir -p results outputs cache third_party
@@ -35,6 +35,7 @@ fi
 
 echo "==> verifying the install"
 python scripts/verify_install.py
+python -m pytest
 
 cat <<'MSG'
 

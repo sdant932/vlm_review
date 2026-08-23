@@ -27,6 +27,9 @@ download = [
     "datasets>=2.19",
     "huggingface_hub>=0.23",
 ]
+dev = [
+    "pytest>=8",
+]
 
 [tool.setuptools]
 packages = [
@@ -42,3 +45,9 @@ packages = [
     "scripts.run",
     "scripts.analyze",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The suite is offline and deterministic: no API calls, no downloads, no
+# dependency on results/. It runs on a fresh clone in a few seconds.
+addopts = "-q"
