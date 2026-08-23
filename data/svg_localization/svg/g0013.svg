@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="561.98" lengthAdjust="spacingAndGlyphs">Content Moderation - mindmap 0013</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="228.00" stroke="#333333" stroke-width="3.36"/>
+<rect x="655.00" y="209.50" width="190.00" height="37.00" rx="14" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="236.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="164.00" lengthAdjust="spacingAndGlyphs">Rehydrate Queue</text>
+<line x1="750.00" y1="513.00" x2="1062.36" y2="311.47" stroke="#333333" stroke-width="3.36"/>
+<rect x="1019.86" y="292.97" width="85.00" height="37.00" rx="14" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="label" data-target="true" x="1062.36" y="319.47" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<line x1="750.00" y1="513.00" x2="1191.75" y2="513.00" stroke="#333333" stroke-width="3.36"/>
+<rect x="1116.75" y="494.50" width="150.00" height="37.00" rx="14" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="label" data-target="true" x="1191.75" y="521.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Enrich Signal</text>
+<line x1="750.00" y1="513.00" x2="1062.36" y2="714.53" stroke="#333333" stroke-width="3.36"/>
+<rect x="972.36" y="696.03" width="180.00" height="37.00" rx="14" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="label" data-target="true" x="1062.36" y="722.53" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="154.00" lengthAdjust="spacingAndGlyphs">Snapshot Signal</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="798.00" stroke="#333333" stroke-width="3.36"/>
+<rect x="715.50" y="779.50" width="69.00" height="37.00" rx="14" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="label" data-target="true" x="750.00" y="806.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<line x1="750.00" y1="513.00" x2="437.64" y2="714.53" stroke="#333333" stroke-width="3.36"/>
+<rect x="356.64" y="696.03" width="162.00" height="37.00" rx="14" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="label" data-target="true" x="437.64" y="722.53" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="136.00" lengthAdjust="spacingAndGlyphs">Throttle Strike</text>
+<line x1="750.00" y1="513.00" x2="308.25" y2="513.00" stroke="#333333" stroke-width="3.36"/>
+<rect x="226.75" y="494.50" width="163.00" height="37.00" rx="14" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t7" data-role="label" data-target="true" x="308.25" y="521.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="137.00" lengthAdjust="spacingAndGlyphs">Backfill Report</text>
+<line x1="750.00" y1="513.00" x2="437.64" y2="311.47" stroke="#333333" stroke-width="3.36"/>
+<rect x="360.14" y="292.97" width="155.00" height="37.00" rx="14" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t8" data-role="label" data-target="true" x="437.64" y="319.47" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="129.00" lengthAdjust="spacingAndGlyphs">Publish Strike</text>
+<circle cx="750.00" cy="513.00" r="68.00" fill="#ffda43" stroke="#000000" stroke-width="3.36"/>
+<text id="t9" data-role="root" data-target="true" x="750.00" y="523.00" font-family="Verdana, Geneva, sans-serif" font-size="23" fill="#000000" text-anchor="middle" textLength="92.00" lengthAdjust="spacingAndGlyphs">Content</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="235.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4631 | rev 2</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="113.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="109.00" lengthAdjust="spacingAndGlyphs">generated 17/2</text>
+</svg>

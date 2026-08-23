@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#000000" text-anchor="start" textLength="379.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - scatter 0035</text>
+<line x1="154.00" y1="152.00" x2="154.00" y2="836.00" stroke="#333333" stroke-width="2.40"/>
+<line x1="154.00" y1="836.00" x2="1402.00" y2="836.00" stroke="#333333" stroke-width="2.40"/>
+<circle cx="1243.13" cy="202.04" r="11.56" fill="#826a00" stroke="#000000" stroke-width="1.92"/>
+<text id="t1" data-role="point" data-target="true" x="1243.13" y="185.04" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="271.88" cy="418.27" r="11.06" fill="#2d852d" stroke="#000000" stroke-width="1.92"/>
+<text id="t2" data-role="point" data-target="true" x="271.88" y="401.27" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<circle cx="830.32" cy="241.96" r="8.22" fill="#eb0000" stroke="#000000" stroke-width="1.92"/>
+<text id="t3" data-role="point" data-target="true" x="830.32" y="224.96" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">South</text>
+<circle cx="532.73" cy="387.32" r="8.74" fill="#006cd9" stroke="#000000" stroke-width="1.92"/>
+<text id="t4" data-role="point" data-target="true" x="532.73" y="370.32" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="544.90" cy="215.95" r="8.41" fill="#9629ff" stroke="#000000" stroke-width="1.92"/>
+<text id="t5" data-role="point" data-target="true" x="544.90" y="198.95" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<circle cx="664.82" cy="682.77" r="13.41" fill="#b55a00" stroke="#000000" stroke-width="1.92"/>
+<text id="t6" data-role="point" data-target="true" x="664.82" y="665.77" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="1279.56" cy="399.11" r="8.34" fill="#826a00" stroke="#000000" stroke-width="1.92"/>
+<text id="t7" data-role="point" data-target="true" x="1279.56" y="382.11" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="810.86" cy="751.26" r="10.42" fill="#2d852d" stroke="#000000" stroke-width="1.92"/>
+<text id="t8" data-role="point" data-target="true" x="810.86" y="734.26" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<circle cx="543.58" cy="794.33" r="7.46" fill="#eb0000" stroke="#000000" stroke-width="1.92"/>
+<text id="t9" data-role="point" data-target="true" x="543.58" y="777.33" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<circle cx="754.27" cy="582.94" r="10.57" fill="#006cd9" stroke="#000000" stroke-width="1.92"/>
+<text id="t10" data-role="point" data-target="true" x="754.27" y="565.94" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<circle cx="247.63" cy="665.77" r="10.85" fill="#9629ff" stroke="#000000" stroke-width="1.92"/>
+<text id="t11" data-role="point" data-target="true" x="247.63" y="648.77" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<circle cx="1186.79" cy="687.57" r="7.44" fill="#b55a00" stroke="#000000" stroke-width="1.92"/>
+<text id="t12" data-role="point" data-target="true" x="1186.79" y="670.57" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t13" data-role="axis" data-target="true" x="778.00" y="873.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#333333" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Backlog</text>
+<text id="t14" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#333333" text-anchor="start" textLength="205.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4309 | rev 17</text>
+<text id="t15" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#333333" text-anchor="end" textLength="79.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t16" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#333333" text-anchor="end" textLength="94.00" lengthAdjust="spacingAndGlyphs">generated 12/9</text>
+</svg>

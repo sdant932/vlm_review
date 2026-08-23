@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fffdf5"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#77704f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#241f10" text-anchor="start" textLength="470.98" lengthAdjust="spacingAndGlyphs">Content Moderation - network 0167</text>
+<line x1="1159.16" y1="494.78" x2="407.65" y2="620.98" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="1079.80" y1="639.01" x2="342.57" y2="347.58" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="1060.46" y1="736.88" x2="342.57" y2="347.58" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="829.83" y1="769.97" x2="1159.16" y2="494.78" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="686.95" y1="819.89" x2="1079.80" y2="639.01" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="686.95" y1="819.89" x2="829.83" y2="769.97" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="506.60" y1="758.83" x2="1159.16" y2="494.78" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="407.65" y1="620.98" x2="686.95" y2="819.89" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="278.83" y1="515.59" x2="1159.16" y2="494.78" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="468.43" y1="246.47" x2="993.98" y2="253.90" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="633.32" y1="228.91" x2="686.95" y2="819.89" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="993.98" y1="253.90" x2="831.15" y2="206.33" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="1132.51" y1="357.95" x2="506.60" y2="758.83" stroke="#f0ead2" stroke-width="1.44"/>
+<rect x="1084.66" y="475.78" width="149.00" height="38.00" rx="5" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="1159.16" y="502.78" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="123.00" lengthAdjust="spacingAndGlyphs">Publish Signal</text>
+<rect x="995.80" y="620.01" width="168.00" height="38.00" rx="5" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="1079.80" y="647.01" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Route Reinstate</text>
+<rect x="977.97" y="717.88" width="164.98" height="38.00" rx="5" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="1060.46" y="744.88" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="138.98" lengthAdjust="spacingAndGlyphs">Verify Reviewer</text>
+<rect x="759.83" y="750.97" width="140.00" height="38.00" rx="5" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="829.83" y="777.97" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="114.00" lengthAdjust="spacingAndGlyphs">Enrich Signal</text>
+<rect x="644.45" y="800.89" width="85.00" height="38.00" rx="5" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="686.95" y="827.89" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<rect x="469.10" y="739.83" width="75.00" height="38.00" rx="5" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="506.60" y="766.83" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<rect x="333.15" y="601.98" width="149.00" height="38.00" rx="5" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="407.65" y="628.98" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="123.00" lengthAdjust="spacingAndGlyphs">Backfill Signal</text>
+<rect x="229.33" y="496.59" width="99.00" height="38.00" rx="5" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="278.83" y="523.59" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="73.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<rect x="253.07" y="328.58" width="179.00" height="38.00" rx="5" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t9" data-role="label" data-target="true" x="342.57" y="355.58" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="153.00" lengthAdjust="spacingAndGlyphs">Normalize Queue</text>
+<rect x="390.43" y="227.47" width="156.00" height="38.00" rx="5" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t10" data-role="label" data-target="true" x="468.43" y="254.47" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="130.00" lengthAdjust="spacingAndGlyphs">Backfill Appeal</text>
+<rect x="558.82" y="209.91" width="149.00" height="38.00" rx="5" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t11" data-role="label" data-target="true" x="633.32" y="236.91" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="123.00" lengthAdjust="spacingAndGlyphs">Sample Strike</text>
+<rect x="751.65" y="187.33" width="159.00" height="38.00" rx="5" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t12" data-role="label" data-target="true" x="831.15" y="214.33" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Resolve Queue</text>
+<rect x="906.00" y="234.90" width="175.97" height="38.00" rx="5" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t13" data-role="label" data-target="true" x="993.98" y="261.90" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="149.97" lengthAdjust="spacingAndGlyphs">Route Takedown</text>
+<rect x="1047.01" y="338.95" width="171.00" height="38.00" rx="5" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t14" data-role="label" data-target="true" x="1132.51" y="365.95" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Merge Reinstate</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#77704f" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3951 | rev 18</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#77704f" text-anchor="end" textLength="62.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#77704f" text-anchor="end" textLength="95.00" lengthAdjust="spacingAndGlyphs">generated 2/11</text>
+</svg>

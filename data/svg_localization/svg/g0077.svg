@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="418.98" lengthAdjust="spacingAndGlyphs">Access Review - mindmap 0077</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="228.00" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="671.01" y="209.50" width="157.98" height="37.00" rx="14" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="235.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="131.98" lengthAdjust="spacingAndGlyphs">Route Directory</text>
+<line x1="750.00" y1="513.00" x2="1062.36" y2="311.47" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="999.36" y="292.97" width="126.00" height="37.00" rx="14" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="label" data-target="true" x="1062.36" y="318.47" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="100.00" lengthAdjust="spacingAndGlyphs">Index Grant</text>
+<line x1="750.00" y1="513.00" x2="1191.75" y2="513.00" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="1155.75" y="494.50" width="72.00" height="37.00" rx="14" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="label" data-target="true" x="1191.75" y="520.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<line x1="750.00" y1="513.00" x2="1062.36" y2="714.53" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="1029.86" y="696.03" width="65.00" height="37.00" rx="14" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="label" data-target="true" x="1062.36" y="721.53" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="798.00" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="674.52" y="779.50" width="150.97" height="37.00" rx="14" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="label" data-target="true" x="750.00" y="805.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="124.97" lengthAdjust="spacingAndGlyphs">Partition Audit</text>
+<line x1="750.00" y1="513.00" x2="437.64" y2="714.53" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="359.64" y="696.03" width="155.98" height="37.00" rx="14" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="label" data-target="true" x="437.64" y="721.53" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="129.98" lengthAdjust="spacingAndGlyphs">Resolve Session</text>
+<line x1="750.00" y1="513.00" x2="308.25" y2="513.00" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="224.75" y="494.50" width="167.00" height="37.00" rx="14" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="label" data-target="true" x="308.25" y="520.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="141.00" lengthAdjust="spacingAndGlyphs">Aggregate Scope</text>
+<line x1="750.00" y1="513.00" x2="437.64" y2="311.47" stroke="#efe7d6" stroke-width="2.38"/>
+<rect x="367.66" y="292.97" width="139.95" height="37.00" rx="14" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t8" data-role="label" data-target="true" x="437.64" y="318.47" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="113.95" lengthAdjust="spacingAndGlyphs">Rotate Token</text>
+<circle cx="750.00" cy="513.00" r="58.00" fill="#e7cd9c" stroke="#5f5340" stroke-width="2.38"/>
+<text id="t9" data-role="root" data-target="true" x="750.00" y="521.00" font-family="'Trebuchet MS', sans-serif" font-size="23" fill="#2b2418" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Access</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=8599 | rev 13</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="67.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="104.00" lengthAdjust="spacingAndGlyphs">generated 21/12</text>
+</svg>

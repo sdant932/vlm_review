@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fffdf5"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#77704f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#241f10" text-anchor="start" textLength="443.00" lengthAdjust="spacingAndGlyphs">Claims Handling - mindmap 0141</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="228.00" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="673.00" y="209.50" width="154.00" height="37.00" rx="14" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="235.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#241f10" text-anchor="middle" textLength="128.00" lengthAdjust="spacingAndGlyphs">Score Coverage</text>
+<line x1="750.00" y1="513.00" x2="1132.57" y2="370.50" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="1055.58" y="352.00" width="153.97" height="37.00" rx="14" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="1132.57" y="377.50" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#241f10" text-anchor="middle" textLength="127.97" lengthAdjust="spacingAndGlyphs">Resolve Payout</text>
+<line x1="750.00" y1="513.00" x2="1132.57" y2="655.50" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="1100.07" y="637.00" width="65.00" height="37.00" rx="14" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="1132.57" y="662.50" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#241f10" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="798.00" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="714.00" y="779.50" width="72.00" height="37.00" rx="14" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="750.00" y="805.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#241f10" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<line x1="750.00" y1="513.00" x2="367.43" y2="655.50" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="319.93" y="637.00" width="95.00" height="37.00" rx="14" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="367.43" y="662.50" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#241f10" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<line x1="750.00" y1="513.00" x2="367.43" y2="370.50" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="290.44" y="352.00" width="153.98" height="37.00" rx="14" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="367.43" y="377.50" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#241f10" text-anchor="middle" textLength="127.98" lengthAdjust="spacingAndGlyphs">Merge Adjuster</text>
+<circle cx="750.00" cy="513.00" r="58.00" fill="#fbe189" stroke="#5a5330" stroke-width="2.2399999999999998"/>
+<text id="t7" data-role="root" data-target="true" x="750.00" y="521.00" font-family="'Trebuchet MS', sans-serif" font-size="23" fill="#241f10" text-anchor="middle" textLength="68.00" lengthAdjust="spacingAndGlyphs">Claims</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#77704f" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=8472 | rev 12</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#77704f" text-anchor="end" textLength="59.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#77704f" text-anchor="end" textLength="104.00" lengthAdjust="spacingAndGlyphs">generated 25/12</text>
+</svg>

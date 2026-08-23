@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="471.98" lengthAdjust="spacingAndGlyphs">Returns Workflow - sequence 0106</text>
+<rect x="256.00" y="158.00" width="88.00" height="40.00" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t1" data-role="actor" data-target="true" x="300.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Worker</text>
+<line x1="300.00" y1="198.00" x2="300.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<rect x="552.00" y="158.00" width="96.00" height="40.00" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t2" data-role="actor" data-target="true" x="600.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Registry</text>
+<line x1="600.00" y1="198.00" x2="600.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<rect x="863.50" y="158.00" width="73.00" height="40.00" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t3" data-role="actor" data-target="true" x="900.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Store</text>
+<line x1="900.00" y1="198.00" x2="900.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<rect x="1159.00" y="158.00" width="82.00" height="40.00" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t4" data-role="actor" data-target="true" x="1200.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Cache</text>
+<line x1="1200.00" y1="198.00" x2="1200.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<line x1="900.00" y1="236.00" x2="600.00" y2="236.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t5" data-role="message" data-target="true" x="750.00" y="226.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="27.00" lengthAdjust="spacingAndGlyphs">dup</text>
+<line x1="300.00" y1="389.00" x2="900.00" y2="389.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t6" data-role="message" data-target="true" x="600.00" y="379.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="600.00" y1="542.00" x2="900.00" y2="542.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t7" data-role="message" data-target="true" x="750.00" y="532.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<line x1="900.00" y1="695.00" x2="600.00" y2="695.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t8" data-role="message" data-target="true" x="750.00" y="685.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="900.00" y1="848.00" x2="1200.00" y2="848.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t9" data-role="message" data-target="true" x="1050.00" y="838.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#555555" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7270 | rev 13</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#555555" text-anchor="end" textLength="110.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#555555" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 15/2</text>
+</svg>

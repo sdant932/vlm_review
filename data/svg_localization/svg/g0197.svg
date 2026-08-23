@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f2fbf7"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#4a6b60"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#0f2b22" text-anchor="start" textLength="373.00" lengthAdjust="spacingAndGlyphs">Access Review - table 0197</text>
+<rect x="88.00" y="144.00" width="1324.00" height="49.87" rx="8" fill="#b3dcc8" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t1" data-role="header" data-target="true" x="198.33" y="175.93" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Region</text>
+<text id="t2" data-role="header" data-target="true" x="419.00" y="175.93" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t3" data-role="header" data-target="true" x="639.67" y="175.93" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<text id="t4" data-role="header" data-target="true" x="860.33" y="175.93" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="78.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<text id="t5" data-role="header" data-target="true" x="1081.00" y="175.93" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Retention</text>
+<text id="t6" data-role="header" data-target="true" x="1301.67" y="175.93" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<text id="t7" data-role="cell" data-target="true" x="198.33" y="225.80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t8" data-role="cell" data-target="true" x="419.00" y="225.80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">16.8</text>
+<text id="t9" data-role="cell" data-target="true" x="639.67" y="225.80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="34.98" lengthAdjust="spacingAndGlyphs">11.1</text>
+<text id="t10" data-role="cell" data-target="true" x="860.33" y="225.80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">34.0</text>
+<text id="t11" data-role="cell" data-target="true" x="1081.00" y="225.80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">45.6</text>
+<text id="t12" data-role="cell" data-target="true" x="1301.67" y="225.80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">63.0</text>
+<rect x="88.00" y="243.73" width="1324.00" height="49.87" rx="0" fill="#dcefe6"/>
+<text id="t13" data-role="cell" data-target="true" x="198.33" y="275.67" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t14" data-role="cell" data-target="true" x="419.00" y="275.67" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">27.7</text>
+<text id="t15" data-role="cell" data-target="true" x="639.67" y="275.67" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">35.5</text>
+<text id="t16" data-role="cell" data-target="true" x="860.33" y="275.67" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">65.9</text>
+<text id="t17" data-role="cell" data-target="true" x="1081.00" y="275.67" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">36.3</text>
+<text id="t18" data-role="cell" data-target="true" x="1301.67" y="275.67" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">79.9</text>
+<text id="t19" data-role="cell" data-target="true" x="198.33" y="325.53" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t20" data-role="cell" data-target="true" x="419.00" y="325.53" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">58.7</text>
+<text id="t21" data-role="cell" data-target="true" x="639.67" y="325.53" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">99.0</text>
+<text id="t22" data-role="cell" data-target="true" x="860.33" y="325.53" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">14.7</text>
+<text id="t23" data-role="cell" data-target="true" x="1081.00" y="325.53" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">39.9</text>
+<text id="t24" data-role="cell" data-target="true" x="1301.67" y="325.53" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">27.9</text>
+<rect x="88.00" y="343.47" width="1324.00" height="49.87" rx="0" fill="#dcefe6"/>
+<text id="t25" data-role="cell" data-target="true" x="198.33" y="375.40" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t26" data-role="cell" data-target="true" x="419.00" y="375.40" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">95.4</text>
+<text id="t27" data-role="cell" data-target="true" x="639.67" y="375.40" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">77.2</text>
+<text id="t28" data-role="cell" data-target="true" x="860.33" y="375.40" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">22.9</text>
+<text id="t29" data-role="cell" data-target="true" x="1081.00" y="375.40" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">62.2</text>
+<text id="t30" data-role="cell" data-target="true" x="1301.67" y="375.40" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">59.0</text>
+<text id="t31" data-role="cell" data-target="true" x="198.33" y="425.27" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t32" data-role="cell" data-target="true" x="419.00" y="425.27" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">47.0</text>
+<text id="t33" data-role="cell" data-target="true" x="639.67" y="425.27" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">44.2</text>
+<text id="t34" data-role="cell" data-target="true" x="860.33" y="425.27" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">40.4</text>
+<text id="t35" data-role="cell" data-target="true" x="1081.00" y="425.27" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">81.5</text>
+<text id="t36" data-role="cell" data-target="true" x="1301.67" y="425.27" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">69.1</text>
+<rect x="88.00" y="443.20" width="1324.00" height="49.87" rx="0" fill="#dcefe6"/>
+<text id="t37" data-role="cell" data-target="true" x="198.33" y="475.13" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t38" data-role="cell" data-target="true" x="419.00" y="475.13" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">90.4</text>
+<text id="t39" data-role="cell" data-target="true" x="639.67" y="475.13" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">88.4</text>
+<text id="t40" data-role="cell" data-target="true" x="860.33" y="475.13" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">63.4</text>
+<text id="t41" data-role="cell" data-target="true" x="1081.00" y="475.13" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">29.8</text>
+<text id="t42" data-role="cell" data-target="true" x="1301.67" y="475.13" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">61.5</text>
+<text id="t43" data-role="cell" data-target="true" x="198.33" y="525.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t44" data-role="cell" data-target="true" x="419.00" y="525.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">54.5</text>
+<text id="t45" data-role="cell" data-target="true" x="639.67" y="525.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">72.7</text>
+<text id="t46" data-role="cell" data-target="true" x="860.33" y="525.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">44.7</text>
+<text id="t47" data-role="cell" data-target="true" x="1081.00" y="525.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">90.6</text>
+<text id="t48" data-role="cell" data-target="true" x="1301.67" y="525.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">66.9</text>
+<rect x="88.00" y="542.93" width="1324.00" height="49.87" rx="0" fill="#dcefe6"/>
+<text id="t49" data-role="cell" data-target="true" x="198.33" y="574.87" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t50" data-role="cell" data-target="true" x="419.00" y="574.87" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">59.5</text>
+<text id="t51" data-role="cell" data-target="true" x="639.67" y="574.87" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">89.9</text>
+<text id="t52" data-role="cell" data-target="true" x="860.33" y="574.87" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">13.2</text>
+<text id="t53" data-role="cell" data-target="true" x="1081.00" y="574.87" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">61.5</text>
+<text id="t54" data-role="cell" data-target="true" x="1301.67" y="574.87" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">79.5</text>
+<text id="t55" data-role="cell" data-target="true" x="198.33" y="624.73" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t56" data-role="cell" data-target="true" x="419.00" y="624.73" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">21.6</text>
+<text id="t57" data-role="cell" data-target="true" x="639.67" y="624.73" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">15.2</text>
+<text id="t58" data-role="cell" data-target="true" x="860.33" y="624.73" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">89.0</text>
+<text id="t59" data-role="cell" data-target="true" x="1081.00" y="624.73" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">50.8</text>
+<text id="t60" data-role="cell" data-target="true" x="1301.67" y="624.73" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">64.7</text>
+<rect x="88.00" y="642.67" width="1324.00" height="49.87" rx="0" fill="#dcefe6"/>
+<text id="t61" data-role="cell" data-target="true" x="198.33" y="674.60" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="61.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t62" data-role="cell" data-target="true" x="419.00" y="674.60" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">82.5</text>
+<text id="t63" data-role="cell" data-target="true" x="639.67" y="674.60" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">35.7</text>
+<text id="t64" data-role="cell" data-target="true" x="860.33" y="674.60" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">13.6</text>
+<text id="t65" data-role="cell" data-target="true" x="1081.00" y="674.60" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">81.4</text>
+<text id="t66" data-role="cell" data-target="true" x="1301.67" y="674.60" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">20.8</text>
+<text id="t67" data-role="cell" data-target="true" x="198.33" y="724.47" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t68" data-role="cell" data-target="true" x="419.00" y="724.47" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">85.8</text>
+<text id="t69" data-role="cell" data-target="true" x="639.67" y="724.47" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">35.4</text>
+<text id="t70" data-role="cell" data-target="true" x="860.33" y="724.47" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">71.4</text>
+<text id="t71" data-role="cell" data-target="true" x="1081.00" y="724.47" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">64.4</text>
+<text id="t72" data-role="cell" data-target="true" x="1301.67" y="724.47" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">91.1</text>
+<rect x="88.00" y="742.40" width="1324.00" height="49.87" rx="0" fill="#dcefe6"/>
+<text id="t73" data-role="cell" data-target="true" x="198.33" y="774.33" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t74" data-role="cell" data-target="true" x="419.00" y="774.33" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">95.9</text>
+<text id="t75" data-role="cell" data-target="true" x="639.67" y="774.33" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">89.3</text>
+<text id="t76" data-role="cell" data-target="true" x="860.33" y="774.33" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">28.8</text>
+<text id="t77" data-role="cell" data-target="true" x="1081.00" y="774.33" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">43.4</text>
+<text id="t78" data-role="cell" data-target="true" x="1301.67" y="774.33" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">78.9</text>
+<text id="t79" data-role="cell" data-target="true" x="198.33" y="824.20" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="75.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t80" data-role="cell" data-target="true" x="419.00" y="824.20" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">16.7</text>
+<text id="t81" data-role="cell" data-target="true" x="639.67" y="824.20" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">28.0</text>
+<text id="t82" data-role="cell" data-target="true" x="860.33" y="824.20" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">14.2</text>
+<text id="t83" data-role="cell" data-target="true" x="1081.00" y="824.20" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">62.0</text>
+<text id="t84" data-role="cell" data-target="true" x="1301.67" y="824.20" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">66.7</text>
+<rect x="88.00" y="842.13" width="1324.00" height="49.87" rx="0" fill="#dcefe6"/>
+<text id="t85" data-role="cell" data-target="true" x="198.33" y="874.07" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t86" data-role="cell" data-target="true" x="419.00" y="874.07" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">68.4</text>
+<text id="t87" data-role="cell" data-target="true" x="639.67" y="874.07" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">87.6</text>
+<text id="t88" data-role="cell" data-target="true" x="860.33" y="874.07" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">32.3</text>
+<text id="t89" data-role="cell" data-target="true" x="1081.00" y="874.07" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">62.1</text>
+<text id="t90" data-role="cell" data-target="true" x="1301.67" y="874.07" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">72.9</text>
+<line x1="88.00" y1="144.00" x2="88.00" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="308.67" y1="144.00" x2="308.67" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="529.33" y1="144.00" x2="529.33" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="750.00" y1="144.00" x2="750.00" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="970.67" y1="144.00" x2="970.67" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="1191.33" y1="144.00" x2="1191.33" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="1412.00" y1="144.00" x2="1412.00" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="144.00" x2="1412.00" y2="144.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="193.87" x2="1412.00" y2="193.87" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="243.73" x2="1412.00" y2="243.73" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="293.60" x2="1412.00" y2="293.60" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="343.47" x2="1412.00" y2="343.47" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="393.33" x2="1412.00" y2="393.33" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="443.20" x2="1412.00" y2="443.20" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="493.07" x2="1412.00" y2="493.07" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="542.93" x2="1412.00" y2="542.93" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="592.80" x2="1412.00" y2="592.80" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="642.67" x2="1412.00" y2="642.67" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="692.53" x2="1412.00" y2="692.53" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="742.40" x2="1412.00" y2="742.40" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="792.27" x2="1412.00" y2="792.27" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="842.13" x2="1412.00" y2="842.13" stroke="#2f5b4c" stroke-width="1.05"/>
+<line x1="88.00" y1="892.00" x2="1412.00" y2="892.00" stroke="#2f5b4c" stroke-width="1.05"/>
+<text id="t91" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#4a6b60" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3334 | rev 9</text>
+<text id="t92" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4a6b60" text-anchor="end" textLength="69.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t93" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#4a6b60" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 19/4</text>
+</svg>

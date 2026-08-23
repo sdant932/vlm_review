@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="54.96" font-family="'Courier New', Courier, monospace" font-size="30" fill="#12161c" text-anchor="start" textLength="576.00" lengthAdjust="spacingAndGlyphs">Claims Handling - bar chart 0097</text>
+<line x1="168.00" y1="150.00" x2="168.00" y2="830.00" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="168.00" y1="830.00" x2="1412.00" y2="830.00" stroke="#5c636e" stroke-width="1.60"/>
+<text id="t1" data-role="tick" data-target="true" x="156.00" y="835.00" font-family="'Courier New', Courier, monospace" font-size="18" fill="#5c636e" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="168.00" y1="660.00" x2="1412.00" y2="660.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t2" data-role="tick" data-target="true" x="156.00" y="665.00" font-family="'Courier New', Courier, monospace" font-size="18" fill="#5c636e" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">24</text>
+<line x1="168.00" y1="490.00" x2="1412.00" y2="490.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t3" data-role="tick" data-target="true" x="156.00" y="495.00" font-family="'Courier New', Courier, monospace" font-size="18" fill="#5c636e" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">48</text>
+<line x1="168.00" y1="320.00" x2="1412.00" y2="320.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t4" data-role="tick" data-target="true" x="156.00" y="325.00" font-family="'Courier New', Courier, monospace" font-size="18" fill="#5c636e" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">71</text>
+<line x1="168.00" y1="150.00" x2="1412.00" y2="150.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t5" data-role="tick" data-target="true" x="156.00" y="155.00" font-family="'Courier New', Courier, monospace" font-size="18" fill="#5c636e" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">95</text>
+<rect x="195.87" y="536.53" width="68.65" height="293.47" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t6" data-role="category" data-target="true" x="230.20" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t7" data-role="value" data-target="true" x="230.20" y="526.53" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">41%</text>
+<rect x="320.27" y="422.00" width="68.65" height="408.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t8" data-role="category" data-target="true" x="354.60" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t9" data-role="value" data-target="true" x="354.60" y="412.00" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">57%</text>
+<rect x="444.67" y="543.68" width="68.65" height="286.32" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t10" data-role="category" data-target="true" x="479.00" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t11" data-role="value" data-target="true" x="479.00" y="533.68" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">40%</text>
+<rect x="569.07" y="300.32" width="68.65" height="529.68" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t12" data-role="category" data-target="true" x="603.40" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t13" data-role="value" data-target="true" x="603.40" y="290.32" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">74%</text>
+<rect x="693.47" y="235.89" width="68.65" height="594.11" rx="4" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t14" data-role="category" data-target="true" x="727.80" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t15" data-role="value" data-target="true" x="727.80" y="225.89" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">83%</text>
+<rect x="817.87" y="486.42" width="68.65" height="343.58" rx="4" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t16" data-role="category" data-target="true" x="852.20" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t17" data-role="value" data-target="true" x="852.20" y="476.42" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">48%</text>
+<rect x="942.27" y="307.47" width="68.65" height="522.53" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t18" data-role="category" data-target="true" x="976.60" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t19" data-role="value" data-target="true" x="976.60" y="297.47" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">73%</text>
+<rect x="1066.67" y="150.00" width="68.65" height="680.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t20" data-role="category" data-target="true" x="1101.00" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t21" data-role="value" data-target="true" x="1101.00" y="140.00" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">95%</text>
+<rect x="1191.07" y="744.11" width="68.65" height="85.89" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t22" data-role="category" data-target="true" x="1225.40" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t23" data-role="value" data-target="true" x="1225.40" y="734.11" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">12%</text>
+<rect x="1315.47" y="278.84" width="68.65" height="551.16" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t24" data-role="category" data-target="true" x="1349.80" y="855.00" font-family="'Courier New', Courier, monospace" font-size="19" fill="#12161c" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t25" data-role="value" data-target="true" x="1349.80" y="268.84" font-family="'Courier New', Courier, monospace" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">77%</text>
+<text id="t26" data-role="axis" data-target="true" x="80.00" y="496.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#5c636e" text-anchor="middle" textLength="120.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<text id="t27" data-role="footnote" data-target="false" x="58.00" y="930.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#5c636e" text-anchor="start" textLength="264.00" lengthAdjust="spacingAndGlyphs">source: internal | n=765 | rev 19</text>
+<text id="t28" data-role="badge" data-target="false" x="1442.00" y="43.96" font-family="'Courier New', Courier, monospace" font-size="15" fill="#5c636e" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t29" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#5c636e" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 27/3</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#000000" text-anchor="start" textLength="398.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - network 0055</text>
+<line x1="1165.33" y1="487.38" x2="631.41" y2="806.59" stroke="#333333" stroke-width="2.16"/>
+<line x1="1110.46" y1="653.29" x2="812.82" y2="840.82" stroke="#333333" stroke-width="2.16"/>
+<line x1="944.03" y1="757.88" x2="812.82" y2="840.82" stroke="#333333" stroke-width="2.16"/>
+<line x1="944.03" y1="757.88" x2="1110.46" y2="653.29" stroke="#333333" stroke-width="2.16"/>
+<line x1="812.82" y1="840.82" x2="591.51" y2="257.00" stroke="#333333" stroke-width="2.16"/>
+<line x1="631.41" y1="806.59" x2="320.23" y2="418.10" stroke="#333333" stroke-width="2.16"/>
+<line x1="631.41" y1="806.59" x2="1179.96" y2="372.35" stroke="#333333" stroke-width="2.16"/>
+<line x1="403.47" y1="687.60" x2="591.51" y2="257.00" stroke="#333333" stroke-width="2.16"/>
+<line x1="374.68" y1="544.75" x2="968.62" y2="262.23" stroke="#333333" stroke-width="2.16"/>
+<line x1="374.68" y1="544.75" x2="591.51" y2="257.00" stroke="#333333" stroke-width="2.16"/>
+<line x1="320.23" y1="418.10" x2="1179.96" y2="372.35" stroke="#333333" stroke-width="2.16"/>
+<line x1="320.23" y1="418.10" x2="968.62" y2="262.23" stroke="#333333" stroke-width="2.16"/>
+<line x1="461.77" y1="304.23" x2="1110.46" y2="653.29" stroke="#333333" stroke-width="2.16"/>
+<line x1="461.77" y1="304.23" x2="812.82" y2="840.82" stroke="#333333" stroke-width="2.16"/>
+<line x1="591.51" y1="257.00" x2="1165.33" y2="487.38" stroke="#333333" stroke-width="2.16"/>
+<line x1="591.51" y1="257.00" x2="1110.46" y2="653.29" stroke="#333333" stroke-width="2.16"/>
+<line x1="968.62" y1="262.23" x2="631.41" y2="806.59" stroke="#333333" stroke-width="2.16"/>
+<line x1="1179.96" y1="372.35" x2="461.77" y2="304.23" stroke="#333333" stroke-width="2.16"/>
+<rect x="1076.83" y="468.38" width="177.00" height="38.00" rx="0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t1" data-role="label" data-target="true" x="1165.33" y="494.38" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="151.00" lengthAdjust="spacingAndGlyphs">Throttle Commit</text>
+<rect x="1032.96" y="634.29" width="155.00" height="38.00" rx="0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="label" data-target="true" x="1110.46" y="660.29" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="129.00" lengthAdjust="spacingAndGlyphs">Resolve Cache</text>
+<rect x="867.53" y="738.88" width="153.00" height="38.00" rx="0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="label" data-target="true" x="944.03" y="764.88" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="127.00" lengthAdjust="spacingAndGlyphs">Publish Cache</text>
+<rect x="721.32" y="821.82" width="183.00" height="38.00" rx="0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="label" data-target="true" x="812.82" y="847.82" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="157.00" lengthAdjust="spacingAndGlyphs">Compact Commit</text>
+<rect x="555.91" y="787.59" width="151.00" height="38.00" rx="0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="label" data-target="true" x="631.41" y="813.59" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="125.00" lengthAdjust="spacingAndGlyphs">Purge Runner</text>
+<rect x="319.97" y="668.60" width="167.00" height="38.00" rx="0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="label" data-target="true" x="403.47" y="694.60" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="141.00" lengthAdjust="spacingAndGlyphs">Publish Runner</text>
+<rect x="295.18" y="525.75" width="159.00" height="38.00" rx="0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t7" data-role="label" data-target="true" x="374.68" y="551.75" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Rotate Release</text>
+<rect x="278.23" y="399.10" width="84.00" height="38.00" rx="0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t8" data-role="label" data-target="true" x="320.23" y="425.10" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="379.77" y="285.23" width="164.00" height="38.00" rx="0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t9" data-role="label" data-target="true" x="461.77" y="311.23" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="138.00" lengthAdjust="spacingAndGlyphs">Dispatch Cache</text>
+<rect x="509.01" y="238.00" width="165.00" height="38.00" rx="0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t10" data-role="label" data-target="true" x="591.51" y="264.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="139.00" lengthAdjust="spacingAndGlyphs">Resolve Bundle</text>
+<rect x="682.11" y="213.35" width="168.00" height="38.00" rx="0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t11" data-role="label" data-target="true" x="766.11" y="239.35" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Validate Bundle</text>
+<rect x="930.62" y="243.23" width="76.00" height="38.00" rx="0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t12" data-role="label" data-target="true" x="968.62" y="269.23" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<rect x="1107.46" y="353.35" width="145.00" height="38.00" rx="0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t13" data-role="label" data-target="true" x="1179.96" y="379.35" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#000000" text-anchor="middle" textLength="119.00" lengthAdjust="spacingAndGlyphs">Enrich Cache</text>
+<text id="t14" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#333333" text-anchor="start" textLength="203.00" lengthAdjust="spacingAndGlyphs">source: internal | n=1239 | rev 19</text>
+<text id="t15" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#333333" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t16" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#333333" text-anchor="end" textLength="94.00" lengthAdjust="spacingAndGlyphs">generated 27/5</text>
+</svg>

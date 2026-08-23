@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="449.00" lengthAdjust="spacingAndGlyphs">Content Moderation - scatter 0051</text>
+<line x1="154.00" y1="152.00" x2="154.00" y2="836.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="154.00" y1="836.00" x2="1402.00" y2="836.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<circle cx="1117.71" cy="720.99" r="13.75" fill="#5686bc" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t1" data-role="point" data-target="true" x="1117.71" y="701.99" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<circle cx="944.68" cy="300.50" r="9.60" fill="#4bae8d" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t2" data-role="point" data-target="true" x="944.68" y="281.50" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<circle cx="308.97" cy="597.65" r="9.64" fill="#b98f55" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t3" data-role="point" data-target="true" x="308.97" y="578.65" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="1206.40" cy="430.92" r="11.17" fill="#9580bc" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t4" data-role="point" data-target="true" x="1206.40" y="411.92" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="40.98" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="503.83" cy="399.19" r="8.62" fill="#45a1b8" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t5" data-role="point" data-target="true" x="503.83" y="380.19" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="1091.58" cy="359.26" r="14.09" fill="#bb6d75" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t6" data-role="point" data-target="true" x="1091.58" y="340.26" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="214.53" cy="736.50" r="12.53" fill="#5686bc" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t7" data-role="point" data-target="true" x="214.53" y="717.50" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<circle cx="1029.24" cy="524.98" r="7.75" fill="#4bae8d" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t8" data-role="point" data-target="true" x="1029.24" y="505.98" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<circle cx="1304.92" cy="200.94" r="9.51" fill="#b98f55" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t9" data-role="point" data-target="true" x="1304.92" y="181.94" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">East</text>
+<circle cx="870.93" cy="463.26" r="10.04" fill="#9580bc" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t10" data-role="point" data-target="true" x="870.93" y="444.26" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<circle cx="369.92" cy="755.20" r="13.71" fill="#45a1b8" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t11" data-role="point" data-target="true" x="369.92" y="736.20" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<circle cx="805.78" cy="264.53" r="8.34" fill="#bb6d75" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t12" data-role="point" data-target="true" x="805.78" y="245.53" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="42.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<circle cx="739.98" cy="795.51" r="14.78" fill="#5686bc" stroke="#5b6675" stroke-width="1.2800000000000002"/>
+<text id="t13" data-role="point" data-target="true" x="739.98" y="776.51" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t14" data-role="axis" data-target="true" x="778.00" y="871.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#9aa6b4" text-anchor="middle" textLength="102.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="206.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2266 | rev 4</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="51.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="90.00" lengthAdjust="spacingAndGlyphs">generated 1/6</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#000000" text-anchor="start" textLength="576.00" lengthAdjust="spacingAndGlyphs">Fleet Logistics - flowchart 0064</text>
+<line x1="818.25" y1="156.00" x2="430.25" y2="296.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="615.28" y1="156.00" x2="620.22" y2="296.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t1" data-role="edge" data-target="true" x="617.75" y="221.25" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="880.55" y1="156.00" x2="890.45" y2="296.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t2" data-role="edge" data-target="true" x="885.50" y="221.25" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">flagged</text>
+<line x1="910.54" y1="156.00" x2="1111.96" y2="296.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="367.17" y1="340.50" x2="352.33" y2="481.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t3" data-role="edge" data-target="true" x="359.75" y="405.75" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="80.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="622.55" y1="340.50" x2="632.45" y2="481.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="1117.39" y1="340.50" x2="950.61" y2="481.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t4" data-role="edge" data-target="true" x="1034.00" y="405.75" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="80.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="465.67" y1="340.50" x2="1089.50" y2="483.21" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="1089.50" y1="522.47" x2="449.50" y2="666.56" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="628.57" y1="525.00" x2="593.93" y2="665.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t5" data-role="edge" data-target="true" x="611.25" y="590.25" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">signed</text>
+<line x1="1137.49" y1="525.00" x2="891.51" y2="665.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t6" data-role="edge" data-target="true" x="1014.50" y="590.25" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="1170.57" y1="525.00" x2="1135.93" y2="665.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="823.79" y1="709.50" x2="637.21" y2="850.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="1098.96" y1="709.50" x2="897.54" y2="850.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="614.31" y1="156.00" x2="608.19" y2="850.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t7" data-role="edge" data-target="true" x="611.25" y="498.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="378.98" y1="340.50" x2="598.52" y2="850.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="648.61" y1="481.00" x2="864.39" y2="156.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="873.91" y1="340.50" x2="606.59" y2="665.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t8" data-role="edge" data-target="true" x="740.25" y="498.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="388.43" y1="665.50" x2="860.07" y2="340.50" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<rect x="508.50" y="112.00" width="212.00" height="44.00" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t9" data-role="label" data-target="true" x="614.50" y="142.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="182.00" lengthAdjust="spacingAndGlyphs">Rehydrate Dock</text>
+<rect x="766.50" y="112.00" width="225.00" height="44.00" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t10" data-role="label" data-target="true" x="879.00" y="142.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="195.00" lengthAdjust="spacingAndGlyphs">Throttle Driver</text>
+<rect x="270.00" y="296.50" width="199.00" height="44.00" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t11" data-role="label" data-target="true" x="369.50" y="326.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="169.00" lengthAdjust="spacingAndGlyphs">Dispatch Fuel</text>
+<rect x="515.00" y="296.50" width="212.00" height="44.00" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t12" data-role="label" data-target="true" x="621.00" y="326.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="182.00" lengthAdjust="spacingAndGlyphs">Publish Driver</text>
+<rect x="773.00" y="296.50" width="238.00" height="44.00" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t13" data-role="label" data-target="true" x="892.00" y="326.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="208.00" lengthAdjust="spacingAndGlyphs">Resolve Manifest</text>
+<rect x="1057.00" y="296.50" width="173.00" height="44.00" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t14" data-role="label" data-target="true" x="1143.50" y="326.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="143.00" lengthAdjust="spacingAndGlyphs">Route Depot</text>
+<rect x="237.50" y="481.00" width="225.00" height="44.00" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t15" data-role="label" data-target="true" x="350.00" y="511.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="195.00" lengthAdjust="spacingAndGlyphs">Resolve Waybill</text>
+<rect x="508.50" y="481.00" width="251.00" height="44.00" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t16" data-role="label" data-target="true" x="634.00" y="511.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="221.00" lengthAdjust="spacingAndGlyphs">Quarantine Driver</text>
+<rect x="805.50" y="481.00" width="238.00" height="44.00" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t17" data-role="label" data-target="true" x="924.50" y="511.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="208.00" lengthAdjust="spacingAndGlyphs">Deduplicate Yard</text>
+<rect x="1089.50" y="481.00" width="173.00" height="44.00" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t18" data-role="label" data-target="true" x="1176.00" y="511.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="143.00" lengthAdjust="spacingAndGlyphs">Sample Yard</text>
+<rect x="263.50" y="665.50" width="186.00" height="44.00" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t19" data-role="label" data-target="true" x="356.50" y="695.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Publish Yard</text>
+<rect x="495.50" y="665.50" width="186.00" height="44.00" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t20" data-role="label" data-target="true" x="588.50" y="695.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Cluster Fuel</text>
+<rect x="727.50" y="665.50" width="251.00" height="44.00" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t21" data-role="label" data-target="true" x="853.00" y="695.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="221.00" lengthAdjust="spacingAndGlyphs">Reconcile Waybill</text>
+<rect x="1024.50" y="665.50" width="212.00" height="44.00" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t22" data-role="label" data-target="true" x="1130.50" y="695.50" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="182.00" lengthAdjust="spacingAndGlyphs">Normalize Yard</text>
+<rect x="515.00" y="850.00" width="186.00" height="44.00" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t23" data-role="label" data-target="true" x="608.00" y="880.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Score Driver</text>
+<rect x="747.00" y="850.00" width="238.00" height="44.00" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t24" data-role="label" data-target="true" x="866.00" y="880.00" font-family="Menlo, Monaco, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="208.00" lengthAdjust="spacingAndGlyphs">Rehydrate Driver</text>
+<text id="t25" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#555555" text-anchor="start" textLength="264.00" lengthAdjust="spacingAndGlyphs">source: internal | n=6777 | rev 5</text>
+<text id="t26" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#555555" text-anchor="end" textLength="72.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t27" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#555555" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 16/3</text>
+</svg>

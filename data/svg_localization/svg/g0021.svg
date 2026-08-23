@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="522.00" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - table 0021</text>
+<rect x="88.00" y="144.00" width="1324.00" height="49.87" rx="4" fill="#b6d0f0" stroke="#33506e" stroke-width="1.5"/>
+<text id="t1" data-role="header" data-target="true" x="182.57" y="174.93" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Region</text>
+<text id="t2" data-role="header" data-target="true" x="371.71" y="174.93" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t3" data-role="header" data-target="true" x="560.86" y="174.93" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="110.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<text id="t4" data-role="header" data-target="true" x="750.00" y="174.93" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<text id="t5" data-role="header" data-target="true" x="939.14" y="174.93" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="88.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<text id="t6" data-role="header" data-target="true" x="1128.29" y="174.93" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<text id="t7" data-role="header" data-target="true" x="1317.43" y="174.93" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Backlog</text>
+<text id="t8" data-role="cell" data-target="true" x="182.57" y="224.80" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t9" data-role="cell" data-target="true" x="371.71" y="224.80" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">41.8</text>
+<text id="t10" data-role="cell" data-target="true" x="560.86" y="224.80" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">73.4</text>
+<text id="t11" data-role="cell" data-target="true" x="750.00" y="224.80" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">34.7</text>
+<text id="t12" data-role="cell" data-target="true" x="939.14" y="224.80" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">25.2</text>
+<text id="t13" data-role="cell" data-target="true" x="1128.29" y="224.80" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">83.1</text>
+<text id="t14" data-role="cell" data-target="true" x="1317.43" y="224.80" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">89.0</text>
+<rect x="88.00" y="243.73" width="1324.00" height="49.87" rx="0" fill="#e2ebf6"/>
+<text id="t15" data-role="cell" data-target="true" x="182.57" y="274.67" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t16" data-role="cell" data-target="true" x="371.71" y="274.67" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">64.7</text>
+<text id="t17" data-role="cell" data-target="true" x="560.86" y="274.67" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">24.2</text>
+<text id="t18" data-role="cell" data-target="true" x="750.00" y="274.67" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">66.8</text>
+<text id="t19" data-role="cell" data-target="true" x="939.14" y="274.67" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">18.9</text>
+<text id="t20" data-role="cell" data-target="true" x="1128.29" y="274.67" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">14.4</text>
+<text id="t21" data-role="cell" data-target="true" x="1317.43" y="274.67" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">50.4</text>
+<text id="t22" data-role="cell" data-target="true" x="182.57" y="324.53" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t23" data-role="cell" data-target="true" x="371.71" y="324.53" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">51.9</text>
+<text id="t24" data-role="cell" data-target="true" x="560.86" y="324.53" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">30.7</text>
+<text id="t25" data-role="cell" data-target="true" x="750.00" y="324.53" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">38.1</text>
+<text id="t26" data-role="cell" data-target="true" x="939.14" y="324.53" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">71.0</text>
+<text id="t27" data-role="cell" data-target="true" x="1128.29" y="324.53" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">31.1</text>
+<text id="t28" data-role="cell" data-target="true" x="1317.43" y="324.53" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">61.0</text>
+<rect x="88.00" y="343.47" width="1324.00" height="49.87" rx="0" fill="#e2ebf6"/>
+<text id="t29" data-role="cell" data-target="true" x="182.57" y="374.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t30" data-role="cell" data-target="true" x="371.71" y="374.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">80.9</text>
+<text id="t31" data-role="cell" data-target="true" x="560.86" y="374.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">80.5</text>
+<text id="t32" data-role="cell" data-target="true" x="750.00" y="374.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">92.2</text>
+<text id="t33" data-role="cell" data-target="true" x="939.14" y="374.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">12.8</text>
+<text id="t34" data-role="cell" data-target="true" x="1128.29" y="374.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">46.9</text>
+<text id="t35" data-role="cell" data-target="true" x="1317.43" y="374.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">80.8</text>
+<text id="t36" data-role="cell" data-target="true" x="182.57" y="424.27" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="88.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t37" data-role="cell" data-target="true" x="371.71" y="424.27" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">19.6</text>
+<text id="t38" data-role="cell" data-target="true" x="560.86" y="424.27" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">45.4</text>
+<text id="t39" data-role="cell" data-target="true" x="750.00" y="424.27" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">34.4</text>
+<text id="t40" data-role="cell" data-target="true" x="939.14" y="424.27" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">66.9</text>
+<text id="t41" data-role="cell" data-target="true" x="1128.29" y="424.27" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">41.6</text>
+<text id="t42" data-role="cell" data-target="true" x="1317.43" y="424.27" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">88.5</text>
+<rect x="88.00" y="443.20" width="1324.00" height="49.87" rx="0" fill="#e2ebf6"/>
+<text id="t43" data-role="cell" data-target="true" x="182.57" y="474.13" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t44" data-role="cell" data-target="true" x="371.71" y="474.13" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">91.2</text>
+<text id="t45" data-role="cell" data-target="true" x="560.86" y="474.13" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">81.5</text>
+<text id="t46" data-role="cell" data-target="true" x="750.00" y="474.13" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">11.9</text>
+<text id="t47" data-role="cell" data-target="true" x="939.14" y="474.13" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">24.2</text>
+<text id="t48" data-role="cell" data-target="true" x="1128.29" y="474.13" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">48.2</text>
+<text id="t49" data-role="cell" data-target="true" x="1317.43" y="474.13" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">76.1</text>
+<text id="t50" data-role="cell" data-target="true" x="182.57" y="524.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t51" data-role="cell" data-target="true" x="371.71" y="524.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">40.7</text>
+<text id="t52" data-role="cell" data-target="true" x="560.86" y="524.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">95.9</text>
+<text id="t53" data-role="cell" data-target="true" x="750.00" y="524.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">26.0</text>
+<text id="t54" data-role="cell" data-target="true" x="939.14" y="524.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">84.5</text>
+<text id="t55" data-role="cell" data-target="true" x="1128.29" y="524.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">11.3</text>
+<text id="t56" data-role="cell" data-target="true" x="1317.43" y="524.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">18.5</text>
+<rect x="88.00" y="542.93" width="1324.00" height="49.87" rx="0" fill="#e2ebf6"/>
+<text id="t57" data-role="cell" data-target="true" x="182.57" y="573.87" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t58" data-role="cell" data-target="true" x="371.71" y="573.87" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">61.6</text>
+<text id="t59" data-role="cell" data-target="true" x="560.86" y="573.87" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">19.3</text>
+<text id="t60" data-role="cell" data-target="true" x="750.00" y="573.87" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">48.7</text>
+<text id="t61" data-role="cell" data-target="true" x="939.14" y="573.87" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">16.6</text>
+<text id="t62" data-role="cell" data-target="true" x="1128.29" y="573.87" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">91.5</text>
+<text id="t63" data-role="cell" data-target="true" x="1317.43" y="573.87" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">89.8</text>
+<text id="t64" data-role="cell" data-target="true" x="182.57" y="623.73" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t65" data-role="cell" data-target="true" x="371.71" y="623.73" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">17.3</text>
+<text id="t66" data-role="cell" data-target="true" x="560.86" y="623.73" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">52.6</text>
+<text id="t67" data-role="cell" data-target="true" x="750.00" y="623.73" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">90.5</text>
+<text id="t68" data-role="cell" data-target="true" x="939.14" y="623.73" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">34.8</text>
+<text id="t69" data-role="cell" data-target="true" x="1128.29" y="623.73" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">76.3</text>
+<text id="t70" data-role="cell" data-target="true" x="1317.43" y="623.73" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">44.9</text>
+<rect x="88.00" y="642.67" width="1324.00" height="49.87" rx="0" fill="#e2ebf6"/>
+<text id="t71" data-role="cell" data-target="true" x="182.57" y="673.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t72" data-role="cell" data-target="true" x="371.71" y="673.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">59.6</text>
+<text id="t73" data-role="cell" data-target="true" x="560.86" y="673.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">63.1</text>
+<text id="t74" data-role="cell" data-target="true" x="750.00" y="673.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">83.2</text>
+<text id="t75" data-role="cell" data-target="true" x="939.14" y="673.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">77.5</text>
+<text id="t76" data-role="cell" data-target="true" x="1128.29" y="673.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">70.8</text>
+<text id="t77" data-role="cell" data-target="true" x="1317.43" y="673.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">62.1</text>
+<text id="t78" data-role="cell" data-target="true" x="182.57" y="723.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t79" data-role="cell" data-target="true" x="371.71" y="723.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">81.0</text>
+<text id="t80" data-role="cell" data-target="true" x="560.86" y="723.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">21.9</text>
+<text id="t81" data-role="cell" data-target="true" x="750.00" y="723.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">47.5</text>
+<text id="t82" data-role="cell" data-target="true" x="939.14" y="723.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">47.1</text>
+<text id="t83" data-role="cell" data-target="true" x="1128.29" y="723.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">87.6</text>
+<text id="t84" data-role="cell" data-target="true" x="1317.43" y="723.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">56.7</text>
+<rect x="88.00" y="742.40" width="1324.00" height="49.87" rx="0" fill="#e2ebf6"/>
+<text id="t85" data-role="cell" data-target="true" x="182.57" y="773.33" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t86" data-role="cell" data-target="true" x="371.71" y="773.33" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">67.6</text>
+<text id="t87" data-role="cell" data-target="true" x="560.86" y="773.33" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">23.5</text>
+<text id="t88" data-role="cell" data-target="true" x="750.00" y="773.33" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">24.3</text>
+<text id="t89" data-role="cell" data-target="true" x="939.14" y="773.33" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">85.3</text>
+<text id="t90" data-role="cell" data-target="true" x="1128.29" y="773.33" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">43.0</text>
+<text id="t91" data-role="cell" data-target="true" x="1317.43" y="773.33" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">48.0</text>
+<text id="t92" data-role="cell" data-target="true" x="182.57" y="823.20" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t93" data-role="cell" data-target="true" x="371.71" y="823.20" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">97.5</text>
+<text id="t94" data-role="cell" data-target="true" x="560.86" y="823.20" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">22.0</text>
+<text id="t95" data-role="cell" data-target="true" x="750.00" y="823.20" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">16.1</text>
+<text id="t96" data-role="cell" data-target="true" x="939.14" y="823.20" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">96.8</text>
+<text id="t97" data-role="cell" data-target="true" x="1128.29" y="823.20" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">60.9</text>
+<text id="t98" data-role="cell" data-target="true" x="1317.43" y="823.20" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">82.6</text>
+<rect x="88.00" y="842.13" width="1324.00" height="49.87" rx="0" fill="#e2ebf6"/>
+<text id="t99" data-role="cell" data-target="true" x="182.57" y="873.07" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t100" data-role="cell" data-target="true" x="371.71" y="873.07" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">19.4</text>
+<text id="t101" data-role="cell" data-target="true" x="560.86" y="873.07" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">51.9</text>
+<text id="t102" data-role="cell" data-target="true" x="750.00" y="873.07" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">49.0</text>
+<text id="t103" data-role="cell" data-target="true" x="939.14" y="873.07" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">45.6</text>
+<text id="t104" data-role="cell" data-target="true" x="1128.29" y="873.07" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">27.7</text>
+<text id="t105" data-role="cell" data-target="true" x="1317.43" y="873.07" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">24.7</text>
+<line x1="88.00" y1="144.00" x2="88.00" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="277.14" y1="144.00" x2="277.14" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="466.29" y1="144.00" x2="466.29" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="655.43" y1="144.00" x2="655.43" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="844.57" y1="144.00" x2="844.57" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="1033.71" y1="144.00" x2="1033.71" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="1222.86" y1="144.00" x2="1222.86" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="1412.00" y1="144.00" x2="1412.00" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="144.00" x2="1412.00" y2="144.00" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="193.87" x2="1412.00" y2="193.87" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="243.73" x2="1412.00" y2="243.73" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="293.60" x2="1412.00" y2="293.60" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="343.47" x2="1412.00" y2="343.47" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="393.33" x2="1412.00" y2="393.33" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="443.20" x2="1412.00" y2="443.20" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="493.07" x2="1412.00" y2="493.07" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="542.93" x2="1412.00" y2="542.93" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="592.80" x2="1412.00" y2="592.80" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="642.67" x2="1412.00" y2="642.67" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="692.53" x2="1412.00" y2="692.53" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="742.40" x2="1412.00" y2="742.40" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="792.27" x2="1412.00" y2="792.27" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="842.13" x2="1412.00" y2="842.13" stroke="#33506e" stroke-width="1.05"/>
+<line x1="88.00" y1="892.00" x2="1412.00" y2="892.00" stroke="#33506e" stroke-width="1.05"/>
+<text id="t106" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#54677f" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4771 | rev 15</text>
+<text id="t107" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#54677f" text-anchor="end" textLength="63.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t108" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#54677f" text-anchor="end" textLength="104.00" lengthAdjust="spacingAndGlyphs">generated 8/9</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#12161c" text-anchor="start" textLength="491.00" lengthAdjust="spacingAndGlyphs">Content Moderation - mindmap 0029</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="228.00" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="668.50" y="209.50" width="163.00" height="37.00" rx="14" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="233.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="137.00" lengthAdjust="spacingAndGlyphs">Snapshot Queue</text>
+<line x1="750.00" y1="513.00" x2="1062.36" y2="311.47" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="992.36" y="292.97" width="140.00" height="37.00" rx="14" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="1062.36" y="316.47" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="114.00" lengthAdjust="spacingAndGlyphs">Merge Signal</text>
+<line x1="750.00" y1="513.00" x2="1191.75" y2="513.00" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="1114.75" y="494.50" width="154.00" height="37.00" rx="14" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="1191.75" y="518.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="128.00" lengthAdjust="spacingAndGlyphs">Score Reinstate</text>
+<line x1="750.00" y1="513.00" x2="1062.36" y2="714.53" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="978.37" y="696.03" width="167.98" height="37.00" rx="14" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="1062.36" y="719.53" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="141.98" lengthAdjust="spacingAndGlyphs">Dispatch Appeal</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="798.00" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="684.00" y="779.50" width="132.00" height="37.00" rx="14" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="750.00" y="803.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="106.00" lengthAdjust="spacingAndGlyphs">Flush Signal</text>
+<line x1="750.00" y1="513.00" x2="437.64" y2="714.53" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="358.14" y="696.03" width="158.98" height="37.00" rx="14" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="437.64" y="719.53" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="132.98" lengthAdjust="spacingAndGlyphs">Resolve Appeal</text>
+<line x1="750.00" y1="513.00" x2="308.25" y2="513.00" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="237.76" y="494.50" width="140.98" height="37.00" rx="14" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="308.25" y="518.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="114.98" lengthAdjust="spacingAndGlyphs">Index Appeal</text>
+<line x1="750.00" y1="513.00" x2="437.64" y2="311.47" stroke="#eceff4" stroke-width="2.24"/>
+<rect x="354.65" y="292.97" width="165.97" height="37.00" rx="14" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="437.64" y="316.47" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="139.97" lengthAdjust="spacingAndGlyphs">Validate Appeal</text>
+<circle cx="750.00" cy="513.00" r="63.00" fill="#aec7eb" stroke="#39414e" stroke-width="2.2399999999999998"/>
+<text id="t9" data-role="root" data-target="true" x="750.00" y="519.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="23" fill="#12161c" text-anchor="middle" textLength="82.00" lengthAdjust="spacingAndGlyphs">Content</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="213.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3560 | rev 18</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="51.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="90.00" lengthAdjust="spacingAndGlyphs">generated 6/1</text>
+</svg>

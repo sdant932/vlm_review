@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="60.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="432.95" lengthAdjust="spacingAndGlyphs">Access Review - line chart 0130</text>
+<line x1="154.00" y1="154.00" x2="154.00" y2="834.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="154.00" y1="834.00" x2="1292.00" y2="834.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t1" data-role="tick" data-target="true" x="142.00" y="841.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#9aa6b4" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="154.00" y1="664.00" x2="1292.00" y2="664.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t2" data-role="tick" data-target="true" x="142.00" y="671.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#9aa6b4" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">25</text>
+<line x1="154.00" y1="494.00" x2="1292.00" y2="494.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t3" data-role="tick" data-target="true" x="142.00" y="501.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#9aa6b4" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">50</text>
+<line x1="154.00" y1="324.00" x2="1292.00" y2="324.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t4" data-role="tick" data-target="true" x="142.00" y="331.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#9aa6b4" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">75</text>
+<line x1="154.00" y1="154.00" x2="1292.00" y2="154.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t5" data-role="tick" data-target="true" x="142.00" y="161.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#9aa6b4" text-anchor="end" textLength="32.98" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t6" data-role="category" data-target="true" x="154.00" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t7" data-role="category" data-target="true" x="280.44" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<text id="t8" data-role="category" data-target="true" x="406.89" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<text id="t9" data-role="category" data-target="true" x="533.33" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<text id="t10" data-role="category" data-target="true" x="659.78" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<text id="t11" data-role="category" data-target="true" x="786.22" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<text id="t12" data-role="category" data-target="true" x="912.67" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<text id="t13" data-role="category" data-target="true" x="1039.11" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t14" data-role="category" data-target="true" x="1165.56" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t15" data-role="category" data-target="true" x="1292.00" y="861.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17" fill="#f2f5f8" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<line x1="154.00" y1="364.80" x2="280.44" y2="460.00" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="280.44" y1="460.00" x2="406.89" y2="330.80" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="406.89" y1="330.80" x2="533.33" y2="344.40" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="533.33" y1="344.40" x2="659.78" y2="296.80" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="659.78" y1="296.80" x2="786.22" y2="208.40" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="786.22" y1="208.40" x2="912.67" y2="194.80" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="912.67" y1="194.80" x2="1039.11" y2="167.60" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="1039.11" y1="167.60" x2="1165.56" y2="215.20" stroke="#5d8bbf" stroke-width="2.72"/>
+<line x1="1165.56" y1="215.20" x2="1292.00" y2="317.20" stroke="#5d8bbf" stroke-width="2.72"/>
+<circle cx="154.00" cy="364.80" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="280.44" cy="460.00" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="406.89" cy="330.80" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="533.33" cy="344.40" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="659.78" cy="296.80" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="786.22" cy="208.40" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="912.67" cy="194.80" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1039.11" cy="167.60" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1165.56" cy="215.20" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="317.20" r="4.16" fill="#5d8bbf" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<text id="t16" data-role="series" data-target="true" x="1306.00" y="324.20" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#5d8bbf" text-anchor="start" textLength="62.00" lengthAdjust="spacingAndGlyphs">Defects</text>
+<line x1="154.00" y1="514.40" x2="280.44" y2="378.40" stroke="#50b392" stroke-width="2.72"/>
+<line x1="280.44" y1="378.40" x2="406.89" y2="358.00" stroke="#50b392" stroke-width="2.72"/>
+<line x1="406.89" y1="358.00" x2="533.33" y2="269.60" stroke="#50b392" stroke-width="2.72"/>
+<line x1="533.33" y1="269.60" x2="659.78" y2="167.60" stroke="#50b392" stroke-width="2.72"/>
+<line x1="659.78" y1="167.60" x2="786.22" y2="167.60" stroke="#50b392" stroke-width="2.72"/>
+<line x1="786.22" y1="167.60" x2="912.67" y2="249.20" stroke="#50b392" stroke-width="2.72"/>
+<line x1="912.67" y1="249.20" x2="1039.11" y2="283.20" stroke="#50b392" stroke-width="2.72"/>
+<line x1="1039.11" y1="283.20" x2="1165.56" y2="235.60" stroke="#50b392" stroke-width="2.72"/>
+<line x1="1165.56" y1="235.60" x2="1292.00" y2="167.60" stroke="#50b392" stroke-width="2.72"/>
+<circle cx="154.00" cy="514.40" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="280.44" cy="378.40" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="406.89" cy="358.00" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="533.33" cy="269.60" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="659.78" cy="167.60" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="786.22" cy="167.60" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="912.67" cy="249.20" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1039.11" cy="283.20" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1165.56" cy="235.60" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="167.60" r="4.16" fill="#50b392" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<text id="t17" data-role="series" data-target="true" x="1306.00" y="174.60" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#50b392" text-anchor="start" textLength="59.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<line x1="154.00" y1="575.60" x2="280.44" y2="439.60" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="280.44" y1="439.60" x2="406.89" y2="412.40" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="406.89" y1="412.40" x2="533.33" y2="466.80" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="533.33" y1="466.80" x2="659.78" y2="514.40" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="659.78" y1="514.40" x2="786.22" y2="616.40" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="786.22" y1="616.40" x2="912.67" y2="630.00" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="912.67" y1="630.00" x2="1039.11" y2="528.00" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="1039.11" y1="528.00" x2="1165.56" y2="514.40" stroke="#bc945c" stroke-width="2.72"/>
+<line x1="1165.56" y1="514.40" x2="1292.00" y2="623.20" stroke="#bc945c" stroke-width="2.72"/>
+<circle cx="154.00" cy="575.60" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="280.44" cy="439.60" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="406.89" cy="412.40" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="533.33" cy="466.80" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="659.78" cy="514.40" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="786.22" cy="616.40" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="912.67" cy="630.00" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1039.11" cy="528.00" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1165.56" cy="514.40" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="623.20" r="4.16" fill="#bc945c" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<text id="t18" data-role="series" data-target="true" x="1306.00" y="630.20" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#bc945c" text-anchor="start" textLength="81.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<line x1="154.00" y1="419.20" x2="280.44" y2="432.80" stroke="#917aba" stroke-width="2.72"/>
+<line x1="280.44" y1="432.80" x2="406.89" y2="419.20" stroke="#917aba" stroke-width="2.72"/>
+<line x1="406.89" y1="419.20" x2="533.33" y2="364.80" stroke="#917aba" stroke-width="2.72"/>
+<line x1="533.33" y1="364.80" x2="659.78" y2="371.60" stroke="#917aba" stroke-width="2.72"/>
+<line x1="659.78" y1="371.60" x2="786.22" y2="371.60" stroke="#917aba" stroke-width="2.72"/>
+<line x1="786.22" y1="371.60" x2="912.67" y2="276.40" stroke="#917aba" stroke-width="2.72"/>
+<line x1="912.67" y1="276.40" x2="1039.11" y2="364.80" stroke="#917aba" stroke-width="2.72"/>
+<line x1="1039.11" y1="364.80" x2="1165.56" y2="419.20" stroke="#917aba" stroke-width="2.72"/>
+<line x1="1165.56" y1="419.20" x2="1292.00" y2="494.00" stroke="#917aba" stroke-width="2.72"/>
+<circle cx="154.00" cy="419.20" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="280.44" cy="432.80" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="406.89" cy="419.20" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="533.33" cy="364.80" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="659.78" cy="371.60" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="786.22" cy="371.60" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="912.67" cy="276.40" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1039.11" cy="364.80" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1165.56" cy="419.20" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="494.00" r="4.16" fill="#917aba" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<text id="t19" data-role="series" data-target="true" x="1306.00" y="501.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#917aba" text-anchor="start" textLength="64.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<line x1="154.00" y1="419.20" x2="280.44" y2="324.00" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="280.44" y1="324.00" x2="406.89" y2="256.00" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="406.89" y1="256.00" x2="533.33" y2="194.80" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="533.33" y1="194.80" x2="659.78" y2="167.60" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="659.78" y1="167.60" x2="786.22" y2="167.60" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="786.22" y1="167.60" x2="912.67" y2="262.80" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="912.67" y1="262.80" x2="1039.11" y2="201.60" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="1039.11" y1="201.60" x2="1165.56" y2="222.00" stroke="#4ba5bc" stroke-width="2.72"/>
+<line x1="1165.56" y1="222.00" x2="1292.00" y2="181.20" stroke="#4ba5bc" stroke-width="2.72"/>
+<circle cx="154.00" cy="419.20" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="280.44" cy="324.00" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="406.89" cy="256.00" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="533.33" cy="194.80" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="659.78" cy="167.60" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="786.22" cy="167.60" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="912.67" cy="262.80" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1039.11" cy="201.60" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1165.56" cy="222.00" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="181.20" r="4.16" fill="#4ba5bc" stroke="#151a21" stroke-width="1.2800000000000002"/>
+<text id="t20" data-role="series" data-target="true" x="1306.00" y="188.20" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#4ba5bc" text-anchor="start" textLength="59.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<text id="t21" data-role="footnote" data-target="false" x="58.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="220.00" lengthAdjust="spacingAndGlyphs">source: internal | n=8880 | rev 6</text>
+<text id="t22" data-role="badge" data-target="false" x="1442.00" y="47.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="71.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t23" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="107.00" lengthAdjust="spacingAndGlyphs">generated 28/8</text>
+</svg>

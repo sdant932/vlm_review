@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="60.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="439.00" lengthAdjust="spacingAndGlyphs">Grid Operations - timeline 0056</text>
+<line x1="118.00" y1="513.00" x2="1382.00" y2="513.00" stroke="#333333" stroke-width="5.28"/>
+<circle cx="118.00" cy="513.00" r="10.56" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<line x1="118.00" y1="499.00" x2="118.00" y2="451.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t1" data-role="milestone" data-target="true" x="118.00" y="437.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="136.00" lengthAdjust="spacingAndGlyphs">Throttle Feeder</text>
+<text id="t2" data-role="date" data-target="true" x="118.00" y="410.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<circle cx="434.00" cy="513.00" r="10.56" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<line x1="434.00" y1="527.00" x2="434.00" y2="575.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t3" data-role="milestone" data-target="true" x="434.00" y="605.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="119.00" lengthAdjust="spacingAndGlyphs">Route Feeder</text>
+<text id="t4" data-role="date" data-target="true" x="434.00" y="630.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<circle cx="750.00" cy="513.00" r="10.56" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<line x1="750.00" y1="499.00" x2="750.00" y2="451.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t5" data-role="milestone" data-target="true" x="750.00" y="437.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="105.00" lengthAdjust="spacingAndGlyphs">Enrich Relay</text>
+<text id="t6" data-role="date" data-target="true" x="750.00" y="410.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<circle cx="1066.00" cy="513.00" r="10.56" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<line x1="1066.00" y1="527.00" x2="1066.00" y2="575.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t7" data-role="milestone" data-target="true" x="1066.00" y="605.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="110.00" lengthAdjust="spacingAndGlyphs">Cluster Load</text>
+<text id="t8" data-role="date" data-target="true" x="1066.00" y="630.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<circle cx="1382.00" cy="513.00" r="10.56" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<line x1="1382.00" y1="499.00" x2="1382.00" y2="451.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t9" data-role="milestone" data-target="true" x="1382.00" y="437.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="129.00" lengthAdjust="spacingAndGlyphs">Sample Feeder</text>
+<text id="t10" data-role="date" data-target="true" x="1382.00" y="410.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<text id="t11" data-role="footnote" data-target="false" x="58.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="219.98" lengthAdjust="spacingAndGlyphs">source: internal | n=1627 | rev 2</text>
+<text id="t12" data-role="badge" data-target="false" x="1442.00" y="47.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="108.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t13" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="98.00" lengthAdjust="spacingAndGlyphs">generated 6/5</text>
+</svg>

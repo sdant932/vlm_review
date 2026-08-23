@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fffdf5"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#77704f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="60.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="30" fill="#241f10" text-anchor="start" textLength="470.92" lengthAdjust="spacingAndGlyphs">Claims Handling - dashboard 0175</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="156.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="64.00" lengthAdjust="spacingAndGlyphs">Network</text>
+<line x1="536.15" y1="393.10" x2="239.94" y2="385.82" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="536.15" y1="393.10" x2="302.53" y2="420.72" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="302.53" y1="420.72" x2="236.08" y2="298.43" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="239.94" y1="385.82" x2="551.31" y2="259.82" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="239.94" y1="385.82" x2="236.08" y2="298.43" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="236.08" y1="298.43" x2="325.60" y2="235.53" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="325.60" y1="235.53" x2="302.53" y2="420.72" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="325.60" y1="235.53" x2="536.15" y2="393.10" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="433.62" y1="217.66" x2="412.46" y2="447.80" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="433.62" y1="217.66" x2="551.31" y2="259.82" stroke="#f0ead2" stroke-width="1.44"/>
+<line x1="551.31" y1="259.82" x2="412.46" y2="447.80" stroke="#f0ead2" stroke-width="1.44"/>
+<rect x="490.59" y="299.33" width="171.00" height="38.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="576.09" y="326.33" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Purge Appraisal</text>
+<rect x="456.15" y="374.10" width="160.00" height="38.00" rx="5.0" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="536.15" y="401.10" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="134.00" lengthAdjust="spacingAndGlyphs">Backfill Payout</text>
+<rect x="332.46" y="428.80" width="160.00" height="38.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="412.46" y="455.80" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="134.00" lengthAdjust="spacingAndGlyphs">Enrich Salvage</text>
+<rect x="228.03" y="401.72" width="149.00" height="38.00" rx="5.0" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="302.53" y="428.72" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="123.00" lengthAdjust="spacingAndGlyphs">Route Payout</text>
+<rect x="163.94" y="366.82" width="152.00" height="38.00" rx="5.0" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="239.94" y="393.82" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="126.00" lengthAdjust="spacingAndGlyphs">Score Liability</text>
+<rect x="198.08" y="279.43" width="76.00" height="38.00" rx="5.0" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="236.08" y="306.43" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<rect x="285.10" y="216.53" width="81.00" height="38.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="325.60" y="243.53" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="388.12" y="198.66" width="91.00" height="38.00" rx="5.0" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t9" data-role="label" data-target="true" x="433.62" y="225.66" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<rect x="468.31" y="240.82" width="166.00" height="38.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t10" data-role="label" data-target="true" x="551.31" y="267.82" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="140.00" lengthAdjust="spacingAndGlyphs">Merge Salvage</text>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t11" data-role="panel_title" data-target="false" x="773.00" y="156.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="73.00" lengthAdjust="spacingAndGlyphs">Flowchart</text>
+<line x1="1058.61" y1="204.00" x2="1008.89" y2="229.50" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1138.38" y1="204.00" x2="1181.12" y2="229.50" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t12" data-role="edge" data-target="true" x="1159.75" y="212.75" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">signed</text>
+<line x1="1145.04" y1="273.50" x2="1060.46" y2="299.00" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1216.73" y1="273.50" x2="1215.26" y2="299.00" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1135.02" y1="343.00" x2="1043.48" y2="368.50" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t13" data-role="edge" data-target="true" x="1089.25" y="351.75" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="1062.84" y1="343.00" x2="1150.16" y2="368.50" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="972.57" y1="412.50" x2="981.92" y2="438.00" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t14" data-role="edge" data-target="true" x="977.25" y="421.25" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="1046.01" y1="412.50" x2="1140.49" y2="438.00" stroke="#77704f" stroke-width="1.44" marker-end="url(#ah)"/>
+<rect x="987.51" y="160.00" width="227.98" height="44.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t15" data-role="label" data-target="true" x="1101.50" y="191.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="197.98" lengthAdjust="spacingAndGlyphs">Quarantine Payout</text>
+<rect x="872.50" y="229.50" width="187.00" height="44.00" rx="5.0" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t16" data-role="label" data-target="true" x="966.00" y="260.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="157.00" lengthAdjust="spacingAndGlyphs">Rotate Estimate</text>
+<rect x="1105.50" y="229.50" width="225.00" height="44.00" rx="5.0" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t17" data-role="label" data-target="true" x="1218.00" y="260.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="195.00" lengthAdjust="spacingAndGlyphs">Rehydrate Salvage</text>
+<rect x="898.01" y="299.00" width="178.98" height="44.00" rx="5.0" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t18" data-role="label" data-target="true" x="987.50" y="330.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="148.98" lengthAdjust="spacingAndGlyphs">Cluster Payout</text>
+<rect x="1122.99" y="299.00" width="182.00" height="44.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t19" data-role="label" data-target="true" x="1213.99" y="330.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="152.00" lengthAdjust="spacingAndGlyphs">Merge Liability</text>
+<rect x="863.50" y="368.50" width="202.00" height="44.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t20" data-role="label" data-target="true" x="964.50" y="399.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="172.00" lengthAdjust="spacingAndGlyphs">Rotate Coverage</text>
+<rect x="1111.50" y="368.50" width="228.00" height="44.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t21" data-role="label" data-target="true" x="1225.50" y="399.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="198.00" lengthAdjust="spacingAndGlyphs">Rebalance Salvage</text>
+<rect x="892.49" y="438.00" width="195.00" height="44.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t22" data-role="label" data-target="true" x="989.99" y="469.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="165.00" lengthAdjust="spacingAndGlyphs">Score Appraisal</text>
+<rect x="1133.49" y="438.00" width="177.02" height="44.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t23" data-role="label" data-target="true" x="1222.00" y="469.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22.0" fill="#241f10" text-anchor="middle" textLength="147.02" lengthAdjust="spacingAndGlyphs">Enrich Liability</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t24" data-role="panel_title" data-target="false" x="70.00" y="546.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="76.00" lengthAdjust="spacingAndGlyphs">Line Chart</text>
+<line x1="176.00" y1="592.00" x2="176.00" y2="812.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="176.00" y1="812.00" x2="567.00" y2="812.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t25" data-role="tick" data-target="true" x="164.00" y="819.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="176.00" y1="757.00" x2="567.00" y2="757.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t26" data-role="tick" data-target="true" x="164.00" y="764.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">25</text>
+<line x1="176.00" y1="702.00" x2="567.00" y2="702.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t27" data-role="tick" data-target="true" x="164.00" y="709.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">50</text>
+<line x1="176.00" y1="647.00" x2="567.00" y2="647.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t28" data-role="tick" data-target="true" x="164.00" y="654.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">75</text>
+<line x1="176.00" y1="592.00" x2="567.00" y2="592.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t29" data-role="tick" data-target="true" x="164.00" y="599.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="32.98" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t30" data-role="category" data-target="true" x="176.00" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t31" data-role="category" data-target="true" x="241.17" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<text id="t32" data-role="category" data-target="true" x="306.33" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<text id="t33" data-role="category" data-target="true" x="371.50" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<text id="t34" data-role="category" data-target="true" x="436.67" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<text id="t35" data-role="category" data-target="true" x="501.83" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t36" data-role="category" data-target="true" x="567.00" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<line x1="176.00" y1="680.00" x2="241.17" y2="636.00" stroke="#816404" stroke-width="2.72"/>
+<line x1="241.17" y1="636.00" x2="306.33" y2="600.80" stroke="#816404" stroke-width="2.72"/>
+<line x1="306.33" y1="600.80" x2="371.50" y2="596.40" stroke="#816404" stroke-width="2.72"/>
+<line x1="371.50" y1="596.40" x2="436.67" y2="607.40" stroke="#816404" stroke-width="2.72"/>
+<line x1="436.67" y1="607.40" x2="501.83" y2="596.40" stroke="#816404" stroke-width="2.72"/>
+<line x1="501.83" y1="596.40" x2="567.00" y2="596.40" stroke="#816404" stroke-width="2.72"/>
+<circle cx="176.00" cy="680.00" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="241.17" cy="636.00" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="306.33" cy="600.80" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="371.50" cy="596.40" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="436.67" cy="607.40" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="501.83" cy="596.40" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="567.00" cy="596.40" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<text id="t37" data-role="series" data-target="true" x="581.00" y="603.40" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#816404" text-anchor="start" textLength="62.00" lengthAdjust="spacingAndGlyphs">Defects</text>
+<line x1="176.00" y1="686.60" x2="241.17" y2="677.80" stroke="#61771f" stroke-width="2.72"/>
+<line x1="241.17" y1="677.80" x2="306.33" y2="651.40" stroke="#61771f" stroke-width="2.72"/>
+<line x1="306.33" y1="651.40" x2="371.50" y2="649.20" stroke="#61771f" stroke-width="2.72"/>
+<line x1="371.50" y1="649.20" x2="436.67" y2="647.00" stroke="#61771f" stroke-width="2.72"/>
+<line x1="436.67" y1="647.00" x2="501.83" y2="642.60" stroke="#61771f" stroke-width="2.72"/>
+<line x1="501.83" y1="642.60" x2="567.00" y2="675.60" stroke="#61771f" stroke-width="2.72"/>
+<circle cx="176.00" cy="686.60" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="241.17" cy="677.80" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="306.33" cy="651.40" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="371.50" cy="649.20" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="436.67" cy="647.00" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="501.83" cy="642.60" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="567.00" cy="675.60" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<text id="t38" data-role="series" data-target="true" x="581.00" y="682.60" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#61771f" text-anchor="start" textLength="81.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<line x1="176.00" y1="675.60" x2="241.17" y2="706.40" stroke="#a75805" stroke-width="2.72"/>
+<line x1="241.17" y1="706.40" x2="306.33" y2="677.80" stroke="#a75805" stroke-width="2.72"/>
+<line x1="306.33" y1="677.80" x2="371.50" y2="655.80" stroke="#a75805" stroke-width="2.72"/>
+<line x1="371.50" y1="655.80" x2="436.67" y2="633.80" stroke="#a75805" stroke-width="2.72"/>
+<line x1="436.67" y1="633.80" x2="501.83" y2="596.40" stroke="#a75805" stroke-width="2.72"/>
+<line x1="501.83" y1="596.40" x2="567.00" y2="596.40" stroke="#a75805" stroke-width="2.72"/>
+<circle cx="176.00" cy="675.60" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="241.17" cy="706.40" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="306.33" cy="677.80" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="371.50" cy="655.80" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="436.67" cy="633.80" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="501.83" cy="596.40" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="567.00" cy="596.40" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<text id="t39" data-role="series" data-target="true" x="581.00" y="603.40" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#a75805" text-anchor="start" textLength="66.00" lengthAdjust="spacingAndGlyphs">Backlog</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t40" data-role="panel_title" data-target="false" x="773.00" y="546.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="76.00" lengthAdjust="spacingAndGlyphs">Line Chart</text>
+<line x1="879.00" y1="592.00" x2="879.00" y2="812.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="879.00" y1="812.00" x2="1270.00" y2="812.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t41" data-role="tick" data-target="true" x="867.00" y="819.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="879.00" y1="757.00" x2="1270.00" y2="757.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t42" data-role="tick" data-target="true" x="867.00" y="764.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">25</text>
+<line x1="879.00" y1="702.00" x2="1270.00" y2="702.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t43" data-role="tick" data-target="true" x="867.00" y="709.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">50</text>
+<line x1="879.00" y1="647.00" x2="1270.00" y2="647.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t44" data-role="tick" data-target="true" x="867.00" y="654.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">75</text>
+<line x1="879.00" y1="592.00" x2="1270.00" y2="592.00" stroke="#f0ead2" stroke-width="1.12"/>
+<text id="t45" data-role="tick" data-target="true" x="867.00" y="599.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#77704f" text-anchor="end" textLength="32.98" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t46" data-role="category" data-target="true" x="879.00" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t47" data-role="category" data-target="true" x="957.20" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<text id="t48" data-role="category" data-target="true" x="1035.40" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<text id="t49" data-role="category" data-target="true" x="1113.60" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<text id="t50" data-role="category" data-target="true" x="1191.80" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t51" data-role="category" data-target="true" x="1270.00" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<line x1="879.00" y1="765.80" x2="957.20" y2="774.60" stroke="#816404" stroke-width="2.72"/>
+<line x1="957.20" y1="774.60" x2="1035.40" y2="741.60" stroke="#816404" stroke-width="2.72"/>
+<line x1="1035.40" y1="741.60" x2="1113.60" y2="757.00" stroke="#816404" stroke-width="2.72"/>
+<line x1="1113.60" y1="757.00" x2="1191.80" y2="792.20" stroke="#816404" stroke-width="2.72"/>
+<line x1="1191.80" y1="792.20" x2="1270.00" y2="798.80" stroke="#816404" stroke-width="2.72"/>
+<circle cx="879.00" cy="765.80" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="957.20" cy="774.60" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1035.40" cy="741.60" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1113.60" cy="757.00" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1191.80" cy="792.20" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1270.00" cy="798.80" r="4.16" fill="#816404" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<text id="t52" data-role="series" data-target="true" x="1284.00" y="805.80" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#816404" text-anchor="start" textLength="59.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<line x1="879.00" y1="660.20" x2="957.20" y2="686.60" stroke="#61771f" stroke-width="2.72"/>
+<line x1="957.20" y1="686.60" x2="1035.40" y2="699.80" stroke="#61771f" stroke-width="2.72"/>
+<line x1="1035.40" y1="699.80" x2="1113.60" y2="724.00" stroke="#61771f" stroke-width="2.72"/>
+<line x1="1113.60" y1="724.00" x2="1191.80" y2="693.20" stroke="#61771f" stroke-width="2.72"/>
+<line x1="1191.80" y1="693.20" x2="1270.00" y2="651.40" stroke="#61771f" stroke-width="2.72"/>
+<circle cx="879.00" cy="660.20" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="957.20" cy="686.60" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1035.40" cy="699.80" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1113.60" cy="724.00" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1191.80" cy="693.20" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1270.00" cy="651.40" r="4.16" fill="#61771f" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<text id="t53" data-role="series" data-target="true" x="1284.00" y="658.40" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#61771f" text-anchor="start" textLength="92.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<line x1="879.00" y1="737.20" x2="957.20" y2="695.40" stroke="#a75805" stroke-width="2.72"/>
+<line x1="957.20" y1="695.40" x2="1035.40" y2="680.00" stroke="#a75805" stroke-width="2.72"/>
+<line x1="1035.40" y1="680.00" x2="1113.60" y2="647.00" stroke="#a75805" stroke-width="2.72"/>
+<line x1="1113.60" y1="647.00" x2="1191.80" y2="625.00" stroke="#a75805" stroke-width="2.72"/>
+<line x1="1191.80" y1="625.00" x2="1270.00" y2="649.20" stroke="#a75805" stroke-width="2.72"/>
+<circle cx="879.00" cy="737.20" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="957.20" cy="695.40" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1035.40" cy="680.00" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1113.60" cy="647.00" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1191.80" cy="625.00" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<circle cx="1270.00" cy="649.20" r="4.16" fill="#a75805" stroke="#fffdf5" stroke-width="1.2800000000000002"/>
+<text id="t54" data-role="series" data-target="true" x="1284.00" y="656.20" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#a75805" text-anchor="start" textLength="81.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<text id="t55" data-role="footnote" data-target="false" x="58.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#77704f" text-anchor="start" textLength="228.98" lengthAdjust="spacingAndGlyphs">source: internal | n=4738 | rev 15</text>
+<text id="t56" data-role="badge" data-target="false" x="1442.00" y="47.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="15" fill="#77704f" text-anchor="end" textLength="71.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t57" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#77704f" text-anchor="end" textLength="107.00" lengthAdjust="spacingAndGlyphs">generated 26/7</text>
+</svg>

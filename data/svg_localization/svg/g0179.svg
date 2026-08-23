@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="371.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - scatter 0179</text>
+<line x1="154.00" y1="152.00" x2="154.00" y2="836.00" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="154.00" y1="836.00" x2="1402.00" y2="836.00" stroke="#5c636e" stroke-width="1.60"/>
+<circle cx="243.23" cy="547.68" r="12.38" fill="#3371c9" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t1" data-role="point" data-target="true" x="243.23" y="531.68" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">South</text>
+<circle cx="274.44" cy="719.71" r="14.90" fill="#428054" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t2" data-role="point" data-target="true" x="274.44" y="703.71" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="1203.37" cy="622.33" r="8.44" fill="#9e6718" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t3" data-role="point" data-target="true" x="1203.37" y="606.33" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">East</text>
+<circle cx="762.09" cy="394.22" r="8.39" fill="#895fc7" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t4" data-role="point" data-target="true" x="762.09" y="378.22" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="68.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="1192.85" cy="218.15" r="13.41" fill="#35808d" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t5" data-role="point" data-target="true" x="1192.85" y="202.15" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="338.75" cy="251.91" r="12.14" fill="#d72d2d" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t6" data-role="point" data-target="true" x="338.75" y="235.91" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<circle cx="434.29" cy="561.87" r="12.77" fill="#3371c9" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t7" data-role="point" data-target="true" x="434.29" y="545.87" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<circle cx="1277.18" cy="372.87" r="9.67" fill="#428054" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t8" data-role="point" data-target="true" x="1277.18" y="356.87" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<circle cx="872.77" cy="490.32" r="8.23" fill="#9e6718" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t9" data-role="point" data-target="true" x="872.77" y="474.32" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<circle cx="926.16" cy="227.36" r="9.14" fill="#895fc7" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t10" data-role="point" data-target="true" x="926.16" y="211.36" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="42.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<circle cx="889.95" cy="787.70" r="11.86" fill="#35808d" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t11" data-role="point" data-target="true" x="889.95" y="771.70" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<circle cx="577.28" cy="559.15" r="9.38" fill="#d72d2d" stroke="#39414e" stroke-width="1.2800000000000002"/>
+<text id="t12" data-role="point" data-target="true" x="577.28" y="543.15" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="42.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t13" data-role="axis" data-target="true" x="778.00" y="874.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#5c636e" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<text id="t14" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4688 | rev 18</text>
+<text id="t15" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="103.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t16" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="87.00" lengthAdjust="spacingAndGlyphs">generated 8/2</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="420.00" lengthAdjust="spacingAndGlyphs">Claims Handling - timeline 0072</text>
+<line x1="118.00" y1="513.00" x2="1382.00" y2="513.00" stroke="#9aa6b4" stroke-width="3.52"/>
+<circle cx="118.00" cy="513.00" r="7.04" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<line x1="118.00" y1="499.00" x2="118.00" y2="451.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t1" data-role="milestone" data-target="true" x="118.00" y="437.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="134.00" lengthAdjust="spacingAndGlyphs">Dispatch Payout</text>
+<text id="t2" data-role="date" data-target="true" x="118.00" y="410.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<circle cx="328.67" cy="513.00" r="7.04" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<line x1="328.67" y1="527.00" x2="328.67" y2="575.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t3" data-role="milestone" data-target="true" x="328.67" y="605.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="131.00" lengthAdjust="spacingAndGlyphs">Route Appraisal</text>
+<text id="t4" data-role="date" data-target="true" x="328.67" y="630.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<circle cx="539.33" cy="513.00" r="7.04" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<line x1="539.33" y1="499.00" x2="539.33" y2="451.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t5" data-role="milestone" data-target="true" x="539.33" y="437.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<text id="t6" data-role="date" data-target="true" x="539.33" y="410.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<circle cx="750.00" cy="513.00" r="7.04" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<line x1="750.00" y1="527.00" x2="750.00" y2="575.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t7" data-role="milestone" data-target="true" x="750.00" y="605.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="38.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<text id="t8" data-role="date" data-target="true" x="750.00" y="630.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<circle cx="960.67" cy="513.00" r="7.04" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<line x1="960.67" y1="499.00" x2="960.67" y2="451.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t9" data-role="milestone" data-target="true" x="960.67" y="437.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Purge Deductible</text>
+<text id="t10" data-role="date" data-target="true" x="960.67" y="410.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<circle cx="1171.33" cy="513.00" r="7.04" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<line x1="1171.33" y1="527.00" x2="1171.33" y2="575.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t11" data-role="milestone" data-target="true" x="1171.33" y="605.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="111.00" lengthAdjust="spacingAndGlyphs">Purge Payout</text>
+<text id="t12" data-role="date" data-target="true" x="1171.33" y="630.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<circle cx="1382.00" cy="513.00" r="7.04" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<line x1="1382.00" y1="499.00" x2="1382.00" y2="451.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t13" data-role="milestone" data-target="true" x="1382.00" y="437.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<text id="t14" data-role="date" data-target="true" x="1382.00" y="410.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=5902 | rev 13</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="62.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="95.00" lengthAdjust="spacingAndGlyphs">generated 24/4</text>
+</svg>

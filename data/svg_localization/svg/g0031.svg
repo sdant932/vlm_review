@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#000000" text-anchor="start" textLength="558.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - dashboard 0031</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="1.71"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="155.00" font-family="Menlo, Monaco, monospace" font-size="16" fill="#555555" text-anchor="start" textLength="90.00" lengthAdjust="spacingAndGlyphs">Org Chart</text>
+<line x1="398.50" y1="224.00" x2="398.50" y2="261.75" stroke="#555555" stroke-width="1.90"/>
+<line x1="398.50" y1="261.75" x2="285.00" y2="261.75" stroke="#555555" stroke-width="1.90"/>
+<line x1="285.00" y1="261.75" x2="285.00" y2="299.50" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<line x1="398.50" y1="224.00" x2="398.50" y2="263.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="398.50" y1="263.00" x2="512.00" y2="263.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="512.00" y1="263.00" x2="512.00" y2="302.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<line x1="285.00" y1="342.50" x2="285.00" y2="383.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="285.00" y1="383.00" x2="171.50" y2="383.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="171.50" y1="383.00" x2="171.50" y2="423.50" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<line x1="285.00" y1="342.50" x2="285.00" y2="383.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="285.00" y1="383.00" x2="285.00" y2="383.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="285.00" y1="383.00" x2="285.00" y2="423.50" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<line x1="285.00" y1="342.50" x2="285.00" y2="383.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="285.00" y1="383.00" x2="398.50" y2="383.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="398.50" y1="383.00" x2="398.50" y2="423.50" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<line x1="512.00" y1="340.00" x2="512.00" y2="381.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="512.00" y1="381.00" x2="512.00" y2="381.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="512.00" y1="381.00" x2="512.00" y2="422.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<line x1="512.00" y1="340.00" x2="512.00" y2="381.50" stroke="#555555" stroke-width="1.90"/>
+<line x1="512.00" y1="381.50" x2="625.50" y2="381.50" stroke="#555555" stroke-width="1.90"/>
+<line x1="625.50" y1="381.50" x2="625.50" y2="423.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<rect x="295.50" y="180.00" width="206.00" height="44.00" rx="0.0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t2" data-role="label" data-target="true" x="398.50" y="209.00" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Planner Release</text>
+<rect x="184.00" y="299.50" width="202.00" height="43.00" rx="0.0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t3" data-role="label" data-target="true" x="285.00" y="328.00" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="176.00" lengthAdjust="spacingAndGlyphs">Auditor Manifest</text>
+<rect x="415.00" y="302.00" width="194.00" height="38.00" rx="0.0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t4" data-role="label" data-target="true" x="512.00" y="327.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="210.00" lengthAdjust="spacingAndGlyphs">Coordinator Container</text>
+<rect x="116.00" y="423.50" width="111.00" height="33.00" rx="0.0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t5" data-role="label" data-target="true" x="171.50" y="446.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="170.00" lengthAdjust="spacingAndGlyphs">Specialist Commit</text>
+<rect x="237.00" y="423.50" width="96.00" height="33.00" rx="0.0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t6" data-role="label" data-target="true" x="285.00" y="446.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="140.00" lengthAdjust="spacingAndGlyphs">Analyst Linter</text>
+<rect x="345.50" y="423.50" width="106.00" height="33.00" rx="0.0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t7" data-role="label" data-target="true" x="398.50" y="446.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="160.00" lengthAdjust="spacingAndGlyphs">Architect Runner</text>
+<rect x="460.50" y="422.00" width="103.00" height="36.00" rx="0.0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t8" data-role="label" data-target="true" x="512.00" y="446.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="110.00" lengthAdjust="spacingAndGlyphs">Lead Bundle</text>
+<rect x="573.50" y="423.00" width="104.00" height="34.00" rx="0.0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t9" data-role="label" data-target="true" x="625.50" y="446.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="130.00" lengthAdjust="spacingAndGlyphs">Manager Cache</text>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="1.71"/>
+<text id="t10" data-role="panel_title" data-target="false" x="773.00" y="155.00" font-family="Menlo, Monaco, monospace" font-size="16" fill="#555555" text-anchor="start" textLength="70.00" lengthAdjust="spacingAndGlyphs">Network</text>
+<line x1="1280.54" y1="337.48" x2="1122.00" y2="440.99" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="1209.38" y1="405.68" x2="1122.00" y2="440.99" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="1122.00" y1="440.99" x2="953.84" y2="380.21" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="1014.36" y1="430.94" x2="931.36" y2="287.38" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="931.36" y1="287.38" x2="1012.47" y2="218.94" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="1012.47" y1="218.94" x2="1122.00" y2="440.99" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="1123.40" y1="230.53" x2="931.36" y2="287.38" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="1123.40" y1="230.53" x2="1280.54" y2="337.48" stroke="#dddddd" stroke-width="1.71"/>
+<line x1="1225.07" y1="273.60" x2="1280.54" y2="337.48" stroke="#dddddd" stroke-width="1.71"/>
+<rect x="1177.54" y="318.48" width="206.00" height="38.00" rx="0.0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t11" data-role="label" data-target="true" x="1280.54" y="344.48" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Escalate Runner</text>
+<rect x="1124.38" y="386.68" width="170.00" height="38.00" rx="0.0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t12" data-role="label" data-target="true" x="1209.38" y="412.68" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Index Bundle</text>
+<rect x="1073.00" y="421.99" width="98.00" height="38.00" rx="0.0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t13" data-role="label" data-target="true" x="1122.00" y="447.99" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<rect x="917.36" y="411.94" width="194.00" height="38.00" rx="0.0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t14" data-role="label" data-target="true" x="1014.36" y="437.94" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Merge Artifact</text>
+<rect x="868.84" y="361.21" width="170.00" height="38.00" rx="0.0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t15" data-role="label" data-target="true" x="953.84" y="387.21" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Flush Runner</text>
+<rect x="828.36" y="268.38" width="206.00" height="38.00" rx="0.0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t16" data-role="label" data-target="true" x="931.36" y="294.38" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Backfill Commit</text>
+<rect x="969.47" y="199.94" width="86.00" height="38.00" rx="0.0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t17" data-role="label" data-target="true" x="1012.47" y="225.94" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<rect x="1074.40" y="211.53" width="98.00" height="38.00" rx="0.0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t18" data-role="label" data-target="true" x="1123.40" y="237.53" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="1128.07" y="254.60" width="194.00" height="38.00" rx="0.0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t19" data-role="label" data-target="true" x="1225.07" y="280.60" font-family="Menlo, Monaco, monospace" font-size="20.0" fill="#000000" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Archive Bundle</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="1.71"/>
+<text id="t20" data-role="panel_title" data-target="false" x="70.00" y="545.00" font-family="Menlo, Monaco, monospace" font-size="16" fill="#555555" text-anchor="start" textLength="100.00" lengthAdjust="spacingAndGlyphs">Line Chart</text>
+<line x1="176.00" y1="592.00" x2="176.00" y2="812.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="176.00" y1="812.00" x2="567.00" y2="812.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t21" data-role="tick" data-target="true" x="164.00" y="818.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#555555" text-anchor="end" textLength="10.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="176.00" y1="757.00" x2="567.00" y2="757.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t22" data-role="tick" data-target="true" x="164.00" y="763.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#555555" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">25</text>
+<line x1="176.00" y1="702.00" x2="567.00" y2="702.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t23" data-role="tick" data-target="true" x="164.00" y="708.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#555555" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">50</text>
+<line x1="176.00" y1="647.00" x2="567.00" y2="647.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t24" data-role="tick" data-target="true" x="164.00" y="653.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#555555" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">75</text>
+<line x1="176.00" y1="592.00" x2="567.00" y2="592.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t25" data-role="tick" data-target="true" x="164.00" y="598.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#555555" text-anchor="end" textLength="30.00" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t26" data-role="category" data-target="true" x="176.00" y="838.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t27" data-role="category" data-target="true" x="254.20" y="838.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<text id="t28" data-role="category" data-target="true" x="332.40" y="838.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<text id="t29" data-role="category" data-target="true" x="410.60" y="838.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t30" data-role="category" data-target="true" x="488.80" y="838.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t31" data-role="category" data-target="true" x="567.00" y="838.00" font-family="Menlo, Monaco, monospace" font-size="17.0" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<line x1="176.00" y1="726.20" x2="254.20" y2="741.60" stroke="#727272" stroke-width="3.23"/>
+<line x1="254.20" y1="741.60" x2="332.40" y2="768.00" stroke="#727272" stroke-width="3.23"/>
+<line x1="332.40" y1="768.00" x2="410.60" y2="732.80" stroke="#727272" stroke-width="3.23"/>
+<line x1="410.60" y1="732.80" x2="488.80" y2="739.40" stroke="#727272" stroke-width="3.23"/>
+<line x1="488.80" y1="739.40" x2="567.00" y2="752.60" stroke="#727272" stroke-width="3.23"/>
+<circle cx="176.00" cy="726.20" r="4.94" fill="#727272" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="254.20" cy="741.60" r="4.94" fill="#727272" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="332.40" cy="768.00" r="4.94" fill="#727272" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="410.60" cy="732.80" r="4.94" fill="#727272" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="488.80" cy="739.40" r="4.94" fill="#727272" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="567.00" cy="752.60" r="4.94" fill="#727272" stroke="#ffffff" stroke-width="1.52"/>
+<text id="t32" data-role="series" data-target="true" x="581.00" y="758.60" font-family="Menlo, Monaco, monospace" font-size="18.0" fill="#727272" text-anchor="start" textLength="66.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<line x1="176.00" y1="748.20" x2="254.20" y2="761.40" stroke="#737373" stroke-width="3.23"/>
+<line x1="254.20" y1="761.40" x2="332.40" y2="787.80" stroke="#737373" stroke-width="3.23"/>
+<line x1="332.40" y1="787.80" x2="410.60" y2="770.20" stroke="#737373" stroke-width="3.23"/>
+<line x1="410.60" y1="770.20" x2="488.80" y2="792.20" stroke="#737373" stroke-width="3.23"/>
+<line x1="488.80" y1="792.20" x2="567.00" y2="798.80" stroke="#737373" stroke-width="3.23"/>
+<circle cx="176.00" cy="748.20" r="4.94" fill="#737373" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="254.20" cy="761.40" r="4.94" fill="#737373" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="332.40" cy="787.80" r="4.94" fill="#737373" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="410.60" cy="770.20" r="4.94" fill="#737373" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="488.80" cy="792.20" r="4.94" fill="#737373" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="567.00" cy="798.80" r="4.94" fill="#737373" stroke="#ffffff" stroke-width="1.52"/>
+<text id="t33" data-role="series" data-target="true" x="581.00" y="804.80" font-family="Menlo, Monaco, monospace" font-size="18.0" fill="#737373" text-anchor="start" textLength="77.00" lengthAdjust="spacingAndGlyphs">Defects</text>
+<line x1="176.00" y1="783.40" x2="254.20" y2="743.80" stroke="#747474" stroke-width="3.23"/>
+<line x1="254.20" y1="743.80" x2="332.40" y2="772.40" stroke="#747474" stroke-width="3.23"/>
+<line x1="332.40" y1="772.40" x2="410.60" y2="732.80" stroke="#747474" stroke-width="3.23"/>
+<line x1="410.60" y1="732.80" x2="488.80" y2="739.40" stroke="#747474" stroke-width="3.23"/>
+<line x1="488.80" y1="739.40" x2="567.00" y2="772.40" stroke="#747474" stroke-width="3.23"/>
+<circle cx="176.00" cy="783.40" r="4.94" fill="#747474" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="254.20" cy="743.80" r="4.94" fill="#747474" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="332.40" cy="772.40" r="4.94" fill="#747474" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="410.60" cy="732.80" r="4.94" fill="#747474" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="488.80" cy="739.40" r="4.94" fill="#747474" stroke="#ffffff" stroke-width="1.52"/>
+<circle cx="567.00" cy="772.40" r="4.94" fill="#747474" stroke="#ffffff" stroke-width="1.52"/>
+<text id="t34" data-role="series" data-target="true" x="581.00" y="778.40" font-family="Menlo, Monaco, monospace" font-size="18.0" fill="#747474" text-anchor="start" textLength="99.00" lengthAdjust="spacingAndGlyphs">Retention</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="1.71"/>
+<text id="t35" data-role="panel_title" data-target="false" x="773.00" y="545.00" font-family="Menlo, Monaco, monospace" font-size="16" fill="#555555" text-anchor="start" textLength="70.00" lengthAdjust="spacingAndGlyphs">Mindmap</text>
+<line x1="1101.50" y1="721.00" x2="1101.50" y2="610.60" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="1022.50" y="592.10" width="158.00" height="37.00" rx="14.0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t36" data-role="label" data-target="true" x="1101.50" y="617.60" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Enrich Cache</text>
+<line x1="1101.50" y1="721.00" x2="1222.50" y2="642.94" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="1138.00" y="624.44" width="169.00" height="37.00" rx="14.0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t37" data-role="label" data-target="true" x="1222.50" y="649.94" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="143.00" lengthAdjust="spacingAndGlyphs">Sample Runner</text>
+<line x1="1101.50" y1="721.00" x2="1272.62" y2="721.00" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="1182.62" y="702.50" width="180.00" height="37.00" rx="14.0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t38" data-role="label" data-target="true" x="1272.62" y="728.00" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="154.00" lengthAdjust="spacingAndGlyphs">Merge Manifest</text>
+<line x1="1101.50" y1="721.00" x2="1222.50" y2="799.06" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="1132.50" y="780.56" width="180.00" height="37.00" rx="14.0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t39" data-role="label" data-target="true" x="1222.50" y="806.06" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="154.00" lengthAdjust="spacingAndGlyphs">Archive Runner</text>
+<line x1="1101.50" y1="721.00" x2="1101.50" y2="831.40" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="1017.00" y="812.90" width="169.00" height="37.00" rx="14.0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t40" data-role="label" data-target="true" x="1101.50" y="838.40" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="143.00" lengthAdjust="spacingAndGlyphs">Verify Commit</text>
+<line x1="1101.50" y1="721.00" x2="980.50" y2="799.06" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="901.50" y="780.56" width="158.00" height="37.00" rx="14.0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t41" data-role="label" data-target="true" x="980.50" y="806.06" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Index Runner</text>
+<line x1="1101.50" y1="721.00" x2="930.38" y2="721.00" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="834.88" y="702.50" width="191.00" height="37.00" rx="14.0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t42" data-role="label" data-target="true" x="930.38" y="728.00" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="165.00" lengthAdjust="spacingAndGlyphs">Partition Cache</text>
+<line x1="1101.50" y1="721.00" x2="980.50" y2="642.94" stroke="#dddddd" stroke-width="2.66"/>
+<rect x="940.00" y="624.44" width="81.00" height="37.00" rx="14.0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t43" data-role="label" data-target="true" x="980.50" y="649.94" font-family="Menlo, Monaco, monospace" font-size="19.0" fill="#000000" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<circle cx="1101.50" cy="721.00" r="58.00" fill="#e0e0e0" stroke="#000000" stroke-width="2.6599999999999997"/>
+<text id="t44" data-role="root" data-target="true" x="1101.50" y="729.00" font-family="Menlo, Monaco, monospace" font-size="23.0" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Build</text>
+<text id="t45" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#555555" text-anchor="start" textLength="264.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3828 | rev 8</text>
+<text id="t46" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#555555" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t47" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#555555" text-anchor="end" textLength="104.00" lengthAdjust="spacingAndGlyphs">generated 5/6</text>
+</svg>

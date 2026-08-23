@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="576.00" lengthAdjust="spacingAndGlyphs">Fleet Logistics - bar chart 0049</text>
+<line x1="168.00" y1="150.00" x2="168.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="168.00" y1="830.00" x2="1412.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60"/>
+<text id="t1" data-role="tick" data-target="true" x="156.00" y="836.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#9aa6b4" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="168.00" y1="660.00" x2="1412.00" y2="660.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t2" data-role="tick" data-target="true" x="156.00" y="666.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#9aa6b4" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">24</text>
+<line x1="168.00" y1="490.00" x2="1412.00" y2="490.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t3" data-role="tick" data-target="true" x="156.00" y="496.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#9aa6b4" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">48</text>
+<line x1="168.00" y1="320.00" x2="1412.00" y2="320.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t4" data-role="tick" data-target="true" x="156.00" y="326.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#9aa6b4" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">71</text>
+<line x1="168.00" y1="150.00" x2="1412.00" y2="150.00" stroke="#222a34" stroke-width="1.12"/>
+<text id="t5" data-role="tick" data-target="true" x="156.00" y="156.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#9aa6b4" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">95</text>
+<rect x="196.72" y="715.47" width="66.96" height="114.53" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t6" data-role="category" data-target="true" x="230.20" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t7" data-role="value" data-target="true" x="230.20" y="706.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">16%</text>
+<rect x="321.12" y="150.00" width="66.96" height="680.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t8" data-role="category" data-target="true" x="354.60" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t9" data-role="value" data-target="true" x="354.60" y="141.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">95%</text>
+<rect x="445.52" y="307.47" width="66.96" height="522.53" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t10" data-role="category" data-target="true" x="479.00" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t11" data-role="value" data-target="true" x="479.00" y="298.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">73%</text>
+<rect x="569.92" y="307.47" width="66.96" height="522.53" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t12" data-role="category" data-target="true" x="603.40" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t13" data-role="value" data-target="true" x="603.40" y="298.47" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">73%</text>
+<rect x="694.32" y="364.74" width="66.96" height="465.26" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t14" data-role="category" data-target="true" x="727.80" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t15" data-role="value" data-target="true" x="727.80" y="355.74" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">65%</text>
+<rect x="818.72" y="192.95" width="66.96" height="637.05" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t16" data-role="category" data-target="true" x="852.20" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t17" data-role="value" data-target="true" x="852.20" y="183.95" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">89%</text>
+<rect x="943.12" y="507.89" width="66.96" height="322.11" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t18" data-role="category" data-target="true" x="976.60" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t19" data-role="value" data-target="true" x="976.60" y="498.89" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">45%</text>
+<rect x="1067.52" y="701.16" width="66.96" height="128.84" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t20" data-role="category" data-target="true" x="1101.00" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t21" data-role="value" data-target="true" x="1101.00" y="692.16" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<rect x="1191.92" y="694.00" width="66.96" height="136.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t22" data-role="category" data-target="true" x="1225.40" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t23" data-role="value" data-target="true" x="1225.40" y="685.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">19%</text>
+<rect x="1316.32" y="593.79" width="66.96" height="236.21" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t24" data-role="category" data-target="true" x="1349.80" y="857.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#f2f5f8" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t25" data-role="value" data-target="true" x="1349.80" y="584.79" font-family="Menlo, Monaco, monospace" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">33%</text>
+<text id="t26" data-role="axis" data-target="true" x="80.00" y="497.00" font-family="Menlo, Monaco, monospace" font-size="20" fill="#9aa6b4" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<text id="t27" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3681 | rev 11</text>
+<text id="t28" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t29" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 21/2</text>
+</svg>

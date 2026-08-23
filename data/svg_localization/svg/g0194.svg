@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="490.95" lengthAdjust="spacingAndGlyphs">Triage Protocol - line chart 0194</text>
+<line x1="154.00" y1="154.00" x2="154.00" y2="834.00" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="154.00" y1="834.00" x2="1292.00" y2="834.00" stroke="#5c636e" stroke-width="1.60"/>
+<text id="t1" data-role="tick" data-target="true" x="142.00" y="841.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#5c636e" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="154.00" y1="664.00" x2="1292.00" y2="664.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t2" data-role="tick" data-target="true" x="142.00" y="671.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#5c636e" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">25</text>
+<line x1="154.00" y1="494.00" x2="1292.00" y2="494.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t3" data-role="tick" data-target="true" x="142.00" y="501.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#5c636e" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">50</text>
+<line x1="154.00" y1="324.00" x2="1292.00" y2="324.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t4" data-role="tick" data-target="true" x="142.00" y="331.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#5c636e" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">75</text>
+<line x1="154.00" y1="154.00" x2="1292.00" y2="154.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t5" data-role="tick" data-target="true" x="142.00" y="161.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#5c636e" text-anchor="end" textLength="33.00" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t6" data-role="category" data-target="true" x="154.00" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t7" data-role="category" data-target="true" x="296.25" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<text id="t8" data-role="category" data-target="true" x="438.50" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<text id="t9" data-role="category" data-target="true" x="580.75" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<text id="t10" data-role="category" data-target="true" x="723.00" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<text id="t11" data-role="category" data-target="true" x="865.25" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<text id="t12" data-role="category" data-target="true" x="1007.50" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<text id="t13" data-role="category" data-target="true" x="1149.75" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t14" data-role="category" data-target="true" x="1292.00" y="861.00" font-family="Verdana, Geneva, sans-serif" font-size="17" fill="#12161c" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<line x1="154.00" y1="290.00" x2="296.25" y2="256.00" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="296.25" y1="256.00" x2="438.50" y2="269.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="438.50" y1="269.60" x2="580.75" y2="337.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="580.75" y1="337.60" x2="723.00" y2="249.20" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="723.00" y1="249.20" x2="865.25" y2="167.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="865.25" y1="167.60" x2="1007.50" y2="167.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="1007.50" y1="167.60" x2="1149.75" y2="249.20" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="1149.75" y1="249.20" x2="1292.00" y2="256.00" stroke="#3876cc" stroke-width="2.72"/>
+<circle cx="154.00" cy="290.00" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="256.00" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="269.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="337.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="249.20" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="167.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="167.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="249.20" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="256.00" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t15" data-role="series" data-target="true" x="1306.00" y="264.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#3876cc" text-anchor="start" textLength="87.00" lengthAdjust="spacingAndGlyphs">Retention</text>
+<line x1="154.00" y1="630.00" x2="296.25" y2="562.00" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="296.25" y1="562.00" x2="438.50" y2="670.80" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="438.50" y1="670.80" x2="580.75" y2="575.60" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="580.75" y1="575.60" x2="723.00" y2="439.60" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="723.00" y1="439.60" x2="865.25" y2="507.60" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="865.25" y1="507.60" x2="1007.50" y2="487.20" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="1007.50" y1="487.20" x2="1149.75" y2="521.20" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="1149.75" y1="521.20" x2="1292.00" y2="419.20" stroke="#3f7a4f" stroke-width="2.72"/>
+<circle cx="154.00" cy="630.00" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="562.00" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="670.80" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="575.60" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="439.60" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="507.60" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="487.20" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="521.20" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="419.20" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t16" data-role="series" data-target="true" x="1306.00" y="427.20" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#3f7a4f" text-anchor="start" textLength="54.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<line x1="154.00" y1="480.40" x2="296.25" y2="548.40" stroke="#966117" stroke-width="2.72"/>
+<line x1="296.25" y1="548.40" x2="438.50" y2="521.20" stroke="#966117" stroke-width="2.72"/>
+<line x1="438.50" y1="521.20" x2="580.75" y2="385.20" stroke="#966117" stroke-width="2.72"/>
+<line x1="580.75" y1="385.20" x2="723.00" y2="364.80" stroke="#966117" stroke-width="2.72"/>
+<line x1="723.00" y1="364.80" x2="865.25" y2="412.40" stroke="#966117" stroke-width="2.72"/>
+<line x1="865.25" y1="412.40" x2="1007.50" y2="303.60" stroke="#966117" stroke-width="2.72"/>
+<line x1="1007.50" y1="303.60" x2="1149.75" y2="358.00" stroke="#966117" stroke-width="2.72"/>
+<line x1="1149.75" y1="358.00" x2="1292.00" y2="303.60" stroke="#966117" stroke-width="2.72"/>
+<circle cx="154.00" cy="480.40" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="548.40" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="521.20" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="385.20" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="364.80" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="412.40" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="303.60" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="358.00" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="303.60" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t17" data-role="series" data-target="true" x="1306.00" y="311.60" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#966117" text-anchor="start" textLength="67.00" lengthAdjust="spacingAndGlyphs">Defects</text>
+<line x1="154.00" y1="453.20" x2="296.25" y2="541.60" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="296.25" y1="541.60" x2="438.50" y2="405.60" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="438.50" y1="405.60" x2="580.75" y2="426.00" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="580.75" y1="426.00" x2="723.00" y2="351.20" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="723.00" y1="351.20" x2="865.25" y2="242.40" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="865.25" y1="242.40" x2="1007.50" y2="167.60" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="1007.50" y1="167.60" x2="1149.75" y2="167.60" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="1149.75" y1="167.60" x2="1292.00" y2="167.60" stroke="#8457c4" stroke-width="2.72"/>
+<circle cx="154.00" cy="453.20" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="541.60" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="405.60" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="426.00" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="351.20" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="242.40" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="167.60" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="167.60" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="167.60" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t18" data-role="series" data-target="true" x="1306.00" y="175.60" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#8457c4" text-anchor="start" textLength="61.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<line x1="154.00" y1="242.40" x2="296.25" y2="167.60" stroke="#327a87" stroke-width="2.72"/>
+<line x1="296.25" y1="167.60" x2="438.50" y2="167.60" stroke="#327a87" stroke-width="2.72"/>
+<line x1="438.50" y1="167.60" x2="580.75" y2="167.60" stroke="#327a87" stroke-width="2.72"/>
+<line x1="580.75" y1="167.60" x2="723.00" y2="215.20" stroke="#327a87" stroke-width="2.72"/>
+<line x1="723.00" y1="215.20" x2="865.25" y2="249.20" stroke="#327a87" stroke-width="2.72"/>
+<line x1="865.25" y1="249.20" x2="1007.50" y2="222.00" stroke="#327a87" stroke-width="2.72"/>
+<line x1="1007.50" y1="222.00" x2="1149.75" y2="167.60" stroke="#327a87" stroke-width="2.72"/>
+<line x1="1149.75" y1="167.60" x2="1292.00" y2="256.00" stroke="#327a87" stroke-width="2.72"/>
+<circle cx="154.00" cy="242.40" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="167.60" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="167.60" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="167.60" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="215.20" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="249.20" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="222.00" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="167.60" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="256.00" r="4.16" fill="#327a87" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t19" data-role="series" data-target="true" x="1306.00" y="264.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#327a87" text-anchor="start" textLength="70.00" lengthAdjust="spacingAndGlyphs">Backlog</text>
+<text id="t20" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="244.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2774 | rev 11</text>
+<text id="t21" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t22" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="109.00" lengthAdjust="spacingAndGlyphs">generated 14/4</text>
+</svg>

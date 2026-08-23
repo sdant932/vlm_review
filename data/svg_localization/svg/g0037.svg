@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="436.98" lengthAdjust="spacingAndGlyphs">Grid Operations - table 0037</text>
+<rect x="88.00" y="144.00" width="1324.00" height="53.43" rx="0" fill="#ebebeb" stroke="#000000" stroke-width="1.9"/>
+<text id="t1" data-role="header" data-target="true" x="182.57" y="178.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Region</text>
+<text id="t2" data-role="header" data-target="true" x="371.71" y="178.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<text id="t3" data-role="header" data-target="true" x="560.86" y="178.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<text id="t4" data-role="header" data-target="true" x="750.00" y="178.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t5" data-role="header" data-target="true" x="939.14" y="178.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="87.00" lengthAdjust="spacingAndGlyphs">Retention</text>
+<text id="t6" data-role="header" data-target="true" x="1128.29" y="178.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="87.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<text id="t7" data-role="header" data-target="true" x="1317.43" y="178.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Defects</text>
+<text id="t8" data-role="cell" data-target="true" x="182.57" y="232.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t9" data-role="cell" data-target="true" x="371.71" y="232.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">60.1</text>
+<text id="t10" data-role="cell" data-target="true" x="560.86" y="232.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">19.2</text>
+<text id="t11" data-role="cell" data-target="true" x="750.00" y="232.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">73.6</text>
+<text id="t12" data-role="cell" data-target="true" x="939.14" y="232.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">66.7</text>
+<text id="t13" data-role="cell" data-target="true" x="1128.29" y="232.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">50.1</text>
+<text id="t14" data-role="cell" data-target="true" x="1317.43" y="232.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">37.1</text>
+<rect x="88.00" y="250.86" width="1324.00" height="53.43" rx="0" fill="#dddddd"/>
+<text id="t15" data-role="cell" data-target="true" x="182.57" y="285.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t16" data-role="cell" data-target="true" x="371.71" y="285.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">80.2</text>
+<text id="t17" data-role="cell" data-target="true" x="560.86" y="285.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">84.5</text>
+<text id="t18" data-role="cell" data-target="true" x="750.00" y="285.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">92.1</text>
+<text id="t19" data-role="cell" data-target="true" x="939.14" y="285.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">12.9</text>
+<text id="t20" data-role="cell" data-target="true" x="1128.29" y="285.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">24.7</text>
+<text id="t21" data-role="cell" data-target="true" x="1317.43" y="285.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">19.0</text>
+<text id="t22" data-role="cell" data-target="true" x="182.57" y="339.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t23" data-role="cell" data-target="true" x="371.71" y="339.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">74.2</text>
+<text id="t24" data-role="cell" data-target="true" x="560.86" y="339.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">99.3</text>
+<text id="t25" data-role="cell" data-target="true" x="750.00" y="339.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">84.6</text>
+<text id="t26" data-role="cell" data-target="true" x="939.14" y="339.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">94.3</text>
+<text id="t27" data-role="cell" data-target="true" x="1128.29" y="339.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">10.7</text>
+<text id="t28" data-role="cell" data-target="true" x="1317.43" y="339.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">14.6</text>
+<rect x="88.00" y="357.71" width="1324.00" height="53.43" rx="0" fill="#dddddd"/>
+<text id="t29" data-role="cell" data-target="true" x="182.57" y="392.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t30" data-role="cell" data-target="true" x="371.71" y="392.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">51.8</text>
+<text id="t31" data-role="cell" data-target="true" x="560.86" y="392.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">91.0</text>
+<text id="t32" data-role="cell" data-target="true" x="750.00" y="392.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">94.6</text>
+<text id="t33" data-role="cell" data-target="true" x="939.14" y="392.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">25.6</text>
+<text id="t34" data-role="cell" data-target="true" x="1128.29" y="392.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">25.3</text>
+<text id="t35" data-role="cell" data-target="true" x="1317.43" y="392.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">87.1</text>
+<text id="t36" data-role="cell" data-target="true" x="182.57" y="445.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t37" data-role="cell" data-target="true" x="371.71" y="445.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">93.1</text>
+<text id="t38" data-role="cell" data-target="true" x="560.86" y="445.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">76.2</text>
+<text id="t39" data-role="cell" data-target="true" x="750.00" y="445.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">23.1</text>
+<text id="t40" data-role="cell" data-target="true" x="939.14" y="445.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">27.3</text>
+<text id="t41" data-role="cell" data-target="true" x="1128.29" y="445.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">11.3</text>
+<text id="t42" data-role="cell" data-target="true" x="1317.43" y="445.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">70.6</text>
+<rect x="88.00" y="464.57" width="1324.00" height="53.43" rx="0" fill="#dddddd"/>
+<text id="t43" data-role="cell" data-target="true" x="182.57" y="499.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="44.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t44" data-role="cell" data-target="true" x="371.71" y="499.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">73.6</text>
+<text id="t45" data-role="cell" data-target="true" x="560.86" y="499.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">77.6</text>
+<text id="t46" data-role="cell" data-target="true" x="750.00" y="499.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">63.2</text>
+<text id="t47" data-role="cell" data-target="true" x="939.14" y="499.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">55.8</text>
+<text id="t48" data-role="cell" data-target="true" x="1128.29" y="499.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">72.2</text>
+<text id="t49" data-role="cell" data-target="true" x="1317.43" y="499.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">65.5</text>
+<text id="t50" data-role="cell" data-target="true" x="182.57" y="552.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t51" data-role="cell" data-target="true" x="371.71" y="552.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">19.4</text>
+<text id="t52" data-role="cell" data-target="true" x="560.86" y="552.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">40.3</text>
+<text id="t53" data-role="cell" data-target="true" x="750.00" y="552.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">53.0</text>
+<text id="t54" data-role="cell" data-target="true" x="939.14" y="552.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">95.6</text>
+<text id="t55" data-role="cell" data-target="true" x="1128.29" y="552.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">18.5</text>
+<text id="t56" data-role="cell" data-target="true" x="1317.43" y="552.71" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">17.4</text>
+<rect x="88.00" y="571.43" width="1324.00" height="53.43" rx="0" fill="#dddddd"/>
+<text id="t57" data-role="cell" data-target="true" x="182.57" y="606.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t58" data-role="cell" data-target="true" x="371.71" y="606.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">82.6</text>
+<text id="t59" data-role="cell" data-target="true" x="560.86" y="606.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">21.7</text>
+<text id="t60" data-role="cell" data-target="true" x="750.00" y="606.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">83.5</text>
+<text id="t61" data-role="cell" data-target="true" x="939.14" y="606.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">83.5</text>
+<text id="t62" data-role="cell" data-target="true" x="1128.29" y="606.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">15.6</text>
+<text id="t63" data-role="cell" data-target="true" x="1317.43" y="606.14" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">67.8</text>
+<text id="t64" data-role="cell" data-target="true" x="182.57" y="659.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t65" data-role="cell" data-target="true" x="371.71" y="659.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">29.8</text>
+<text id="t66" data-role="cell" data-target="true" x="560.86" y="659.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">45.7</text>
+<text id="t67" data-role="cell" data-target="true" x="750.00" y="659.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">37.4</text>
+<text id="t68" data-role="cell" data-target="true" x="939.14" y="659.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">95.9</text>
+<text id="t69" data-role="cell" data-target="true" x="1128.29" y="659.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">18.4</text>
+<text id="t70" data-role="cell" data-target="true" x="1317.43" y="659.57" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">53.9</text>
+<rect x="88.00" y="678.29" width="1324.00" height="53.43" rx="0" fill="#dddddd"/>
+<text id="t71" data-role="cell" data-target="true" x="182.57" y="713.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t72" data-role="cell" data-target="true" x="371.71" y="713.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">32.1</text>
+<text id="t73" data-role="cell" data-target="true" x="560.86" y="713.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">20.4</text>
+<text id="t74" data-role="cell" data-target="true" x="750.00" y="713.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">16.4</text>
+<text id="t75" data-role="cell" data-target="true" x="939.14" y="713.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">39.9</text>
+<text id="t76" data-role="cell" data-target="true" x="1128.29" y="713.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">54.6</text>
+<text id="t77" data-role="cell" data-target="true" x="1317.43" y="713.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">14.6</text>
+<text id="t78" data-role="cell" data-target="true" x="182.57" y="766.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="38.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t79" data-role="cell" data-target="true" x="371.71" y="766.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">92.3</text>
+<text id="t80" data-role="cell" data-target="true" x="560.86" y="766.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">20.9</text>
+<text id="t81" data-role="cell" data-target="true" x="750.00" y="766.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">68.9</text>
+<text id="t82" data-role="cell" data-target="true" x="939.14" y="766.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">48.9</text>
+<text id="t83" data-role="cell" data-target="true" x="1128.29" y="766.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">40.6</text>
+<text id="t84" data-role="cell" data-target="true" x="1317.43" y="766.43" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">45.7</text>
+<rect x="88.00" y="785.14" width="1324.00" height="53.43" rx="0" fill="#dddddd"/>
+<text id="t85" data-role="cell" data-target="true" x="182.57" y="819.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t86" data-role="cell" data-target="true" x="371.71" y="819.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">41.2</text>
+<text id="t87" data-role="cell" data-target="true" x="560.86" y="819.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">87.1</text>
+<text id="t88" data-role="cell" data-target="true" x="750.00" y="819.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">77.9</text>
+<text id="t89" data-role="cell" data-target="true" x="939.14" y="819.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">31.1</text>
+<text id="t90" data-role="cell" data-target="true" x="1128.29" y="819.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">79.6</text>
+<text id="t91" data-role="cell" data-target="true" x="1317.43" y="819.86" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">23.9</text>
+<text id="t92" data-role="cell" data-target="true" x="182.57" y="873.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="61.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t93" data-role="cell" data-target="true" x="371.71" y="873.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">33.7</text>
+<text id="t94" data-role="cell" data-target="true" x="560.86" y="873.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">96.7</text>
+<text id="t95" data-role="cell" data-target="true" x="750.00" y="873.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">80.2</text>
+<text id="t96" data-role="cell" data-target="true" x="939.14" y="873.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">38.6</text>
+<text id="t97" data-role="cell" data-target="true" x="1128.29" y="873.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">51.4</text>
+<text id="t98" data-role="cell" data-target="true" x="1317.43" y="873.29" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">30.9</text>
+<line x1="88.00" y1="144.00" x2="88.00" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="277.14" y1="144.00" x2="277.14" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="466.29" y1="144.00" x2="466.29" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="655.43" y1="144.00" x2="655.43" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="844.57" y1="144.00" x2="844.57" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="1033.71" y1="144.00" x2="1033.71" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="1222.86" y1="144.00" x2="1222.86" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="1412.00" y1="144.00" x2="1412.00" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="144.00" x2="1412.00" y2="144.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="197.43" x2="1412.00" y2="197.43" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="250.86" x2="1412.00" y2="250.86" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="304.29" x2="1412.00" y2="304.29" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="357.71" x2="1412.00" y2="357.71" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="411.14" x2="1412.00" y2="411.14" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="464.57" x2="1412.00" y2="464.57" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="518.00" x2="1412.00" y2="518.00" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="571.43" x2="1412.00" y2="571.43" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="624.86" x2="1412.00" y2="624.86" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="678.29" x2="1412.00" y2="678.29" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="731.71" x2="1412.00" y2="731.71" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="785.14" x2="1412.00" y2="785.14" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="838.57" x2="1412.00" y2="838.57" stroke="#000000" stroke-width="1.33"/>
+<line x1="88.00" y1="892.00" x2="1412.00" y2="892.00" stroke="#000000" stroke-width="1.33"/>
+<text id="t99" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#555555" text-anchor="start" textLength="244.00" lengthAdjust="spacingAndGlyphs">source: internal | n=1652 | rev 13</text>
+<text id="t100" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#555555" text-anchor="end" textLength="113.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t101" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#555555" text-anchor="end" textLength="100.00" lengthAdjust="spacingAndGlyphs">generated 7/2</text>
+</svg>

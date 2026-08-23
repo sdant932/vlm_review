@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="537.97" lengthAdjust="spacingAndGlyphs">Payment Authorization - sequence 0026</text>
+<rect x="249.50" y="158.00" width="101.00" height="40.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="actor" data-target="true" x="300.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="71.00" lengthAdjust="spacingAndGlyphs">Gateway</text>
+<line x1="300.00" y1="198.00" x2="300.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="563.50" y="158.00" width="73.00" height="40.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="actor" data-target="true" x="600.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Store</text>
+<line x1="600.00" y1="198.00" x2="600.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="856.00" y="158.00" width="88.00" height="40.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="actor" data-target="true" x="900.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Worker</text>
+<line x1="900.00" y1="198.00" x2="900.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="1156.50" y="158.00" width="87.00" height="40.00" rx="6" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="actor" data-target="true" x="1200.00" y="185.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Auditor</text>
+<line x1="1200.00" y1="198.00" x2="1200.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<line x1="1200.00" y1="236.00" x2="900.00" y2="236.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t5" data-role="message" data-target="true" x="1050.00" y="226.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="1200.00" y1="440.00" x2="900.00" y2="440.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t6" data-role="message" data-target="true" x="1050.00" y="430.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="900.00" y1="644.00" x2="300.00" y2="644.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t7" data-role="message" data-target="true" x="600.00" y="634.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="300.00" y1="848.00" x2="600.00" y2="848.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t8" data-role="message" data-target="true" x="450.00" y="838.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<text id="t9" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3121 | rev 5</text>
+<text id="t10" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="69.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t11" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 16/2</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="415.98" lengthAdjust="spacingAndGlyphs">Access Review - quadrant 0028</text>
+<rect x="178.00" y="154.00" width="1204.00" height="678.00" rx="0" fill="none" stroke="#555555" stroke-width="1.9"/>
+<line x1="780.00" y1="154.00" x2="780.00" y2="832.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="178.00" y1="493.00" x2="1382.00" y2="493.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t1" data-role="quadrant" data-target="true" x="479.00" y="215.24" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#555555" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Invest</text>
+<text id="t2" data-role="quadrant" data-target="true" x="1081.00" y="215.24" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#555555" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Sustain</text>
+<text id="t3" data-role="quadrant" data-target="true" x="479.00" y="784.76" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#555555" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Divest</text>
+<text id="t4" data-role="quadrant" data-target="true" x="1081.00" y="784.76" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#555555" text-anchor="middle" textLength="56.98" lengthAdjust="spacingAndGlyphs">Review</text>
+<circle cx="874.87" cy="585.58" r="11.00" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t5" data-role="point" data-target="true" x="874.87" y="567.58" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<circle cx="786.58" cy="524.73" r="11.00" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t6" data-role="point" data-target="true" x="786.58" y="506.73" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="42.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="572.13" cy="751.00" r="11.00" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t7" data-role="point" data-target="true" x="572.13" y="733.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="679.02" cy="659.44" r="11.00" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t8" data-role="point" data-target="true" x="679.02" y="641.44" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<circle cx="1173.09" cy="746.22" r="11.00" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t9" data-role="point" data-target="true" x="1173.09" y="728.22" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="347.70" cy="627.21" r="11.00" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t10" data-role="point" data-target="true" x="347.70" y="609.21" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="36.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t11" data-role="axis" data-target="true" x="780.00" y="870.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#555555" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<text id="t12" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#555555" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=8315 | rev 15</text>
+<text id="t13" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#555555" text-anchor="end" textLength="98.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t14" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#555555" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 7/12</text>
+</svg>

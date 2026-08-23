@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fffdf5"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#77704f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#241f10" text-anchor="start" textLength="455.00" lengthAdjust="spacingAndGlyphs">Claims Handling - dashboard 0063</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="156.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="37.98" lengthAdjust="spacingAndGlyphs">Table</text>
+<rect x="110.00" y="192.00" width="577.00" height="32.00" rx="5.0" fill="#fce69d" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t2" data-role="header" data-target="true" x="182.12" y="216.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Region</text>
+<text id="t3" data-role="header" data-target="true" x="326.38" y="216.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="75.00" lengthAdjust="spacingAndGlyphs">Retention</text>
+<text id="t4" data-role="header" data-target="true" x="470.62" y="216.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="73.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<text id="t5" data-role="header" data-target="true" x="614.88" y="216.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="37.00" lengthAdjust="spacingAndGlyphs">Yield</text>
+<text id="t6" data-role="cell" data-target="true" x="182.12" y="248.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t7" data-role="cell" data-target="true" x="326.38" y="248.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">51.4</text>
+<text id="t8" data-role="cell" data-target="true" x="470.62" y="248.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">88.9</text>
+<text id="t9" data-role="cell" data-target="true" x="614.88" y="248.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">43.6</text>
+<rect x="110.00" y="256.00" width="577.00" height="32.00" rx="0.0" fill="#f0ead2"/>
+<text id="t10" data-role="cell" data-target="true" x="182.12" y="280.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="42.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t11" data-role="cell" data-target="true" x="326.38" y="280.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">12.8</text>
+<text id="t12" data-role="cell" data-target="true" x="470.62" y="280.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">63.2</text>
+<text id="t13" data-role="cell" data-target="true" x="614.88" y="280.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">86.4</text>
+<text id="t14" data-role="cell" data-target="true" x="182.12" y="312.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t15" data-role="cell" data-target="true" x="326.38" y="312.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">45.4</text>
+<text id="t16" data-role="cell" data-target="true" x="470.62" y="312.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="34.98" lengthAdjust="spacingAndGlyphs">57.1</text>
+<text id="t17" data-role="cell" data-target="true" x="614.88" y="312.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">99.3</text>
+<rect x="110.00" y="320.00" width="577.00" height="32.00" rx="0.0" fill="#f0ead2"/>
+<text id="t18" data-role="cell" data-target="true" x="182.12" y="344.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t19" data-role="cell" data-target="true" x="326.38" y="344.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="34.98" lengthAdjust="spacingAndGlyphs">97.8</text>
+<text id="t20" data-role="cell" data-target="true" x="470.62" y="344.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">96.6</text>
+<text id="t21" data-role="cell" data-target="true" x="614.88" y="344.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">25.7</text>
+<text id="t22" data-role="cell" data-target="true" x="182.12" y="376.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t23" data-role="cell" data-target="true" x="326.38" y="376.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">76.3</text>
+<text id="t24" data-role="cell" data-target="true" x="470.62" y="376.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">56.9</text>
+<text id="t25" data-role="cell" data-target="true" x="614.88" y="376.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">91.0</text>
+<rect x="110.00" y="384.00" width="577.00" height="32.00" rx="0.0" fill="#f0ead2"/>
+<text id="t26" data-role="cell" data-target="true" x="182.12" y="408.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="68.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t27" data-role="cell" data-target="true" x="326.38" y="408.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="34.98" lengthAdjust="spacingAndGlyphs">17.2</text>
+<text id="t28" data-role="cell" data-target="true" x="470.62" y="408.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">20.8</text>
+<text id="t29" data-role="cell" data-target="true" x="614.88" y="408.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="34.98" lengthAdjust="spacingAndGlyphs">97.9</text>
+<text id="t30" data-role="cell" data-target="true" x="182.12" y="440.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t31" data-role="cell" data-target="true" x="326.38" y="440.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">88.3</text>
+<text id="t32" data-role="cell" data-target="true" x="470.62" y="440.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="34.98" lengthAdjust="spacingAndGlyphs">87.6</text>
+<text id="t33" data-role="cell" data-target="true" x="614.88" y="440.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">50.5</text>
+<rect x="110.00" y="448.00" width="577.00" height="32.00" rx="0.0" fill="#f0ead2"/>
+<text id="t34" data-role="cell" data-target="true" x="182.12" y="472.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="42.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t35" data-role="cell" data-target="true" x="326.38" y="472.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">46.8</text>
+<text id="t36" data-role="cell" data-target="true" x="470.62" y="472.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">75.9</text>
+<text id="t37" data-role="cell" data-target="true" x="614.88" y="472.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">13.9</text>
+<line x1="110.00" y1="192.00" x2="110.00" y2="480.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="254.25" y1="192.00" x2="254.25" y2="480.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="398.50" y1="192.00" x2="398.50" y2="480.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="542.75" y1="192.00" x2="542.75" y2="480.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="687.00" y1="192.00" x2="687.00" y2="480.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="192.00" x2="687.00" y2="192.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="224.00" x2="687.00" y2="224.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="256.00" x2="687.00" y2="256.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="288.00" x2="687.00" y2="288.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="320.00" x2="687.00" y2="320.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="352.00" x2="687.00" y2="352.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="384.00" x2="687.00" y2="384.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="416.00" x2="687.00" y2="416.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="448.00" x2="687.00" y2="448.00" stroke="#5a5330" stroke-width="1.12"/>
+<line x1="110.00" y1="480.00" x2="687.00" y2="480.00" stroke="#5a5330" stroke-width="1.12"/>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t38" data-role="panel_title" data-target="false" x="773.00" y="155.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="67.00" lengthAdjust="spacingAndGlyphs">Sequence</text>
+<rect x="821.50" y="206.00" width="106.00" height="40.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t39" data-role="actor" data-target="true" x="874.50" y="234.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="76.00" lengthAdjust="spacingAndGlyphs">Scheduler</text>
+<line x1="874.50" y1="246.00" x2="874.50" y2="456.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="944.50" y="206.00" width="87.00" height="40.00" rx="5.0" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t40" data-role="actor" data-target="true" x="988.00" y="234.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Auditor</text>
+<line x1="988.00" y1="246.00" x2="988.00" y2="456.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="1064.50" y="206.00" width="74.00" height="40.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t41" data-role="actor" data-target="true" x="1101.50" y="234.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Client</text>
+<line x1="1101.50" y1="246.00" x2="1101.50" y2="456.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="1174.50" y="206.00" width="81.00" height="40.00" rx="5.0" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t42" data-role="actor" data-target="true" x="1215.00" y="234.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Broker</text>
+<line x1="1215.00" y1="246.00" x2="1215.00" y2="456.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="1285.50" y="206.00" width="86.00" height="40.00" rx="5.0" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t43" data-role="actor" data-target="true" x="1328.50" y="234.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Worker</text>
+<line x1="1328.50" y1="246.00" x2="1328.50" y2="456.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<line x1="874.50" y1="284.00" x2="1215.00" y2="284.00" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t44" data-role="message" data-target="true" x="1044.75" y="275.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="874.50" y1="314.40" x2="1101.50" y2="314.40" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t45" data-role="message" data-target="true" x="988.00" y="305.40" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="1328.50" y1="344.80" x2="1101.50" y2="344.80" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t46" data-role="message" data-target="true" x="1215.00" y="335.80" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="1101.50" y1="375.20" x2="874.50" y2="375.20" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t47" data-role="message" data-target="true" x="988.00" y="366.20" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="1328.50" y1="405.60" x2="1101.50" y2="405.60" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t48" data-role="message" data-target="true" x="1215.00" y="396.60" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="1215.00" y1="436.00" x2="988.00" y2="436.00" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t49" data-role="message" data-target="true" x="1101.50" y="427.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t50" data-role="panel_title" data-target="false" x="70.00" y="546.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="64.00" lengthAdjust="spacingAndGlyphs">Mindmap</text>
+<line x1="398.50" y1="721.00" x2="398.50" y2="610.60" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="366.50" y="592.10" width="64.00" height="37.00" rx="14.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t51" data-role="label" data-target="true" x="398.50" y="618.60" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="38.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<line x1="398.50" y1="721.00" x2="546.69" y2="665.80" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="499.19" y="647.30" width="95.00" height="37.00" rx="14.0" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t52" data-role="label" data-target="true" x="546.69" y="673.80" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<line x1="398.50" y1="721.00" x2="546.69" y2="776.20" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="507.69" y="757.70" width="78.00" height="37.00" rx="14.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t53" data-role="label" data-target="true" x="546.69" y="784.20" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<line x1="398.50" y1="721.00" x2="398.50" y2="831.40" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="323.50" y="812.90" width="150.00" height="37.00" rx="14.0" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t54" data-role="label" data-target="true" x="398.50" y="839.40" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Enrich Salvage</text>
+<line x1="398.50" y1="721.00" x2="250.31" y2="776.20" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="215.31" y="757.70" width="70.00" height="37.00" rx="14.0" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t55" data-role="label" data-target="true" x="250.31" y="784.20" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<line x1="398.50" y1="721.00" x2="250.31" y2="665.80" stroke="#f0ead2" stroke-width="2.24"/>
+<rect x="170.81" y="647.30" width="159.00" height="37.00" rx="14.0" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t56" data-role="label" data-target="true" x="250.31" y="673.80" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Route Coverage</text>
+<circle cx="398.50" cy="721.00" r="58.00" fill="#fbe189" stroke="#5a5330" stroke-width="2.2399999999999998"/>
+<text id="t57" data-role="root" data-target="true" x="398.50" y="731.00" font-family="Tahoma, Geneva, sans-serif" font-size="23.0" fill="#241f10" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">Claims</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t58" data-role="panel_title" data-target="false" x="773.00" y="546.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#77704f" text-anchor="start" textLength="59.00" lengthAdjust="spacingAndGlyphs">Timeline</text>
+<line x1="843.00" y1="721.00" x2="1360.00" y2="721.00" stroke="#77704f" stroke-width="3.52"/>
+<circle cx="843.00" cy="721.00" r="7.04" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<line x1="843.00" y1="707.00" x2="843.00" y2="659.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t59" data-role="milestone" data-target="true" x="843.00" y="645.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="119.00" lengthAdjust="spacingAndGlyphs">Index Salvage</text>
+<text id="t60" data-role="date" data-target="true" x="843.00" y="618.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<circle cx="972.25" cy="721.00" r="7.04" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<line x1="972.25" y1="735.00" x2="972.25" y2="783.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t61" data-role="milestone" data-target="true" x="972.25" y="813.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="116.00" lengthAdjust="spacingAndGlyphs">Rotate Payout</text>
+<text id="t62" data-role="date" data-target="true" x="972.25" y="838.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<circle cx="1101.50" cy="721.00" r="7.04" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<line x1="1101.50" y1="707.00" x2="1101.50" y2="659.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t63" data-role="milestone" data-target="true" x="1101.50" y="645.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Sample Appraisal</text>
+<text id="t64" data-role="date" data-target="true" x="1101.50" y="618.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<circle cx="1230.75" cy="721.00" r="7.04" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<line x1="1230.75" y1="735.00" x2="1230.75" y2="783.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t65" data-role="milestone" data-target="true" x="1230.75" y="813.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="120.00" lengthAdjust="spacingAndGlyphs">Merge Liability</text>
+<text id="t66" data-role="date" data-target="true" x="1230.75" y="838.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<circle cx="1360.00" cy="721.00" r="7.04" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<line x1="1360.00" y1="707.00" x2="1360.00" y2="659.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t67" data-role="milestone" data-target="true" x="1360.00" y="645.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="130.00" lengthAdjust="spacingAndGlyphs">Merge Estimate</text>
+<text id="t68" data-role="date" data-target="true" x="1360.00" y="618.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t69" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#77704f" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=5194 | rev 19</text>
+<text id="t70" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#77704f" text-anchor="end" textLength="62.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t71" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#77704f" text-anchor="end" textLength="87.00" lengthAdjust="spacingAndGlyphs">generated 7/4</text>
+</svg>

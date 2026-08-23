@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#2b2418" text-anchor="start" textLength="540.00" lengthAdjust="spacingAndGlyphs">Grid Operations - treemap 0027</text>
+<rect x="81.00" y="147.00" width="248.02" height="742.00" rx="4" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="cell" data-target="true" x="205.01" y="516.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#2b2418" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t2" data-role="value" data-target="true" x="205.01" y="539.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">55</text>
+<rect x="335.02" y="147.00" width="1083.98" height="161.98" rx="4" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="cell" data-target="true" x="877.01" y="225.99" font-family="Menlo, Monaco, monospace" font-size="19" fill="#2b2418" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t4" data-role="value" data-target="true" x="877.01" y="248.99" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">53</text>
+<rect x="335.02" y="314.98" width="262.03" height="574.02" rx="4" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="cell" data-target="true" x="466.03" y="599.99" font-family="Menlo, Monaco, monospace" font-size="19" fill="#2b2418" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t6" data-role="value" data-target="true" x="466.03" y="622.99" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">45</text>
+<rect x="603.05" y="314.98" width="815.95" height="178.93" rx="4" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="cell" data-target="true" x="1011.02" y="402.45" font-family="Menlo, Monaco, monospace" font-size="19" fill="#2b2418" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t8" data-role="value" data-target="true" x="1011.02" y="425.45" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">44</text>
+<rect x="603.05" y="499.92" width="378.74" height="389.08" rx="4" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t9" data-role="cell" data-target="true" x="792.42" y="692.46" font-family="Menlo, Monaco, monospace" font-size="19" fill="#2b2418" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t10" data-role="value" data-target="true" x="792.42" y="715.46" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">44</text>
+<rect x="987.79" y="499.92" width="431.21" height="278.46" rx="4" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t11" data-role="cell" data-target="true" x="1203.40" y="637.15" font-family="Menlo, Monaco, monospace" font-size="19" fill="#2b2418" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t12" data-role="value" data-target="true" x="1203.40" y="660.15" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">36</text>
+<rect x="987.79" y="784.38" width="431.21" height="104.62" rx="4" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t13" data-role="cell" data-target="true" x="1203.40" y="834.69" font-family="Menlo, Monaco, monospace" font-size="19" fill="#2b2418" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t14" data-role="value" data-target="true" x="1203.40" y="857.69" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">14</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#7a6c56" text-anchor="start" textLength="264.00" lengthAdjust="spacingAndGlyphs">source: internal | n=5864 | rev 9</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#7a6c56" text-anchor="end" textLength="63.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#7a6c56" text-anchor="end" textLength="104.00" lengthAdjust="spacingAndGlyphs">generated 2/3</text>
+</svg>

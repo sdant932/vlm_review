@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="60.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="418.94" lengthAdjust="spacingAndGlyphs">Build Pipeline - sequence 0186</text>
+<rect x="209.50" y="158.00" width="81.00" height="40.00" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t1" data-role="actor" data-target="true" x="250.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Cache</text>
+<line x1="250.00" y1="198.00" x2="250.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<rect x="457.50" y="158.00" width="85.00" height="40.00" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t2" data-role="actor" data-target="true" x="500.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Broker</text>
+<line x1="500.00" y1="198.00" x2="500.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<rect x="703.51" y="158.00" width="92.98" height="40.00" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t3" data-role="actor" data-target="true" x="750.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="62.98" lengthAdjust="spacingAndGlyphs">Worker</text>
+<line x1="750.00" y1="198.00" x2="750.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<rect x="954.50" y="158.00" width="91.00" height="40.00" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t4" data-role="actor" data-target="true" x="1000.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="61.00" lengthAdjust="spacingAndGlyphs">Auditor</text>
+<line x1="1000.00" y1="198.00" x2="1000.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<rect x="1196.50" y="158.00" width="107.00" height="40.00" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t5" data-role="actor" data-target="true" x="1250.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Gateway</text>
+<line x1="1250.00" y1="198.00" x2="1250.00" y2="868.00" stroke="#555555" stroke-width="1.52" stroke-dasharray="5 4"/>
+<line x1="500.00" y1="236.00" x2="1250.00" y2="236.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t6" data-role="message" data-target="true" x="875.00" y="227.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">flagged</text>
+<line x1="1000.00" y1="440.00" x2="500.00" y2="440.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t7" data-role="message" data-target="true" x="750.00" y="431.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="250.00" y1="644.00" x2="1250.00" y2="644.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t8" data-role="message" data-target="true" x="750.00" y="635.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="1250.00" y1="848.00" x2="750.00" y2="848.00" stroke="#000000" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t9" data-role="message" data-target="true" x="1000.00" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="37.02" lengthAdjust="spacingAndGlyphs">retry</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#555555" text-anchor="start" textLength="228.98" lengthAdjust="spacingAndGlyphs">source: internal | n=5044 | rev 12</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="47.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="15" fill="#555555" text-anchor="end" textLength="108.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#555555" text-anchor="end" textLength="115.98" lengthAdjust="spacingAndGlyphs">generated 10/11</text>
+</svg>

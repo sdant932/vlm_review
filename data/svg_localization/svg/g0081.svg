@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#000000" text-anchor="start" textLength="444.00" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - bar chart 0081</text>
+<line x1="168.00" y1="150.00" x2="168.00" y2="830.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="168.00" y1="830.00" x2="1412.00" y2="830.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t1" data-role="tick" data-target="true" x="156.00" y="837.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#555555" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="168.00" y1="660.00" x2="1412.00" y2="660.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t2" data-role="tick" data-target="true" x="156.00" y="667.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#555555" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">23</text>
+<line x1="168.00" y1="490.00" x2="1412.00" y2="490.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t3" data-role="tick" data-target="true" x="156.00" y="497.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#555555" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">46</text>
+<line x1="168.00" y1="320.00" x2="1412.00" y2="320.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t4" data-role="tick" data-target="true" x="156.00" y="327.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#555555" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">69</text>
+<line x1="168.00" y1="150.00" x2="1412.00" y2="150.00" stroke="#dddddd" stroke-width="1.33"/>
+<text id="t5" data-role="tick" data-target="true" x="156.00" y="157.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#555555" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">92</text>
+<rect x="190.51" y="726.52" width="79.38" height="103.48" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t6" data-role="category" data-target="true" x="230.20" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t7" data-role="value" data-target="true" x="230.20" y="718.52" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">14%</text>
+<rect x="314.91" y="283.04" width="79.38" height="546.96" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t8" data-role="category" data-target="true" x="354.60" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="76.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t9" data-role="value" data-target="true" x="354.60" y="275.04" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">74%</text>
+<rect x="439.31" y="349.57" width="79.38" height="480.43" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t10" data-role="category" data-target="true" x="479.00" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="37.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t11" data-role="value" data-target="true" x="479.00" y="341.57" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">65%</text>
+<rect x="563.71" y="320.00" width="79.38" height="510.00" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t12" data-role="category" data-target="true" x="603.40" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t13" data-role="value" data-target="true" x="603.40" y="312.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">69%</text>
+<rect x="688.11" y="526.96" width="79.38" height="303.04" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t14" data-role="category" data-target="true" x="727.80" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t15" data-role="value" data-target="true" x="727.80" y="518.96" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">41%</text>
+<rect x="812.51" y="401.30" width="79.38" height="428.70" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t16" data-role="category" data-target="true" x="852.20" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t17" data-role="value" data-target="true" x="852.20" y="393.30" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">58%</text>
+<rect x="936.91" y="497.39" width="79.38" height="332.61" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t18" data-role="category" data-target="true" x="976.60" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t19" data-role="value" data-target="true" x="976.60" y="489.39" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">45%</text>
+<rect x="1061.31" y="608.26" width="79.38" height="221.74" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t20" data-role="category" data-target="true" x="1101.00" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t21" data-role="value" data-target="true" x="1101.00" y="600.26" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">30%</text>
+<rect x="1185.71" y="150.00" width="79.38" height="680.00" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t22" data-role="category" data-target="true" x="1225.40" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t23" data-role="value" data-target="true" x="1225.40" y="142.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">92%</text>
+<rect x="1310.11" y="512.17" width="79.38" height="317.83" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t24" data-role="category" data-target="true" x="1349.80" y="857.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t25" data-role="value" data-target="true" x="1349.80" y="504.17" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">43%</text>
+<text id="t26" data-role="axis" data-target="true" x="80.00" y="497.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#555555" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t27" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#555555" text-anchor="start" textLength="204.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4535 | rev 10</text>
+<text id="t28" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#555555" text-anchor="end" textLength="79.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t29" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#555555" text-anchor="end" textLength="93.00" lengthAdjust="spacingAndGlyphs">generated 17/4</text>
+</svg>

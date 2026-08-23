@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="495.98" lengthAdjust="spacingAndGlyphs">Grid Operations - state machine 0190</text>
+<circle cx="168.00" cy="443.00" r="52.00" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t1" data-role="label" data-target="true" x="168.00" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="38.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<circle cx="400.80" cy="583.00" r="80.50" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t2" data-role="label" data-target="true" x="400.80" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="117.00" lengthAdjust="spacingAndGlyphs">Score Breaker</text>
+<circle cx="633.60" cy="443.00" r="88.00" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t3" data-role="label" data-target="true" x="633.60" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Sample Breaker</text>
+<circle cx="866.40" cy="583.00" r="79.00" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t4" data-role="label" data-target="true" x="866.40" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="114.00" lengthAdjust="spacingAndGlyphs">Score Outage</text>
+<circle cx="1099.20" cy="443.00" r="86.50" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t5" data-role="label" data-target="true" x="1099.20" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="129.00" lengthAdjust="spacingAndGlyphs">Snapshot Relay</text>
+<circle cx="1332.00" cy="583.00" r="80.49" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t6" data-role="label" data-target="true" x="1332.00" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="116.98" lengthAdjust="spacingAndGlyphs">Validate Relay</text>
+<line x1="214.00" y1="443.00" x2="354.80" y2="583.00" stroke="#54677f" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t7" data-role="transition" data-target="true" x="284.40" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="446.80" y1="583.00" x2="587.60" y2="443.00" stroke="#54677f" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t8" data-role="transition" data-target="true" x="517.20" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="679.60" y1="443.00" x2="820.40" y2="583.00" stroke="#54677f" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t9" data-role="transition" data-target="true" x="750.00" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="17.00" lengthAdjust="spacingAndGlyphs">ok</text>
+<line x1="912.40" y1="583.00" x2="1053.20" y2="443.00" stroke="#54677f" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t10" data-role="transition" data-target="true" x="982.80" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="1145.20" y1="443.00" x2="1286.00" y2="583.00" stroke="#54677f" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t11" data-role="transition" data-target="true" x="1215.60" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<text id="t12" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#54677f" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=6021 | rev 2</text>
+<text id="t13" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#54677f" text-anchor="end" textLength="68.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t14" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#54677f" text-anchor="end" textLength="95.00" lengthAdjust="spacingAndGlyphs">generated 22/6</text>
+</svg>

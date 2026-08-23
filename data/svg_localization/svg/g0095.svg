@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fffdf5"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#77704f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="54.96" font-family="'Courier New', Courier, monospace" font-size="30" fill="#241f10" text-anchor="start" textLength="576.00" lengthAdjust="spacingAndGlyphs">Grid Operations - dashboard 0095</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="153.00" font-family="'Courier New', Courier, monospace" font-size="16" fill="#77704f" text-anchor="start" textLength="80.00" lengthAdjust="spacingAndGlyphs">Quadrant</text>
+<rect x="200.00" y="202.00" width="457.00" height="218.00" rx="0.0" fill="none" stroke="#77704f" stroke-width="1.6"/>
+<line x1="428.50" y1="202.00" x2="428.50" y2="420.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="200.00" y1="311.00" x2="657.00" y2="311.00" stroke="#77704f" stroke-width="1.60"/>
+<text id="t2" data-role="quadrant" data-target="true" x="314.25" y="224.44" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#77704f" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Invest</text>
+<text id="t3" data-role="quadrant" data-target="true" x="542.75" y="224.44" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#77704f" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Sustain</text>
+<text id="t4" data-role="quadrant" data-target="true" x="314.25" y="407.56" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#77704f" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Divest</text>
+<text id="t5" data-role="quadrant" data-target="true" x="542.75" y="407.56" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#77704f" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Review</text>
+<circle cx="376.12" cy="348.07" r="11.00" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t6" data-role="point" data-target="true" x="376.12" y="329.07" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="540.84" cy="334.58" r="11.00" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t7" data-role="point" data-target="true" x="540.84" y="315.58" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="80.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="486.18" cy="312.21" r="11.00" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t8" data-role="point" data-target="true" x="486.18" y="293.21" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">East</text>
+<circle cx="522.61" cy="351.18" r="11.00" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t9" data-role="point" data-target="true" x="522.61" y="332.18" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<circle cx="521.29" cy="294.78" r="11.00" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t10" data-role="point" data-target="true" x="521.29" y="275.78" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t11" data-role="axis" data-target="true" x="428.50" y="457.00" font-family="'Courier New', Courier, monospace" font-size="17.0" fill="#77704f" text-anchor="middle" textLength="90.00" lengthAdjust="spacingAndGlyphs">Retention</text>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t12" data-role="panel_title" data-target="false" x="773.00" y="153.00" font-family="'Courier New', Courier, monospace" font-size="16" fill="#77704f" text-anchor="start" textLength="90.00" lengthAdjust="spacingAndGlyphs">Org Chart</text>
+<line x1="1101.50" y1="224.00" x2="1101.50" y2="263.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="263.00" x2="931.25" y2="263.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="931.25" y1="263.00" x2="931.25" y2="302.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="224.00" x2="1101.50" y2="263.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="263.00" x2="1101.50" y2="263.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="263.00" x2="1101.50" y2="302.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="224.00" x2="1101.50" y2="262.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="262.75" x2="1271.75" y2="262.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1271.75" y1="262.75" x2="1271.75" y2="301.50" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="931.25" y1="340.00" x2="931.25" y2="381.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="931.25" y1="381.00" x2="931.25" y2="381.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="931.25" y1="381.00" x2="931.25" y2="422.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="340.00" x2="1101.50" y2="379.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="379.75" x2="1101.50" y2="379.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="379.75" x2="1101.50" y2="419.50" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1271.75" y1="340.50" x2="1271.75" y2="380.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1271.75" y1="380.75" x2="1271.75" y2="380.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1271.75" y1="380.75" x2="1271.75" y2="421.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<rect x="1016.50" y="180.00" width="170.00" height="44.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t13" data-role="label" data-target="true" x="1101.50" y="208.00" font-family="'Courier New', Courier, monospace" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Planner Load</text>
+<rect x="854.25" y="302.00" width="154.00" height="38.00" rx="5.0" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t14" data-role="label" data-target="true" x="931.25" y="326.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="160.00" lengthAdjust="spacingAndGlyphs">Architect Outage</text>
+<rect x="1024.50" y="302.00" width="154.00" height="38.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t15" data-role="label" data-target="true" x="1101.50" y="326.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="160.00" lengthAdjust="spacingAndGlyphs">Lead Transformer</text>
+<rect x="1195.75" y="301.50" width="152.00" height="39.00" rx="5.0" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t16" data-role="label" data-target="true" x="1271.75" y="326.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="140.00" lengthAdjust="spacingAndGlyphs">Director Relay</text>
+<rect x="855.25" y="422.00" width="152.00" height="36.00" rx="5.0" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t17" data-role="label" data-target="true" x="931.25" y="445.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Coordinator Feeder</text>
+<rect x="1023.50" y="419.50" width="156.00" height="41.00" rx="5.0" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t18" data-role="label" data-target="true" x="1101.50" y="445.00" font-family="'Courier New', Courier, monospace" font-size="17.0" fill="#241f10" text-anchor="middle" textLength="130.00" lengthAdjust="spacingAndGlyphs">Manager Meter</text>
+<rect x="1198.75" y="421.00" width="146.00" height="38.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t19" data-role="label" data-target="true" x="1271.75" y="445.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="150.00" lengthAdjust="spacingAndGlyphs">Auditor Breaker</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t20" data-role="panel_title" data-target="false" x="70.00" y="542.00" font-family="'Courier New', Courier, monospace" font-size="16" fill="#77704f" text-anchor="start" textLength="70.00" lengthAdjust="spacingAndGlyphs">Scatter</text>
+<line x1="176.00" y1="590.00" x2="176.00" y2="814.00" stroke="#77704f" stroke-width="1.60"/>
+<line x1="176.00" y1="814.00" x2="677.00" y2="814.00" stroke="#77704f" stroke-width="1.60"/>
+<circle cx="523.90" cy="696.86" r="13.90" fill="#8c6d04" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t21" data-role="point" data-target="true" x="523.90" y="677.86" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="262.98" cy="744.69" r="14.27" fill="#5c701e" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t22" data-role="point" data-target="true" x="262.98" y="725.69" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">East</text>
+<circle cx="259.32" cy="744.35" r="12.77" fill="#b15d06" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t23" data-role="point" data-target="true" x="259.32" y="725.35" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<circle cx="353.21" cy="635.44" r="14.37" fill="#7164c1" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t24" data-role="point" data-target="true" x="353.21" y="616.44" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="88.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="484.50" cy="697.69" r="14.73" fill="#318086" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t25" data-role="point" data-target="true" x="484.50" y="678.69" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<circle cx="407.42" cy="715.87" r="8.70" fill="#cc3719" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t26" data-role="point" data-target="true" x="407.42" y="696.87" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<circle cx="573.65" cy="675.76" r="12.71" fill="#8c6d04" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t27" data-role="point" data-target="true" x="573.65" y="656.76" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="336.83" cy="657.75" r="11.03" fill="#5c701e" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t28" data-role="point" data-target="true" x="336.83" y="638.75" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">South</text>
+<circle cx="408.73" cy="634.63" r="13.47" fill="#b15d06" stroke="#5a5330" stroke-width="1.2800000000000002"/>
+<text id="t29" data-role="point" data-target="true" x="408.73" y="615.63" font-family="'Courier New', Courier, monospace" font-size="18.0" fill="#241f10" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t30" data-role="axis" data-target="true" x="426.50" y="849.00" font-family="'Courier New', Courier, monospace" font-size="19.0" fill="#77704f" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Yield</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="5" fill="none" stroke="#5a5330" stroke-width="1.4400000000000002"/>
+<text id="t31" data-role="panel_title" data-target="false" x="773.00" y="543.00" font-family="'Courier New', Courier, monospace" font-size="16" fill="#77704f" text-anchor="start" textLength="90.00" lengthAdjust="spacingAndGlyphs">Org Chart</text>
+<line x1="1101.50" y1="614.00" x2="1101.50" y2="651.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="651.75" x2="988.00" y2="651.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="988.00" y1="651.75" x2="988.00" y2="689.50" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="614.00" x2="1101.50" y2="652.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="652.75" x2="1215.00" y2="652.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1215.00" y1="652.75" x2="1215.00" y2="691.50" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="988.00" y1="732.50" x2="988.00" y2="771.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="988.00" y1="771.75" x2="931.25" y2="771.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="931.25" y1="771.75" x2="931.25" y2="811.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="988.00" y1="732.50" x2="988.00" y2="772.25" stroke="#77704f" stroke-width="1.60"/>
+<line x1="988.00" y1="772.25" x2="1101.50" y2="772.25" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1101.50" y1="772.25" x2="1101.50" y2="812.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1215.00" y1="730.50" x2="1215.00" y2="771.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1215.00" y1="771.75" x2="1271.75" y2="771.75" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1271.75" y1="771.75" x2="1271.75" y2="813.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<rect x="1010.50" y="570.00" width="182.00" height="44.00" rx="5.0" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t32" data-role="label" data-target="true" x="1101.50" y="598.00" font-family="'Courier New', Courier, monospace" font-size="20.0" fill="#241f10" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Manager Meter</text>
+<rect x="881.50" y="689.50" width="213.00" height="43.00" rx="5.0" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t33" data-role="label" data-target="true" x="988.00" y="716.00" font-family="'Courier New', Courier, monospace" font-size="19.0" fill="#241f10" text-anchor="middle" textLength="187.00" lengthAdjust="spacingAndGlyphs">Coordinator Relay</text>
+<rect x="1116.50" y="691.50" width="197.00" height="39.00" rx="5.0" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t34" data-role="label" data-target="true" x="1215.00" y="716.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="190.00" lengthAdjust="spacingAndGlyphs">Auditor Curtailment</text>
+<rect x="854.25" y="811.00" width="154.00" height="38.00" rx="5.0" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t35" data-role="label" data-target="true" x="931.25" y="835.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="160.00" lengthAdjust="spacingAndGlyphs">Director Reserve</text>
+<rect x="1029.00" y="812.00" width="145.00" height="36.00" rx="5.0" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t36" data-role="label" data-target="true" x="1101.50" y="835.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="170.00" lengthAdjust="spacingAndGlyphs">Architect Breaker</text>
+<rect x="1198.75" y="813.00" width="146.00" height="34.00" rx="5.0" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t37" data-role="label" data-target="true" x="1271.75" y="835.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#241f10" text-anchor="middle" textLength="200.00" lengthAdjust="spacingAndGlyphs">Engineer Transformer</text>
+<text id="t38" data-role="footnote" data-target="false" x="58.00" y="930.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#77704f" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=9526 | rev 12</text>
+<text id="t39" data-role="badge" data-target="false" x="1442.00" y="43.96" font-family="'Courier New', Courier, monospace" font-size="15" fill="#77704f" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t40" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#77704f" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 8/11</text>
+</svg>

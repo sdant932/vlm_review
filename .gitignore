@@ -1,0 +1,36 @@
+# --- secrets
+.env
+
+# --- python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+build/
+dist/
+.ipynb_checkpoints/
+
+# --- macOS
+.DS_Store
+
+# --- heavy artefacts, none of which belong in git.
+#
+# On the machine this study ran on, these are symlinks into the original
+# scratch tree so the pipeline stays runnable without duplicating ~16GB.
+# On a fresh clone they are absent, and the commands in docs/PIPELINE.md
+# recreate them. No trailing slashes here: these are symlinks, and a
+# trailing slash would fail to match one.
+#
+# outputs      rendered report + figures (a deliverable, not source)
+# results      raw API responses, ~70MB (inventory: docs/RESULTS_MANIFEST.md)
+# cache        derived crops/renders, fully regenerable from data/
+# third_party  cloned upstream repos (BlindTest, Ferret-UI, FlowLearn, ...)
+outputs
+results
+cache
+third_party
+
+# --- data: ignore everything except the dataset this study generated
+data/*
+!data/svg_localization/
+!data/README.md

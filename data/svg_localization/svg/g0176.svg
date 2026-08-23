@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="54.96" font-family="'Courier New', Courier, monospace" font-size="30" fill="#000000" text-anchor="start" textLength="540.00" lengthAdjust="spacingAndGlyphs">Access Review - flowchart 0176</text>
+<line x1="231.00" y1="492.22" x2="501.83" y2="388.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="231.00" y1="506.07" x2="446.50" y2="478.43" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="231.00" y1="519.93" x2="453.00" y2="548.40" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="231.00" y1="533.78" x2="501.83" y2="638.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t1" data-role="edge" data-target="true" x="366.41" y="579.89" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">ok</text>
+<line x1="644.76" y1="540.00" x2="855.24" y2="486.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="665.00" y1="562.00" x2="841.50" y2="562.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="1040.50" y1="549.24" x2="1210.50" y2="527.43" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t2" data-role="edge" data-target="true" x="1125.50" y="532.33" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="80.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="898.12" y1="486.00" x2="601.88" y2="638.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="231.00" y1="533.78" x2="501.83" y2="638.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="1210.50" y1="513.00" x2="231.00" y2="513.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t3" data-role="edge" data-target="true" x="720.75" y="507.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="644.76" y1="388.00" x2="855.24" y2="442.00" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<line x1="231.00" y1="516.46" x2="841.50" y2="555.62" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t4" data-role="edge" data-target="true" x="536.25" y="530.04" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="1210.50" y1="491.35" x2="645.50" y2="382.64" stroke="#555555" stroke-width="1.71" marker-end="url(#ah)"/>
+<text id="t5" data-role="edge" data-target="true" x="928.00" y="431.00" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<rect x="123.00" y="491.00" width="108.00" height="44.00" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t6" data-role="label" data-target="true" x="177.00" y="519.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="78.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="472.50" y="344.00" width="173.00" height="44.00" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t7" data-role="label" data-target="true" x="559.00" y="372.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="143.00" lengthAdjust="spacingAndGlyphs">Purge Scope</text>
+<rect x="446.50" y="442.00" width="225.00" height="44.00" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t8" data-role="label" data-target="true" x="559.00" y="470.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="195.00" lengthAdjust="spacingAndGlyphs">Aggregate Grant</text>
+<rect x="453.00" y="540.00" width="212.00" height="44.00" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t9" data-role="label" data-target="true" x="559.00" y="568.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="182.00" lengthAdjust="spacingAndGlyphs">Index Approval</text>
+<rect x="440.00" y="638.00" width="238.00" height="44.00" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t10" data-role="label" data-target="true" x="559.00" y="666.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="208.00" lengthAdjust="spacingAndGlyphs">Dispatch Session</text>
+<rect x="828.50" y="442.00" width="225.00" height="44.00" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t11" data-role="label" data-target="true" x="941.00" y="470.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="195.00" lengthAdjust="spacingAndGlyphs">Flush Directory</text>
+<rect x="841.50" y="540.00" width="199.00" height="44.00" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t12" data-role="label" data-target="true" x="941.00" y="568.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="169.00" lengthAdjust="spacingAndGlyphs">Archive Audit</text>
+<rect x="1210.50" y="491.00" width="225.00" height="44.00" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t13" data-role="label" data-target="true" x="1323.00" y="519.00" font-family="'Courier New', Courier, monospace" font-size="22" fill="#000000" text-anchor="middle" textLength="195.00" lengthAdjust="spacingAndGlyphs">Rebalance Scope</text>
+<text id="t14" data-role="footnote" data-target="false" x="58.00" y="930.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#555555" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=1180 | rev 17</text>
+<text id="t15" data-role="badge" data-target="false" x="1442.00" y="43.96" font-family="'Courier New', Courier, monospace" font-size="15" fill="#555555" text-anchor="end" textLength="72.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t16" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#555555" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 2/10</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="482.00" lengthAdjust="spacingAndGlyphs">Content Moderation - treemap 0107</text>
+<rect x="81.00" y="147.00" width="307.06" height="742.00" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t1" data-role="cell" data-target="true" x="234.53" y="516.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t2" data-role="value" data-target="true" x="234.53" y="539.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">58</text>
+<rect x="394.06" y="147.00" width="1024.94" height="185.90" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t3" data-role="cell" data-target="true" x="906.53" y="237.95" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="41.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t4" data-role="value" data-target="true" x="906.53" y="260.95" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">49</text>
+<rect x="394.06" y="338.90" width="291.67" height="550.10" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t5" data-role="cell" data-target="true" x="539.89" y="611.95" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="55.98" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t6" data-role="value" data-target="true" x="539.89" y="634.95" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">41</text>
+<rect x="691.73" y="338.90" width="727.27" height="214.24" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t7" data-role="cell" data-target="true" x="1055.36" y="444.02" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t8" data-role="value" data-target="true" x="1055.36" y="467.02" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">40</text>
+<rect x="691.73" y="559.13" width="378.67" height="329.87" rx="4" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t9" data-role="cell" data-target="true" x="881.06" y="722.07" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t10" data-role="value" data-target="true" x="881.06" y="745.07" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">32</text>
+<rect x="1076.39" y="559.13" width="342.61" height="190.89" rx="4" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t11" data-role="cell" data-target="true" x="1247.70" y="652.58" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t12" data-role="value" data-target="true" x="1247.70" y="675.58" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">17</text>
+<rect x="1076.39" y="756.02" width="342.61" height="132.98" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t13" data-role="cell" data-target="true" x="1247.70" y="820.51" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t14" data-role="value" data-target="true" x="1247.70" y="843.51" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">12</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="205.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7758 | rev 4</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="67.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="90.00" lengthAdjust="spacingAndGlyphs">generated 7/6</text>
+</svg>

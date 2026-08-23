@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="524.94" lengthAdjust="spacingAndGlyphs">Payment Authorization - bar chart 0113</text>
+<line x1="168.00" y1="150.00" x2="168.00" y2="830.00" stroke="#54677f" stroke-width="1.50"/>
+<line x1="168.00" y1="830.00" x2="1412.00" y2="830.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t1" data-role="tick" data-target="true" x="156.00" y="837.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#54677f" text-anchor="end" textLength="10.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="168.00" y1="660.00" x2="1412.00" y2="660.00" stroke="#e2ebf6" stroke-width="1.05"/>
+<text id="t2" data-role="tick" data-target="true" x="156.00" y="667.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#54677f" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">24</text>
+<line x1="168.00" y1="490.00" x2="1412.00" y2="490.00" stroke="#e2ebf6" stroke-width="1.05"/>
+<text id="t3" data-role="tick" data-target="true" x="156.00" y="497.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#54677f" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">47</text>
+<line x1="168.00" y1="320.00" x2="1412.00" y2="320.00" stroke="#e2ebf6" stroke-width="1.05"/>
+<text id="t4" data-role="tick" data-target="true" x="156.00" y="327.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#54677f" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">70</text>
+<line x1="168.00" y1="150.00" x2="1412.00" y2="150.00" stroke="#e2ebf6" stroke-width="1.05"/>
+<text id="t5" data-role="tick" data-target="true" x="156.00" y="157.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#54677f" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">94</text>
+<rect x="197.01" y="439.36" width="66.37" height="390.64" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t6" data-role="category" data-target="true" x="230.20" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t7" data-role="value" data-target="true" x="230.20" y="431.36" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">54%</text>
+<rect x="321.41" y="497.23" width="66.37" height="332.77" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t8" data-role="category" data-target="true" x="354.60" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="82.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t9" data-role="value" data-target="true" x="354.60" y="489.23" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">46%</text>
+<rect x="445.81" y="345.32" width="66.37" height="484.68" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t10" data-role="category" data-target="true" x="479.00" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t11" data-role="value" data-target="true" x="479.00" y="337.32" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">67%</text>
+<rect x="570.21" y="229.57" width="66.37" height="600.43" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t12" data-role="category" data-target="true" x="603.40" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t13" data-role="value" data-target="true" x="603.40" y="221.57" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">83%</text>
+<rect x="694.61" y="395.96" width="66.37" height="434.04" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t14" data-role="category" data-target="true" x="727.80" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t15" data-role="value" data-target="true" x="727.80" y="387.96" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">60%</text>
+<rect x="819.01" y="150.00" width="66.37" height="680.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t16" data-role="category" data-target="true" x="852.20" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t17" data-role="value" data-target="true" x="852.20" y="142.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">94%</text>
+<rect x="943.41" y="424.89" width="66.37" height="405.11" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t18" data-role="category" data-target="true" x="976.60" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t19" data-role="value" data-target="true" x="976.60" y="416.89" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">56%</text>
+<rect x="1067.81" y="678.09" width="66.37" height="151.91" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t20" data-role="category" data-target="true" x="1101.00" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t21" data-role="value" data-target="true" x="1101.00" y="670.09" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">21%</text>
+<rect x="1192.21" y="641.91" width="66.37" height="188.09" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t22" data-role="category" data-target="true" x="1225.40" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t23" data-role="value" data-target="true" x="1225.40" y="633.91" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">26%</text>
+<rect x="1316.61" y="714.26" width="66.37" height="115.74" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t24" data-role="category" data-target="true" x="1349.80" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t25" data-role="value" data-target="true" x="1349.80" y="706.26" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">16%</text>
+<text id="t26" data-role="axis" data-target="true" x="80.00" y="497.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#54677f" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t27" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#54677f" text-anchor="start" textLength="201.98" lengthAdjust="spacingAndGlyphs">source: internal | n=7711 | rev 6</text>
+<text id="t28" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#54677f" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t29" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#54677f" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 20/7</text>
+</svg>

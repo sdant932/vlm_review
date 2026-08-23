@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="514.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - state machine 0110</text>
+<circle cx="168.00" cy="443.00" r="52.00" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="168.00" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<circle cx="556.00" cy="583.00" r="52.00" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="556.00" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<circle cx="944.00" cy="443.00" r="52.00" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="944.00" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<circle cx="1332.00" cy="583.00" r="66.00" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="1332.00" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#12161c" text-anchor="middle" textLength="88.00" lengthAdjust="spacingAndGlyphs">Score Sink</text>
+<line x1="214.00" y1="443.00" x2="510.00" y2="583.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t5" data-role="transition" data-target="true" x="362.00" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<line x1="602.00" y1="583.00" x2="898.00" y2="443.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t6" data-role="transition" data-target="true" x="750.00" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="990.00" y1="443.00" x2="1286.00" y2="583.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t7" data-role="transition" data-target="true" x="1138.00" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7482 | rev 5</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="95.00" lengthAdjust="spacingAndGlyphs">generated 5/12</text>
+</svg>

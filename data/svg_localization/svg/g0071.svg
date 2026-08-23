@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="505.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - network 0071</text>
+<line x1="1154.55" y1="503.41" x2="761.73" y2="776.25" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="1154.55" y1="503.41" x2="1066.70" y2="654.71" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="1066.70" y1="654.71" x2="584.93" y2="753.56" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="1066.70" y1="654.71" x2="966.61" y2="293.98" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="955.60" y1="774.43" x2="966.61" y2="293.98" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="761.73" y1="776.25" x2="372.21" y2="378.70" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="584.93" y1="753.56" x2="1154.55" y2="503.41" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="414.80" y1="647.03" x2="1105.04" y2="334.03" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="322.61" y1="492.43" x2="372.21" y2="378.70" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="322.61" y1="492.43" x2="955.60" y2="774.43" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="504.79" y1="249.83" x2="322.61" y2="492.43" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="504.79" y1="249.83" x2="966.61" y2="293.98" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="966.61" y1="293.98" x2="740.07" y2="255.55" stroke="#efe7d6" stroke-width="1.53"/>
+<line x1="1105.04" y1="334.03" x2="584.93" y2="753.56" stroke="#efe7d6" stroke-width="1.53"/>
+<rect x="1110.05" y="484.41" width="89.00" height="38.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="label" data-target="true" x="1154.55" y="511.41" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="976.20" y="635.71" width="181.00" height="38.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="label" data-target="true" x="1066.70" y="662.71" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="155.00" lengthAdjust="spacingAndGlyphs">Sample Stream</text>
+<rect x="873.60" y="755.43" width="164.00" height="38.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="label" data-target="true" x="955.60" y="782.43" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="138.00" lengthAdjust="spacingAndGlyphs">Flush Window</text>
+<rect x="679.23" y="757.25" width="165.00" height="38.00" rx="6" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="label" data-target="true" x="761.73" y="784.25" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="139.00" lengthAdjust="spacingAndGlyphs">Merge Replica</text>
+<rect x="495.93" y="734.56" width="178.00" height="38.00" rx="6" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="label" data-target="true" x="584.93" y="761.56" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="152.00" lengthAdjust="spacingAndGlyphs">Cluster Stream</text>
+<rect x="324.30" y="628.03" width="181.00" height="38.00" rx="6" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="label" data-target="true" x="414.80" y="655.03" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="155.00" lengthAdjust="spacingAndGlyphs">Score Envelope</text>
+<rect x="238.61" y="473.43" width="168.00" height="38.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="label" data-target="true" x="322.61" y="500.43" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Score Window</text>
+<rect x="287.21" y="359.70" width="170.00" height="38.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t8" data-role="label" data-target="true" x="372.21" y="386.70" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Reconcile Sink</text>
+<rect x="401.29" y="230.83" width="207.00" height="38.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t9" data-role="label" data-target="true" x="504.79" y="257.83" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="181.00" lengthAdjust="spacingAndGlyphs">Snapshot Schema</text>
+<rect x="655.07" y="236.55" width="170.00" height="38.00" rx="6" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t10" data-role="label" data-target="true" x="740.07" y="263.55" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Score Schema</text>
+<rect x="922.11" y="274.98" width="89.00" height="38.00" rx="6" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t11" data-role="label" data-target="true" x="966.61" y="301.98" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="1064.54" y="315.03" width="81.00" height="38.00" rx="6" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t12" data-role="label" data-target="true" x="1105.04" y="342.03" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="235.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3906 | rev 6</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="109.00" lengthAdjust="spacingAndGlyphs">generated 13/2</text>
+</svg>

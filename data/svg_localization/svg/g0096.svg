@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="61.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="456.00" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - flowchart 0096</text>
+<line x1="194.59" y1="491.00" x2="343.74" y2="339.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="216.18" y1="491.00" x2="322.16" y2="437.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="217.50" y1="513.00" x2="257.33" y2="513.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t1" data-role="edge" data-target="true" x="237.41" y="509.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="37.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="216.18" y1="535.00" x2="326.33" y2="591.13" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="194.59" y1="535.00" x2="343.74" y2="687.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="451.69" y1="393.00" x2="471.31" y2="388.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="451.69" y1="491.00" x2="516.16" y2="474.57" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="451.69" y1="535.00" x2="471.31" y2="540.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="382.60" y1="437.00" x2="540.40" y2="638.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t2" data-role="edge" data-target="true" x="461.50" y="533.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="586.45" y1="442.00" x2="721.22" y2="339.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t3" data-role="edge" data-target="true" x="653.83" y="386.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="32.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="599.17" y1="453.43" x2="672.49" y2="434.75" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t4" data-role="edge" data-target="true" x="635.83" y="440.09" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="644.02" y1="540.00" x2="663.65" y2="535.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="644.02" y1="584.00" x2="663.65" y2="589.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t5" data-role="edge" data-target="true" x="653.83" y="582.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="644.02" y1="682.00" x2="663.65" y2="687.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t6" data-role="edge" data-target="true" x="653.83" y="680.50" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="793.18" y1="491.00" x2="899.16" y2="437.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="771.59" y1="687.00" x2="920.74" y2="535.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t7" data-role="edge" data-target="true" x="846.17" y="607.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="32.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="764.39" y1="339.00" x2="927.94" y2="589.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t8" data-role="edge" data-target="true" x="846.17" y="460.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="963.92" y1="491.00" x2="1113.08" y2="339.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t9" data-role="edge" data-target="true" x="1038.50" y="411.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="963.92" y1="589.00" x2="1113.08" y2="437.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="985.51" y1="589.00" x2="1091.49" y2="535.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t10" data-role="edge" data-target="true" x="1038.50" y="558.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="1050.33" y1="611.00" x2="1028.66" y2="611.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="963.92" y1="535.00" x2="1113.08" y2="687.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1151.94" y1="687.00" x2="1309.73" y2="486.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1163.45" y1="687.00" x2="1298.22" y2="584.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="382.60" y1="687.00" x2="540.40" y2="486.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="216.18" y1="491.00" x2="322.16" y2="437.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1019.67" y1="331.65" x2="455.83" y2="403.47" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t11" data-role="edge" data-target="true" x="737.75" y="363.56" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="32.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="1298.22" y1="442.00" x2="1163.45" y2="339.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1028.65" y1="513.00" x2="984.83" y2="513.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1240.49" y1="471.35" x2="852.01" y2="504.34" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<rect x="128.50" y="491.00" width="89.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t12" data-role="label" data-target="true" x="173.00" y="522.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="268.33" y="295.00" width="194.00" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t13" data-role="label" data-target="true" x="365.33" y="326.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="164.00" lengthAdjust="spacingAndGlyphs">Publish Partition</text>
+<rect x="274.83" y="393.00" width="181.00" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t14" data-role="label" data-target="true" x="365.33" y="424.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="151.00" lengthAdjust="spacingAndGlyphs">Cluster Stream</text>
+<rect x="257.33" y="491.00" width="216.02" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t15" data-role="label" data-target="true" x="365.33" y="522.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="186.02" lengthAdjust="spacingAndGlyphs">Rotate Checkpoint</text>
+<rect x="326.33" y="589.00" width="78.00" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t16" data-role="label" data-target="true" x="365.33" y="620.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<rect x="272.33" y="687.00" width="186.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t17" data-role="label" data-target="true" x="365.33" y="718.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Normalize Sink</text>
+<rect x="469.67" y="344.00" width="176.00" height="44.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t18" data-role="label" data-target="true" x="557.67" y="375.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="146.00" lengthAdjust="spacingAndGlyphs">Rotate Stream</text>
+<rect x="516.16" y="442.00" width="83.02" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t19" data-role="label" data-target="true" x="557.67" y="473.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="53.02" lengthAdjust="spacingAndGlyphs">Retry</text>
+<rect x="461.66" y="540.00" width="192.02" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t20" data-role="label" data-target="true" x="557.67" y="571.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="162.02" lengthAdjust="spacingAndGlyphs">Enrich Envelope</text>
+<rect x="466.66" y="638.00" width="182.02" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t21" data-role="label" data-target="true" x="557.67" y="669.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="152.02" lengthAdjust="spacingAndGlyphs">Backfill Stream</text>
+<rect x="640.50" y="295.00" width="219.00" height="44.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t22" data-role="label" data-target="true" x="750.00" y="326.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="189.00" lengthAdjust="spacingAndGlyphs">Aggregate Stream</text>
+<rect x="672.49" y="393.00" width="155.02" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t23" data-role="label" data-target="true" x="750.00" y="424.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="125.02" lengthAdjust="spacingAndGlyphs">Archive Sink</text>
+<rect x="647.99" y="491.00" width="204.02" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t24" data-role="label" data-target="true" x="750.00" y="522.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="174.02" lengthAdjust="spacingAndGlyphs">Rehydrate Offset</text>
+<rect x="660.50" y="589.00" width="179.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t25" data-role="label" data-target="true" x="750.00" y="620.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="149.00" lengthAdjust="spacingAndGlyphs">Score Partition</text>
+<rect x="638.99" y="687.00" width="222.02" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t26" data-role="label" data-target="true" x="750.00" y="718.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="192.02" lengthAdjust="spacingAndGlyphs">Rehydrate Schema</text>
+<rect x="850.33" y="393.00" width="184.02" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t27" data-role="label" data-target="true" x="942.33" y="424.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="154.02" lengthAdjust="spacingAndGlyphs">Enrich Partition</text>
+<rect x="899.83" y="491.00" width="85.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t28" data-role="label" data-target="true" x="942.33" y="522.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<rect x="834.33" y="589.00" width="216.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t29" data-role="label" data-target="true" x="942.33" y="620.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="186.00" lengthAdjust="spacingAndGlyphs">Annotate Window</text>
+<rect x="1019.67" y="295.00" width="230.00" height="44.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t30" data-role="label" data-target="true" x="1134.67" y="326.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="200.00" lengthAdjust="spacingAndGlyphs">Quarantine Stream</text>
+<rect x="1035.17" y="393.00" width="199.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t31" data-role="label" data-target="true" x="1134.67" y="424.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="169.00" lengthAdjust="spacingAndGlyphs">Quarantine Sink</text>
+<rect x="1028.65" y="491.00" width="212.03" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t32" data-role="label" data-target="true" x="1134.67" y="522.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="182.03" lengthAdjust="spacingAndGlyphs">Enrich Checkpoint</text>
+<rect x="1028.66" y="589.00" width="212.02" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t33" data-role="label" data-target="true" x="1134.67" y="620.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="182.02" lengthAdjust="spacingAndGlyphs">Annotate Backlog</text>
+<rect x="1024.17" y="687.00" width="221.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t34" data-role="label" data-target="true" x="1134.67" y="718.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="191.00" lengthAdjust="spacingAndGlyphs">Compact Envelope</text>
+<rect x="1240.49" y="442.00" width="173.02" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t35" data-role="label" data-target="true" x="1327.00" y="473.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="143.02" lengthAdjust="spacingAndGlyphs">Enrich Replica</text>
+<rect x="1232.01" y="540.00" width="189.98" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t36" data-role="label" data-target="true" x="1327.00" y="571.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="159.98" lengthAdjust="spacingAndGlyphs">Verify Envelope</text>
+<text id="t37" data-role="footnote" data-target="false" x="58.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="228.98" lengthAdjust="spacingAndGlyphs">source: internal | n=7270 | rev 19</text>
+<text id="t38" data-role="badge" data-target="false" x="1442.00" y="47.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="71.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t39" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="98.00" lengthAdjust="spacingAndGlyphs">generated 7/6</text>
+</svg>

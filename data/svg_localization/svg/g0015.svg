@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="60.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="459.92" lengthAdjust="spacingAndGlyphs">Triage Protocol - dashboard 0015</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="2.16"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="156.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#333333" text-anchor="start" textLength="68.00" lengthAdjust="spacingAndGlyphs">Pie Chart</text>
+<path d="M330.40,331.00 L330.40,196.60 A134.40,134.40 0 0 1 393.23,212.19 Z" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="value" data-target="true" x="350.47" y="257.12" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="28.00" lengthAdjust="spacingAndGlyphs">7%</text>
+<path d="M330.40,331.00 L393.23,212.19 A134.40,134.40 0 0 1 453.36,385.25 Z" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="value" data-target="true" x="409.11" y="310.65" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">23%</text>
+<path d="M330.40,331.00 L453.36,385.25 A134.40,134.40 0 0 1 354.78,463.17 Z" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="value" data-target="true" x="382.07" y="403.37" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="38.98" lengthAdjust="spacingAndGlyphs">15%</text>
+<path d="M330.40,331.00 L354.78,463.17 A134.40,134.40 0 0 1 231.13,421.60 Z" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="value" data-target="true" x="303.85" y="416.98" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="38.98" lengthAdjust="spacingAndGlyphs">16%</text>
+<path d="M330.40,331.00 L231.13,421.60 A134.40,134.40 0 0 1 196.83,316.05 Z" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="value" data-target="true" x="251.15" y="363.75" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="38.98" lengthAdjust="spacingAndGlyphs">13%</text>
+<path d="M330.40,331.00 L196.83,316.05 A134.40,134.40 0 0 1 330.40,196.60 Z" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t7" data-role="value" data-target="true" x="274.85" y="275.89" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">23%</text>
+<rect x="417.00" y="212.00" width="22.00" height="22.00" rx="3.0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t8" data-role="legend" data-target="true" x="453.00" y="230.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="45.98" lengthAdjust="spacingAndGlyphs">West</text>
+<rect x="417.00" y="256.00" width="22.00" height="22.00" rx="3.0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t9" data-role="legend" data-target="true" x="453.00" y="274.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="53.02" lengthAdjust="spacingAndGlyphs">North</text>
+<rect x="417.00" y="300.00" width="22.00" height="22.00" rx="3.0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t10" data-role="legend" data-target="true" x="453.00" y="318.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="47.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<rect x="417.00" y="344.00" width="22.00" height="22.00" rx="3.0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t11" data-role="legend" data-target="true" x="453.00" y="362.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="64.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<rect x="417.00" y="388.00" width="22.00" height="22.00" rx="3.0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t12" data-role="legend" data-target="true" x="453.00" y="406.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="50.00" lengthAdjust="spacingAndGlyphs">South</text>
+<rect x="417.00" y="432.00" width="22.00" height="22.00" rx="3.0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t13" data-role="legend" data-target="true" x="453.00" y="450.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="46.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="2.16"/>
+<text id="t14" data-role="panel_title" data-target="false" x="773.00" y="156.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#333333" text-anchor="start" textLength="68.00" lengthAdjust="spacingAndGlyphs">Pie Chart</text>
+<path d="M1033.40,331.00 L1033.40,196.60 A134.40,134.40 0 0 1 1167.71,326.17 Z" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t15" data-role="value" data-target="true" x="1091.25" y="278.03" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">24%</text>
+<path d="M1033.40,331.00 L1167.71,326.17 A134.40,134.40 0 0 1 1159.76,376.80 Z" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t16" data-role="value" data-target="true" x="1115.72" y="350.94" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="28.00" lengthAdjust="spacingAndGlyphs">6%</text>
+<path d="M1033.40,331.00 L1159.76,376.80 A134.40,134.40 0 0 1 1098.26,448.71 Z" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t17" data-role="value" data-target="true" x="1096.73" y="392.16" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="38.97" lengthAdjust="spacingAndGlyphs">11%</text>
+<path d="M1033.40,331.00 L1098.26,448.71 A134.40,134.40 0 0 1 929.19,415.87 Z" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t18" data-role="value" data-target="true" x="1017.51" y="419.80" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">22%</text>
+<path d="M1033.40,331.00 L929.19,415.87 A134.40,134.40 0 0 1 931.25,243.65 Z" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t19" data-role="value" data-target="true" x="950.08" y="337.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">22%</text>
+<path d="M1033.40,331.00 L931.25,243.65 A134.40,134.40 0 0 1 1033.40,196.60 Z" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t20" data-role="value" data-target="true" x="998.54" y="262.32" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="38.98" lengthAdjust="spacingAndGlyphs">13%</text>
+<rect x="1120.00" y="212.00" width="22.00" height="22.00" rx="3.0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t21" data-role="legend" data-target="true" x="1156.00" y="230.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="54.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<rect x="1120.00" y="256.00" width="22.00" height="22.00" rx="3.0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t22" data-role="legend" data-target="true" x="1156.00" y="274.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="68.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<rect x="1120.00" y="300.00" width="22.00" height="22.00" rx="3.0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t23" data-role="legend" data-target="true" x="1156.00" y="318.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="47.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<rect x="1120.00" y="344.00" width="22.00" height="22.00" rx="3.0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t24" data-role="legend" data-target="true" x="1156.00" y="362.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="50.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<rect x="1120.00" y="388.00" width="22.00" height="22.00" rx="3.0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t25" data-role="legend" data-target="true" x="1156.00" y="406.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="54.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<rect x="1120.00" y="432.00" width="22.00" height="22.00" rx="3.0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t26" data-role="legend" data-target="true" x="1156.00" y="450.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="start" textLength="53.02" lengthAdjust="spacingAndGlyphs">North</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="2.16"/>
+<text id="t27" data-role="panel_title" data-target="false" x="70.00" y="546.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#333333" text-anchor="start" textLength="72.00" lengthAdjust="spacingAndGlyphs">Bar Chart</text>
+<line x1="190.00" y1="588.00" x2="190.00" y2="808.00" stroke="#333333" stroke-width="2.40"/>
+<line x1="190.00" y1="808.00" x2="687.00" y2="808.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t28" data-role="tick" data-target="true" x="178.00" y="815.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#333333" text-anchor="end" textLength="11.00" lengthAdjust="spacingAndGlyphs">0</text>
+<text id="t29" data-role="tick" data-target="true" x="178.00" y="760.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#333333" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">23</text>
+<text id="t30" data-role="tick" data-target="true" x="178.00" y="705.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#333333" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">46</text>
+<text id="t31" data-role="tick" data-target="true" x="178.00" y="650.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#333333" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">69</text>
+<text id="t32" data-role="tick" data-target="true" x="178.00" y="595.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#333333" text-anchor="end" textLength="22.00" lengthAdjust="spacingAndGlyphs">92</text>
+<rect x="201.18" y="700.39" width="39.76" height="107.61" rx="0.0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t33" data-role="category" data-target="true" x="221.06" y="836.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="middle" textLength="45.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t34" data-role="value" data-target="true" x="221.06" y="692.39" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">45%</text>
+<rect x="263.31" y="683.65" width="39.76" height="124.35" rx="0.0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t35" data-role="category" data-target="true" x="283.19" y="836.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t36" data-role="value" data-target="true" x="283.19" y="675.65" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">52%</text>
+<rect x="325.43" y="654.96" width="39.76" height="153.04" rx="0.0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t37" data-role="category" data-target="true" x="345.31" y="835.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="17.0" fill="#000000" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t38" data-role="value" data-target="true" x="345.31" y="646.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">64%</text>
+<rect x="387.56" y="588.00" width="39.76" height="220.00" rx="0.0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t39" data-role="category" data-target="true" x="407.44" y="835.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="71.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t40" data-role="value" data-target="true" x="407.44" y="580.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">92%</text>
+<rect x="449.68" y="659.74" width="39.76" height="148.26" rx="0.0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t41" data-role="category" data-target="true" x="469.56" y="836.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t42" data-role="value" data-target="true" x="469.56" y="651.74" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">62%</text>
+<rect x="511.81" y="753.00" width="39.76" height="55.00" rx="0.0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t43" data-role="category" data-target="true" x="531.69" y="836.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t44" data-role="value" data-target="true" x="531.69" y="745.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">23%</text>
+<rect x="573.93" y="736.26" width="39.76" height="71.74" rx="0.0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t45" data-role="category" data-target="true" x="593.81" y="836.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t46" data-role="value" data-target="true" x="593.81" y="728.26" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">30%</text>
+<rect x="636.06" y="753.00" width="39.76" height="55.00" rx="0.0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t47" data-role="category" data-target="true" x="655.94" y="836.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="19.0" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t48" data-role="value" data-target="true" x="655.94" y="745.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">23%</text>
+<text id="t49" data-role="axis" data-target="true" x="102.00" y="706.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#333333" text-anchor="middle" textLength="71.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="0" fill="none" stroke="#000000" stroke-width="2.16"/>
+<text id="t50" data-role="panel_title" data-target="false" x="773.00" y="546.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16" fill="#333333" text-anchor="start" textLength="78.00" lengthAdjust="spacingAndGlyphs">Org Chart</text>
+<line x1="1101.50" y1="614.00" x2="1101.50" y2="651.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1101.50" y1="651.50" x2="931.25" y2="651.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="931.25" y1="651.50" x2="931.25" y2="689.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="614.00" x2="1101.50" y2="652.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1101.50" y1="652.50" x2="1101.50" y2="652.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1101.50" y1="652.50" x2="1101.50" y2="691.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="614.00" x2="1101.50" y2="652.00" stroke="#333333" stroke-width="2.40"/>
+<line x1="1101.50" y1="652.00" x2="1271.75" y2="652.00" stroke="#333333" stroke-width="2.40"/>
+<line x1="1271.75" y1="652.00" x2="1271.75" y2="690.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="931.25" y1="733.00" x2="931.25" y2="772.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="931.25" y1="772.50" x2="897.20" y2="772.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="897.20" y1="772.50" x2="897.20" y2="812.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="931.25" y1="733.00" x2="931.25" y2="772.00" stroke="#333333" stroke-width="2.40"/>
+<line x1="931.25" y1="772.00" x2="1033.40" y2="772.00" stroke="#333333" stroke-width="2.40"/>
+<line x1="1033.40" y1="772.00" x2="1033.40" y2="811.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="731.00" x2="1101.50" y2="771.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1101.50" y1="771.50" x2="1169.60" y2="771.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1169.60" y1="771.50" x2="1169.60" y2="812.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="1271.75" y1="732.00" x2="1271.75" y2="771.25" stroke="#333333" stroke-width="2.40"/>
+<line x1="1271.75" y1="771.25" x2="1305.80" y2="771.25" stroke="#333333" stroke-width="2.40"/>
+<line x1="1305.80" y1="771.25" x2="1305.80" y2="810.50" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<rect x="1019.50" y="570.00" width="164.00" height="44.00" rx="0.0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t51" data-role="label" data-target="true" x="1101.50" y="600.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#000000" text-anchor="middle" textLength="138.00" lengthAdjust="spacingAndGlyphs">Architect Vitals</text>
+<rect x="857.75" y="689.00" width="147.00" height="44.00" rx="0.0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t52" data-role="label" data-target="true" x="931.25" y="719.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="20.0" fill="#000000" text-anchor="middle" textLength="121.00" lengthAdjust="spacingAndGlyphs">Lead Referral</text>
+<rect x="1023.50" y="691.00" width="156.00" height="40.00" rx="0.0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t53" data-role="label" data-target="true" x="1101.50" y="718.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="138.00" lengthAdjust="spacingAndGlyphs">Planner Specimen</text>
+<rect x="1192.25" y="690.00" width="159.00" height="42.00" rx="0.0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t54" data-role="label" data-target="true" x="1271.75" y="718.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18.0" fill="#000000" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Manager Intake</text>
+<rect x="833.70" y="812.00" width="127.00" height="36.00" rx="0.0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t55" data-role="label" data-target="true" x="897.20" y="837.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="136.00" lengthAdjust="spacingAndGlyphs">Specialist Consult</text>
+<rect x="969.40" y="811.00" width="128.00" height="38.00" rx="0.0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t56" data-role="label" data-target="true" x="1033.40" y="837.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="120.00" lengthAdjust="spacingAndGlyphs">Auditor Allergy</text>
+<rect x="1106.60" y="812.00" width="126.00" height="36.00" rx="0.0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t57" data-role="label" data-target="true" x="1169.60" y="837.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="143.00" lengthAdjust="spacingAndGlyphs">Director Symptom</text>
+<rect x="1244.30" y="810.50" width="123.00" height="39.00" rx="0.0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t58" data-role="label" data-target="true" x="1305.80" y="837.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="106.00" lengthAdjust="spacingAndGlyphs">Analyst Chart</text>
+<text id="t59" data-role="footnote" data-target="false" x="58.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="210.97" lengthAdjust="spacingAndGlyphs">source: internal | n=513 | rev 6</text>
+<text id="t60" data-role="badge" data-target="false" x="1442.00" y="47.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="62.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t61" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="98.00" lengthAdjust="spacingAndGlyphs">generated 2/9</text>
+</svg>

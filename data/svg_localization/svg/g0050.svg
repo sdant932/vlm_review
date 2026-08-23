@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#0d2137"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#8fb4d9"/></marker></defs>
+<line x1="48" y1="0" x2="48" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="96" y1="0" x2="96" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="144" y1="0" x2="144" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="192" y1="0" x2="192" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="240" y1="0" x2="240" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="288" y1="0" x2="288" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="336" y1="0" x2="336" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="384" y1="0" x2="384" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="432" y1="0" x2="432" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="480" y1="0" x2="480" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="528" y1="0" x2="528" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="576" y1="0" x2="576" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="624" y1="0" x2="624" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="672" y1="0" x2="672" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="720" y1="0" x2="720" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="768" y1="0" x2="768" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="816" y1="0" x2="816" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="864" y1="0" x2="864" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="912" y1="0" x2="912" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="960" y1="0" x2="960" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1008" y1="0" x2="1008" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1056" y1="0" x2="1056" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1104" y1="0" x2="1104" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1152" y1="0" x2="1152" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1200" y1="0" x2="1200" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1248" y1="0" x2="1248" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1296" y1="0" x2="1296" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1344" y1="0" x2="1344" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1392" y1="0" x2="1392" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1440" y1="0" x2="1440" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1488" y1="0" x2="1488" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="48" x2="1500" y2="48" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="96" x2="1500" y2="96" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="144" x2="1500" y2="144" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="192" x2="1500" y2="192" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="240" x2="1500" y2="240" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="288" x2="1500" y2="288" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="336" x2="1500" y2="336" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="384" x2="1500" y2="384" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="432" x2="1500" y2="432" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="480" x2="1500" y2="480" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="528" x2="1500" y2="528" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="576" x2="1500" y2="576" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="624" x2="1500" y2="624" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="672" x2="1500" y2="672" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="720" x2="1500" y2="720" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="768" x2="1500" y2="768" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="816" x2="1500" y2="816" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="864" x2="1500" y2="864" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="912" x2="1500" y2="912" stroke="#173a56" stroke-width="1"/>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#e8f2ff" text-anchor="start" textLength="439.00" lengthAdjust="spacingAndGlyphs">Claims Handling - line chart 0050</text>
+<line x1="154.00" y1="154.00" x2="154.00" y2="834.00" stroke="#8fb4d9" stroke-width="1.50"/>
+<line x1="154.00" y1="834.00" x2="1292.00" y2="834.00" stroke="#8fb4d9" stroke-width="1.50"/>
+<text id="t1" data-role="tick" data-target="true" x="142.00" y="841.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#8fb4d9" text-anchor="end" textLength="9.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="154.00" y1="664.00" x2="1292.00" y2="664.00" stroke="#173a56" stroke-width="1.05"/>
+<text id="t2" data-role="tick" data-target="true" x="142.00" y="671.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#8fb4d9" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">25</text>
+<line x1="154.00" y1="494.00" x2="1292.00" y2="494.00" stroke="#173a56" stroke-width="1.05"/>
+<text id="t3" data-role="tick" data-target="true" x="142.00" y="501.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#8fb4d9" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">50</text>
+<line x1="154.00" y1="324.00" x2="1292.00" y2="324.00" stroke="#173a56" stroke-width="1.05"/>
+<text id="t4" data-role="tick" data-target="true" x="142.00" y="331.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#8fb4d9" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">75</text>
+<line x1="154.00" y1="154.00" x2="1292.00" y2="154.00" stroke="#173a56" stroke-width="1.05"/>
+<text id="t5" data-role="tick" data-target="true" x="142.00" y="161.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#8fb4d9" text-anchor="end" textLength="27.00" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t6" data-role="category" data-target="true" x="154.00" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t7" data-role="category" data-target="true" x="296.25" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<text id="t8" data-role="category" data-target="true" x="438.50" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<text id="t9" data-role="category" data-target="true" x="580.75" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<text id="t10" data-role="category" data-target="true" x="723.00" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<text id="t11" data-role="category" data-target="true" x="865.25" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<text id="t12" data-role="category" data-target="true" x="1007.50" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t13" data-role="category" data-target="true" x="1149.75" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t14" data-role="category" data-target="true" x="1292.00" y="861.00" font-family="Tahoma, Geneva, sans-serif" font-size="17" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<line x1="154.00" y1="249.20" x2="296.25" y2="303.60" stroke="#478bc9" stroke-width="2.55"/>
+<line x1="296.25" y1="303.60" x2="438.50" y2="167.60" stroke="#478bc9" stroke-width="2.55"/>
+<line x1="438.50" y1="167.60" x2="580.75" y2="167.60" stroke="#478bc9" stroke-width="2.55"/>
+<line x1="580.75" y1="167.60" x2="723.00" y2="167.60" stroke="#478bc9" stroke-width="2.55"/>
+<line x1="723.00" y1="167.60" x2="865.25" y2="167.60" stroke="#478bc9" stroke-width="2.55"/>
+<line x1="865.25" y1="167.60" x2="1007.50" y2="167.60" stroke="#478bc9" stroke-width="2.55"/>
+<line x1="1007.50" y1="167.60" x2="1149.75" y2="167.60" stroke="#478bc9" stroke-width="2.55"/>
+<line x1="1149.75" y1="167.60" x2="1292.00" y2="167.60" stroke="#478bc9" stroke-width="2.55"/>
+<circle cx="154.00" cy="249.20" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="296.25" cy="303.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="438.50" cy="167.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="580.75" cy="167.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="723.00" cy="167.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="865.25" cy="167.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1007.50" cy="167.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1149.75" cy="167.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1292.00" cy="167.60" r="3.90" fill="#478bc9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<text id="t15" data-role="series" data-target="true" x="1306.00" y="175.60" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#478bc9" text-anchor="start" textLength="73.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<line x1="154.00" y1="364.80" x2="296.25" y2="364.80" stroke="#4ca2c8" stroke-width="2.55"/>
+<line x1="296.25" y1="364.80" x2="438.50" y2="290.00" stroke="#4ca2c8" stroke-width="2.55"/>
+<line x1="438.50" y1="290.00" x2="580.75" y2="371.60" stroke="#4ca2c8" stroke-width="2.55"/>
+<line x1="580.75" y1="371.60" x2="723.00" y2="358.00" stroke="#4ca2c8" stroke-width="2.55"/>
+<line x1="723.00" y1="358.00" x2="865.25" y2="303.60" stroke="#4ca2c8" stroke-width="2.55"/>
+<line x1="865.25" y1="303.60" x2="1007.50" y2="337.60" stroke="#4ca2c8" stroke-width="2.55"/>
+<line x1="1007.50" y1="337.60" x2="1149.75" y2="385.20" stroke="#4ca2c8" stroke-width="2.55"/>
+<line x1="1149.75" y1="385.20" x2="1292.00" y2="392.00" stroke="#4ca2c8" stroke-width="2.55"/>
+<circle cx="154.00" cy="364.80" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="296.25" cy="364.80" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="438.50" cy="290.00" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="580.75" cy="371.60" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="723.00" cy="358.00" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="865.25" cy="303.60" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1007.50" cy="337.60" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1149.75" cy="385.20" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1292.00" cy="392.00" r="3.90" fill="#4ca2c8" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<text id="t16" data-role="series" data-target="true" x="1306.00" y="400.00" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#4ca2c8" text-anchor="start" textLength="53.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<line x1="154.00" y1="704.80" x2="296.25" y2="616.40" stroke="#5f92be" stroke-width="2.55"/>
+<line x1="296.25" y1="616.40" x2="438.50" y2="555.20" stroke="#5f92be" stroke-width="2.55"/>
+<line x1="438.50" y1="555.20" x2="580.75" y2="575.60" stroke="#5f92be" stroke-width="2.55"/>
+<line x1="580.75" y1="575.60" x2="723.00" y2="643.60" stroke="#5f92be" stroke-width="2.55"/>
+<line x1="723.00" y1="643.60" x2="865.25" y2="623.20" stroke="#5f92be" stroke-width="2.55"/>
+<line x1="865.25" y1="623.20" x2="1007.50" y2="616.40" stroke="#5f92be" stroke-width="2.55"/>
+<line x1="1007.50" y1="616.40" x2="1149.75" y2="684.40" stroke="#5f92be" stroke-width="2.55"/>
+<line x1="1149.75" y1="684.40" x2="1292.00" y2="589.20" stroke="#5f92be" stroke-width="2.55"/>
+<circle cx="154.00" cy="704.80" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="296.25" cy="616.40" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="438.50" cy="555.20" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="580.75" cy="575.60" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="723.00" cy="643.60" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="865.25" cy="623.20" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1007.50" cy="616.40" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1149.75" cy="684.40" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1292.00" cy="589.20" r="3.90" fill="#5f92be" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<text id="t17" data-role="series" data-target="true" x="1306.00" y="597.20" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#5f92be" text-anchor="start" textLength="47.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<line x1="154.00" y1="419.20" x2="296.25" y2="364.80" stroke="#5c93c9" stroke-width="2.55"/>
+<line x1="296.25" y1="364.80" x2="438.50" y2="242.40" stroke="#5c93c9" stroke-width="2.55"/>
+<line x1="438.50" y1="242.40" x2="580.75" y2="242.40" stroke="#5c93c9" stroke-width="2.55"/>
+<line x1="580.75" y1="242.40" x2="723.00" y2="256.00" stroke="#5c93c9" stroke-width="2.55"/>
+<line x1="723.00" y1="256.00" x2="865.25" y2="290.00" stroke="#5c93c9" stroke-width="2.55"/>
+<line x1="865.25" y1="290.00" x2="1007.50" y2="194.80" stroke="#5c93c9" stroke-width="2.55"/>
+<line x1="1007.50" y1="194.80" x2="1149.75" y2="222.00" stroke="#5c93c9" stroke-width="2.55"/>
+<line x1="1149.75" y1="222.00" x2="1292.00" y2="167.60" stroke="#5c93c9" stroke-width="2.55"/>
+<circle cx="154.00" cy="419.20" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="296.25" cy="364.80" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="438.50" cy="242.40" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="580.75" cy="242.40" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="723.00" cy="256.00" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="865.25" cy="290.00" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1007.50" cy="194.80" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1149.75" cy="222.00" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<circle cx="1292.00" cy="167.60" r="3.90" fill="#5c93c9" stroke="#0d2137" stroke-width="1.2000000000000002"/>
+<text id="t18" data-role="series" data-target="true" x="1306.00" y="175.60" font-family="Tahoma, Geneva, sans-serif" font-size="18" fill="#5c93c9" text-anchor="start" textLength="93.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<text id="t19" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#8fb4d9" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=256 | rev 11</text>
+<text id="t20" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#8fb4d9" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t21" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#8fb4d9" text-anchor="end" textLength="95.00" lengthAdjust="spacingAndGlyphs">generated 18/4</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="460.97" lengthAdjust="spacingAndGlyphs">Returns Workflow - pie chart 0020</text>
+<path d="M600.00,513.00 L600.00,294.60 A218.40,218.40 0 0 1 817.20,535.83 Z" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t1" data-role="value" data-target="true" x="700.63" y="429.39" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">26%</text>
+<path d="M600.00,513.00 L817.20,535.83 A218.40,218.40 0 0 1 746.14,675.30 Z" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t2" data-role="value" data-target="true" x="720.65" y="581.47" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">11%</text>
+<path d="M600.00,513.00 L746.14,675.30 A218.40,218.40 0 0 1 471.63,689.69 Z" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t3" data-role="value" data-target="true" x="607.09" y="655.22" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">21%</text>
+<path d="M600.00,513.00 L471.63,689.69 A218.40,218.40 0 0 1 382.80,490.17 Z" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t4" data-role="value" data-target="true" x="476.30" y="575.08" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">16%</text>
+<path d="M600.00,513.00 L382.80,490.17 A218.40,218.40 0 0 1 600.00,294.60 Z" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t5" data-role="value" data-target="true" x="509.39" y="419.37" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">23%</text>
+<rect x="1142.00" y="164.00" width="22.00" height="22.00" rx="3" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t6" data-role="legend" data-target="true" x="1178.00" y="181.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="62.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<rect x="1142.00" y="208.00" width="22.00" height="22.00" rx="3" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t7" data-role="legend" data-target="true" x="1178.00" y="225.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="74.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<rect x="1142.00" y="252.00" width="22.00" height="22.00" rx="3" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t8" data-role="legend" data-target="true" x="1178.00" y="269.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="62.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<rect x="1142.00" y="296.00" width="22.00" height="22.00" rx="3" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t9" data-role="legend" data-target="true" x="1178.00" y="313.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="47.00" lengthAdjust="spacingAndGlyphs">North</text>
+<rect x="1142.00" y="340.00" width="22.00" height="22.00" rx="3" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t10" data-role="legend" data-target="true" x="1178.00" y="357.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="49.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t11" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#555555" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7914 | rev 17</text>
+<text id="t12" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#555555" text-anchor="end" textLength="44.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t13" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#555555" text-anchor="end" textLength="104.00" lengthAdjust="spacingAndGlyphs">generated 27/11</text>
+</svg>

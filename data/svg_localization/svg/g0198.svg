@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="431.94" lengthAdjust="spacingAndGlyphs">Triage Protocol - org chart 0198</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="375.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="375.00" y1="328.50" x2="375.00" y2="481.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="481.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="1125.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1125.00" y1="328.50" x2="1125.00" y2="481.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="375.00" y1="525.00" x2="375.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="375.00" y1="677.50" x2="250.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="250.00" y1="677.50" x2="250.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="375.00" y1="525.00" x2="375.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="375.00" y1="677.50" x2="500.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="500.00" y1="677.50" x2="500.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="750.00" y1="525.00" x2="750.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="750.00" y1="525.00" x2="750.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="677.50" x2="1000.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1000.00" y1="677.50" x2="1000.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="1125.00" y1="525.00" x2="1125.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1125.00" y1="677.50" x2="1250.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1250.00" y1="677.50" x2="1250.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<rect x="664.50" y="132.00" width="171.00" height="44.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="161.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Manager Dosage</text>
+<rect x="297.00" y="481.00" width="156.00" height="44.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="label" data-target="true" x="375.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="130.00" lengthAdjust="spacingAndGlyphs">Auditor Intake</text>
+<rect x="679.00" y="481.00" width="142.00" height="44.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="label" data-target="true" x="750.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="116.00" lengthAdjust="spacingAndGlyphs">Lead Consult</text>
+<rect x="1049.50" y="481.00" width="151.00" height="44.00" rx="6" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="label" data-target="true" x="1125.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="125.00" lengthAdjust="spacingAndGlyphs">Planner Chart</text>
+<rect x="160.51" y="830.00" width="178.98" height="44.00" rx="6" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="label" data-target="true" x="250.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="152.98" lengthAdjust="spacingAndGlyphs">Architect Allergy</text>
+<rect x="397.00" y="830.00" width="206.00" height="44.00" rx="6" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="label" data-target="true" x="500.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Specialist Specimen</text>
+<rect x="657.50" y="830.00" width="185.00" height="44.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="label" data-target="true" x="750.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="159.00" lengthAdjust="spacingAndGlyphs">Analyst Discharge</text>
+<rect x="904.50" y="830.00" width="191.00" height="44.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t8" data-role="label" data-target="true" x="1000.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="165.00" lengthAdjust="spacingAndGlyphs">Coordinator Vitals</text>
+<rect x="1160.01" y="830.00" width="179.98" height="44.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t9" data-role="label" data-target="true" x="1250.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="153.98" lengthAdjust="spacingAndGlyphs">Director Referral</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4594 | rev 15</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="67.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 22/6</text>
+</svg>

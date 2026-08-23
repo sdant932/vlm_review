@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="426.98" lengthAdjust="spacingAndGlyphs">Build Pipeline - dashboard 0143</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="155.00" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="39.98" lengthAdjust="spacingAndGlyphs">Table</text>
+<rect x="110.00" y="192.00" width="577.00" height="36.00" rx="4.0" fill="#bed3ef" stroke="#39414e" stroke-width="1.6"/>
+<text id="t2" data-role="header" data-target="true" x="182.12" y="217.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="53.98" lengthAdjust="spacingAndGlyphs">Region</text>
+<text id="t3" data-role="header" data-target="true" x="326.38" y="217.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<text id="t4" data-role="header" data-target="true" x="470.62" y="217.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<text id="t5" data-role="header" data-target="true" x="614.88" y="217.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="93.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<text id="t6" data-role="cell" data-target="true" x="182.12" y="253.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="38.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t7" data-role="cell" data-target="true" x="326.38" y="253.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">25.8</text>
+<text id="t8" data-role="cell" data-target="true" x="470.62" y="253.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">44.0</text>
+<text id="t9" data-role="cell" data-target="true" x="614.88" y="253.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">23.5</text>
+<rect x="110.00" y="264.00" width="577.00" height="36.00" rx="0.0" fill="#eceff4"/>
+<text id="t10" data-role="cell" data-target="true" x="182.12" y="289.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t11" data-role="cell" data-target="true" x="326.38" y="289.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">92.0</text>
+<text id="t12" data-role="cell" data-target="true" x="470.62" y="289.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">90.9</text>
+<text id="t13" data-role="cell" data-target="true" x="614.88" y="289.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">65.7</text>
+<text id="t14" data-role="cell" data-target="true" x="182.12" y="325.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t15" data-role="cell" data-target="true" x="326.38" y="325.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">86.5</text>
+<text id="t16" data-role="cell" data-target="true" x="470.62" y="325.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">63.0</text>
+<text id="t17" data-role="cell" data-target="true" x="614.88" y="325.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">43.7</text>
+<rect x="110.00" y="336.00" width="577.00" height="36.00" rx="0.0" fill="#eceff4"/>
+<text id="t18" data-role="cell" data-target="true" x="182.12" y="361.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t19" data-role="cell" data-target="true" x="326.38" y="361.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">17.8</text>
+<text id="t20" data-role="cell" data-target="true" x="470.62" y="361.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">82.2</text>
+<text id="t21" data-role="cell" data-target="true" x="614.88" y="361.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">91.4</text>
+<text id="t22" data-role="cell" data-target="true" x="182.12" y="397.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t23" data-role="cell" data-target="true" x="326.38" y="397.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">36.2</text>
+<text id="t24" data-role="cell" data-target="true" x="470.62" y="397.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">21.4</text>
+<text id="t25" data-role="cell" data-target="true" x="614.88" y="397.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">34.8</text>
+<rect x="110.00" y="408.00" width="577.00" height="36.00" rx="0.0" fill="#eceff4"/>
+<text id="t26" data-role="cell" data-target="true" x="182.12" y="433.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t27" data-role="cell" data-target="true" x="326.38" y="433.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">13.3</text>
+<text id="t28" data-role="cell" data-target="true" x="470.62" y="433.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">72.2</text>
+<text id="t29" data-role="cell" data-target="true" x="614.88" y="433.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">86.4</text>
+<text id="t30" data-role="cell" data-target="true" x="182.12" y="469.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t31" data-role="cell" data-target="true" x="326.38" y="469.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">43.3</text>
+<text id="t32" data-role="cell" data-target="true" x="470.62" y="469.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">30.7</text>
+<text id="t33" data-role="cell" data-target="true" x="614.88" y="469.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">84.7</text>
+<line x1="110.00" y1="192.00" x2="110.00" y2="480.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="254.25" y1="192.00" x2="254.25" y2="480.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="398.50" y1="192.00" x2="398.50" y2="480.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="542.75" y1="192.00" x2="542.75" y2="480.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="687.00" y1="192.00" x2="687.00" y2="480.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="192.00" x2="687.00" y2="192.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="228.00" x2="687.00" y2="228.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="264.00" x2="687.00" y2="264.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="300.00" x2="687.00" y2="300.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="336.00" x2="687.00" y2="336.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="372.00" x2="687.00" y2="372.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="408.00" x2="687.00" y2="408.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="444.00" x2="687.00" y2="444.00" stroke="#39414e" stroke-width="1.12"/>
+<line x1="110.00" y1="480.00" x2="687.00" y2="480.00" stroke="#39414e" stroke-width="1.12"/>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t34" data-role="panel_title" data-target="false" x="773.00" y="155.00" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="67.00" lengthAdjust="spacingAndGlyphs">Bar Chart</text>
+<line x1="893.00" y1="198.00" x2="893.00" y2="418.00" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="893.00" y1="418.00" x2="1390.00" y2="418.00" stroke="#5c636e" stroke-width="1.60"/>
+<text id="t35" data-role="tick" data-target="true" x="881.00" y="425.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="end" textLength="9.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="893.00" y1="363.00" x2="1390.00" y2="363.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t36" data-role="tick" data-target="true" x="881.00" y="370.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">23</text>
+<line x1="893.00" y1="308.00" x2="1390.00" y2="308.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t37" data-role="tick" data-target="true" x="881.00" y="315.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">46</text>
+<line x1="893.00" y1="253.00" x2="1390.00" y2="253.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t38" data-role="tick" data-target="true" x="881.00" y="260.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">68</text>
+<line x1="893.00" y1="198.00" x2="1390.00" y2="198.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t39" data-role="tick" data-target="true" x="881.00" y="205.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">91</text>
+<rect x="901.40" y="330.97" width="38.42" height="87.03" rx="4.0" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t40" data-role="category" data-target="true" x="920.61" y="445.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t41" data-role="value" data-target="true" x="920.61" y="322.97" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">36%</text>
+<rect x="956.63" y="198.00" width="38.42" height="220.00" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t42" data-role="category" data-target="true" x="975.83" y="444.00" font-family="'Trebuchet MS', sans-serif" font-size="17.0" fill="#12161c" text-anchor="middle" textLength="49.98" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t43" data-role="value" data-target="true" x="975.83" y="190.00" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">91%</text>
+<rect x="1011.85" y="246.35" width="38.42" height="171.65" rx="4.0" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t44" data-role="category" data-target="true" x="1031.06" y="445.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t45" data-role="value" data-target="true" x="1031.06" y="238.35" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">71%</text>
+<rect x="1067.07" y="374.48" width="38.42" height="43.52" rx="4.0" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t46" data-role="category" data-target="true" x="1086.28" y="445.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t47" data-role="value" data-target="true" x="1086.28" y="366.48" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<rect x="1122.29" y="381.74" width="38.42" height="36.26" rx="4.0" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t48" data-role="category" data-target="true" x="1141.50" y="445.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t49" data-role="value" data-target="true" x="1141.50" y="373.74" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">15%</text>
+<rect x="1177.51" y="311.63" width="38.42" height="106.37" rx="4.0" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t50" data-role="category" data-target="true" x="1196.72" y="444.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t51" data-role="value" data-target="true" x="1196.72" y="303.63" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">44%</text>
+<rect x="1232.74" y="282.62" width="38.42" height="135.38" rx="4.0" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t52" data-role="category" data-target="true" x="1251.94" y="444.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t53" data-role="value" data-target="true" x="1251.94" y="274.62" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">56%</text>
+<rect x="1287.96" y="229.43" width="38.42" height="188.57" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t54" data-role="category" data-target="true" x="1307.17" y="445.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t55" data-role="value" data-target="true" x="1307.17" y="221.43" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">78%</text>
+<rect x="1343.18" y="318.88" width="38.42" height="99.12" rx="4.0" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t56" data-role="category" data-target="true" x="1362.39" y="444.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t57" data-role="value" data-target="true" x="1362.39" y="310.88" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">41%</text>
+<text id="t58" data-role="axis" data-target="true" x="805.00" y="315.00" font-family="'Trebuchet MS', sans-serif" font-size="20.0" fill="#5c636e" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t59" data-role="panel_title" data-target="false" x="70.00" y="545.00" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="66.00" lengthAdjust="spacingAndGlyphs">Quadrant</text>
+<rect x="200.00" y="592.00" width="457.00" height="218.00" rx="0.0" fill="none" stroke="#5c636e" stroke-width="1.6"/>
+<line x1="428.50" y1="592.00" x2="428.50" y2="810.00" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="200.00" y1="701.00" x2="657.00" y2="701.00" stroke="#5c636e" stroke-width="1.60"/>
+<text id="t60" data-role="quadrant" data-target="true" x="314.25" y="616.44" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Invest</text>
+<text id="t61" data-role="quadrant" data-target="true" x="542.75" y="616.44" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Sustain</text>
+<text id="t62" data-role="quadrant" data-target="true" x="314.25" y="799.56" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Divest</text>
+<text id="t63" data-role="quadrant" data-target="true" x="542.75" y="799.56" font-family="'Trebuchet MS', sans-serif" font-size="18.0" fill="#5c636e" text-anchor="middle" textLength="56.98" lengthAdjust="spacingAndGlyphs">Review</text>
+<circle cx="405.76" cy="701.59" r="11.00" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t64" data-role="point" data-target="true" x="405.76" y="683.59" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="435.14" cy="684.84" r="11.00" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t65" data-role="point" data-target="true" x="435.14" y="666.84" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="580.72" cy="675.56" r="11.00" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t66" data-role="point" data-target="true" x="580.72" y="657.56" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<circle cx="393.32" cy="688.30" r="11.00" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t67" data-role="point" data-target="true" x="393.32" y="670.30" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="36.98" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="367.01" cy="740.31" r="11.00" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t68" data-role="point" data-target="true" x="367.01" y="722.31" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="42.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t69" data-role="axis" data-target="true" x="428.50" y="848.00" font-family="'Trebuchet MS', sans-serif" font-size="17.0" fill="#5c636e" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t70" data-role="panel_title" data-target="false" x="773.00" y="545.00" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="101.00" lengthAdjust="spacingAndGlyphs">State Machine</text>
+<circle cx="893.00" cy="651.00" r="52.00" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t71" data-role="label" data-target="true" x="893.00" y="658.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<circle cx="997.25" cy="791.00" r="80.50" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t72" data-role="label" data-target="true" x="997.25" y="798.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="117.00" lengthAdjust="spacingAndGlyphs">Archive Cache</text>
+<circle cx="1101.50" cy="651.00" r="52.00" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t73" data-role="label" data-target="true" x="1101.50" y="658.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<circle cx="1205.75" cy="791.00" r="76.00" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t74" data-role="label" data-target="true" x="1205.75" y="798.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="108.00" lengthAdjust="spacingAndGlyphs">Flush Bundle</text>
+<circle cx="1310.00" cy="651.00" r="95.50" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t75" data-role="label" data-target="true" x="1310.00" y="658.00" font-family="'Trebuchet MS', sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="147.00" lengthAdjust="spacingAndGlyphs">Compact Commit</text>
+<line x1="939.00" y1="651.00" x2="951.25" y2="791.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t76" data-role="transition" data-target="true" x="945.12" y="713.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="27.00" lengthAdjust="spacingAndGlyphs">dup</text>
+<line x1="1043.25" y1="791.00" x2="1055.50" y2="651.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t77" data-role="transition" data-target="true" x="1049.38" y="713.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="1147.50" y1="651.00" x2="1159.75" y2="791.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t78" data-role="transition" data-target="true" x="1153.62" y="713.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="1251.75" y1="791.00" x2="1264.00" y2="651.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t79" data-role="transition" data-target="true" x="1257.88" y="713.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<text id="t80" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="205.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7182 | rev 4</text>
+<text id="t81" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="67.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t82" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 19/3</text>
+</svg>

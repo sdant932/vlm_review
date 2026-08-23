@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="475.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - state machine 0158</text>
+<circle cx="168.00" cy="443.00" r="94.50" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="label" data-target="true" x="168.00" y="450.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Snapshot Cache</text>
+<circle cx="459.00" cy="583.00" r="82.00" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="label" data-target="true" x="459.00" y="590.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="120.00" lengthAdjust="spacingAndGlyphs">Score Runner</text>
+<circle cx="750.00" cy="443.00" r="87.00" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="label" data-target="true" x="750.00" y="450.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="130.00" lengthAdjust="spacingAndGlyphs">Cluster Runner</text>
+<circle cx="1041.00" cy="583.00" r="88.50" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="label" data-target="true" x="1041.00" y="590.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Merge Manifest</text>
+<circle cx="1332.00" cy="443.00" r="82.50" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="label" data-target="true" x="1332.00" y="450.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="121.00" lengthAdjust="spacingAndGlyphs">Merge Bundle</text>
+<line x1="214.00" y1="443.00" x2="413.00" y2="583.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t6" data-role="transition" data-target="true" x="313.50" y="505.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="505.00" y1="583.00" x2="704.00" y2="443.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t7" data-role="transition" data-target="true" x="604.50" y="505.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<line x1="796.00" y1="443.00" x2="995.00" y2="583.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t8" data-role="transition" data-target="true" x="895.50" y="505.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">retry</text>
+<line x1="1087.00" y1="583.00" x2="1286.00" y2="443.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t9" data-role="transition" data-target="true" x="1186.50" y="505.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4700 | rev 9</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="74.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="105.00" lengthAdjust="spacingAndGlyphs">generated 15/10</text>
+</svg>

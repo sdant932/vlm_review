@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="54.96" font-family="'Courier New', Courier, monospace" font-size="30" fill="#2b2418" text-anchor="start" textLength="576.00" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - quadrant 0156</text>
+<rect x="178.00" y="154.00" width="1204.00" height="678.00" rx="0" fill="none" stroke="#7a6c56" stroke-width="1.7"/>
+<line x1="780.00" y1="154.00" x2="780.00" y2="832.00" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="178.00" y1="493.00" x2="1382.00" y2="493.00" stroke="#7a6c56" stroke-width="1.70"/>
+<text id="t1" data-role="quadrant" data-target="true" x="479.00" y="213.24" font-family="'Courier New', Courier, monospace" font-size="18" fill="#7a6c56" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Invest</text>
+<text id="t2" data-role="quadrant" data-target="true" x="1081.00" y="213.24" font-family="'Courier New', Courier, monospace" font-size="18" fill="#7a6c56" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Sustain</text>
+<text id="t3" data-role="quadrant" data-target="true" x="479.00" y="782.76" font-family="'Courier New', Courier, monospace" font-size="18" fill="#7a6c56" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Divest</text>
+<text id="t4" data-role="quadrant" data-target="true" x="1081.00" y="782.76" font-family="'Courier New', Courier, monospace" font-size="18" fill="#7a6c56" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Review</text>
+<circle cx="332.61" cy="527.47" r="11.00" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="point" data-target="true" x="332.61" y="508.47" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="483.34" cy="240.67" r="11.00" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="point" data-target="true" x="483.34" y="221.67" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<circle cx="1020.70" cy="618.04" r="11.00" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="point" data-target="true" x="1020.70" y="599.04" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="80.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="593.72" cy="411.33" r="11.00" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t8" data-role="point" data-target="true" x="593.72" y="392.33" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<circle cx="250.62" cy="436.22" r="11.00" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t9" data-role="point" data-target="true" x="250.62" y="417.22" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="600.94" cy="631.66" r="11.00" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t10" data-role="point" data-target="true" x="600.94" y="612.66" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<circle cx="1107.73" cy="563.47" r="11.00" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t11" data-role="point" data-target="true" x="1107.73" y="544.47" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<circle cx="567.76" cy="480.58" r="11.00" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t12" data-role="point" data-target="true" x="567.76" y="461.58" font-family="'Courier New', Courier, monospace" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t13" data-role="axis" data-target="true" x="780.00" y="869.00" font-family="'Courier New', Courier, monospace" font-size="17" fill="#7a6c56" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t14" data-role="footnote" data-target="false" x="58.00" y="930.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#7a6c56" text-anchor="start" textLength="264.00" lengthAdjust="spacingAndGlyphs">source: internal | n=1949 | rev 9</text>
+<text id="t15" data-role="badge" data-target="false" x="1442.00" y="43.96" font-family="'Courier New', Courier, monospace" font-size="15" fill="#7a6c56" text-anchor="end" textLength="72.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t16" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#7a6c56" text-anchor="end" textLength="104.00" lengthAdjust="spacingAndGlyphs">generated 6/1</text>
+</svg>

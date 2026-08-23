@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="437.00" lengthAdjust="spacingAndGlyphs">Grid Operations - pie chart 0148</text>
+<path d="M600.00,513.00 L600.00,294.60 A218.40,218.40 0 0 1 812.63,463.13 Z" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t1" data-role="value" data-target="true" x="684.11" y="413.88" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">21%</text>
+<path d="M600.00,513.00 L812.63,463.13 A218.40,218.40 0 0 1 756.04,665.81 Z" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t2" data-role="value" data-target="true" x="730.42" y="556.41" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">16%</text>
+<path d="M600.00,513.00 L756.04,665.81 A218.40,218.40 0 0 1 431.72,652.21 Z" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t3" data-role="value" data-target="true" x="594.33" y="655.29" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">26%</text>
+<path d="M600.00,513.00 L431.72,652.21 A218.40,218.40 0 0 1 381.65,517.57 Z" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t4" data-role="value" data-target="true" x="473.08" y="567.20" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">10%</text>
+<path d="M600.00,513.00 L381.65,517.57 A218.40,218.40 0 0 1 502.89,317.38 Z" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t5" data-role="value" data-target="true" x="484.18" y="449.85" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="29.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<path d="M600.00,513.00 L502.89,317.38 A218.40,218.40 0 0 1 600.00,294.60 Z" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t6" data-role="value" data-target="true" x="569.08" y="388.17" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#12161c" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">7%</text>
+<rect x="1142.00" y="164.00" width="22.00" height="22.00" rx="3" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t7" data-role="legend" data-target="true" x="1178.00" y="181.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="start" textLength="49.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<rect x="1142.00" y="208.00" width="22.00" height="22.00" rx="3" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t8" data-role="legend" data-target="true" x="1178.00" y="225.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="start" textLength="50.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<rect x="1142.00" y="252.00" width="22.00" height="22.00" rx="3" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t9" data-role="legend" data-target="true" x="1178.00" y="269.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="start" textLength="41.98" lengthAdjust="spacingAndGlyphs">West</text>
+<rect x="1142.00" y="296.00" width="22.00" height="22.00" rx="3" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t10" data-role="legend" data-target="true" x="1178.00" y="313.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="start" textLength="45.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<rect x="1142.00" y="340.00" width="22.00" height="22.00" rx="3" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t11" data-role="legend" data-target="true" x="1178.00" y="357.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="start" textLength="46.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<rect x="1142.00" y="384.00" width="22.00" height="22.00" rx="3" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t12" data-role="legend" data-target="true" x="1178.00" y="401.00" font-family="'Trebuchet MS', sans-serif" font-size="19" fill="#12161c" text-anchor="start" textLength="74.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3887 | rev 12</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="67.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 27/3</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fffdf5"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#77704f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#241f10" text-anchor="start" textLength="424.00" lengthAdjust="spacingAndGlyphs">Triage Protocol - org chart 0038</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="375.00" y2="328.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="375.00" y1="328.50" x2="375.00" y2="481.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="328.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="481.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="1125.00" y2="328.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1125.00" y1="328.50" x2="1125.00" y2="481.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="375.00" y1="525.00" x2="375.00" y2="677.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="677.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="830.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="525.00" x2="750.00" y2="677.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="677.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1125.00" y1="525.00" x2="1125.00" y2="677.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="677.50" stroke="#77704f" stroke-width="1.60"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="830.00" stroke="#77704f" stroke-width="1.60" marker-end="url(#ah)"/>
+<rect x="671.50" y="132.00" width="157.00" height="44.00" rx="5" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="161.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="131.00" lengthAdjust="spacingAndGlyphs">Auditor Intake</text>
+<rect x="295.00" y="481.00" width="160.00" height="44.00" rx="5" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="375.00" y="510.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="134.00" lengthAdjust="spacingAndGlyphs">Manager Chart</text>
+<rect x="661.00" y="481.00" width="178.00" height="44.00" rx="5" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="750.00" y="510.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="152.00" lengthAdjust="spacingAndGlyphs">Director Referral</text>
+<rect x="1024.50" y="481.00" width="201.00" height="44.00" rx="5" fill="#e8e6f5" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="1125.00" y="510.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="175.00" lengthAdjust="spacingAndGlyphs">Architect Discharge</text>
+<rect x="276.00" y="830.00" width="198.00" height="44.00" rx="5" fill="#d6eef0" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="375.00" y="859.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="172.00" lengthAdjust="spacingAndGlyphs">Engineer Symptom</text>
+<rect x="666.00" y="830.00" width="168.00" height="44.00" rx="5" fill="#fadcd6" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="750.00" y="859.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Analyst Consult</text>
+<rect x="1012.00" y="830.00" width="226.00" height="44.00" rx="5" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="1125.00" y="859.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#241f10" text-anchor="middle" textLength="200.00" lengthAdjust="spacingAndGlyphs">Coordinator Specimen</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#77704f" text-anchor="start" textLength="205.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3580 | rev 19</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#77704f" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#77704f" text-anchor="end" textLength="94.00" lengthAdjust="spacingAndGlyphs">generated 27/7</text>
+</svg>

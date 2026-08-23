@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="438.00" lengthAdjust="spacingAndGlyphs">Claims Handling - org chart 0134</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="500.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="500.00" y1="328.50" x2="500.00" y2="481.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="1000.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="1000.00" y1="328.50" x2="1000.00" y2="481.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="500.00" y1="677.50" x2="375.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="500.00" y1="677.50" x2="750.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1000.00" y1="525.00" x2="1000.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="1000.00" y1="677.50" x2="1125.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<rect x="650.00" y="132.00" width="200.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="161.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="174.00" lengthAdjust="spacingAndGlyphs">Specialist Appraisal</text>
+<rect x="382.00" y="481.00" width="236.00" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="500.00" y="510.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="210.00" lengthAdjust="spacingAndGlyphs">Coordinator Deductible</text>
+<rect x="909.50" y="481.00" width="181.00" height="44.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="1000.00" y="510.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="155.00" lengthAdjust="spacingAndGlyphs">Planner Estimate</text>
+<rect x="265.00" y="830.00" width="220.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="375.00" y="859.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="194.00" lengthAdjust="spacingAndGlyphs">Auditor Endorsement</text>
+<rect x="675.00" y="830.00" width="150.00" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="750.00" y="859.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Lead Adjuster</text>
+<rect x="1035.50" y="830.00" width="179.00" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="1125.00" y="859.00" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="153.00" lengthAdjust="spacingAndGlyphs">Architect Salvage</text>
+<text id="t7" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="204.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3058 | rev 17</text>
+<text id="t8" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t9" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="87.00" lengthAdjust="spacingAndGlyphs">generated 6/7</text>
+</svg>

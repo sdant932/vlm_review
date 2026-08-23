@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fffdf5"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#77704f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#241f10" text-anchor="start" textLength="492.00" lengthAdjust="spacingAndGlyphs">Content Moderation - sequence 0010</text>
+<rect x="336.00" y="158.00" width="78.00" height="40.00" rx="5" fill="#fdf0c4" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t1" data-role="actor" data-target="true" x="375.00" y="185.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#241f10" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Client</text>
+<line x1="375.00" y1="198.00" x2="375.00" y2="868.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="704.50" y="158.00" width="91.00" height="40.00" rx="5" fill="#e9f2cf" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t2" data-role="actor" data-target="true" x="750.00" y="185.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#241f10" text-anchor="middle" textLength="61.00" lengthAdjust="spacingAndGlyphs">Worker</text>
+<line x1="750.00" y1="198.00" x2="750.00" y2="868.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="1071.00" y="158.00" width="108.00" height="40.00" rx="5" fill="#fde3c8" stroke="#5a5330" stroke-width="1.6"/>
+<text id="t3" data-role="actor" data-target="true" x="1125.00" y="185.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#241f10" text-anchor="middle" textLength="78.00" lengthAdjust="spacingAndGlyphs">Scheduler</text>
+<line x1="1125.00" y1="198.00" x2="1125.00" y2="868.00" stroke="#77704f" stroke-width="1.28" stroke-dasharray="5 4"/>
+<line x1="375.00" y1="236.00" x2="1125.00" y2="236.00" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t4" data-role="message" data-target="true" x="750.00" y="226.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="1125.00" y1="358.40" x2="375.00" y2="358.40" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t5" data-role="message" data-target="true" x="750.00" y="348.40" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">retry</text>
+<line x1="1125.00" y1="480.80" x2="375.00" y2="480.80" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t6" data-role="message" data-target="true" x="750.00" y="470.80" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="1125.00" y1="603.20" x2="750.00" y2="603.20" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t7" data-role="message" data-target="true" x="937.50" y="593.20" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="375.00" y1="725.60" x2="1125.00" y2="725.60" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t8" data-role="message" data-target="true" x="750.00" y="715.60" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<line x1="375.00" y1="848.00" x2="1125.00" y2="848.00" stroke="#241f10" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t9" data-role="message" data-target="true" x="750.00" y="838.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#77704f" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">signed</text>
+<text id="t10" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#77704f" text-anchor="start" textLength="204.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2766 | rev 16</text>
+<text id="t11" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#77704f" text-anchor="end" textLength="71.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t12" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#77704f" text-anchor="end" textLength="88.00" lengthAdjust="spacingAndGlyphs">generated 4/4</text>
+</svg>

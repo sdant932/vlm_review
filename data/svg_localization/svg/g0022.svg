@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="522.98" lengthAdjust="spacingAndGlyphs">Payment Authorization - org chart 0022</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="500.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="500.00" y1="328.50" x2="500.00" y2="481.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="1000.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1000.00" y1="328.50" x2="1000.00" y2="481.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="500.00" y1="677.50" x2="375.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="500.00" y1="677.50" x2="750.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="1000.00" y1="525.00" x2="1000.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1000.00" y1="677.50" x2="1125.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<rect x="666.51" y="132.00" width="166.98" height="44.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="162.00" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="140.98" lengthAdjust="spacingAndGlyphs">Architect Wallet</text>
+<rect x="413.50" y="481.00" width="173.00" height="44.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="label" data-target="true" x="500.00" y="511.00" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="147.00" lengthAdjust="spacingAndGlyphs">Lead Settlement</text>
+<rect x="904.50" y="481.00" width="191.00" height="44.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="label" data-target="true" x="1000.00" y="511.00" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="165.00" lengthAdjust="spacingAndGlyphs">Manager Merchant</text>
+<rect x="275.00" y="830.00" width="200.00" height="44.00" rx="6" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="label" data-target="true" x="375.00" y="860.00" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="174.00" lengthAdjust="spacingAndGlyphs">Auditor Chargeback</text>
+<rect x="675.50" y="830.00" width="149.00" height="44.00" rx="6" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="label" data-target="true" x="750.00" y="860.00" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="123.00" lengthAdjust="spacingAndGlyphs">Planner Payer</text>
+<rect x="1036.50" y="830.00" width="177.00" height="44.00" rx="6" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="label" data-target="true" x="1125.00" y="860.00" font-family="Tahoma, Geneva, sans-serif" font-size="20" fill="#2b2418" text-anchor="middle" textLength="151.00" lengthAdjust="spacingAndGlyphs">Coordinator Card</text>
+<text id="t7" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3175 | rev 9</text>
+<text id="t8" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="68.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t9" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="103.00" lengthAdjust="spacingAndGlyphs">generated 24/11</text>
+</svg>

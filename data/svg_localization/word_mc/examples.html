@@ -1,0 +1,126 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Word presence — multiple choice &mdash; examples</title><style>
+:root{--bg:#0f1116;--panel:#171a21;--panel2:#1d2028;--ink:#e8eaed;--muted:#9aa0aa;
+      --line:#2a2f3a;--good:#2ecc71;--bad:#ff5b5b;--accent:#5b8def;--chip:#232833}
+@media (prefers-color-scheme:light){:root{--bg:#f7f8fa;--panel:#fff;--panel2:#f0f2f6;
+      --ink:#15181d;--muted:#5c636e;--line:#dfe3ea;--chip:#eceff4}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 22px 80px}
+h1{font-size:26px;margin:0 0 6px}
+h2{font-size:20px;margin:40px 0 10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+h3{font-size:15px;margin:20px 0 8px;color:var(--muted);font-weight:600}
+.sub{color:var(--muted);margin:0 0 20px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 24px}
+nav a{background:var(--chip);color:var(--ink);text-decoration:none;padding:6px 12px;
+      border-radius:7px;font-size:13px;border:1px solid var(--line)}
+nav a:hover{border-color:var(--accent)}
+.note{background:var(--panel);border-left:3px solid var(--accent);padding:12px 15px;
+      border-radius:0 8px 8px 0;margin:14px 0}
+.note.warn{border-left-color:#d68a1e}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px}
+.tile .v{font-size:23px;font-weight:650;font-variant-numeric:tabular-nums}
+.tile .l{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;
+      padding:16px;margin:16px 0}
+.card .hd{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:11px}
+.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);
+      border-radius:20px;padding:2px 9px;font-size:11px;color:var(--muted)}
+.chip.k{color:var(--accent);border-color:var(--accent)}
+.cols{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+.cols>.img{flex:0 0 auto}
+.cols>.txt{flex:1 1 340px;min-width:300px}
+.stage{position:relative;display:inline-block;border:1px solid var(--line);
+       border-radius:8px;overflow:hidden;background:#fff;line-height:0}
+.stage img{display:block;max-width:100%;height:auto}
+.box{position:absolute;border:2px solid var(--good);
+     box-shadow:0 0 0 1px rgba(0,0,0,.5) inset;pointer-events:none}
+.cross{position:absolute;pointer-events:none}
+.cross::before,.cross::after{content:"";position:absolute;background:var(--bad)}
+.cross::before{left:-10px;top:-1px;width:20px;height:2px}
+.cross::after{top:-10px;left:-1px;height:20px;width:2px}
+pre{background:var(--panel2);border:1px solid var(--line);border-radius:8px;
+    padding:11px 13px;margin:6px 0 12px;overflow-x:auto;white-space:pre-wrap;
+    font:12.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink)}
+pre.ans{border-left:3px solid var(--good)}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+     margin:10px 0 3px;font-weight:600}
+code{background:var(--chip);padding:1px 5px;border-radius:4px;font-size:12.5px;
+     font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+table{width:100%;border-collapse:collapse;margin:10px 0;background:var(--panel);
+      border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th,td{padding:7px 11px;text-align:left;border-bottom:1px solid var(--line);font-size:13px}
+th{background:var(--chip);color:var(--muted);font-weight:600;font-size:11px;
+   text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:none}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:12.5px;margin-top:8px}
+.kv dt{color:var(--muted)} .kv dd{margin:0;font-variant-numeric:tabular-nums}
+</style></head><body><div class="wrap"><h1>Word presence — multiple choice</h1><p class="sub">Which of four words appears in the figure?</p><nav><a href="../examples/index.html">Localization examples</a><a href="../verify/index.html">Ground-truth audit</a><a href="EVAL.md">EVAL.md</a></nav><div class="tiles"><div class="tile"><div class="l">scenes</div><div class="v">191</div></div><div class="tile"><div class="l">questions</div><div class="v">1104</div></div><div class="tile"><div class="l">chart types</div><div class="v">16</div></div><div class="tile"><div class="l">chance</div><div class="v">25%</div></div></div><div class="note">One option appears somewhere in the figure; the other three appear nowhere in it. The correct word is drawn only from labels that already passed the localization set's filters &mdash; legible at this resolution, not occluded, unique in the scene &mdash; so a word the model physically cannot read is never the answer. Every distractor is verified absent as a substring across <i>all</i> text in the scene, including the title, footnotes and badges.</div><div class="note"><b>Scoring.</b> Exact letter match (<code>multiple_choice</code>). Chance is 25%.</div><div class="note warn"><b>These questions run on the existing scenes.</b> No image was re-rendered to create them &mdash; they are derived from <code>scenes.jsonl</code> and point at the same PNGs and SVGs as the localization set. A model can therefore be scored on all three sets over identical pixels.</div><h2>Examples</h2><div class="card"><div class="hd"><span class="chip k">word_mc</span><span class="chip">flowchart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: ice</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0000_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Answer with the single letter of the correct option.
+Base your answer only on what is shown in the diagram.
+
+Which of the following words appears in the figure?
+
+A. Scheduler
+B. Backfill
+C. Nordics
+D. Chart</pre><div class="lbl">gold answer</div><pre class="ans">&quot;D&quot;   (Chart)
+
+# the other three appear nowhere in the figure:
+#   Scheduler, Backfill, Nordics</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0000.svg</code></dd><dt>uid</dt><dd><code>svgmc:0000:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">word_mc</span><span class="chip">bar_chart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: high-contrast</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0001_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Answer with the single letter of the correct option.
+Base your answer only on what is shown in the diagram.
+
+Which of the following words appears in the figure?
+
+A. Client
+B. South
+C. Directory
+D. Normalize</pre><div class="lbl">gold answer</div><pre class="ans">&quot;B&quot;   (South)
+
+# the other three appear nowhere in the figure:
+#   Client, Directory, Normalize</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0001.svg</code></dd><dt>uid</dt><dd><code>svgmc:0001:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">word_mc</span><span class="chip">line_chart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: high-contrast</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0002_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Answer with the single letter of the correct option.
+Base your answer only on what is shown in the diagram.
+
+Which of the following words appears in the figure?
+
+A. Directory
+B. Approve
+C. North
+D. Yield</pre><div class="lbl">gold answer</div><pre class="ans">&quot;D&quot;   (Yield)
+
+# the other three appear nowhere in the figure:
+#   North, Directory, Approve</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0002.svg</code></dd><dt>uid</dt><dd><code>svgmc:0002:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">word_mc</span><span class="chip">scatter</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: blueprint</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0003_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Answer with the single letter of the correct option.
+Base your answer only on what is shown in the diagram.
+
+Which of the following words appears in the figure?
+
+A. Window
+B. Backlog
+C. Depot
+D. East</pre><div class="lbl">gold answer</div><pre class="ans">&quot;D&quot;   (East)
+
+# the other three appear nowhere in the figure:
+#   Depot, Backlog, Window</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0003.svg</code></dd><dt>uid</dt><dd><code>svgmc:0003:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">word_mc</span><span class="chip">pie_chart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: ice</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0004_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Answer with the single letter of the correct option.
+Base your answer only on what is shown in the diagram.
+
+Which of the following words appears in the figure?
+
+A. Pacific
+B. Merge
+C. Iberia
+D. Partition</pre><div class="lbl">gold answer</div><pre class="ans">&quot;A&quot;   (Pacific)
+
+# the other three appear nowhere in the figure:
+#   Iberia, Partition, Merge</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0004.svg</code></dd><dt>uid</dt><dd><code>svgmc:0004:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">word_mc</span><span class="chip">table</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: slate-dark</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0005_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Answer with the single letter of the correct option.
+Base your answer only on what is shown in the diagram.
+
+Which of the following words appears in the figure?
+
+A. Wallet
+B. Allergy
+C. Pacific
+D. Auditor</pre><div class="lbl">gold answer</div><pre class="ans">&quot;C&quot;   (Pacific)
+
+# the other three appear nowhere in the figure:
+#   Allergy, Auditor, Wallet</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0005.svg</code></dd><dt>uid</dt><dd><code>svgmc:0005:medium:00</code></dd></dl></div></div></div></div></body></html>

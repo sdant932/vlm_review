@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="593.97" lengthAdjust="spacingAndGlyphs">Payment Authorization - state machine 0126</text>
+<circle cx="168.00" cy="443.00" r="77.50" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t1" data-role="label" data-target="true" x="168.00" y="450.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="111.00" lengthAdjust="spacingAndGlyphs">Publish Card</text>
+<circle cx="556.00" cy="583.00" r="52.00" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t2" data-role="label" data-target="true" x="556.00" y="590.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<circle cx="944.00" cy="443.00" r="69.50" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t3" data-role="label" data-target="true" x="944.00" y="450.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="95.00" lengthAdjust="spacingAndGlyphs">Flush Card</text>
+<circle cx="1332.00" cy="583.00" r="81.00" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t4" data-role="label" data-target="true" x="1332.00" y="590.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="118.00" lengthAdjust="spacingAndGlyphs">Purge Ledger</text>
+<line x1="214.00" y1="443.00" x2="510.00" y2="583.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t5" data-role="transition" data-target="true" x="362.00" y="505.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="602.00" y1="583.00" x2="898.00" y2="443.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t6" data-role="transition" data-target="true" x="750.00" y="505.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">ok</text>
+<line x1="990.00" y1="443.00" x2="1286.00" y2="583.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t7" data-role="transition" data-target="true" x="1138.00" y="505.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#555555" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=8807 | rev 3</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#555555" text-anchor="end" textLength="110.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#555555" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 23/1</text>
+</svg>

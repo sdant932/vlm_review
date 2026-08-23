@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#000000" text-anchor="start" textLength="400.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - treemap 0059</text>
+<rect x="81.00" y="147.00" width="331.51" height="742.00" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t1" data-role="cell" data-target="true" x="246.75" y="516.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t2" data-role="value" data-target="true" x="246.75" y="539.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="19.00" lengthAdjust="spacingAndGlyphs">56</text>
+<rect x="418.51" y="147.00" width="1000.49" height="164.20" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t3" data-role="cell" data-target="true" x="918.75" y="227.10" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t4" data-role="value" data-target="true" x="918.75" y="250.10" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="19.00" lengthAdjust="spacingAndGlyphs">38</text>
+<rect x="418.51" y="317.20" width="290.49" height="571.80" rx="0" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t5" data-role="cell" data-target="true" x="563.75" y="601.10" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t6" data-role="value" data-target="true" x="563.75" y="624.10" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="19.00" lengthAdjust="spacingAndGlyphs">38</text>
+<rect x="714.99" y="317.20" width="704.01" height="171.78" rx="0" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t7" data-role="cell" data-target="true" x="1067.00" y="401.10" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t8" data-role="value" data-target="true" x="1067.00" y="424.10" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="20.00" lengthAdjust="spacingAndGlyphs">28</text>
+<rect x="714.99" y="494.99" width="196.86" height="394.01" rx="0" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t9" data-role="cell" data-target="true" x="813.42" y="689.99" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t10" data-role="value" data-target="true" x="813.42" y="712.99" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="17.00" lengthAdjust="spacingAndGlyphs">18</text>
+<rect x="917.85" y="494.99" width="501.15" height="145.12" rx="0" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t11" data-role="cell" data-target="true" x="1168.43" y="565.55" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t12" data-role="value" data-target="true" x="1168.43" y="588.55" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="16.00" lengthAdjust="spacingAndGlyphs">17</text>
+<rect x="917.85" y="646.10" width="247.57" height="242.90" rx="0" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t13" data-role="cell" data-target="true" x="1041.64" y="765.55" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="37.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t14" data-role="value" data-target="true" x="1041.64" y="788.55" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="17.00" lengthAdjust="spacingAndGlyphs">14</text>
+<rect x="1171.43" y="646.10" width="247.57" height="242.90" rx="0" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t15" data-role="cell" data-target="true" x="1295.21" y="765.55" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t16" data-role="value" data-target="true" x="1295.21" y="788.55" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="17.00" lengthAdjust="spacingAndGlyphs">14</text>
+<text id="t17" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#555555" text-anchor="start" textLength="204.00" lengthAdjust="spacingAndGlyphs">source: internal | n=5740 | rev 16</text>
+<text id="t18" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#555555" text-anchor="end" textLength="71.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t19" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#555555" text-anchor="end" textLength="94.00" lengthAdjust="spacingAndGlyphs">generated 25/5</text>
+</svg>

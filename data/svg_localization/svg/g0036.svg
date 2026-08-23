@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="516.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - pie chart 0036</text>
+<path d="M600.00,513.00 L600.00,294.60 A218.40,218.40 0 0 1 770.75,376.83 Z" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t1" data-role="value" data-target="true" x="658.75" y="399.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">14%</text>
+<path d="M600.00,513.00 L770.75,376.83 A218.40,218.40 0 0 1 670.59,719.68 Z" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="value" data-target="true" x="729.97" y="558.97" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">30%</text>
+<path d="M600.00,513.00 L670.59,719.68 A218.40,218.40 0 0 1 394.40,586.67 Z" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="value" data-target="true" x="541.25" y="643.00" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">24%</text>
+<path d="M600.00,513.00 L394.40,586.67 A218.40,218.40 0 0 1 600.00,294.60 Z" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="value" data-target="true" x="489.27" y="443.06" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">30%</text>
+<rect x="1142.00" y="164.00" width="22.00" height="22.00" rx="3" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="legend" data-target="true" x="1178.00" y="182.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="67.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<rect x="1142.00" y="208.00" width="22.00" height="22.00" rx="3" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="legend" data-target="true" x="1178.00" y="226.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="51.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<rect x="1142.00" y="252.00" width="22.00" height="22.00" rx="3" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t7" data-role="legend" data-target="true" x="1178.00" y="270.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="59.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<rect x="1142.00" y="296.00" width="22.00" height="22.00" rx="3" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t8" data-role="legend" data-target="true" x="1178.00" y="314.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="53.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t9" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="226.00" lengthAdjust="spacingAndGlyphs">source: internal | n=970 | rev 3</text>
+<text id="t10" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="113.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t11" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="109.00" lengthAdjust="spacingAndGlyphs">generated 22/7</text>
+</svg>

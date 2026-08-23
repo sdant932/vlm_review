@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#000000" text-anchor="start" textLength="514.00" lengthAdjust="spacingAndGlyphs">Payment Authorization - timeline 0136</text>
+<line x1="118.00" y1="513.00" x2="1382.00" y2="513.00" stroke="#333333" stroke-width="5.28"/>
+<circle cx="118.00" cy="513.00" r="10.56" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<line x1="118.00" y1="499.00" x2="118.00" y2="451.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t1" data-role="milestone" data-target="true" x="118.00" y="436.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="116.00" lengthAdjust="spacingAndGlyphs">Route Refund</text>
+<text id="t2" data-role="date" data-target="true" x="118.00" y="409.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<circle cx="434.00" cy="513.00" r="10.56" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<line x1="434.00" y1="527.00" x2="434.00" y2="575.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t3" data-role="milestone" data-target="true" x="434.00" y="604.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="110.00" lengthAdjust="spacingAndGlyphs">Publish Card</text>
+<text id="t4" data-role="date" data-target="true" x="434.00" y="629.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<circle cx="750.00" cy="513.00" r="10.56" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<line x1="750.00" y1="499.00" x2="750.00" y2="451.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t5" data-role="milestone" data-target="true" x="750.00" y="436.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Enrich Merchant</text>
+<text id="t6" data-role="date" data-target="true" x="750.00" y="409.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<circle cx="1066.00" cy="513.00" r="10.56" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<line x1="1066.00" y1="527.00" x2="1066.00" y2="575.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t7" data-role="milestone" data-target="true" x="1066.00" y="604.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="126.00" lengthAdjust="spacingAndGlyphs">Sample Ledger</text>
+<text id="t8" data-role="date" data-target="true" x="1066.00" y="629.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<circle cx="1382.00" cy="513.00" r="10.56" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<line x1="1382.00" y1="499.00" x2="1382.00" y2="451.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t9" data-role="milestone" data-target="true" x="1382.00" y="436.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<text id="t10" data-role="date" data-target="true" x="1382.00" y="409.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#333333" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t11" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#333333" text-anchor="start" textLength="204.00" lengthAdjust="spacingAndGlyphs">source: internal | n=1082 | rev 14</text>
+<text id="t12" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#333333" text-anchor="end" textLength="71.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t13" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#333333" text-anchor="end" textLength="94.00" lengthAdjust="spacingAndGlyphs">generated 13/9</text>
+</svg>

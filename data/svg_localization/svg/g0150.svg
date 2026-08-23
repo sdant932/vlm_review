@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f2fbf7"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#4a6b60"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#0f2b22" text-anchor="start" textLength="403.98" lengthAdjust="spacingAndGlyphs">Fleet Logistics - org chart 0150</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="328.50" x2="500.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="500.00" y1="328.50" x2="500.00" y2="481.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="328.50" x2="1000.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="1000.00" y1="328.50" x2="1000.00" y2="481.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="500.00" y1="677.50" x2="375.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="500.00" y1="677.50" x2="750.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="1000.00" y1="525.00" x2="1000.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="1000.00" y1="677.50" x2="1125.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<rect x="668.50" y="132.00" width="163.00" height="44.00" rx="8" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="160.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="137.00" lengthAdjust="spacingAndGlyphs">Director Driver</text>
+<rect x="410.00" y="481.00" width="180.00" height="44.00" rx="8" fill="#d9ecc9" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t2" data-role="label" data-target="true" x="500.00" y="509.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="154.00" lengthAdjust="spacingAndGlyphs">Planner Manifest</text>
+<rect x="914.50" y="481.00" width="171.00" height="44.00" rx="8" fill="#c9e6ea" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t3" data-role="label" data-target="true" x="1000.00" y="509.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Specialist Depot</text>
+<rect x="307.51" y="830.00" width="134.98" height="44.00" rx="8" fill="#eae2d0" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t4" data-role="label" data-target="true" x="375.00" y="858.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="108.98" lengthAdjust="spacingAndGlyphs">Lead Trailer</text>
+<rect x="659.01" y="830.00" width="181.98" height="44.00" rx="8" fill="#e3dcef" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t5" data-role="label" data-target="true" x="750.00" y="858.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="155.98" lengthAdjust="spacingAndGlyphs">Engineer Waybill</text>
+<rect x="1043.00" y="830.00" width="164.00" height="44.00" rx="8" fill="#f2dcdc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t6" data-role="label" data-target="true" x="1125.00" y="858.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="138.00" lengthAdjust="spacingAndGlyphs">Manager Route</text>
+<text id="t7" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#4a6b60" text-anchor="start" textLength="199.00" lengthAdjust="spacingAndGlyphs">source: internal | n=663 | rev 5</text>
+<text id="t8" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#4a6b60" text-anchor="end" textLength="51.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t9" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#4a6b60" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 24/3</text>
+</svg>

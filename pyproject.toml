@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blindspot"
+version = "0.1.0"
+description = "Characterizing Claude Haiku 4.5's perception blind spots on business visual reasoning"
+readme = "README.md"
+requires-python = ">=3.11"
+
+# The full dependency surface, verified by grepping every import in
+# blindspot/ and scripts/ rather than copied from an earlier environment.
+# In particular this project does NOT need torch, transformers, opencv,
+# scikit-learn, pandas or matplotlib: the target model is API-only, and every
+# image is drawn and measured with Pillow.
+dependencies = [
+    "anthropic>=1.0.0",   # 1.0.0 is what the study ran on; see docs/METHODOLOGY.md
+    "pillow>=10",         # all rendering, measurement and downscaling
+    "numpy>=1.26",        # regression fits in the coordinate diagnostics
+]
+
+[project.optional-dependencies]
+# Only the scripts under scripts/download/ need these. Evaluating on the
+# dataset shipped in data/svg_localization requires neither.
+download = [
+    "datasets>=2.19",
+    "huggingface_hub>=0.23",
+]
+
+[tool.setuptools]
+packages = [
+    "blindspot",
+    "blindspot.core",
+    "blindspot.core.vendor",
+    "blindspot.judging",
+    "blindspot.analysis",
+    "blindspot.reporting",
+    "scripts",
+    "scripts.download",
+    "scripts.generate",
+    "scripts.run",
+    "scripts.analyze",
+]

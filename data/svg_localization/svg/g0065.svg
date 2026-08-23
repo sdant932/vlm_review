@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f2fbf7"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#4a6b60"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#0f2b22" text-anchor="start" textLength="415.94" lengthAdjust="spacingAndGlyphs">Triage Protocol - bar chart 0065</text>
+<line x1="168.00" y1="150.00" x2="168.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="168.00" y1="830.00" x2="1412.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t1" data-role="tick" data-target="true" x="156.00" y="835.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="9.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="168.00" y1="660.00" x2="1412.00" y2="660.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t2" data-role="tick" data-target="true" x="156.00" y="665.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">20</text>
+<line x1="168.00" y1="490.00" x2="1412.00" y2="490.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t3" data-role="tick" data-target="true" x="156.00" y="495.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">40</text>
+<line x1="168.00" y1="320.00" x2="1412.00" y2="320.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t4" data-role="tick" data-target="true" x="156.00" y="325.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">60</text>
+<line x1="168.00" y1="150.00" x2="1412.00" y2="150.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t5" data-role="tick" data-target="true" x="156.00" y="155.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">80</text>
+<rect x="186.06" y="532.50" width="76.98" height="297.50" rx="4" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t6" data-role="category" data-target="true" x="224.55" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t7" data-role="value" data-target="true" x="224.55" y="522.50" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">35%</text>
+<rect x="299.15" y="269.00" width="76.98" height="561.00" rx="4" fill="#d9ecc9" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t8" data-role="category" data-target="true" x="337.64" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t9" data-role="value" data-target="true" x="337.64" y="259.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">66%</text>
+<rect x="412.24" y="600.50" width="76.98" height="229.50" rx="4" fill="#c9e6ea" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t10" data-role="category" data-target="true" x="450.73" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t11" data-role="value" data-target="true" x="450.73" y="590.50" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">27%</text>
+<rect x="525.33" y="269.00" width="76.98" height="561.00" rx="4" fill="#eae2d0" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t12" data-role="category" data-target="true" x="563.82" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">South</text>
+<text id="t13" data-role="value" data-target="true" x="563.82" y="259.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">66%</text>
+<rect x="638.42" y="286.00" width="76.98" height="544.00" rx="4" fill="#e3dcef" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t14" data-role="category" data-target="true" x="676.91" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t15" data-role="value" data-target="true" x="676.91" y="276.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">64%</text>
+<rect x="751.51" y="209.50" width="76.98" height="620.50" rx="4" fill="#f2dcdc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t16" data-role="category" data-target="true" x="790.00" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t17" data-role="value" data-target="true" x="790.00" y="199.50" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">73%</text>
+<rect x="864.60" y="150.00" width="76.98" height="680.00" rx="4" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t18" data-role="category" data-target="true" x="903.09" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t19" data-role="value" data-target="true" x="903.09" y="140.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">80%</text>
+<rect x="977.69" y="311.50" width="76.98" height="518.50" rx="4" fill="#d9ecc9" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t20" data-role="category" data-target="true" x="1016.18" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t21" data-role="value" data-target="true" x="1016.18" y="301.50" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">61%</text>
+<rect x="1090.78" y="626.00" width="76.98" height="204.00" rx="4" fill="#c9e6ea" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t22" data-role="category" data-target="true" x="1129.27" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t23" data-role="value" data-target="true" x="1129.27" y="616.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">24%</text>
+<rect x="1203.88" y="150.00" width="76.98" height="680.00" rx="4" fill="#eae2d0" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t24" data-role="category" data-target="true" x="1242.36" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t25" data-role="value" data-target="true" x="1242.36" y="140.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">80%</text>
+<rect x="1316.97" y="575.00" width="76.98" height="255.00" rx="4" fill="#e3dcef" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t26" data-role="category" data-target="true" x="1355.45" y="855.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="41.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t27" data-role="value" data-target="true" x="1355.45" y="565.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">30%</text>
+<text id="t28" data-role="axis" data-target="true" x="80.00" y="496.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#4a6b60" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Backlog</text>
+<text id="t29" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#4a6b60" text-anchor="start" textLength="206.00" lengthAdjust="spacingAndGlyphs">source: internal | n=639 | rev 10</text>
+<text id="t30" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#4a6b60" text-anchor="end" textLength="68.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t31" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#4a6b60" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 28/9</text>
+</svg>

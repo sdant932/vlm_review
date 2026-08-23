@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f2fbf7"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#4a6b60"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#0f2b22" text-anchor="start" textLength="444.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - bar chart 0193</text>
+<line x1="168.00" y1="150.00" x2="168.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="168.00" y1="830.00" x2="1412.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t1" data-role="tick" data-target="true" x="156.00" y="837.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="10.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="168.00" y1="660.00" x2="1412.00" y2="660.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t2" data-role="tick" data-target="true" x="156.00" y="667.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">22</text>
+<line x1="168.00" y1="490.00" x2="1412.00" y2="490.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t3" data-role="tick" data-target="true" x="156.00" y="497.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">45</text>
+<line x1="168.00" y1="320.00" x2="1412.00" y2="320.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t4" data-role="tick" data-target="true" x="156.00" y="327.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">68</text>
+<line x1="168.00" y1="150.00" x2="1412.00" y2="150.00" stroke="#dcefe6" stroke-width="1.05"/>
+<text id="t5" data-role="tick" data-target="true" x="156.00" y="157.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4a6b60" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">90</text>
+<rect x="192.83" y="512.67" width="63.44" height="317.33" rx="4" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t6" data-role="category" data-target="true" x="224.55" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t7" data-role="value" data-target="true" x="224.55" y="504.67" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">42%</text>
+<rect x="305.92" y="595.78" width="63.44" height="234.22" rx="4" fill="#d9ecc9" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t8" data-role="category" data-target="true" x="337.64" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t9" data-role="value" data-target="true" x="337.64" y="587.78" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">31%</text>
+<rect x="419.01" y="422.00" width="63.44" height="408.00" rx="4" fill="#c9e6ea" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t10" data-role="category" data-target="true" x="450.73" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Nordics</text>
+<text id="t11" data-role="value" data-target="true" x="450.73" y="414.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">54%</text>
+<rect x="532.10" y="565.56" width="63.44" height="264.44" rx="4" fill="#eae2d0" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t12" data-role="category" data-target="true" x="563.82" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t13" data-role="value" data-target="true" x="563.82" y="557.56" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">35%</text>
+<rect x="645.19" y="293.56" width="63.44" height="536.44" rx="4" fill="#e3dcef" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t14" data-role="category" data-target="true" x="676.91" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t15" data-role="value" data-target="true" x="676.91" y="285.56" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">71%</text>
+<rect x="758.28" y="678.89" width="63.44" height="151.11" rx="4" fill="#f2dcdc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t16" data-role="category" data-target="true" x="790.00" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t17" data-role="value" data-target="true" x="790.00" y="670.89" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">20%</text>
+<rect x="871.37" y="316.22" width="63.44" height="513.78" rx="4" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t18" data-role="category" data-target="true" x="903.09" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t19" data-role="value" data-target="true" x="903.09" y="308.22" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">68%</text>
+<rect x="984.46" y="595.78" width="63.44" height="234.22" rx="4" fill="#d9ecc9" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t20" data-role="category" data-target="true" x="1016.18" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="82.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<text id="t21" data-role="value" data-target="true" x="1016.18" y="587.78" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">31%</text>
+<rect x="1097.55" y="150.00" width="63.44" height="680.00" rx="4" fill="#c9e6ea" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t22" data-role="category" data-target="true" x="1129.27" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t23" data-role="value" data-target="true" x="1129.27" y="142.00" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">90%</text>
+<rect x="1210.64" y="165.11" width="63.44" height="664.89" rx="4" fill="#eae2d0" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t24" data-role="category" data-target="true" x="1242.36" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t25" data-role="value" data-target="true" x="1242.36" y="157.11" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">88%</text>
+<rect x="1323.74" y="656.22" width="63.44" height="173.78" rx="4" fill="#e3dcef" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t26" data-role="category" data-target="true" x="1355.45" y="857.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t27" data-role="value" data-target="true" x="1355.45" y="648.22" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#0f2b22" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">23%</text>
+<text id="t28" data-role="axis" data-target="true" x="80.00" y="497.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#4a6b60" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Backlog</text>
+<text id="t29" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#4a6b60" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4844 | rev 2</text>
+<text id="t30" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4a6b60" text-anchor="end" textLength="110.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t31" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#4a6b60" text-anchor="end" textLength="105.00" lengthAdjust="spacingAndGlyphs">generated 23/12</text>
+</svg>

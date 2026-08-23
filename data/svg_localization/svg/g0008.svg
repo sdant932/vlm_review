@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="522.00" lengthAdjust="spacingAndGlyphs">Access Review - timeline 0008</text>
+<line x1="118.00" y1="513.00" x2="1382.00" y2="513.00" stroke="#54677f" stroke-width="3.30"/>
+<circle cx="118.00" cy="513.00" r="6.60" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<line x1="118.00" y1="499.00" x2="118.00" y2="451.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t1" data-role="milestone" data-target="true" x="118.00" y="436.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<text id="t2" data-role="date" data-target="true" x="118.00" y="409.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<circle cx="370.80" cy="513.00" r="6.60" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<line x1="370.80" y1="527.00" x2="370.80" y2="575.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t3" data-role="milestone" data-target="true" x="370.80" y="604.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<text id="t4" data-role="date" data-target="true" x="370.80" y="629.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<circle cx="623.60" cy="513.00" r="6.60" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<line x1="623.60" y1="499.00" x2="623.60" y2="451.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t5" data-role="milestone" data-target="true" x="623.60" y="436.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<text id="t6" data-role="date" data-target="true" x="623.60" y="409.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<circle cx="876.40" cy="513.00" r="6.60" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<line x1="876.40" y1="527.00" x2="876.40" y2="575.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t7" data-role="milestone" data-target="true" x="876.40" y="604.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Sample Token</text>
+<text id="t8" data-role="date" data-target="true" x="876.40" y="629.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<circle cx="1129.20" cy="513.00" r="6.60" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<line x1="1129.20" y1="499.00" x2="1129.20" y2="451.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t9" data-role="milestone" data-target="true" x="1129.20" y="436.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Enrich Scope</text>
+<text id="t10" data-role="date" data-target="true" x="1129.20" y="409.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<circle cx="1382.00" cy="513.00" r="6.60" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<line x1="1382.00" y1="527.00" x2="1382.00" y2="575.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t11" data-role="milestone" data-target="true" x="1382.00" y="604.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#0c1b2e" text-anchor="middle" textLength="121.00" lengthAdjust="spacingAndGlyphs">Purge Grant</text>
+<text id="t12" data-role="date" data-target="true" x="1382.00" y="629.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#54677f" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4189 | rev 11</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#54677f" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#54677f" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 10/6</text>
+</svg>

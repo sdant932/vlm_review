@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f2fbf7"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#4a6b60"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#0f2b22" text-anchor="start" textLength="424.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - timeline 0104</text>
+<line x1="118.00" y1="513.00" x2="1382.00" y2="513.00" stroke="#4a6b60" stroke-width="3.30"/>
+<circle cx="118.00" cy="513.00" r="6.60" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<line x1="118.00" y1="499.00" x2="118.00" y2="451.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t1" data-role="milestone" data-target="true" x="118.00" y="434.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="118.00" lengthAdjust="spacingAndGlyphs">Compact Sink</text>
+<text id="t2" data-role="date" data-target="true" x="118.00" y="408.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#4a6b60" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<circle cx="328.67" cy="513.00" r="6.60" fill="#d9ecc9" stroke="#2f5b4c" stroke-width="1.5"/>
+<line x1="328.67" y1="527.00" x2="328.67" y2="575.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t3" data-role="milestone" data-target="true" x="328.67" y="602.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="131.00" lengthAdjust="spacingAndGlyphs">Sample Replica</text>
+<text id="t4" data-role="date" data-target="true" x="328.67" y="628.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#4a6b60" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<circle cx="539.33" cy="513.00" r="6.60" fill="#c9e6ea" stroke="#2f5b4c" stroke-width="1.5"/>
+<line x1="539.33" y1="499.00" x2="539.33" y2="451.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t5" data-role="milestone" data-target="true" x="539.33" y="434.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="142.98" lengthAdjust="spacingAndGlyphs">Publish Window</text>
+<text id="t6" data-role="date" data-target="true" x="539.33" y="408.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#4a6b60" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<circle cx="750.00" cy="513.00" r="6.60" fill="#eae2d0" stroke="#2f5b4c" stroke-width="1.5"/>
+<line x1="750.00" y1="527.00" x2="750.00" y2="575.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t7" data-role="milestone" data-target="true" x="750.00" y="602.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="138.00" lengthAdjust="spacingAndGlyphs">Backfill Backlog</text>
+<text id="t8" data-role="date" data-target="true" x="750.00" y="628.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#4a6b60" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<circle cx="960.67" cy="513.00" r="6.60" fill="#e3dcef" stroke="#2f5b4c" stroke-width="1.5"/>
+<line x1="960.67" y1="499.00" x2="960.67" y2="451.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t9" data-role="milestone" data-target="true" x="960.67" y="434.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="109.00" lengthAdjust="spacingAndGlyphs">Resolve Sink</text>
+<text id="t10" data-role="date" data-target="true" x="960.67" y="408.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#4a6b60" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<circle cx="1171.33" cy="513.00" r="6.60" fill="#f2dcdc" stroke="#2f5b4c" stroke-width="1.5"/>
+<line x1="1171.33" y1="527.00" x2="1171.33" y2="575.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t11" data-role="milestone" data-target="true" x="1171.33" y="602.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="130.00" lengthAdjust="spacingAndGlyphs">Dispatch Offset</text>
+<text id="t12" data-role="date" data-target="true" x="1171.33" y="628.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#4a6b60" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<circle cx="1382.00" cy="513.00" r="6.60" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<line x1="1382.00" y1="499.00" x2="1382.00" y2="451.00" stroke="#4a6b60" stroke-width="1.50"/>
+<text id="t13" data-role="milestone" data-target="true" x="1382.00" y="434.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#0f2b22" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<text id="t14" data-role="date" data-target="true" x="1382.00" y="408.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#4a6b60" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#4a6b60" text-anchor="start" textLength="206.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2318 | rev 6</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#4a6b60" text-anchor="end" textLength="116.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#4a6b60" text-anchor="end" textLength="90.00" lengthAdjust="spacingAndGlyphs">generated 3/2</text>
+</svg>

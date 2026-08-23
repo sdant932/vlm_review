@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="429.00" lengthAdjust="spacingAndGlyphs">Claims Handling - network 0199</text>
+<line x1="1151.42" y1="495.36" x2="336.92" y2="393.21" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1151.42" y1="495.36" x2="1089.15" y2="374.86" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1145.55" y1="637.48" x2="1028.52" y2="277.60" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="988.62" y1="740.70" x2="1089.15" y2="374.86" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="667.34" y1="785.41" x2="295.35" y2="496.37" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="667.34" y1="785.41" x2="491.03" y2="766.93" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="491.03" y1="766.93" x2="1145.55" y2="637.48" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="395.34" y1="611.48" x2="662.75" y2="216.49" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="295.35" y1="496.37" x2="824.62" y2="222.49" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="336.92" y1="393.21" x2="824.62" y2="222.49" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="510.62" y1="259.60" x2="1028.52" y2="277.60" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="662.75" y1="216.49" x2="1151.42" y2="495.36" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="662.75" y1="216.49" x2="1028.52" y2="277.60" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="824.62" y1="222.49" x2="1145.55" y2="637.48" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1089.15" y1="374.86" x2="889.43" y2="786.73" stroke="#e2ebf6" stroke-width="1.35"/>
+<rect x="1065.42" y="476.36" width="172.00" height="38.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t1" data-role="label" data-target="true" x="1151.42" y="502.36" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="146.00" lengthAdjust="spacingAndGlyphs">Dispatch Payout</text>
+<rect x="1095.55" y="618.48" width="100.00" height="38.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t2" data-role="label" data-target="true" x="1145.55" y="644.48" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="74.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<rect x="913.12" y="721.70" width="151.00" height="38.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t3" data-role="label" data-target="true" x="988.62" y="747.70" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="125.00" lengthAdjust="spacingAndGlyphs">Score Reserve</text>
+<rect x="802.93" y="767.73" width="173.00" height="38.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t4" data-role="label" data-target="true" x="889.43" y="793.73" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="147.00" lengthAdjust="spacingAndGlyphs">Sample Adjuster</text>
+<rect x="624.84" y="766.41" width="85.00" height="38.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t5" data-role="label" data-target="true" x="667.34" y="792.41" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<rect x="453.53" y="747.93" width="75.00" height="38.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t6" data-role="label" data-target="true" x="491.03" y="773.93" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<rect x="353.34" y="592.48" width="84.00" height="38.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t7" data-role="label" data-target="true" x="395.34" y="618.48" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="210.35" y="477.37" width="170.00" height="38.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t8" data-role="label" data-target="true" x="295.35" y="503.37" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Publish Reserve</text>
+<rect x="263.42" y="374.21" width="147.00" height="38.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t9" data-role="label" data-target="true" x="336.92" y="400.21" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="121.00" lengthAdjust="spacingAndGlyphs">Score Salvage</text>
+<rect x="434.62" y="240.60" width="152.00" height="38.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t10" data-role="label" data-target="true" x="510.62" y="266.60" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="126.00" lengthAdjust="spacingAndGlyphs">Verify Salvage</text>
+<rect x="587.75" y="197.49" width="150.00" height="38.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t11" data-role="label" data-target="true" x="662.75" y="223.49" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Purge Salvage</text>
+<rect x="745.62" y="203.49" width="158.00" height="38.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t12" data-role="label" data-target="true" x="824.62" y="229.49" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Enrich Salvage</text>
+<rect x="956.02" y="258.60" width="145.00" height="38.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t13" data-role="label" data-target="true" x="1028.52" y="284.60" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="119.00" lengthAdjust="spacingAndGlyphs">Purge Payout</text>
+<rect x="1054.15" y="355.86" width="70.00" height="38.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t14" data-role="label" data-target="true" x="1089.15" y="381.86" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#54677f" text-anchor="start" textLength="207.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4800 | rev 19</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#54677f" text-anchor="end" textLength="115.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#54677f" text-anchor="end" textLength="102.00" lengthAdjust="spacingAndGlyphs">generated 27/10</text>
+</svg>

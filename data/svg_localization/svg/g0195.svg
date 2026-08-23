@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="540.00" lengthAdjust="spacingAndGlyphs">Fleet Logistics - scatter 0195</text>
+<line x1="154.00" y1="152.00" x2="154.00" y2="836.00" stroke="#54677f" stroke-width="1.50"/>
+<line x1="154.00" y1="836.00" x2="1402.00" y2="836.00" stroke="#54677f" stroke-width="1.50"/>
+<circle cx="494.94" cy="266.99" r="12.29" fill="#2a72cc" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t1" data-role="point" data-target="true" x="494.94" y="248.99" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<circle cx="839.39" cy="216.49" r="13.98" fill="#327b83" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t2" data-role="point" data-target="true" x="839.39" y="198.49" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="88.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<circle cx="255.98" cy="381.96" r="11.37" fill="#6d62d4" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t3" data-role="point" data-target="true" x="255.98" y="363.96" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="421.06" cy="428.35" r="7.27" fill="#377749" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t4" data-role="point" data-target="true" x="421.06" y="410.35" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="1279.69" cy="612.57" r="10.90" fill="#9f6221" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t5" data-role="point" data-target="true" x="1279.69" y="594.57" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">South</text>
+<circle cx="975.04" cy="526.60" r="10.03" fill="#cd304d" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t6" data-role="point" data-target="true" x="975.04" y="508.60" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<circle cx="755.81" cy="510.71" r="9.63" fill="#2a72cc" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t7" data-role="point" data-target="true" x="755.81" y="492.71" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<circle cx="487.06" cy="773.69" r="9.41" fill="#327b83" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t8" data-role="point" data-target="true" x="487.06" y="755.69" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<circle cx="246.90" cy="654.76" r="10.36" fill="#6d62d4" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t9" data-role="point" data-target="true" x="246.90" y="636.76" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">East</text>
+<circle cx="604.66" cy="707.92" r="9.75" fill="#377749" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t10" data-role="point" data-target="true" x="604.66" y="689.92" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="1087.04" cy="711.22" r="14.62" fill="#9f6221" stroke="#33506e" stroke-width="1.2000000000000002"/>
+<text id="t11" data-role="point" data-target="true" x="1087.04" y="693.22" font-family="Menlo, Monaco, monospace" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<text id="t12" data-role="axis" data-target="true" x="778.00" y="873.00" font-family="Menlo, Monaco, monospace" font-size="19" fill="#54677f" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Backlog</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#54677f" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7842 | rev 17</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#54677f" text-anchor="end" textLength="63.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#54677f" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 7/11</text>
+</svg>

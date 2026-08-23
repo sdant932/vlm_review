@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#000000" text-anchor="start" textLength="408.00" lengthAdjust="spacingAndGlyphs">Access Review - timeline 0088</text>
+<line x1="118.00" y1="513.00" x2="1382.00" y2="513.00" stroke="#555555" stroke-width="4.18"/>
+<circle cx="118.00" cy="513.00" r="8.36" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<line x1="118.00" y1="499.00" x2="118.00" y2="451.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t1" data-role="milestone" data-target="true" x="118.00" y="436.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<text id="t2" data-role="date" data-target="true" x="118.00" y="409.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<circle cx="328.67" cy="513.00" r="8.36" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<line x1="328.67" y1="527.00" x2="328.67" y2="575.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t3" data-role="milestone" data-target="true" x="328.67" y="604.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="118.00" lengthAdjust="spacingAndGlyphs">Backfill Grant</text>
+<text id="t4" data-role="date" data-target="true" x="328.67" y="629.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<circle cx="539.33" cy="513.00" r="8.36" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<line x1="539.33" y1="499.00" x2="539.33" y2="451.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t5" data-role="milestone" data-target="true" x="539.33" y="436.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Rebalance Token</text>
+<text id="t6" data-role="date" data-target="true" x="539.33" y="409.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<circle cx="750.00" cy="513.00" r="8.36" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<line x1="750.00" y1="527.00" x2="750.00" y2="575.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t7" data-role="milestone" data-target="true" x="750.00" y="604.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Enrich Directory</text>
+<text id="t8" data-role="date" data-target="true" x="750.00" y="629.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<circle cx="960.67" cy="513.00" r="8.36" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<line x1="960.67" y1="499.00" x2="960.67" y2="451.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t9" data-role="milestone" data-target="true" x="960.67" y="436.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<text id="t10" data-role="date" data-target="true" x="960.67" y="409.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="65.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<circle cx="1171.33" cy="513.00" r="8.36" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<line x1="1171.33" y1="527.00" x2="1171.33" y2="575.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t11" data-role="milestone" data-target="true" x="1171.33" y="604.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<text id="t12" data-role="date" data-target="true" x="1171.33" y="629.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<circle cx="1382.00" cy="513.00" r="8.36" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<line x1="1382.00" y1="499.00" x2="1382.00" y2="451.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t13" data-role="milestone" data-target="true" x="1382.00" y="436.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#000000" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<text id="t14" data-role="date" data-target="true" x="1382.00" y="409.00" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#555555" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2225 | rev 11</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#555555" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#555555" text-anchor="end" textLength="94.00" lengthAdjust="spacingAndGlyphs">generated 2/12</text>
+</svg>

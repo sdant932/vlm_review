@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="471.98" lengthAdjust="spacingAndGlyphs">Access Review - treemap 0171</text>
+<rect x="81.00" y="147.00" width="292.06" height="742.00" rx="4" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="cell" data-target="true" x="227.03" y="517.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t2" data-role="value" data-target="true" x="227.03" y="540.00" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">55</text>
+<rect x="379.06" y="147.00" width="1039.94" height="199.41" rx="4" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="cell" data-target="true" x="899.03" y="245.70" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="46.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t4" data-role="value" data-target="true" x="899.03" y="268.70" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">53</text>
+<rect x="379.06" y="352.41" width="277.90" height="536.59" rx="4" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="cell" data-target="true" x="518.01" y="619.70" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t6" data-role="value" data-target="true" x="518.01" y="642.70" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">38</text>
+<rect x="662.96" y="352.41" width="756.04" height="196.14" rx="4" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="cell" data-target="true" x="1040.98" y="449.48" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t8" data-role="value" data-target="true" x="1040.98" y="472.48" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">38</text>
+<rect x="662.96" y="554.55" width="255.95" height="334.45" rx="4" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t9" data-role="cell" data-target="true" x="790.94" y="720.78" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">East</text>
+<text id="t10" data-role="value" data-target="true" x="790.94" y="743.78" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">22</text>
+<rect x="924.91" y="554.55" width="494.09" height="139.91" rx="4" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t11" data-role="cell" data-target="true" x="1171.96" y="623.50" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t12" data-role="value" data-target="true" x="1171.96" y="646.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">18</text>
+<rect x="924.91" y="700.46" width="264.88" height="188.54" rx="4" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t13" data-role="cell" data-target="true" x="1057.35" y="793.73" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t14" data-role="value" data-target="true" x="1057.35" y="816.73" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">13</text>
+<rect x="1195.79" y="700.46" width="223.21" height="188.54" rx="4" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t15" data-role="cell" data-target="true" x="1307.40" y="793.73" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#2b2418" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t16" data-role="value" data-target="true" x="1307.40" y="816.73" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#70634f" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">11</text>
+<text id="t17" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="235.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2577 | rev 8</text>
+<text id="t18" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="74.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t19" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="109.00" lengthAdjust="spacingAndGlyphs">generated 7/10</text>
+</svg>

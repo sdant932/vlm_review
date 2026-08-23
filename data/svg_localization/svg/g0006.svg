@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#12161c" text-anchor="start" textLength="540.00" lengthAdjust="spacingAndGlyphs">Access Review - org chart 0006</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="500.00" y2="328.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="500.00" y1="328.50" x2="500.00" y2="481.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="1000.00" y2="328.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1000.00" y1="328.50" x2="1000.00" y2="481.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="500.00" y1="677.50" x2="250.00" y2="677.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="250.00" y1="677.50" x2="250.00" y2="830.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="678.25" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="500.00" y1="678.25" x2="500.00" y2="678.25" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="500.00" y1="678.25" x2="500.00" y2="831.50" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="500.00" y1="677.50" x2="750.00" y2="677.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1000.00" y1="525.00" x2="1000.00" y2="677.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1000.00" y1="677.50" x2="1000.00" y2="677.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1000.00" y1="677.50" x2="1000.00" y2="830.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1000.00" y1="525.00" x2="1000.00" y2="678.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1000.00" y1="678.75" x2="1250.00" y2="678.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1250.00" y1="678.75" x2="1250.00" y2="832.50" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<rect x="641.00" y="132.00" width="218.00" height="44.00" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="161.00" font-family="Menlo, Monaco, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="192.00" lengthAdjust="spacingAndGlyphs">Analyst Approval</text>
+<rect x="397.00" y="481.00" width="206.00" height="44.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="500.00" y="510.00" font-family="Menlo, Monaco, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Engineer Policy</text>
+<rect x="927.00" y="481.00" width="146.00" height="44.00" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="1000.00" y="510.00" font-family="Menlo, Monaco, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="120.00" lengthAdjust="spacingAndGlyphs">Lead Grant</text>
+<rect x="135.00" y="830.00" width="230.00" height="44.00" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="250.00" y="859.00" font-family="Menlo, Monaco, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="204.00" lengthAdjust="spacingAndGlyphs">Manager Directory</text>
+<rect x="387.00" y="831.50" width="226.00" height="41.00" rx="4" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="500.00" y="858.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="200.00" lengthAdjust="spacingAndGlyphs">Specialist Principal</text>
+<rect x="659.00" y="830.00" width="182.00" height="44.00" rx="4" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="750.00" y="859.00" font-family="Menlo, Monaco, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Planner Scope</text>
+<rect x="897.00" y="830.00" width="206.00" height="44.00" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="1000.00" y="859.00" font-family="Menlo, Monaco, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Auditor Session</text>
+<rect x="1138.00" y="832.50" width="224.00" height="39.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="1250.00" y="858.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="220.00" lengthAdjust="spacingAndGlyphs">Coordinator Revocation</text>
+<text id="t9" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#5c636e" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4819 | rev 11</text>
+<text id="t10" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#5c636e" text-anchor="end" textLength="72.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t11" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#5c636e" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 7/11</text>
+</svg>

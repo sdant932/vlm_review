@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="54.96" font-family="'Courier New', Courier, monospace" font-size="30" fill="#12161c" text-anchor="start" textLength="540.00" lengthAdjust="spacingAndGlyphs">Grid Operations - network 0151</text>
+<line x1="1196.77" y1="499.94" x2="564.55" y2="218.31" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1099.80" y1="663.86" x2="359.10" y2="484.77" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1099.80" y1="663.86" x2="387.03" y2="637.55" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="957.80" y1="792.63" x2="952.46" y2="231.55" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="957.80" y1="792.63" x2="591.07" y2="757.77" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="773.98" y1="770.36" x2="952.46" y2="231.55" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="773.98" y1="770.36" x2="754.70" y2="191.23" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="591.07" y1="757.77" x2="952.46" y2="231.55" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="591.07" y1="757.77" x2="1089.74" y2="393.51" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="387.03" y1="637.55" x2="1089.74" y2="393.51" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="359.10" y1="484.77" x2="1089.74" y2="393.51" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="359.10" y1="484.77" x2="754.70" y2="191.23" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="421.64" y1="360.33" x2="591.07" y2="757.77" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="421.64" y1="360.33" x2="952.46" y2="231.55" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="564.55" y1="218.31" x2="754.70" y2="191.23" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="754.70" y1="191.23" x2="1089.74" y2="393.51" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="952.46" y1="231.55" x2="564.55" y2="218.31" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1089.74" y1="393.51" x2="564.55" y2="218.31" stroke="#eceff4" stroke-width="1.44"/>
+<rect x="1099.77" y="480.94" width="194.00" height="38.00" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="1196.77" y="505.94" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Sample Reserve</text>
+<rect x="1020.80" y="644.86" width="158.00" height="38.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="1099.80" y="669.86" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Score Meter</text>
+<rect x="860.80" y="773.63" width="194.00" height="38.00" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="957.80" y="798.63" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Dispatch Meter</text>
+<rect x="688.98" y="751.36" width="170.00" height="38.00" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="773.98" y="776.36" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Purge Feeder</text>
+<rect x="500.07" y="738.77" width="182.00" height="38.00" rx="4" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="591.07" y="763.77" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Verify Feeder</text>
+<rect x="296.03" y="618.55" width="182.00" height="38.00" rx="4" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="387.03" y="643.55" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Dispatch Load</text>
+<rect x="322.10" y="465.77" width="74.00" height="38.00" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="359.10" y="490.77" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<rect x="318.64" y="341.33" width="206.00" height="38.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="421.64" y="366.33" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Normalize Meter</text>
+<rect x="509.55" y="199.31" width="110.00" height="38.00" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t9" data-role="label" data-target="true" x="564.55" y="224.31" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="84.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<rect x="663.70" y="172.23" width="182.00" height="38.00" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t10" data-role="label" data-target="true" x="754.70" y="197.23" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Resolve Relay</text>
+<rect x="861.46" y="212.55" width="182.00" height="38.00" rx="4" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t11" data-role="label" data-target="true" x="952.46" y="237.55" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Score Reserve</text>
+<rect x="992.74" y="374.51" width="194.00" height="38.00" rx="4" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t12" data-role="label" data-target="true" x="1089.74" y="399.51" font-family="'Courier New', Courier, monospace" font-size="20" fill="#12161c" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Escalate Relay</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="930.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#5c636e" text-anchor="start" textLength="256.00" lengthAdjust="spacingAndGlyphs">source: internal | n=183 | rev 3</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="43.96" font-family="'Courier New', Courier, monospace" font-size="15" fill="#5c636e" text-anchor="end" textLength="108.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#5c636e" text-anchor="end" textLength="120.00" lengthAdjust="spacingAndGlyphs">generated 26/10</text>
+</svg>

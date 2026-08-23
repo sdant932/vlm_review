@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="514.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - state machine 0174</text>
+<circle cx="168.00" cy="443.00" r="52.00" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t1" data-role="label" data-target="true" x="168.00" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="38.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<circle cx="400.80" cy="583.00" r="52.00" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t2" data-role="label" data-target="true" x="400.80" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<circle cx="633.60" cy="443.00" r="79.50" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t3" data-role="label" data-target="true" x="633.60" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="115.00" lengthAdjust="spacingAndGlyphs">Purge Replica</text>
+<circle cx="866.40" cy="583.00" r="74.00" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t4" data-role="label" data-target="true" x="866.40" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="104.00" lengthAdjust="spacingAndGlyphs">Purge Offset</text>
+<circle cx="1099.20" cy="443.00" r="80.00" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t5" data-role="label" data-target="true" x="1099.20" y="451.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="116.00" lengthAdjust="spacingAndGlyphs">Annotate Sink</text>
+<circle cx="1332.00" cy="583.00" r="52.00" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t6" data-role="label" data-target="true" x="1332.00" y="591.00" font-family="Tahoma, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<line x1="214.00" y1="443.00" x2="354.80" y2="583.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t7" data-role="transition" data-target="true" x="284.40" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">signed</text>
+<line x1="446.80" y1="583.00" x2="587.60" y2="443.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t8" data-role="transition" data-target="true" x="517.20" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="679.60" y1="443.00" x2="820.40" y2="583.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t9" data-role="transition" data-target="true" x="750.00" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="912.40" y1="583.00" x2="1053.20" y2="443.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t10" data-role="transition" data-target="true" x="982.80" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="1145.20" y1="443.00" x2="1286.00" y2="583.00" stroke="#555555" stroke-width="1.90" marker-end="url(#ah)"/>
+<text id="t11" data-role="transition" data-target="true" x="1215.60" y="506.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#555555" text-anchor="middle" textLength="17.00" lengthAdjust="spacingAndGlyphs">ok</text>
+<text id="t12" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#555555" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7866 | rev 11</text>
+<text id="t13" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#555555" text-anchor="end" textLength="103.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t14" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#555555" text-anchor="end" textLength="103.00" lengthAdjust="spacingAndGlyphs">generated 26/10</text>
+</svg>

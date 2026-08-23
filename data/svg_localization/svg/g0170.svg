@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="482.00" lengthAdjust="spacingAndGlyphs">Content Moderation - sequence 0170</text>
+<rect x="264.50" y="158.00" width="71.00" height="40.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="actor" data-target="true" x="300.00" y="183.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">Store</text>
+<line x1="300.00" y1="198.00" x2="300.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="545.50" y="158.00" width="109.00" height="40.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="actor" data-target="true" x="600.00" y="183.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="79.00" lengthAdjust="spacingAndGlyphs">Scheduler</text>
+<line x1="600.00" y1="198.00" x2="600.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="854.51" y="158.00" width="90.98" height="40.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="actor" data-target="true" x="900.00" y="183.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="60.98" lengthAdjust="spacingAndGlyphs">Worker</text>
+<line x1="900.00" y1="198.00" x2="900.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="1149.00" y="158.00" width="102.00" height="40.00" rx="6" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="actor" data-target="true" x="1200.00" y="183.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="72.00" lengthAdjust="spacingAndGlyphs">Gateway</text>
+<line x1="1200.00" y1="198.00" x2="1200.00" y2="868.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<line x1="900.00" y1="236.00" x2="300.00" y2="236.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t5" data-role="message" data-target="true" x="600.00" y="225.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="37.00" lengthAdjust="spacingAndGlyphs">retry</text>
+<line x1="900.00" y1="358.40" x2="300.00" y2="358.40" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t6" data-role="message" data-target="true" x="600.00" y="347.40" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="300.00" y1="480.80" x2="600.00" y2="480.80" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t7" data-role="message" data-target="true" x="450.00" y="469.80" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="600.00" y1="603.20" x2="900.00" y2="603.20" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t8" data-role="message" data-target="true" x="750.00" y="592.20" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<line x1="1200.00" y1="725.60" x2="600.00" y2="725.60" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t9" data-role="message" data-target="true" x="900.00" y="714.60" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="900.00" y1="848.00" x2="300.00" y2="848.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t10" data-role="message" data-target="true" x="600.00" y="837.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<text id="t11" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="213.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4278 | rev 19</text>
+<text id="t12" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="78.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t13" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 8/12</text>
+</svg>

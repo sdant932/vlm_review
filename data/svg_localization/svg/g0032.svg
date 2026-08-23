@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="436.00" lengthAdjust="spacingAndGlyphs">Grid Operations - flowchart 0032</text>
+<line x1="701.50" y1="148.76" x2="308.00" y2="268.51" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="706.18" y1="156.00" x2="499.82" y2="259.60" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="741.50" y1="156.00" x2="701.50" y2="259.60" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="775.56" y1="156.00" x2="895.94" y2="259.60" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t1" data-role="edge" data-target="true" x="835.75" y="202.80" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="27.00" lengthAdjust="spacingAndGlyphs">dup</text>
+<line x1="798.50" y1="151.06" x2="1106.97" y2="259.60" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1071.50" y1="303.60" x2="607.50" y2="407.76" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t2" data-role="edge" data-target="true" x="839.50" y="350.68" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="27.00" lengthAdjust="spacingAndGlyphs">dup</text>
+<line x1="500.34" y1="303.60" x2="709.16" y2="407.20" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="737.49" y1="303.60" x2="947.01" y2="407.20" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t3" data-role="edge" data-target="true" x="842.25" y="350.40" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="899.50" y1="448.19" x2="345.01" y2="562.66" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t4" data-role="edge" data-target="true" x="622.25" y="500.43" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="714.08" y1="451.20" x2="528.42" y2="554.80" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="543.45" y1="451.20" x2="691.54" y2="554.80" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="984.57" y1="451.20" x2="951.92" y2="554.80" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="607.50" y1="450.16" x2="1084.26" y2="554.80" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="858.99" y1="596.93" x2="400.01" y2="704.38" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t5" data-role="edge" data-target="true" x="629.50" y="645.66" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="493.32" y1="598.80" x2="513.68" y2="702.40" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t6" data-role="edge" data-target="true" x="503.50" y="645.60" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">ok</text>
+<line x1="524.55" y1="598.80" x2="691.95" y2="702.40" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t7" data-role="edge" data-target="true" x="608.25" y="645.60" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="345.01" y1="592.00" x2="864.99" y2="707.42" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="978.16" y1="598.80" x2="1134.33" y2="702.40" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="552.59" y1="746.40" x2="715.42" y2="850.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="711.44" y1="702.40" x2="528.06" y2="451.20" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t8" data-role="edge" data-target="true" x="619.75" y="571.80" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="728.34" y1="702.40" x2="749.16" y2="156.00" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t9" data-role="edge" data-target="true" x="738.75" y="424.20" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="782.38" y1="850.00" x2="1152.11" y2="598.80" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t10" data-role="edge" data-target="true" x="967.25" y="719.40" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<line x1="916.60" y1="451.20" x2="563.90" y2="554.80" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="748.66" y1="156.00" x2="724.33" y2="554.80" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="961.72" y1="554.80" x2="1152.77" y2="303.60" stroke="#9aa6b4" stroke-width="1.44" marker-end="url(#ah)"/>
+<rect x="701.50" y="112.00" width="97.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t11" data-role="label" data-target="true" x="750.00" y="142.00" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<rect x="222.00" y="259.60" width="86.00" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t12" data-role="label" data-target="true" x="265.00" y="289.60" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<rect x="354.00" y="259.60" width="204.00" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t13" data-role="label" data-target="true" x="456.00" y="289.60" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="174.00" lengthAdjust="spacingAndGlyphs">Snapshot Breaker</text>
+<rect x="604.00" y="259.60" width="178.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t14" data-role="label" data-target="true" x="693.00" y="289.60" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="148.00" lengthAdjust="spacingAndGlyphs">Annotate Meter</text>
+<rect x="828.00" y="259.60" width="187.00" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t15" data-role="label" data-target="true" x="921.50" y="289.60" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="157.00" lengthAdjust="spacingAndGlyphs">Partition Outage</text>
+<rect x="1061.00" y="259.60" width="217.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t16" data-role="label" data-target="true" x="1169.50" y="289.60" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="187.00" lengthAdjust="spacingAndGlyphs">Aggregate Reserve</text>
+<rect x="416.50" y="407.20" width="191.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t17" data-role="label" data-target="true" x="512.00" y="437.20" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="161.00" lengthAdjust="spacingAndGlyphs">Sample Reserve</text>
+<rect x="653.50" y="407.20" width="200.00" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t18" data-role="label" data-target="true" x="753.50" y="437.20" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="170.00" lengthAdjust="spacingAndGlyphs">Reconcile Feeder</text>
+<rect x="899.50" y="407.20" width="184.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t19" data-role="label" data-target="true" x="991.50" y="437.20" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="154.00" lengthAdjust="spacingAndGlyphs">Partition Feeder</text>
+<rect x="208.01" y="554.80" width="137.00" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t20" data-role="label" data-target="true" x="276.51" y="584.80" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="107.00" lengthAdjust="spacingAndGlyphs">Index Load</text>
+<rect x="391.01" y="554.80" width="195.98" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t21" data-role="label" data-target="true" x="489.00" y="584.80" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="165.98" lengthAdjust="spacingAndGlyphs">Validate Reserve</text>
+<rect x="632.99" y="554.80" width="180.00" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t22" data-role="label" data-target="true" x="722.99" y="584.80" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="150.00" lengthAdjust="spacingAndGlyphs">Throttle Outage</text>
+<rect x="858.99" y="554.80" width="172.00" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t23" data-role="label" data-target="true" x="944.99" y="584.80" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Partition Relay</text>
+<rect x="1076.99" y="554.80" width="215.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t24" data-role="label" data-target="true" x="1184.49" y="584.80" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="185.00" lengthAdjust="spacingAndGlyphs">Normalize Reserve</text>
+<rect x="229.01" y="702.40" width="171.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t25" data-role="label" data-target="true" x="314.51" y="732.40" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="141.00" lengthAdjust="spacingAndGlyphs">Compact Load</text>
+<rect x="446.01" y="702.40" width="144.00" height="44.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t26" data-role="label" data-target="true" x="518.01" y="732.40" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="114.00" lengthAdjust="spacingAndGlyphs">Index Meter</text>
+<rect x="636.01" y="702.40" width="182.98" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t27" data-role="label" data-target="true" x="727.50" y="732.40" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="152.98" lengthAdjust="spacingAndGlyphs">Validate Feeder</text>
+<rect x="864.99" y="702.40" width="153.00" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t28" data-role="label" data-target="true" x="941.49" y="732.40" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="123.00" lengthAdjust="spacingAndGlyphs">Cluster Load</text>
+<rect x="1063.99" y="702.40" width="207.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t29" data-role="label" data-target="true" x="1167.49" y="732.40" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="177.00" lengthAdjust="spacingAndGlyphs">Deduplicate Relay</text>
+<rect x="649.00" y="850.00" width="202.00" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t30" data-role="label" data-target="true" x="750.00" y="880.00" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f2f5f8" text-anchor="middle" textLength="172.00" lengthAdjust="spacingAndGlyphs">Normalize Feeder</text>
+<text id="t31" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2310 | rev 8</text>
+<text id="t32" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="110.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t33" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="104.98" lengthAdjust="spacingAndGlyphs">generated 22/11</text>
+</svg>

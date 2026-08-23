@@ -1,0 +1,72 @@
+# data/
+
+One directory per dataset. Each holds an `images/` directory and a `manifest.jsonl`
+mapping every example to its ground truth. `blindspot/core/adapters.py` turns those
+manifests into `Example` records.
+
+## What is in git
+
+| | |
+|---|---|
+| `svg_localization/` | **Committed.** The dataset generated for this study — 200 procedurally built chart and diagram scenes, rendered at three sizes, with exact text placement as ground truth. 43MB. |
+| everything else | **Not committed.** Third-party benchmark data, ~16GB, fetched by `scripts/download/`. |
+
+The public benchmarks are not redistributed here: they are other people's data under
+their own licences, and several are large enough to make a repository unusable. Ferret-UI
+in particular is CC BY-NC 4.0, non-commercial only.
+
+## Filling the rest
+
+```bash
+python scripts/download/download_datasets.py        # the HF-hosted ones
+python scripts/download/download_screenspot_pro.py
+python scripts/download/download_flowlearn.py
+python scripts/download/prepare_github_sources.py   # needs the clones in third_party/
+```
+
+What each dataset is and why it was chosen: [../docs/DATASETS.md](../docs/DATASETS.md).
+
+## The generated dataset
+
+`svg_localization/` is the one dataset here that this study produced, and it is what the
+headline localization result rests on. It exists because ScreenSpot-Pro confounds three
+things that needed separating:
+
+| confound | how this set separates it |
+|---|---|
+| target size | `target_area_frac` is recorded per question; targets span 0.011%–0.34% of the image |
+| image size | the same scene is emitted at three sizes, two of which the API delivers at the same dimensions |
+| perception vs. coordinate emission | five question types across the three manifests, from "emit x,y" through "name the neighbour" to "is this word present?" |
+
+Ground truth is the text placement the generator just computed, not a human annotation,
+so unlike the scraped benchmarks there is no labelling noise floor to subtract.
+
+```
+svg_localization/
+  README.md            what it is and what it controls for
+  EVAL.md              how to score it, and the traps that make it easy to score wrong
+  manifest.jsonl       4,723 questions -- 2,380 point, 1,200 reverse, 1,143 relation
+  scenes.jsonl         200 scene descriptions
+  svg/                 200 SVGs -- the vector source for the same geometry
+  images/              600 PNGs -- 200 scenes x 3 sizes
+  counting/            714 counting questions on the same scenes
+  word_mc/             1,104 word-presence questions on the same scenes
+  verify/, examples/   audit and browsing pages
+```
+
+Question counts above are what the generator emitted, across all three sizes. The study
+scored the two sizes the API delivers at different dimensions and dropped the third, so
+the reported n are smaller: 1,587 point, 476 counting, 736 word-presence. `EVAL.md`
+explains why the third size carries no information.
+
+Read `EVAL.md` before scoring it. It pins the metric to ScreenSpot-Pro's click-in-bbox
+so the two are comparable, and documents a pairing trap that silently compares different
+questions.
+
+Rebuild it — deterministic given the seed:
+
+```bash
+python scripts/generate/gen_svg_localization.py --count 200 --complexity 4 --seed 17
+python scripts/generate/gen_svg_derived.py
+python scripts/generate/verify_svg_localization.py --open   # check the gold boxes
+```

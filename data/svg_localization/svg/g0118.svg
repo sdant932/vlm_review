@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="433.97" lengthAdjust="spacingAndGlyphs">Grid Operations - org chart 0118</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="750.00" y1="328.50" x2="375.00" y2="328.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="375.00" y1="328.50" x2="375.00" y2="481.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="328.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="481.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="750.00" y1="328.50" x2="1125.00" y2="328.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1125.00" y1="328.50" x2="1125.00" y2="481.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="375.00" y1="525.00" x2="375.00" y2="677.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="677.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="830.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="750.00" y1="525.00" x2="750.00" y2="677.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="677.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<line x1="1125.00" y1="525.00" x2="1125.00" y2="677.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="677.50" stroke="#333333" stroke-width="2.40"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="830.00" stroke="#333333" stroke-width="2.40" marker-end="url(#ah)"/>
+<rect x="675.00" y="132.00" width="150.00" height="44.00" rx="0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="161.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Lead Reserve</text>
+<rect x="298.00" y="481.00" width="154.00" height="44.00" rx="0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="label" data-target="true" x="375.00" y="510.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="128.00" lengthAdjust="spacingAndGlyphs">Director Meter</text>
+<rect x="659.00" y="481.00" width="182.00" height="44.00" rx="0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="label" data-target="true" x="750.00" y="510.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Specialist Outage</text>
+<rect x="1044.50" y="481.00" width="161.00" height="44.00" rx="0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="label" data-target="true" x="1125.00" y="510.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="135.00" lengthAdjust="spacingAndGlyphs">Engineer Relay</text>
+<rect x="296.00" y="830.00" width="158.00" height="44.00" rx="0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="label" data-target="true" x="375.00" y="859.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Auditor Feeder</text>
+<rect x="649.00" y="830.00" width="202.00" height="44.00" rx="0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="label" data-target="true" x="750.00" y="859.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="176.00" lengthAdjust="spacingAndGlyphs">Planner Curtailment</text>
+<rect x="1034.50" y="830.00" width="181.00" height="44.00" rx="0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t7" data-role="label" data-target="true" x="1125.00" y="859.00" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="155.00" lengthAdjust="spacingAndGlyphs">Manager Breaker</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=3510 | rev 5</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 3/12</text>
+</svg>

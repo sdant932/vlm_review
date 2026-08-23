@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="438.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - quadrant 0044</text>
+<rect x="178.00" y="154.00" width="1204.00" height="678.00" rx="0" fill="none" stroke="#54677f" stroke-width="1.5"/>
+<line x1="780.00" y1="154.00" x2="780.00" y2="832.00" stroke="#54677f" stroke-width="1.50"/>
+<line x1="178.00" y1="493.00" x2="1382.00" y2="493.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t1" data-role="quadrant" data-target="true" x="479.00" y="213.24" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Invest</text>
+<text id="t2" data-role="quadrant" data-target="true" x="1081.00" y="213.24" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Sustain</text>
+<text id="t3" data-role="quadrant" data-target="true" x="479.00" y="782.76" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Divest</text>
+<text id="t4" data-role="quadrant" data-target="true" x="1081.00" y="782.76" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">Review</text>
+<circle cx="1132.79" cy="622.78" r="11.00" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t5" data-role="point" data-target="true" x="1132.79" y="603.78" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="1074.11" cy="686.86" r="11.00" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t6" data-role="point" data-target="true" x="1074.11" y="667.86" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<circle cx="487.47" cy="717.19" r="11.00" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t7" data-role="point" data-target="true" x="487.47" y="698.19" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="44.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<circle cx="602.01" cy="649.88" r="11.00" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t8" data-role="point" data-target="true" x="602.01" y="630.88" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<circle cx="548.54" cy="741.60" r="11.00" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t9" data-role="point" data-target="true" x="548.54" y="722.60" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="37.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t10" data-role="axis" data-target="true" x="780.00" y="869.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="17" fill="#54677f" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t11" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#54677f" text-anchor="start" textLength="213.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2098 | rev 17</text>
+<text id="t12" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#54677f" text-anchor="end" textLength="78.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t13" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#54677f" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 14/5</text>
+</svg>

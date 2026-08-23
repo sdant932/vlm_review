@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="455.00" lengthAdjust="spacingAndGlyphs">Claims Handling - dashboard 0111</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="6" fill="none" stroke="#5f5340" stroke-width="1.53"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="156.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#7a6c56" text-anchor="start" textLength="97.00" lengthAdjust="spacingAndGlyphs">State Machine</text>
+<circle cx="190.00" cy="261.00" r="84.00" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="label" data-target="true" x="190.00" y="269.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Score Estimate</text>
+<circle cx="273.40" cy="401.00" r="76.50" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="label" data-target="true" x="273.40" y="409.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="109.00" lengthAdjust="spacingAndGlyphs">Score Payout</text>
+<circle cx="356.80" cy="261.00" r="52.00" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="label" data-target="true" x="356.80" y="269.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<circle cx="440.20" cy="401.00" r="85.00" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="label" data-target="true" x="440.20" y="409.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="126.00" lengthAdjust="spacingAndGlyphs">Purge Estimate</text>
+<circle cx="523.60" cy="261.00" r="84.00" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="label" data-target="true" x="523.60" y="269.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Route Adjuster</text>
+<circle cx="607.00" cy="401.00" r="52.00" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="label" data-target="true" x="607.00" y="409.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<line x1="236.00" y1="261.00" x2="227.40" y2="401.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t8" data-role="transition" data-target="true" x="231.70" y="324.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">flagged</text>
+<line x1="319.40" y1="401.00" x2="310.80" y2="261.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t9" data-role="transition" data-target="true" x="315.10" y="324.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="27.00" lengthAdjust="spacingAndGlyphs">dup</text>
+<line x1="402.80" y1="261.00" x2="394.20" y2="401.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t10" data-role="transition" data-target="true" x="398.50" y="324.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">signed</text>
+<line x1="486.20" y1="401.00" x2="477.60" y2="261.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t11" data-role="transition" data-target="true" x="481.90" y="324.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="27.00" lengthAdjust="spacingAndGlyphs">dup</text>
+<line x1="569.60" y1="261.00" x2="561.00" y2="401.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t12" data-role="transition" data-target="true" x="565.30" y="324.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="17.00" lengthAdjust="spacingAndGlyphs">ok</text>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="6" fill="none" stroke="#5f5340" stroke-width="1.53"/>
+<text id="t13" data-role="panel_title" data-target="false" x="773.00" y="155.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#7a6c56" text-anchor="start" textLength="38.00" lengthAdjust="spacingAndGlyphs">Gantt</text>
+<line x1="1033.00" y1="194.00" x2="1033.00" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t14" data-role="tick" data-target="true" x="1054.69" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W1</text>
+<line x1="1076.38" y1="194.00" x2="1076.38" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t15" data-role="tick" data-target="true" x="1098.06" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W2</text>
+<line x1="1119.75" y1="194.00" x2="1119.75" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t16" data-role="tick" data-target="true" x="1141.44" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W3</text>
+<line x1="1163.12" y1="194.00" x2="1163.12" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t17" data-role="tick" data-target="true" x="1184.81" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W4</text>
+<line x1="1206.50" y1="194.00" x2="1206.50" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t18" data-role="tick" data-target="true" x="1228.19" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W5</text>
+<line x1="1249.88" y1="194.00" x2="1249.88" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t19" data-role="tick" data-target="true" x="1271.56" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W6</text>
+<line x1="1293.25" y1="194.00" x2="1293.25" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t20" data-role="tick" data-target="true" x="1314.94" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W7</text>
+<line x1="1336.62" y1="194.00" x2="1336.62" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t21" data-role="tick" data-target="true" x="1358.31" y="191.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">W8</text>
+<line x1="1380.00" y1="194.00" x2="1380.00" y2="480.00" stroke="#efe7d6" stroke-width="1.36"/>
+<text id="t22" data-role="task" data-target="true" x="1011.00" y="246.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="end" textLength="109.00" lengthAdjust="spacingAndGlyphs">Score Salvage</text>
+<rect x="1206.50" y="225.68" width="173.50" height="24.64" rx="5.0" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t23" data-role="value" data-target="true" x="1293.25" y="245.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">4w</text>
+<text id="t24" data-role="task" data-target="true" x="1011.00" y="290.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="end" textLength="42.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<rect x="1119.75" y="269.68" width="173.50" height="24.64" rx="5.0" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t25" data-role="value" data-target="true" x="1206.50" y="289.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">4w</text>
+<text id="t26" data-role="task" data-target="true" x="1011.00" y="334.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="end" textLength="41.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<rect x="1119.75" y="313.68" width="216.88" height="24.64" rx="5.0" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t27" data-role="value" data-target="true" x="1228.19" y="333.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">5w</text>
+<text id="t28" data-role="task" data-target="true" x="1011.00" y="378.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="end" textLength="48.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="1033.00" y="357.68" width="216.88" height="24.64" rx="5.0" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t29" data-role="value" data-target="true" x="1141.44" y="377.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">5w</text>
+<text id="t30" data-role="task" data-target="true" x="1011.00" y="422.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="end" textLength="118.00" lengthAdjust="spacingAndGlyphs">Index Estimate</text>
+<rect x="1033.00" y="401.68" width="216.88" height="24.64" rx="5.0" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t31" data-role="value" data-target="true" x="1141.44" y="421.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">5w</text>
+<text id="t32" data-role="task" data-target="true" x="1011.00" y="466.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="end" textLength="106.00" lengthAdjust="spacingAndGlyphs">Route Payout</text>
+<rect x="1163.12" y="445.68" width="216.88" height="24.64" rx="5.0" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t33" data-role="value" data-target="true" x="1271.56" y="465.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#2b2418" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">5w</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="6" fill="none" stroke="#5f5340" stroke-width="1.53"/>
+<text id="t34" data-role="panel_title" data-target="false" x="70.00" y="546.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#7a6c56" text-anchor="start" textLength="97.00" lengthAdjust="spacingAndGlyphs">State Machine</text>
+<circle cx="190.00" cy="651.00" r="84.50" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t35" data-role="label" data-target="true" x="190.00" y="659.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="125.00" lengthAdjust="spacingAndGlyphs">Resolve Payout</text>
+<circle cx="294.25" cy="791.00" r="86.00" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t36" data-role="label" data-target="true" x="294.25" y="799.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="128.00" lengthAdjust="spacingAndGlyphs">Flush Coverage</text>
+<circle cx="398.50" cy="651.00" r="52.00" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t37" data-role="label" data-target="true" x="398.50" y="659.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<circle cx="502.75" cy="791.00" r="84.00" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t38" data-role="label" data-target="true" x="502.75" y="799.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Purge Adjuster</text>
+<circle cx="607.00" cy="651.00" r="56.50" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t39" data-role="label" data-target="true" x="607.00" y="659.00" font-family="Tahoma, Geneva, sans-serif" font-size="19.0" fill="#2b2418" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<line x1="236.00" y1="651.00" x2="248.25" y2="791.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t40" data-role="transition" data-target="true" x="242.12" y="714.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="340.25" y1="791.00" x2="352.50" y2="651.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t41" data-role="transition" data-target="true" x="346.38" y="714.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="444.50" y1="651.00" x2="456.75" y2="791.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t42" data-role="transition" data-target="true" x="450.62" y="714.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="548.75" y1="791.00" x2="561.00" y2="651.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t43" data-role="transition" data-target="true" x="554.88" y="714.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="6" fill="none" stroke="#5f5340" stroke-width="1.53"/>
+<text id="t44" data-role="panel_title" data-target="false" x="773.00" y="545.00" font-family="Tahoma, Geneva, sans-serif" font-size="16" fill="#7a6c56" text-anchor="start" textLength="67.00" lengthAdjust="spacingAndGlyphs">Sequence</text>
+<rect x="826.00" y="596.00" width="97.00" height="40.00" rx="6.0" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t45" data-role="actor" data-target="true" x="874.50" y="624.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="middle" textLength="67.00" lengthAdjust="spacingAndGlyphs">Gateway</text>
+<line x1="874.50" y1="636.00" x2="874.50" y2="846.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="949.50" y="596.00" width="77.00" height="40.00" rx="6.0" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t46" data-role="actor" data-target="true" x="988.00" y="624.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">Cache</text>
+<line x1="988.00" y1="636.00" x2="988.00" y2="846.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="1058.00" y="596.00" width="87.00" height="40.00" rx="6.0" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t47" data-role="actor" data-target="true" x="1101.50" y="624.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Auditor</text>
+<line x1="1101.50" y1="636.00" x2="1101.50" y2="846.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="1179.50" y="596.00" width="71.00" height="40.00" rx="6.0" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t48" data-role="actor" data-target="true" x="1215.00" y="624.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">Store</text>
+<line x1="1215.00" y1="636.00" x2="1215.00" y2="846.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<rect x="1275.50" y="596.00" width="106.00" height="40.00" rx="6.0" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t49" data-role="actor" data-target="true" x="1328.50" y="624.00" font-family="Tahoma, Geneva, sans-serif" font-size="18.0" fill="#2b2418" text-anchor="middle" textLength="76.00" lengthAdjust="spacingAndGlyphs">Scheduler</text>
+<line x1="1328.50" y1="636.00" x2="1328.50" y2="846.00" stroke="#7a6c56" stroke-width="1.36" stroke-dasharray="5 4"/>
+<line x1="874.50" y1="674.00" x2="1101.50" y2="674.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t50" data-role="message" data-target="true" x="988.00" y="665.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="1215.00" y1="724.67" x2="874.50" y2="724.67" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t51" data-role="message" data-target="true" x="1044.75" y="715.67" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="1101.50" y1="775.33" x2="988.00" y2="775.33" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t52" data-role="message" data-target="true" x="1044.75" y="766.33" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="1101.50" y1="826.00" x2="874.50" y2="826.00" stroke="#2b2418" stroke-width="1.70" marker-end="url(#ah)"/>
+<text id="t53" data-role="message" data-target="true" x="988.00" y="817.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#7a6c56" text-anchor="middle" textLength="27.00" lengthAdjust="spacingAndGlyphs">dup</text>
+<text id="t54" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2259 | rev 16</text>
+<text id="t55" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="62.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t56" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="87.00" lengthAdjust="spacingAndGlyphs">generated 7/6</text>
+</svg>

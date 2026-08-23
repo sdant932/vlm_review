@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="60.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="543.92" lengthAdjust="spacingAndGlyphs">Payment Authorization - sequence 0154</text>
+<rect x="257.50" y="158.00" width="85.00" height="40.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t1" data-role="actor" data-target="true" x="300.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Broker</text>
+<line x1="300.00" y1="198.00" x2="300.00" y2="868.00" stroke="#54677f" stroke-width="1.20" stroke-dasharray="5 4"/>
+<rect x="562.50" y="158.00" width="75.00" height="40.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t2" data-role="actor" data-target="true" x="600.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">Client</text>
+<line x1="600.00" y1="198.00" x2="600.00" y2="868.00" stroke="#54677f" stroke-width="1.20" stroke-dasharray="5 4"/>
+<rect x="845.00" y="158.00" width="110.00" height="40.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t3" data-role="actor" data-target="true" x="900.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="80.00" lengthAdjust="spacingAndGlyphs">Scheduler</text>
+<line x1="900.00" y1="198.00" x2="900.00" y2="868.00" stroke="#54677f" stroke-width="1.20" stroke-dasharray="5 4"/>
+<rect x="1159.50" y="158.00" width="81.00" height="40.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t4" data-role="actor" data-target="true" x="1200.00" y="185.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="18" fill="#0c1b2e" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Cache</text>
+<line x1="1200.00" y1="198.00" x2="1200.00" y2="868.00" stroke="#54677f" stroke-width="1.20" stroke-dasharray="5 4"/>
+<line x1="1200.00" y1="236.00" x2="600.00" y2="236.00" stroke="#0c1b2e" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t5" data-role="message" data-target="true" x="900.00" y="227.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="24.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="300.00" y1="440.00" x2="1200.00" y2="440.00" stroke="#0c1b2e" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t6" data-role="message" data-target="true" x="750.00" y="431.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">flagged</text>
+<line x1="600.00" y1="644.00" x2="1200.00" y2="644.00" stroke="#0c1b2e" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t7" data-role="message" data-target="true" x="900.00" y="635.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="300.00" y1="848.00" x2="900.00" y2="848.00" stroke="#0c1b2e" stroke-width="1.50" marker-end="url(#ah)"/>
+<text id="t8" data-role="message" data-target="true" x="600.00" y="839.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">signed</text>
+<text id="t9" data-role="footnote" data-target="false" x="58.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#54677f" text-anchor="start" textLength="219.97" lengthAdjust="spacingAndGlyphs">source: internal | n=946 | rev 16</text>
+<text id="t10" data-role="badge" data-target="false" x="1442.00" y="47.96" font-family="Futura, 'Century Gothic', sans-serif" font-size="15" fill="#54677f" text-anchor="end" textLength="62.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t11" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Futura, 'Century Gothic', sans-serif" font-size="14" fill="#54677f" text-anchor="end" textLength="106.98" lengthAdjust="spacingAndGlyphs">generated 15/1</text>
+</svg>

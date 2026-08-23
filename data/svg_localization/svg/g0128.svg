@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Tahoma, Geneva, sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="460.97" lengthAdjust="spacingAndGlyphs">Returns Workflow - flowchart 0128</text>
+<line x1="244.00" y1="492.72" x2="270.82" y2="486.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t1" data-role="edge" data-target="true" x="257.41" y="485.36" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="22.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="244.00" y1="533.28" x2="270.82" y2="540.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t2" data-role="edge" data-target="true" x="257.41" y="532.64" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">flagged</text>
+<line x1="446.52" y1="442.00" x2="508.83" y2="426.39" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t3" data-role="edge" data-target="true" x="477.68" y="430.20" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="446.52" y1="540.00" x2="481.83" y2="531.16" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="446.52" y1="584.00" x2="467.33" y2="589.21" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="598.26" y1="491.00" x2="706.07" y2="437.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="598.26" y1="589.00" x2="706.07" y2="535.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="641.33" y1="611.00" x2="676.00" y2="611.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="771.96" y1="589.00" x2="923.70" y2="437.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t4" data-role="edge" data-target="true" x="847.83" y="509.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">retry</text>
+<line x1="793.93" y1="589.00" x2="901.74" y2="535.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="793.93" y1="535.00" x2="901.74" y2="589.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1033.52" y1="491.00" x2="1053.48" y2="486.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="1033.52" y1="589.00" x2="1096.33" y2="573.27" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t5" data-role="edge" data-target="true" x="1064.93" y="577.13" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="39.00" lengthAdjust="spacingAndGlyphs">clean</text>
+<line x1="1229.18" y1="486.00" x2="1249.15" y2="491.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="626.83" y1="519.05" x2="1096.33" y2="558.24" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="244.00" y1="526.52" x2="676.00" y2="598.65" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="808.57" y1="437.00" x2="1096.33" y2="545.10" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="904.67" y1="418.42" x2="447.17" y2="456.61" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t6" data-role="edge" data-target="true" x="675.92" y="433.52" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="17.00" lengthAdjust="spacingAndGlyphs">ok</text>
+<line x1="1234.50" y1="513.00" x2="1050.67" y2="513.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t7" data-role="edge" data-target="true" x="1142.58" y="509.00" font-family="Tahoma, Geneva, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="508.83" y1="426.39" x2="446.52" y2="442.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<rect x="82.00" y="491.00" width="162.00" height="44.00" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="163.00" y="522.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Index Courier</text>
+<rect x="270.17" y="442.00" width="177.00" height="44.00" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t9" data-role="label" data-target="true" x="358.67" y="473.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="147.00" lengthAdjust="spacingAndGlyphs">Publish Receipt</text>
+<rect x="268.17" y="540.00" width="181.00" height="44.00" rx="4" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t10" data-role="label" data-target="true" x="358.67" y="571.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="151.00" lengthAdjust="spacingAndGlyphs">Publish Restock</text>
+<rect x="508.83" y="393.00" width="91.00" height="44.00" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t11" data-role="label" data-target="true" x="554.33" y="424.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="61.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="481.83" y="491.00" width="145.00" height="44.00" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t12" data-role="label" data-target="true" x="554.33" y="522.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="115.00" lengthAdjust="spacingAndGlyphs">Index Pallet</text>
+<rect x="467.33" y="589.00" width="174.00" height="44.00" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t13" data-role="label" data-target="true" x="554.33" y="620.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="144.00" lengthAdjust="spacingAndGlyphs">Partition Credit</text>
+<rect x="659.50" y="393.00" width="181.00" height="44.00" rx="4" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t14" data-role="label" data-target="true" x="750.00" y="424.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="151.00" lengthAdjust="spacingAndGlyphs">Sample Dispute</text>
+<rect x="665.51" y="491.00" width="168.98" height="44.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t15" data-role="label" data-target="true" x="750.00" y="522.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="138.98" lengthAdjust="spacingAndGlyphs">Verify Restock</text>
+<rect x="676.00" y="589.00" width="148.00" height="44.00" rx="4" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t16" data-role="label" data-target="true" x="750.00" y="620.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="118.00" lengthAdjust="spacingAndGlyphs">Score Credit</text>
+<rect x="904.67" y="393.00" width="82.00" height="44.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t17" data-role="label" data-target="true" x="945.67" y="424.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="52.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<rect x="840.67" y="491.00" width="210.00" height="44.00" rx="4" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t18" data-role="label" data-target="true" x="945.67" y="522.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="180.00" lengthAdjust="spacingAndGlyphs">Rehydrate Dispute</text>
+<rect x="842.17" y="589.00" width="207.00" height="44.00" rx="4" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t19" data-role="label" data-target="true" x="945.67" y="620.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="177.00" lengthAdjust="spacingAndGlyphs">Normalize Dispute</text>
+<rect x="1052.83" y="442.00" width="177.00" height="44.00" rx="4" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t20" data-role="label" data-target="true" x="1141.33" y="473.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="147.00" lengthAdjust="spacingAndGlyphs">Rotate Restock</text>
+<rect x="1096.33" y="540.00" width="90.00" height="44.00" rx="4" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t21" data-role="label" data-target="true" x="1141.33" y="571.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="1234.50" y="491.00" width="205.00" height="44.00" rx="4" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t22" data-role="label" data-target="true" x="1337.00" y="522.00" font-family="Tahoma, Geneva, sans-serif" font-size="22" fill="#12161c" text-anchor="middle" textLength="175.00" lengthAdjust="spacingAndGlyphs">Reconcile Restock</text>
+<text id="t23" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="194.00" lengthAdjust="spacingAndGlyphs">source: internal | n=422 | rev 9</text>
+<text id="t24" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Tahoma, Geneva, sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t25" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Tahoma, Geneva, sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="103.00" lengthAdjust="spacingAndGlyphs">generated 22/12</text>
+</svg>

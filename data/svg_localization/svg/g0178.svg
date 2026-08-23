@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#12161c" text-anchor="start" textLength="594.00" lengthAdjust="spacingAndGlyphs">Fleet Logistics - line chart 0178</text>
+<line x1="154.00" y1="154.00" x2="154.00" y2="834.00" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="154.00" y1="834.00" x2="1292.00" y2="834.00" stroke="#5c636e" stroke-width="1.60"/>
+<text id="t1" data-role="tick" data-target="true" x="142.00" y="840.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#5c636e" text-anchor="end" textLength="10.00" lengthAdjust="spacingAndGlyphs">0</text>
+<line x1="154.00" y1="664.00" x2="1292.00" y2="664.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t2" data-role="tick" data-target="true" x="142.00" y="670.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#5c636e" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">25</text>
+<line x1="154.00" y1="494.00" x2="1292.00" y2="494.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t3" data-role="tick" data-target="true" x="142.00" y="500.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#5c636e" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">50</text>
+<line x1="154.00" y1="324.00" x2="1292.00" y2="324.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t4" data-role="tick" data-target="true" x="142.00" y="330.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#5c636e" text-anchor="end" textLength="20.00" lengthAdjust="spacingAndGlyphs">75</text>
+<line x1="154.00" y1="154.00" x2="1292.00" y2="154.00" stroke="#eceff4" stroke-width="1.12"/>
+<text id="t5" data-role="tick" data-target="true" x="142.00" y="160.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#5c636e" text-anchor="end" textLength="30.00" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t6" data-role="category" data-target="true" x="154.00" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t7" data-role="category" data-target="true" x="296.25" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<text id="t8" data-role="category" data-target="true" x="438.50" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<text id="t9" data-role="category" data-target="true" x="580.75" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<text id="t10" data-role="category" data-target="true" x="723.00" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<text id="t11" data-role="category" data-target="true" x="865.25" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<text id="t12" data-role="category" data-target="true" x="1007.50" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q4 FY23</text>
+<text id="t13" data-role="category" data-target="true" x="1149.75" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t14" data-role="category" data-target="true" x="1292.00" y="860.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#12161c" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<line x1="154.00" y1="636.80" x2="296.25" y2="609.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="296.25" y1="609.60" x2="438.50" y2="711.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="438.50" y1="711.60" x2="580.75" y2="643.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="580.75" y1="643.60" x2="723.00" y2="616.40" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="723.00" y1="616.40" x2="865.25" y2="568.80" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="865.25" y1="568.80" x2="1007.50" y2="643.60" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="1007.50" y1="643.60" x2="1149.75" y2="582.40" stroke="#3876cc" stroke-width="2.72"/>
+<line x1="1149.75" y1="582.40" x2="1292.00" y2="528.00" stroke="#3876cc" stroke-width="2.72"/>
+<circle cx="154.00" cy="636.80" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="609.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="711.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="643.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="616.40" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="568.80" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="643.60" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="582.40" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="528.00" r="4.16" fill="#3876cc" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t15" data-role="series" data-target="true" x="1306.00" y="534.00" font-family="Menlo, Monaco, monospace" font-size="18" fill="#3876cc" text-anchor="start" textLength="110.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<line x1="154.00" y1="643.60" x2="296.25" y2="643.60" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="296.25" y1="643.60" x2="438.50" y2="698.00" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="438.50" y1="698.00" x2="580.75" y2="704.80" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="580.75" y1="704.80" x2="723.00" y2="623.20" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="723.00" y1="623.20" x2="865.25" y2="677.60" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="865.25" y1="677.60" x2="1007.50" y2="772.80" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="1007.50" y1="772.80" x2="1149.75" y2="711.60" stroke="#3f7a4f" stroke-width="2.72"/>
+<line x1="1149.75" y1="711.60" x2="1292.00" y2="786.40" stroke="#3f7a4f" stroke-width="2.72"/>
+<circle cx="154.00" cy="643.60" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="643.60" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="698.00" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="704.80" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="623.20" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="677.60" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="772.80" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="711.60" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="786.40" r="4.16" fill="#3f7a4f" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t16" data-role="series" data-target="true" x="1306.00" y="792.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#3f7a4f" text-anchor="start" textLength="77.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<line x1="154.00" y1="589.20" x2="296.25" y2="582.40" stroke="#966117" stroke-width="2.72"/>
+<line x1="296.25" y1="582.40" x2="438.50" y2="670.80" stroke="#966117" stroke-width="2.72"/>
+<line x1="438.50" y1="670.80" x2="580.75" y2="596.00" stroke="#966117" stroke-width="2.72"/>
+<line x1="580.75" y1="596.00" x2="723.00" y2="582.40" stroke="#966117" stroke-width="2.72"/>
+<line x1="723.00" y1="582.40" x2="865.25" y2="528.00" stroke="#966117" stroke-width="2.72"/>
+<line x1="865.25" y1="528.00" x2="1007.50" y2="630.00" stroke="#966117" stroke-width="2.72"/>
+<line x1="1007.50" y1="630.00" x2="1149.75" y2="500.80" stroke="#966117" stroke-width="2.72"/>
+<line x1="1149.75" y1="500.80" x2="1292.00" y2="378.40" stroke="#966117" stroke-width="2.72"/>
+<circle cx="154.00" cy="589.20" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="582.40" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="670.80" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="596.00" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="582.40" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="528.00" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="630.00" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="500.80" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="378.40" r="4.16" fill="#966117" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t17" data-role="series" data-target="true" x="1306.00" y="384.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#966117" text-anchor="start" textLength="66.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<line x1="154.00" y1="432.80" x2="296.25" y2="521.20" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="296.25" y1="521.20" x2="438.50" y2="514.40" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="438.50" y1="514.40" x2="580.75" y2="568.80" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="580.75" y1="568.80" x2="723.00" y2="623.20" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="723.00" y1="623.20" x2="865.25" y2="691.20" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="865.25" y1="691.20" x2="1007.50" y2="575.60" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="1007.50" y1="575.60" x2="1149.75" y2="487.20" stroke="#8457c4" stroke-width="2.72"/>
+<line x1="1149.75" y1="487.20" x2="1292.00" y2="514.40" stroke="#8457c4" stroke-width="2.72"/>
+<circle cx="154.00" cy="432.80" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="296.25" cy="521.20" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="438.50" cy="514.40" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="580.75" cy="568.80" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="723.00" cy="623.20" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="865.25" cy="691.20" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1007.50" cy="575.60" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1149.75" cy="487.20" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<circle cx="1292.00" cy="514.40" r="4.16" fill="#8457c4" stroke="#ffffff" stroke-width="1.2800000000000002"/>
+<text id="t18" data-role="series" data-target="true" x="1306.00" y="520.40" font-family="Menlo, Monaco, monospace" font-size="18" fill="#8457c4" text-anchor="start" textLength="77.00" lengthAdjust="spacingAndGlyphs">Defects</text>
+<text id="t19" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#5c636e" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=9053 | rev 18</text>
+<text id="t20" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#5c636e" text-anchor="end" textLength="63.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t21" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#5c636e" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 11/8</text>
+</svg>

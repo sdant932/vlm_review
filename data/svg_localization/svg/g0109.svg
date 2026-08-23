@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="561.98" lengthAdjust="spacingAndGlyphs">Content Moderation - mindmap 0109</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="228.00" stroke="#333333" stroke-width="3.36"/>
+<rect x="666.00" y="209.50" width="168.00" height="37.00" rx="14" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="236.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Throttle Queue</text>
+<line x1="750.00" y1="513.00" x2="1132.57" y2="370.50" stroke="#333333" stroke-width="3.36"/>
+<rect x="1038.57" y="352.00" width="188.00" height="37.00" rx="14" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="label" data-target="true" x="1132.57" y="378.50" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="162.00" lengthAdjust="spacingAndGlyphs">Normalize Queue</text>
+<line x1="750.00" y1="513.00" x2="1132.57" y2="655.50" stroke="#333333" stroke-width="3.36"/>
+<rect x="1063.57" y="637.00" width="138.00" height="37.00" rx="14" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="label" data-target="true" x="1132.57" y="663.50" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="112.00" lengthAdjust="spacingAndGlyphs">Flush Strike</text>
+<line x1="750.00" y1="513.00" x2="750.00" y2="798.00" stroke="#333333" stroke-width="3.36"/>
+<rect x="654.52" y="779.50" width="190.97" height="37.00" rx="14" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="label" data-target="true" x="750.00" y="806.00" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="164.97" lengthAdjust="spacingAndGlyphs">Rotate Takedown</text>
+<line x1="750.00" y1="513.00" x2="367.43" y2="655.50" stroke="#333333" stroke-width="3.36"/>
+<rect x="329.43" y="637.00" width="76.00" height="37.00" rx="14" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="label" data-target="true" x="367.43" y="663.50" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<line x1="750.00" y1="513.00" x2="367.43" y2="370.50" stroke="#333333" stroke-width="3.36"/>
+<rect x="332.93" y="352.00" width="69.00" height="37.00" rx="14" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="label" data-target="true" x="367.43" y="378.50" font-family="Verdana, Geneva, sans-serif" font-size="19" fill="#000000" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<circle cx="750.00" cy="513.00" r="68.00" fill="#ffda43" stroke="#000000" stroke-width="3.36"/>
+<text id="t7" data-role="root" data-target="true" x="750.00" y="523.00" font-family="Verdana, Geneva, sans-serif" font-size="23" fill="#000000" text-anchor="middle" textLength="92.00" lengthAdjust="spacingAndGlyphs">Content</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="244.00" lengthAdjust="spacingAndGlyphs">source: internal | n=5708 | rev 11</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="113.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="100.00" lengthAdjust="spacingAndGlyphs">generated 8/4</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="413.00" lengthAdjust="spacingAndGlyphs">Access Review - network 0087</text>
+<line x1="1166.89" y1="506.07" x2="758.20" y2="815.56" stroke="#333333" stroke-width="2.16"/>
+<line x1="1166.89" y1="506.07" x2="522.93" y2="291.74" stroke="#333333" stroke-width="2.16"/>
+<line x1="1104.89" y1="619.14" x2="522.93" y2="291.74" stroke="#333333" stroke-width="2.16"/>
+<line x1="975.92" y1="802.20" x2="341.08" y2="669.42" stroke="#333333" stroke-width="2.16"/>
+<line x1="975.92" y1="802.20" x2="490.51" y2="761.09" stroke="#333333" stroke-width="2.16"/>
+<line x1="758.20" y1="815.56" x2="281.23" y2="512.57" stroke="#333333" stroke-width="2.16"/>
+<line x1="490.51" y1="761.09" x2="1166.89" y2="506.07" stroke="#333333" stroke-width="2.16"/>
+<line x1="341.08" y1="669.42" x2="1156.74" y2="356.37" stroke="#333333" stroke-width="2.16"/>
+<line x1="341.08" y1="669.42" x2="758.20" y2="815.56" stroke="#333333" stroke-width="2.16"/>
+<line x1="281.23" y1="512.57" x2="1104.89" y2="619.14" stroke="#333333" stroke-width="2.16"/>
+<line x1="407.36" y1="381.39" x2="281.23" y2="512.57" stroke="#333333" stroke-width="2.16"/>
+<line x1="779.77" y1="210.52" x2="975.92" y2="802.20" stroke="#333333" stroke-width="2.16"/>
+<line x1="916.19" y1="251.57" x2="779.77" y2="210.52" stroke="#333333" stroke-width="2.16"/>
+<line x1="1156.74" y1="356.37" x2="490.51" y2="761.09" stroke="#333333" stroke-width="2.16"/>
+<line x1="1156.74" y1="356.37" x2="522.93" y2="291.74" stroke="#333333" stroke-width="2.16"/>
+<rect x="1086.40" y="487.07" width="160.98" height="38.00" rx="0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t1" data-role="label" data-target="true" x="1166.89" y="513.07" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="134.98" lengthAdjust="spacingAndGlyphs">Snapshot Audit</text>
+<rect x="1063.89" y="600.14" width="82.00" height="38.00" rx="0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="label" data-target="true" x="1104.89" y="626.14" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="937.92" y="783.20" width="76.00" height="38.00" rx="0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="label" data-target="true" x="975.92" y="809.20" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<rect x="683.20" y="796.56" width="150.00" height="38.00" rx="0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="label" data-target="true" x="758.20" y="822.56" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Archive Policy</text>
+<rect x="416.01" y="742.09" width="149.00" height="38.00" rx="0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="label" data-target="true" x="490.51" y="768.09" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="123.00" lengthAdjust="spacingAndGlyphs">Archive Grant</text>
+<rect x="261.58" y="650.42" width="159.00" height="38.00" rx="0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="label" data-target="true" x="341.08" y="676.42" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Merge Session</text>
+<rect x="198.73" y="493.57" width="165.00" height="38.00" rx="0" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t7" data-role="label" data-target="true" x="281.23" y="519.57" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="139.00" lengthAdjust="spacingAndGlyphs">Route Directory</text>
+<rect x="337.86" y="362.39" width="139.00" height="38.00" rx="0" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t8" data-role="label" data-target="true" x="407.36" y="388.39" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="113.00" lengthAdjust="spacingAndGlyphs">Enrich Grant</text>
+<rect x="485.43" y="272.74" width="75.00" height="38.00" rx="0" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t9" data-role="label" data-target="true" x="522.93" y="298.74" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<rect x="704.27" y="191.52" width="151.00" height="38.00" rx="0" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t10" data-role="label" data-target="true" x="779.77" y="217.52" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="125.00" lengthAdjust="spacingAndGlyphs">Index Session</text>
+<rect x="872.69" y="232.57" width="87.00" height="38.00" rx="0" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t11" data-role="label" data-target="true" x="916.19" y="258.57" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="61.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<rect x="1073.74" y="337.37" width="166.00" height="38.00" rx="0" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t12" data-role="label" data-target="true" x="1156.74" y="363.37" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#000000" text-anchor="middle" textLength="140.00" lengthAdjust="spacingAndGlyphs">Publish Session</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="202.00" lengthAdjust="spacingAndGlyphs">source: internal | n=6644 | rev 5</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="69.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="89.00" lengthAdjust="spacingAndGlyphs">generated 2/8</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="398.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - pie chart 0068</text>
+<path d="M600.00,513.00 L600.00,294.60 A218.40,218.40 0 0 1 810.30,454.08 Z" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t1" data-role="value" data-target="true" x="702.93" y="382.26" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">20%</text>
+<path d="M600.00,513.00 L810.30,454.08 A218.40,218.40 0 0 1 707.04,703.37 Z" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t2" data-role="value" data-target="true" x="757.38" y="583.19" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">21%</text>
+<path d="M600.00,513.00 L707.04,703.37 A218.40,218.40 0 0 1 445.57,667.43 Z" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t3" data-role="value" data-target="true" x="576.80" y="686.77" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">20%</text>
+<path d="M600.00,513.00 L445.57,667.43 A218.40,218.40 0 0 1 386.17,468.57 Z" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t4" data-role="value" data-target="true" x="436.77" y="566.75" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">15%</text>
+<path d="M600.00,513.00 L386.17,468.57 A218.40,218.40 0 0 1 600.00,294.60 Z" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t5" data-role="value" data-target="true" x="492.49" y="385.86" font-family="Palatino, 'Palatino Linotype', serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">21%</text>
+<circle cx="600.00" cy="513.00" r="100.46" fill="#151a21"/>
+<rect x="1142.00" y="164.00" width="22.00" height="22.00" rx="3" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t6" data-role="legend" data-target="true" x="1178.00" y="179.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#f2f5f8" text-anchor="start" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<rect x="1142.00" y="208.00" width="22.00" height="22.00" rx="3" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t7" data-role="legend" data-target="true" x="1178.00" y="223.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#f2f5f8" text-anchor="start" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<rect x="1142.00" y="252.00" width="22.00" height="22.00" rx="3" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t8" data-role="legend" data-target="true" x="1178.00" y="267.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#f2f5f8" text-anchor="start" textLength="77.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<rect x="1142.00" y="296.00" width="22.00" height="22.00" rx="3" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t9" data-role="legend" data-target="true" x="1178.00" y="311.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#f2f5f8" text-anchor="start" textLength="63.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<rect x="1142.00" y="340.00" width="22.00" height="22.00" rx="3" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t10" data-role="legend" data-target="true" x="1178.00" y="355.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#f2f5f8" text-anchor="start" textLength="41.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t11" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="206.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2526 | rev 8</text>
+<text id="t12" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="116.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t13" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 18/9</text>
+</svg>

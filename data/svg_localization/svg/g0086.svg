@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f2fbf7"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#4a6b60"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#0f2b22" text-anchor="start" textLength="532.95" lengthAdjust="spacingAndGlyphs">Payment Authorization - org chart 0086</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="328.50" x2="375.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="375.00" y1="328.50" x2="375.00" y2="481.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="481.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="328.50" x2="1125.00" y2="328.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="1125.00" y1="328.50" x2="1125.00" y2="481.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="375.00" y1="525.00" x2="375.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="375.00" y1="677.50" x2="375.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="750.00" y1="525.00" x2="750.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="750.00" y1="677.50" x2="750.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<line x1="1125.00" y1="525.00" x2="1125.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="677.50" stroke="#4a6b60" stroke-width="1.50"/>
+<line x1="1125.00" y1="677.50" x2="1125.00" y2="830.00" stroke="#4a6b60" stroke-width="1.50" marker-end="url(#ah)"/>
+<rect x="664.50" y="132.00" width="171.00" height="44.00" rx="8" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="161.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Director Invoice</text>
+<rect x="285.00" y="481.00" width="180.00" height="44.00" rx="8" fill="#d9ecc9" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t2" data-role="label" data-target="true" x="375.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="154.00" lengthAdjust="spacingAndGlyphs">Lead Chargeback</text>
+<rect x="654.51" y="481.00" width="190.98" height="44.00" rx="8" fill="#c9e6ea" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t3" data-role="label" data-target="true" x="750.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="164.98" lengthAdjust="spacingAndGlyphs">Coordinator Payer</text>
+<rect x="1039.51" y="481.00" width="170.98" height="44.00" rx="8" fill="#eae2d0" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t4" data-role="label" data-target="true" x="1125.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="144.98" lengthAdjust="spacingAndGlyphs">Manager Refund</text>
+<rect x="300.00" y="830.00" width="150.00" height="44.00" rx="8" fill="#e3dcef" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t5" data-role="label" data-target="true" x="375.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="124.00" lengthAdjust="spacingAndGlyphs">Analyst Fraud</text>
+<rect x="644.00" y="830.00" width="212.00" height="44.00" rx="8" fill="#f2dcdc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t6" data-role="label" data-target="true" x="750.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="186.00" lengthAdjust="spacingAndGlyphs">Engineer Settlement</text>
+<rect x="1033.50" y="830.00" width="183.00" height="44.00" rx="8" fill="#cfe9dc" stroke="#2f5b4c" stroke-width="1.5"/>
+<text id="t7" data-role="label" data-target="true" x="1125.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0f2b22" text-anchor="middle" textLength="157.00" lengthAdjust="spacingAndGlyphs">Auditor Merchant</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#4a6b60" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=6040 | rev 10</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#4a6b60" text-anchor="end" textLength="98.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#4a6b60" text-anchor="end" textLength="90.00" lengthAdjust="spacingAndGlyphs">generated 5/4</text>
+</svg>

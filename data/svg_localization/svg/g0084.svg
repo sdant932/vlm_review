@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="403.00" lengthAdjust="spacingAndGlyphs">Build Pipeline - pie chart 0084</text>
+<path d="M600.00,513.00 L600.00,294.60 A218.40,218.40 0 0 1 770.75,376.83 Z" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t1" data-role="value" data-target="true" x="673.91" y="366.52" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">14%</text>
+<path d="M600.00,513.00 L770.75,376.83 A218.40,218.40 0 0 1 790.84,619.21 Z" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t2" data-role="value" data-target="true" x="769.77" y="505.93" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<path d="M600.00,513.00 L790.84,619.21 A218.40,218.40 0 0 1 584.54,730.85 Z" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t3" data-role="value" data-target="true" x="681.08" y="669.82" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<path d="M600.00,513.00 L584.54,730.85 A218.40,218.40 0 0 1 414.39,628.10 Z" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t4" data-role="value" data-target="true" x="511.94" y="665.82" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">15%</text>
+<path d="M600.00,513.00 L414.39,628.10 A218.40,218.40 0 0 1 417.16,393.55 Z" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t5" data-role="value" data-target="true" x="429.66" y="517.99" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<path d="M600.00,513.00 L417.16,393.55 A218.40,218.40 0 0 1 600.00,294.60 Z" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t6" data-role="value" data-target="true" x="518.92" y="370.18" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#000000" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">15%</text>
+<circle cx="600.00" cy="513.00" r="100.46" fill="#ffffff"/>
+<rect x="1142.00" y="164.00" width="22.00" height="22.00" rx="3" fill="#ffe680" stroke="#000000" stroke-width="2.4"/>
+<text id="t7" data-role="legend" data-target="true" x="1178.00" y="181.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="82.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<rect x="1142.00" y="208.00" width="22.00" height="22.00" rx="3" fill="#b3e6b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t8" data-role="legend" data-target="true" x="1178.00" y="225.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="39.00" lengthAdjust="spacingAndGlyphs">East</text>
+<rect x="1142.00" y="252.00" width="22.00" height="22.00" rx="3" fill="#ffb3b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t9" data-role="legend" data-target="true" x="1178.00" y="269.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="56.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<rect x="1142.00" y="296.00" width="22.00" height="22.00" rx="3" fill="#b3d9ff" stroke="#000000" stroke-width="2.4"/>
+<text id="t10" data-role="legend" data-target="true" x="1178.00" y="313.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="47.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<rect x="1142.00" y="340.00" width="22.00" height="22.00" rx="3" fill="#e6ccff" stroke="#000000" stroke-width="2.4"/>
+<text id="t11" data-role="legend" data-target="true" x="1178.00" y="357.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="44.00" lengthAdjust="spacingAndGlyphs">West</text>
+<rect x="1142.00" y="384.00" width="22.00" height="22.00" rx="3" fill="#ffd9b3" stroke="#000000" stroke-width="2.4"/>
+<text id="t12" data-role="legend" data-target="true" x="1178.00" y="401.00" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#000000" text-anchor="start" textLength="57.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=9494 | rev 14</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="74.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="89.00" lengthAdjust="spacingAndGlyphs">generated 1/4</text>
+</svg>

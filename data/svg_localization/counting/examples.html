@@ -1,0 +1,99 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Counting &mdash; examples</title><style>
+:root{--bg:#0f1116;--panel:#171a21;--panel2:#1d2028;--ink:#e8eaed;--muted:#9aa0aa;
+      --line:#2a2f3a;--good:#2ecc71;--bad:#ff5b5b;--accent:#5b8def;--chip:#232833}
+@media (prefers-color-scheme:light){:root{--bg:#f7f8fa;--panel:#fff;--panel2:#f0f2f6;
+      --ink:#15181d;--muted:#5c636e;--line:#dfe3ea;--chip:#eceff4}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 22px 80px}
+h1{font-size:26px;margin:0 0 6px}
+h2{font-size:20px;margin:40px 0 10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+h3{font-size:15px;margin:20px 0 8px;color:var(--muted);font-weight:600}
+.sub{color:var(--muted);margin:0 0 20px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 24px}
+nav a{background:var(--chip);color:var(--ink);text-decoration:none;padding:6px 12px;
+      border-radius:7px;font-size:13px;border:1px solid var(--line)}
+nav a:hover{border-color:var(--accent)}
+.note{background:var(--panel);border-left:3px solid var(--accent);padding:12px 15px;
+      border-radius:0 8px 8px 0;margin:14px 0}
+.note.warn{border-left-color:#d68a1e}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px}
+.tile .v{font-size:23px;font-weight:650;font-variant-numeric:tabular-nums}
+.tile .l{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;
+      padding:16px;margin:16px 0}
+.card .hd{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:11px}
+.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);
+      border-radius:20px;padding:2px 9px;font-size:11px;color:var(--muted)}
+.chip.k{color:var(--accent);border-color:var(--accent)}
+.cols{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+.cols>.img{flex:0 0 auto}
+.cols>.txt{flex:1 1 340px;min-width:300px}
+.stage{position:relative;display:inline-block;border:1px solid var(--line);
+       border-radius:8px;overflow:hidden;background:#fff;line-height:0}
+.stage img{display:block;max-width:100%;height:auto}
+.box{position:absolute;border:2px solid var(--good);
+     box-shadow:0 0 0 1px rgba(0,0,0,.5) inset;pointer-events:none}
+.cross{position:absolute;pointer-events:none}
+.cross::before,.cross::after{content:"";position:absolute;background:var(--bad)}
+.cross::before{left:-10px;top:-1px;width:20px;height:2px}
+.cross::after{top:-10px;left:-1px;height:20px;width:2px}
+pre{background:var(--panel2);border:1px solid var(--line);border-radius:8px;
+    padding:11px 13px;margin:6px 0 12px;overflow-x:auto;white-space:pre-wrap;
+    font:12.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink)}
+pre.ans{border-left:3px solid var(--good)}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+     margin:10px 0 3px;font-weight:600}
+code{background:var(--chip);padding:1px 5px;border-radius:4px;font-size:12.5px;
+     font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+table{width:100%;border-collapse:collapse;margin:10px 0;background:var(--panel);
+      border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th,td{padding:7px 11px;text-align:left;border-bottom:1px solid var(--line);font-size:13px}
+th{background:var(--chip);color:var(--muted);font-weight:600;font-size:11px;
+   text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:none}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:12.5px;margin-top:8px}
+.kv dt{color:var(--muted)} .kv dd{margin:0;font-variant-numeric:tabular-nums}
+</style></head><body><div class="wrap"><h1>Counting</h1><p class="sub">How many bars, rows, slices, nodes&hellip;?</p><nav><a href="../examples/index.html">Localization examples</a><a href="../verify/index.html">Ground-truth audit</a><a href="EVAL.md">EVAL.md</a></nav><div class="tiles"><div class="tile"><div class="l">scenes</div><div class="v">200</div></div><div class="tile"><div class="l">questions</div><div class="v">714</div></div><div class="tile"><div class="l">chart types</div><div class="v">16</div></div><div class="tile"><div class="l">gold count range</div><div class="v">3&ndash;27</div></div></div><div class="note">One counting question per chart type, asking about the structure that type is made of. Gold comes from the semantic record captured when the scene was built, not from counting marks in the raster, and 678 of 714 are additionally cross-checked against the labels actually drawn &mdash; a table's row count against rows&times;columns cell labels, a flowchart's box count against its node labels. Counts are identical at all three resolutions, so the same question doubles as a resolution probe.</div><div class="note"><b>Scoring.</b> Exact integer match (<code>exact_count</code>), which also returns <b>signed error</b> &mdash; the sign separates stopping early from over-counting.</div><div class="note warn"><b>These questions run on the existing scenes.</b> No image was re-rendered to create them &mdash; they are derived from <code>scenes.jsonl</code> and point at the same PNGs and SVGs as the localization set. A model can therefore be scored on all three sets over identical pixels.</div><h2 id="ladder">Same question, three resolutions</h2><pre>Count carefully and answer with a single whole number.
+Count only what is actually drawn in the image.
+
+How many labelled boxes are in this flowchart?</pre><div class="note"><b>Gold is 22 at every rung.</b> The structure does not change with resolution, only how many pixels describe it, so any accuracy difference across these three is a resolution effect and nothing else.</div><div class="cols"><div><div class="sub">small &middot; 900&times;570</div><div class="stage" style="width:340px"><img src="../images/g0000_small.png" alt="" width="900" height="570" loading="lazy"></div></div><div><div class="sub">medium &middot; 1500&times;950</div><div class="stage" style="width:340px"><img src="../images/g0000_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div><div class="sub">large &middot; 3000&times;1900</div><div class="stage" style="width:340px"><img src="../images/g0000_large.png" alt="" width="3000" height="1900" loading="lazy"></div></div></div><h2>Examples</h2><div class="card"><div class="hd"><span class="chip k">counting</span><span class="chip">flowchart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: ice</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0000_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Count carefully and answer with a single whole number.
+Count only what is actually drawn in the image.
+
+How many labelled boxes are in this flowchart?</pre><div class="lbl">gold answer</div><pre class="ans">22
+
+# cross-checked against the &#x27;label&#x27; labels actually drawn
+# scored exact, with signed error alongside</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0000.svg</code></dd><dt>uid</dt><dd><code>svgcount:0000:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">counting</span><span class="chip">bar_chart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: high-contrast</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0001_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Count carefully and answer with a single whole number.
+Count only what is actually drawn in the image.
+
+How many bars are in this bar chart?</pre><div class="lbl">gold answer</div><pre class="ans">9
+
+# cross-checked against the &#x27;category&#x27; labels actually drawn
+# scored exact, with signed error alongside</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0001.svg</code></dd><dt>uid</dt><dd><code>svgcount:0001:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">counting</span><span class="chip">line_chart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: high-contrast</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0002_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Count carefully and answer with a single whole number.
+Count only what is actually drawn in the image.
+
+How many separate lines are plotted in this line chart?</pre><div class="lbl">gold answer</div><pre class="ans">5
+
+# cross-checked against the &#x27;series&#x27; labels actually drawn
+# scored exact, with signed error alongside</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0002.svg</code></dd><dt>uid</dt><dd><code>svgcount:0002:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">counting</span><span class="chip">scatter</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: blueprint</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0003_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Count carefully and answer with a single whole number.
+Count only what is actually drawn in the image.
+
+How many labelled points are in this scatter plot?</pre><div class="lbl">gold answer</div><pre class="ans">11
+
+# cross-checked against the &#x27;point&#x27; labels actually drawn
+# scored exact, with signed error alongside</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0003.svg</code></dd><dt>uid</dt><dd><code>svgcount:0003:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">counting</span><span class="chip">pie_chart</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: ice</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0004_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Count carefully and answer with a single whole number.
+Count only what is actually drawn in the image.
+
+How many slices are in this pie chart?</pre><div class="lbl">gold answer</div><pre class="ans">5
+
+# cross-checked against the &#x27;legend&#x27; labels actually drawn
+# scored exact, with signed error alongside</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0004.svg</code></dd><dt>uid</dt><dd><code>svgcount:0004:medium:00</code></dd></dl></div></div></div><div class="card"><div class="hd"><span class="chip k">counting</span><span class="chip">table</span><span class="chip">medium &middot; 1500&times;950</span><span class="chip">theme: slate-dark</span></div><div class="cols"><div class="img"><div class="stage" style="width:520px"><img src="../images/g0005_medium.png" alt="" width="1500" height="950" loading="lazy"></div></div><div class="txt"><div class="lbl">prompt, exactly as sent</div><pre>Count carefully and answer with a single whole number.
+Count only what is actually drawn in the image.
+
+How many data rows does this table have, not counting the header row?</pre><div class="lbl">gold answer</div><pre class="ans">14
+
+# cross-checked against the &#x27;cell&#x27; labels actually drawn
+# scored exact, with signed error alongside</pre><dl class="kv"><dt>delivered to model</dt><dd>1348&times;853 (downscaled)</dd><dt>scene</dt><dd><code>svg/g0005.svg</code></dd><dt>uid</dt><dd><code>svgcount:0005:medium:00</code></dd></dl></div></div></div></div></body></html>

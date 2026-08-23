@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#333333"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#000000" text-anchor="start" textLength="423.98" lengthAdjust="spacingAndGlyphs">Access Review - line chart 0002</text>
+<line x1="154.00" y1="154.00" x2="154.00" y2="834.00" stroke="#333333" stroke-width="2.40"/>
+<line x1="154.00" y1="834.00" x2="1292.00" y2="834.00" stroke="#333333" stroke-width="2.40"/>
+<text id="t1" data-role="tick" data-target="true" x="142.00" y="840.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#333333" text-anchor="end" textLength="9.00" lengthAdjust="spacingAndGlyphs">0</text>
+<text id="t2" data-role="tick" data-target="true" x="142.00" y="670.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#333333" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">25</text>
+<text id="t3" data-role="tick" data-target="true" x="142.00" y="500.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#333333" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">50</text>
+<text id="t4" data-role="tick" data-target="true" x="142.00" y="330.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#333333" text-anchor="end" textLength="18.00" lengthAdjust="spacingAndGlyphs">75</text>
+<text id="t5" data-role="tick" data-target="true" x="142.00" y="160.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#333333" text-anchor="end" textLength="27.00" lengthAdjust="spacingAndGlyphs">100</text>
+<text id="t6" data-role="category" data-target="true" x="154.00" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q1 FY22</text>
+<text id="t7" data-role="category" data-target="true" x="296.25" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q2 FY22</text>
+<text id="t8" data-role="category" data-target="true" x="438.50" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q3 FY22</text>
+<text id="t9" data-role="category" data-target="true" x="580.75" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q4 FY22</text>
+<text id="t10" data-role="category" data-target="true" x="723.00" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q1 FY23</text>
+<text id="t11" data-role="category" data-target="true" x="865.25" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q2 FY23</text>
+<text id="t12" data-role="category" data-target="true" x="1007.50" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q3 FY23</text>
+<text id="t13" data-role="category" data-target="true" x="1149.75" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q1 FY24</text>
+<text id="t14" data-role="category" data-target="true" x="1292.00" y="860.00" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#000000" text-anchor="middle" textLength="62.00" lengthAdjust="spacingAndGlyphs">Q2 FY24</text>
+<line x1="154.00" y1="514.40" x2="296.25" y2="412.40" stroke="#8a7000" stroke-width="4.08"/>
+<line x1="296.25" y1="412.40" x2="438.50" y2="358.00" stroke="#8a7000" stroke-width="4.08"/>
+<line x1="438.50" y1="358.00" x2="580.75" y2="249.20" stroke="#8a7000" stroke-width="4.08"/>
+<line x1="580.75" y1="249.20" x2="723.00" y2="222.00" stroke="#8a7000" stroke-width="4.08"/>
+<line x1="723.00" y1="222.00" x2="865.25" y2="296.80" stroke="#8a7000" stroke-width="4.08"/>
+<line x1="865.25" y1="296.80" x2="1007.50" y2="208.40" stroke="#8a7000" stroke-width="4.08"/>
+<line x1="1007.50" y1="208.40" x2="1149.75" y2="167.60" stroke="#8a7000" stroke-width="4.08"/>
+<line x1="1149.75" y1="167.60" x2="1292.00" y2="167.60" stroke="#8a7000" stroke-width="4.08"/>
+<circle cx="154.00" cy="514.40" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="296.25" cy="412.40" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="438.50" cy="358.00" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="580.75" cy="249.20" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="723.00" cy="222.00" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="865.25" cy="296.80" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1007.50" cy="208.40" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1149.75" cy="167.60" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1292.00" cy="167.60" r="6.24" fill="#8a7000" stroke="#ffffff" stroke-width="1.92"/>
+<text id="t15" data-role="series" data-target="true" x="1306.00" y="174.60" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#8a7000" text-anchor="start" textLength="93.00" lengthAdjust="spacingAndGlyphs">Throughput</text>
+<line x1="154.00" y1="738.80" x2="296.25" y2="623.20" stroke="#2a7d2a" stroke-width="4.08"/>
+<line x1="296.25" y1="623.20" x2="438.50" y2="568.80" stroke="#2a7d2a" stroke-width="4.08"/>
+<line x1="438.50" y1="568.80" x2="580.75" y2="446.40" stroke="#2a7d2a" stroke-width="4.08"/>
+<line x1="580.75" y1="446.40" x2="723.00" y2="371.60" stroke="#2a7d2a" stroke-width="4.08"/>
+<line x1="723.00" y1="371.60" x2="865.25" y2="446.40" stroke="#2a7d2a" stroke-width="4.08"/>
+<line x1="865.25" y1="446.40" x2="1007.50" y2="548.40" stroke="#2a7d2a" stroke-width="4.08"/>
+<line x1="1007.50" y1="548.40" x2="1149.75" y2="568.80" stroke="#2a7d2a" stroke-width="4.08"/>
+<line x1="1149.75" y1="568.80" x2="1292.00" y2="589.20" stroke="#2a7d2a" stroke-width="4.08"/>
+<circle cx="154.00" cy="738.80" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="296.25" cy="623.20" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="438.50" cy="568.80" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="580.75" cy="446.40" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="723.00" cy="371.60" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="865.25" cy="446.40" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1007.50" cy="548.40" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1149.75" cy="568.80" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1292.00" cy="589.20" r="6.24" fill="#2a7d2a" stroke="#ffffff" stroke-width="1.92"/>
+<text id="t16" data-role="series" data-target="true" x="1306.00" y="596.20" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#2a7d2a" text-anchor="start" textLength="39.98" lengthAdjust="spacingAndGlyphs">Yield</text>
+<line x1="154.00" y1="507.60" x2="296.25" y2="514.40" stroke="#e10000" stroke-width="4.08"/>
+<line x1="296.25" y1="514.40" x2="438.50" y2="378.40" stroke="#e10000" stroke-width="4.08"/>
+<line x1="438.50" y1="378.40" x2="580.75" y2="269.60" stroke="#e10000" stroke-width="4.08"/>
+<line x1="580.75" y1="269.60" x2="723.00" y2="249.20" stroke="#e10000" stroke-width="4.08"/>
+<line x1="723.00" y1="249.20" x2="865.25" y2="167.60" stroke="#e10000" stroke-width="4.08"/>
+<line x1="865.25" y1="167.60" x2="1007.50" y2="167.60" stroke="#e10000" stroke-width="4.08"/>
+<line x1="1007.50" y1="167.60" x2="1149.75" y2="235.60" stroke="#e10000" stroke-width="4.08"/>
+<line x1="1149.75" y1="235.60" x2="1292.00" y2="222.00" stroke="#e10000" stroke-width="4.08"/>
+<circle cx="154.00" cy="507.60" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="296.25" cy="514.40" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="438.50" cy="378.40" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="580.75" cy="269.60" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="723.00" cy="249.20" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="865.25" cy="167.60" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1007.50" cy="167.60" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1149.75" cy="235.60" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1292.00" cy="222.00" r="6.24" fill="#e10000" stroke="#ffffff" stroke-width="1.92"/>
+<text id="t17" data-role="series" data-target="true" x="1306.00" y="229.00" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#e10000" text-anchor="start" textLength="53.00" lengthAdjust="spacingAndGlyphs">Margin</text>
+<line x1="154.00" y1="711.60" x2="296.25" y2="711.60" stroke="#0070e1" stroke-width="4.08"/>
+<line x1="296.25" y1="711.60" x2="438.50" y2="630.00" stroke="#0070e1" stroke-width="4.08"/>
+<line x1="438.50" y1="630.00" x2="580.75" y2="555.20" stroke="#0070e1" stroke-width="4.08"/>
+<line x1="580.75" y1="555.20" x2="723.00" y2="487.20" stroke="#0070e1" stroke-width="4.08"/>
+<line x1="723.00" y1="487.20" x2="865.25" y2="378.40" stroke="#0070e1" stroke-width="4.08"/>
+<line x1="865.25" y1="378.40" x2="1007.50" y2="249.20" stroke="#0070e1" stroke-width="4.08"/>
+<line x1="1007.50" y1="249.20" x2="1149.75" y2="235.60" stroke="#0070e1" stroke-width="4.08"/>
+<line x1="1149.75" y1="235.60" x2="1292.00" y2="228.80" stroke="#0070e1" stroke-width="4.08"/>
+<circle cx="154.00" cy="711.60" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="296.25" cy="711.60" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="438.50" cy="630.00" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="580.75" cy="555.20" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="723.00" cy="487.20" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="865.25" cy="378.40" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1007.50" cy="249.20" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1149.75" cy="235.60" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1292.00" cy="228.80" r="6.24" fill="#0070e1" stroke="#ffffff" stroke-width="1.92"/>
+<text id="t18" data-role="series" data-target="true" x="1306.00" y="235.80" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#0070e1" text-anchor="start" textLength="75.00" lengthAdjust="spacingAndGlyphs">Coverage</text>
+<line x1="154.00" y1="487.20" x2="296.25" y2="480.40" stroke="#911fff" stroke-width="4.08"/>
+<line x1="296.25" y1="480.40" x2="438.50" y2="575.60" stroke="#911fff" stroke-width="4.08"/>
+<line x1="438.50" y1="575.60" x2="580.75" y2="487.20" stroke="#911fff" stroke-width="4.08"/>
+<line x1="580.75" y1="487.20" x2="723.00" y2="589.20" stroke="#911fff" stroke-width="4.08"/>
+<line x1="723.00" y1="589.20" x2="865.25" y2="636.80" stroke="#911fff" stroke-width="4.08"/>
+<line x1="865.25" y1="636.80" x2="1007.50" y2="745.60" stroke="#911fff" stroke-width="4.08"/>
+<line x1="1007.50" y1="745.60" x2="1149.75" y2="650.40" stroke="#911fff" stroke-width="4.08"/>
+<line x1="1149.75" y1="650.40" x2="1292.00" y2="745.60" stroke="#911fff" stroke-width="4.08"/>
+<circle cx="154.00" cy="487.20" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="296.25" cy="480.40" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="438.50" cy="575.60" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="580.75" cy="487.20" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="723.00" cy="589.20" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="865.25" cy="636.80" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1007.50" cy="745.60" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1149.75" cy="650.40" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<circle cx="1292.00" cy="745.60" r="6.24" fill="#911fff" stroke="#ffffff" stroke-width="1.92"/>
+<text id="t19" data-role="series" data-target="true" x="1306.00" y="752.60" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#911fff" text-anchor="start" textLength="48.00" lengthAdjust="spacingAndGlyphs">Churn</text>
+<text id="t20" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#333333" text-anchor="start" textLength="205.00" lengthAdjust="spacingAndGlyphs">source: internal | n=6288 | rev 8</text>
+<text id="t21" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#333333" text-anchor="end" textLength="98.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t22" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#333333" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 7/11</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="485.00" lengthAdjust="spacingAndGlyphs">Content Moderation - quadrant 0172</text>
+<rect x="178.00" y="154.00" width="1204.00" height="678.00" rx="0" fill="none" stroke="#54677f" stroke-width="1.5"/>
+<line x1="780.00" y1="154.00" x2="780.00" y2="832.00" stroke="#54677f" stroke-width="1.50"/>
+<line x1="178.00" y1="493.00" x2="1382.00" y2="493.00" stroke="#54677f" stroke-width="1.50"/>
+<text id="t1" data-role="quadrant" data-target="true" x="479.00" y="215.24" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Invest</text>
+<text id="t2" data-role="quadrant" data-target="true" x="1081.00" y="215.24" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Sustain</text>
+<text id="t3" data-role="quadrant" data-target="true" x="479.00" y="784.76" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Divest</text>
+<text id="t4" data-role="quadrant" data-target="true" x="1081.00" y="784.76" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#54677f" text-anchor="middle" textLength="58.00" lengthAdjust="spacingAndGlyphs">Review</text>
+<circle cx="860.87" cy="283.64" r="11.00" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t5" data-role="point" data-target="true" x="860.87" y="265.64" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<circle cx="1232.36" cy="482.96" r="11.00" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t6" data-role="point" data-target="true" x="1232.36" y="464.96" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="558.77" cy="532.62" r="11.00" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t7" data-role="point" data-target="true" x="558.77" y="514.62" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="501.01" cy="710.90" r="11.00" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t8" data-role="point" data-target="true" x="501.01" y="692.90" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="45.00" lengthAdjust="spacingAndGlyphs">South</text>
+<circle cx="561.43" cy="412.07" r="11.00" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t9" data-role="point" data-target="true" x="561.43" y="394.07" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="46.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<circle cx="792.00" cy="439.91" r="11.00" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t10" data-role="point" data-target="true" x="792.00" y="421.91" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="38.00" lengthAdjust="spacingAndGlyphs">West</text>
+<circle cx="824.13" cy="543.15" r="11.00" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t11" data-role="point" data-target="true" x="824.13" y="525.15" font-family="Georgia, 'Times New Roman', serif" font-size="16.666666666666668" fill="#0c1b2e" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">Levant</text>
+<text id="t12" data-role="axis" data-target="true" x="780.00" y="870.00" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#54677f" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">Uptime</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#54677f" text-anchor="start" textLength="196.00" lengthAdjust="spacingAndGlyphs">source: internal | n=1647 | rev 6</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#54677f" text-anchor="end" textLength="115.00" lengthAdjust="spacingAndGlyphs">CONFIDENTIAL</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#54677f" text-anchor="end" textLength="87.00" lengthAdjust="spacingAndGlyphs">generated 7/3</text>
+</svg>

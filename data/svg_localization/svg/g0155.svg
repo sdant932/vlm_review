@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#0d2137"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#8fb4d9"/></marker></defs>
+<line x1="48" y1="0" x2="48" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="96" y1="0" x2="96" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="144" y1="0" x2="144" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="192" y1="0" x2="192" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="240" y1="0" x2="240" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="288" y1="0" x2="288" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="336" y1="0" x2="336" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="384" y1="0" x2="384" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="432" y1="0" x2="432" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="480" y1="0" x2="480" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="528" y1="0" x2="528" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="576" y1="0" x2="576" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="624" y1="0" x2="624" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="672" y1="0" x2="672" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="720" y1="0" x2="720" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="768" y1="0" x2="768" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="816" y1="0" x2="816" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="864" y1="0" x2="864" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="912" y1="0" x2="912" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="960" y1="0" x2="960" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1008" y1="0" x2="1008" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1056" y1="0" x2="1056" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1104" y1="0" x2="1104" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1152" y1="0" x2="1152" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1200" y1="0" x2="1200" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1248" y1="0" x2="1248" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1296" y1="0" x2="1296" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1344" y1="0" x2="1344" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1392" y1="0" x2="1392" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1440" y1="0" x2="1440" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="1488" y1="0" x2="1488" y2="950" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="48" x2="1500" y2="48" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="96" x2="1500" y2="96" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="144" x2="1500" y2="144" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="192" x2="1500" y2="192" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="240" x2="1500" y2="240" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="288" x2="1500" y2="288" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="336" x2="1500" y2="336" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="384" x2="1500" y2="384" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="432" x2="1500" y2="432" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="480" x2="1500" y2="480" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="528" x2="1500" y2="528" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="576" x2="1500" y2="576" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="624" x2="1500" y2="624" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="672" x2="1500" y2="672" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="720" x2="1500" y2="720" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="768" x2="1500" y2="768" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="816" x2="1500" y2="816" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="864" x2="1500" y2="864" stroke="#173a56" stroke-width="1"/>
+<line x1="0" y1="912" x2="1500" y2="912" stroke="#173a56" stroke-width="1"/>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#e8f2ff" text-anchor="start" textLength="470.98" lengthAdjust="spacingAndGlyphs">Content Moderation - treemap 0155</text>
+<rect x="81.00" y="147.00" width="260.99" height="742.00" rx="2" fill="#1b3d5c" stroke="#4a7aa8" stroke-width="1.5"/>
+<text id="t1" data-role="cell" data-target="true" x="211.49" y="514.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#e8f2ff" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t2" data-role="value" data-target="true" x="211.49" y="538.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#8fb4d9" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">59</text>
+<rect x="347.99" y="147.00" width="1071.01" height="144.86" rx="2" fill="#1d4a5e" stroke="#4a7aa8" stroke-width="1.5"/>
+<text id="t3" data-role="cell" data-target="true" x="883.49" y="215.43" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#e8f2ff" text-anchor="middle" textLength="41.98" lengthAdjust="spacingAndGlyphs">West</text>
+<text id="t4" data-role="value" data-target="true" x="883.49" y="239.43" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#9cbdde" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">48</text>
+<rect x="347.99" y="297.86" width="260.42" height="591.14" rx="2" fill="#26445e" stroke="#4a7aa8" stroke-width="1.5"/>
+<text id="t5" data-role="cell" data-target="true" x="478.20" y="589.43" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#e8f2ff" text-anchor="middle" textLength="51.00" lengthAdjust="spacingAndGlyphs">North</text>
+<text id="t6" data-role="value" data-target="true" x="478.20" y="613.43" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#8fb4d9" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">47</text>
+<rect x="614.41" y="297.86" width="804.59" height="186.09" rx="2" fill="#1a3550" stroke="#4a7aa8" stroke-width="1.5"/>
+<text id="t7" data-role="cell" data-target="true" x="1016.70" y="386.90" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#e8f2ff" text-anchor="middle" textLength="63.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<text id="t8" data-role="value" data-target="true" x="1016.70" y="410.90" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#8fb4d9" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">46</text>
+<rect x="614.41" y="489.95" width="361.69" height="399.05" rx="2" fill="#22506b" stroke="#4a7aa8" stroke-width="1.5"/>
+<text id="t9" data-role="cell" data-target="true" x="795.25" y="685.47" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#e8f2ff" text-anchor="middle" textLength="48.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<text id="t10" data-role="value" data-target="true" x="795.25" y="709.47" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#a9c6e2" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">44</text>
+<rect x="982.10" y="489.95" width="436.90" height="230.92" rx="2" fill="#154059" stroke="#4a7aa8" stroke-width="1.5"/>
+<text id="t11" data-role="cell" data-target="true" x="1200.55" y="601.40" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#e8f2ff" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<text id="t12" data-role="value" data-target="true" x="1200.55" y="625.40" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#8fb4d9" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">31</text>
+<rect x="982.10" y="726.86" width="436.90" height="162.14" rx="2" fill="#1b3d5c" stroke="#4a7aa8" stroke-width="1.5"/>
+<text id="t13" data-role="cell" data-target="true" x="1200.55" y="803.93" font-family="Palatino, 'Palatino Linotype', serif" font-size="19" fill="#e8f2ff" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<text id="t14" data-role="value" data-target="true" x="1200.55" y="827.93" font-family="Palatino, 'Palatino Linotype', serif" font-size="16.666666666666668" fill="#8fb4d9" text-anchor="middle" textLength="18.00" lengthAdjust="spacingAndGlyphs">22</text>
+<text id="t15" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#8fb4d9" text-anchor="start" textLength="206.00" lengthAdjust="spacingAndGlyphs">source: internal | n=2100 | rev 2</text>
+<text id="t16" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#8fb4d9" text-anchor="end" textLength="78.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t17" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#8fb4d9" text-anchor="end" textLength="90.00" lengthAdjust="spacingAndGlyphs">generated 8/3</text>
+</svg>

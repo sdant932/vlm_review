@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#5c636e"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#12161c" text-anchor="start" textLength="469.95" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - dashboard 0159</text>
+<rect x="58.00" y="134.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t1" data-role="panel_title" data-target="false" x="70.00" y="155.00" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="70.00" lengthAdjust="spacingAndGlyphs">Flowchart</text>
+<line x1="291.41" y1="204.00" x2="290.09" y2="252.67" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t2" data-role="edge" data-target="true" x="290.75" y="223.33" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="333.50" y1="200.40" x2="451.38" y2="252.67" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t3" data-role="edge" data-target="true" x="392.44" y="221.53" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="452.33" y1="296.67" x2="344.67" y2="345.33" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<line x1="501.47" y1="296.67" x2="502.53" y2="345.33" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<text id="t4" data-role="edge" data-target="true" x="502.00" y="316.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="36.00" lengthAdjust="spacingAndGlyphs">miss</text>
+<line x1="478.19" y1="389.33" x2="423.31" y2="438.00" stroke="#5c636e" stroke-width="1.44" marker-end="url(#ah)"/>
+<rect x="250.50" y="160.00" width="83.00" height="44.00" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="292.00" y="190.00" font-family="Arial, Helvetica, sans-serif" font-size="22.0" fill="#12161c" text-anchor="middle" textLength="53.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<rect x="379.50" y="160.00" width="167.00" height="44.00" rx="4.0" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="463.00" y="190.00" font-family="Arial, Helvetica, sans-serif" font-size="22.0" fill="#12161c" text-anchor="middle" textLength="137.00" lengthAdjust="spacingAndGlyphs">Archive Offset</text>
+<rect x="210.00" y="252.67" width="159.00" height="44.00" rx="4.0" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="289.50" y="282.67" font-family="Arial, Helvetica, sans-serif" font-size="22.0" fill="#12161c" text-anchor="middle" textLength="129.00" lengthAdjust="spacingAndGlyphs">Index Stream</text>
+<rect x="415.00" y="252.67" width="172.00" height="44.00" rx="4.0" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="501.00" y="282.67" font-family="Arial, Helvetica, sans-serif" font-size="22.0" fill="#12161c" text-anchor="middle" textLength="142.00" lengthAdjust="spacingAndGlyphs">Purge Backlog</text>
+<rect x="214.50" y="345.33" width="163.00" height="44.00" rx="4.0" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t9" data-role="label" data-target="true" x="296.00" y="375.33" font-family="Arial, Helvetica, sans-serif" font-size="22.0" fill="#12161c" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Cluster Offset</text>
+<rect x="423.50" y="345.33" width="159.00" height="44.00" rx="4.0" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t10" data-role="label" data-target="true" x="503.00" y="375.33" font-family="Arial, Helvetica, sans-serif" font-size="22.0" fill="#12161c" text-anchor="middle" textLength="129.00" lengthAdjust="spacingAndGlyphs">Flush Stream</text>
+<rect x="301.01" y="438.00" width="194.98" height="44.00" rx="4.0" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t11" data-role="label" data-target="true" x="398.50" y="468.00" font-family="Arial, Helvetica, sans-serif" font-size="22.0" fill="#12161c" text-anchor="middle" textLength="164.98" lengthAdjust="spacingAndGlyphs">Validate Schema</text>
+<rect x="761.00" y="134.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t12" data-role="panel_title" data-target="false" x="773.00" y="155.00" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="59.00" lengthAdjust="spacingAndGlyphs">Network</text>
+<line x1="1254.55" y1="339.41" x2="990.99" y2="395.51" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1254.55" y1="339.41" x2="1204.59" y2="416.03" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1204.59" y1="416.03" x2="981.76" y2="243.52" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1084.17" y1="437.43" x2="1089.51" y2="202.76" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1084.17" y1="437.43" x2="1196.28" y2="255.44" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="951.75" y1="326.87" x2="1254.55" y2="339.41" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="981.76" y1="243.52" x2="990.99" y2="395.51" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="981.76" y1="243.52" x2="1089.51" y2="202.76" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1089.51" y1="202.76" x2="1254.55" y2="339.41" stroke="#eceff4" stroke-width="1.44"/>
+<line x1="1196.28" y1="255.44" x2="951.75" y2="326.87" stroke="#eceff4" stroke-width="1.44"/>
+<rect x="1170.05" y="320.41" width="169.00" height="38.00" rx="4.0" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t13" data-role="label" data-target="true" x="1254.55" y="346.41" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="143.00" lengthAdjust="spacingAndGlyphs">Quarantine Sink</text>
+<rect x="1128.09" y="397.03" width="153.00" height="38.00" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t14" data-role="label" data-target="true" x="1204.59" y="423.03" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="127.00" lengthAdjust="spacingAndGlyphs">Flush Schema</text>
+<rect x="1051.17" y="418.43" width="66.00" height="38.00" rx="4.0" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t15" data-role="label" data-target="true" x="1084.17" y="444.43" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="40.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<rect x="908.99" y="376.51" width="164.00" height="38.00" rx="4.0" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t16" data-role="label" data-target="true" x="990.99" y="402.51" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="138.00" lengthAdjust="spacingAndGlyphs">Sample Replica</text>
+<rect x="883.75" y="307.87" width="136.00" height="38.00" rx="4.0" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t17" data-role="label" data-target="true" x="951.75" y="333.87" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="110.00" lengthAdjust="spacingAndGlyphs">Archive Sink</text>
+<rect x="940.76" y="224.52" width="82.00" height="38.00" rx="4.0" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t18" data-role="label" data-target="true" x="981.76" y="250.52" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="56.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="1005.52" y="183.76" width="167.98" height="38.00" rx="4.0" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t19" data-role="label" data-target="true" x="1089.51" y="209.76" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="141.98" lengthAdjust="spacingAndGlyphs">Validate Stream</text>
+<rect x="1152.78" y="236.44" width="87.00" height="38.00" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t20" data-role="label" data-target="true" x="1196.28" y="262.44" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="61.00" lengthAdjust="spacingAndGlyphs">Accept</text>
+<rect x="58.00" y="524.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t21" data-role="panel_title" data-target="false" x="70.00" y="545.00" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="38.00" lengthAdjust="spacingAndGlyphs">Gantt</text>
+<line x1="330.00" y1="584.00" x2="330.00" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t22" data-role="tick" data-target="true" x="351.69" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W1</text>
+<line x1="373.38" y1="584.00" x2="373.38" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t23" data-role="tick" data-target="true" x="395.06" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W2</text>
+<line x1="416.75" y1="584.00" x2="416.75" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t24" data-role="tick" data-target="true" x="438.44" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W3</text>
+<line x1="460.12" y1="584.00" x2="460.12" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t25" data-role="tick" data-target="true" x="481.81" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W4</text>
+<line x1="503.50" y1="584.00" x2="503.50" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t26" data-role="tick" data-target="true" x="525.19" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W5</text>
+<line x1="546.88" y1="584.00" x2="546.88" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t27" data-role="tick" data-target="true" x="568.56" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W6</text>
+<line x1="590.25" y1="584.00" x2="590.25" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t28" data-role="tick" data-target="true" x="611.94" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W7</text>
+<line x1="633.62" y1="584.00" x2="633.62" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t29" data-role="tick" data-target="true" x="655.31" y="580.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#5c636e" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">W8</text>
+<line x1="677.00" y1="584.00" x2="677.00" y2="870.00" stroke="#eceff4" stroke-width="1.28"/>
+<text id="t30" data-role="task" data-target="true" x="308.00" y="629.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="149.00" lengthAdjust="spacingAndGlyphs">Rebalance Stream</text>
+<rect x="416.75" y="613.26" width="86.75" height="18.48" rx="4.0" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t31" data-role="value" data-target="true" x="460.12" y="628.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">2w</text>
+<text id="t32" data-role="task" data-target="true" x="308.00" y="662.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="148.00" lengthAdjust="spacingAndGlyphs">Reconcile Window</text>
+<rect x="416.75" y="646.26" width="216.88" height="18.48" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t33" data-role="value" data-target="true" x="525.19" y="661.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">5w</text>
+<text id="t34" data-role="task" data-target="true" x="308.00" y="695.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="116.00" lengthAdjust="spacingAndGlyphs">Enrich Replica</text>
+<rect x="503.50" y="679.26" width="86.75" height="18.48" rx="4.0" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t35" data-role="value" data-target="true" x="546.88" y="694.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">2w</text>
+<text id="t36" data-role="task" data-target="true" x="308.00" y="728.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="51.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="416.75" y="712.26" width="130.12" height="18.48" rx="4.0" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t37" data-role="value" data-target="true" x="481.81" y="727.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">3w</text>
+<text id="t38" data-role="task" data-target="true" x="308.00" y="761.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="127.00" lengthAdjust="spacingAndGlyphs">Score Envelope</text>
+<rect x="330.00" y="745.26" width="216.88" height="18.48" rx="4.0" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t39" data-role="value" data-target="true" x="438.44" y="760.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">5w</text>
+<text id="t40" data-role="task" data-target="true" x="308.00" y="794.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="135.00" lengthAdjust="spacingAndGlyphs">Partition Window</text>
+<rect x="416.75" y="778.26" width="130.12" height="18.48" rx="4.0" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t41" data-role="value" data-target="true" x="481.81" y="793.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">3w</text>
+<text id="t42" data-role="task" data-target="true" x="308.00" y="827.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="118.00" lengthAdjust="spacingAndGlyphs">Rotate Replica</text>
+<rect x="373.38" y="811.26" width="173.50" height="18.48" rx="4.0" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t43" data-role="value" data-target="true" x="460.12" y="826.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">4w</text>
+<text id="t44" data-role="task" data-target="true" x="308.00" y="860.50" font-family="Arial, Helvetica, sans-serif" font-size="18.0" fill="#12161c" text-anchor="end" textLength="43.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<rect x="330.00" y="844.26" width="260.25" height="18.48" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t45" data-role="value" data-target="true" x="460.12" y="859.50" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="21.00" lengthAdjust="spacingAndGlyphs">6w</text>
+<rect x="761.00" y="524.00" width="681.00" height="368.00" rx="4" fill="none" stroke="#39414e" stroke-width="1.4400000000000002"/>
+<text id="t46" data-role="panel_title" data-target="false" x="773.00" y="545.00" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5c636e" text-anchor="start" textLength="69.00" lengthAdjust="spacingAndGlyphs">Org Chart</text>
+<line x1="1101.50" y1="614.00" x2="1101.50" y2="651.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1101.50" y1="651.50" x2="988.00" y2="651.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="988.00" y1="651.50" x2="988.00" y2="689.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1101.50" y1="614.00" x2="1101.50" y2="651.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1101.50" y1="651.50" x2="1215.00" y2="651.50" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1215.00" y1="651.50" x2="1215.00" y2="689.00" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="988.00" y1="733.00" x2="988.00" y2="771.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="988.00" y1="771.75" x2="931.25" y2="771.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="931.25" y1="771.75" x2="931.25" y2="810.50" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="988.00" y1="733.00" x2="988.00" y2="771.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="988.00" y1="771.75" x2="1101.50" y2="771.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1101.50" y1="771.75" x2="1101.50" y2="810.50" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1215.00" y1="733.00" x2="1215.00" y2="770.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1215.00" y1="770.75" x2="1271.75" y2="770.75" stroke="#5c636e" stroke-width="1.60"/>
+<line x1="1271.75" y1="770.75" x2="1271.75" y2="808.50" stroke="#5c636e" stroke-width="1.60" marker-end="url(#ah)"/>
+<rect x="1015.00" y="570.00" width="173.00" height="44.00" rx="4.0" fill="#dfe9f7" stroke="#39414e" stroke-width="1.6"/>
+<text id="t47" data-role="label" data-target="true" x="1101.50" y="599.00" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="147.00" lengthAdjust="spacingAndGlyphs">Planner Partition</text>
+<rect x="895.00" y="689.00" width="186.00" height="44.00" rx="4.0" fill="#e2f0e6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t48" data-role="label" data-target="true" x="988.00" y="718.00" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="160.00" lengthAdjust="spacingAndGlyphs">Specialist Backlog</text>
+<rect x="1124.50" y="689.00" width="181.00" height="44.00" rx="4.0" fill="#faeedd" stroke="#39414e" stroke-width="1.6"/>
+<text id="t49" data-role="label" data-target="true" x="1215.00" y="718.00" font-family="Arial, Helvetica, sans-serif" font-size="20.0" fill="#12161c" text-anchor="middle" textLength="155.00" lengthAdjust="spacingAndGlyphs">Manager Window</text>
+<rect x="854.75" y="810.50" width="153.00" height="39.00" rx="4.0" fill="#ece5f6" stroke="#39414e" stroke-width="1.6"/>
+<text id="t50" data-role="label" data-target="true" x="931.25" y="836.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="145.00" lengthAdjust="spacingAndGlyphs">Analyst Checkpoint</text>
+<rect x="1027.00" y="810.50" width="149.00" height="39.00" rx="4.0" fill="#dff0f3" stroke="#39414e" stroke-width="1.6"/>
+<text id="t51" data-role="label" data-target="true" x="1101.50" y="836.00" font-family="Arial, Helvetica, sans-serif" font-size="16.666666666666668" fill="#12161c" text-anchor="middle" textLength="140.00" lengthAdjust="spacingAndGlyphs">Engineer Envelope</text>
+<rect x="1193.25" y="808.50" width="157.00" height="43.00" rx="4.0" fill="#fae4e4" stroke="#39414e" stroke-width="1.6"/>
+<text id="t52" data-role="label" data-target="true" x="1271.75" y="837.00" font-family="Arial, Helvetica, sans-serif" font-size="19.0" fill="#12161c" text-anchor="middle" textLength="131.00" lengthAdjust="spacingAndGlyphs">Architect Offset</text>
+<text id="t53" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5c636e" text-anchor="start" textLength="210.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4270 | rev 12</text>
+<text id="t54" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5c636e" text-anchor="end" textLength="74.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t55" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5c636e" text-anchor="end" textLength="105.00" lengthAdjust="spacingAndGlyphs">generated 23/10</text>
+</svg>

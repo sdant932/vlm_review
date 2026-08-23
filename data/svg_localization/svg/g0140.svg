@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#ffffff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#555555"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Menlo, Monaco, monospace" font-size="30" fill="#000000" text-anchor="start" textLength="558.00" lengthAdjust="spacingAndGlyphs">Triage Protocol - quadrant 0140</text>
+<rect x="178.00" y="154.00" width="1204.00" height="678.00" rx="0" fill="none" stroke="#555555" stroke-width="1.9"/>
+<line x1="780.00" y1="154.00" x2="780.00" y2="832.00" stroke="#555555" stroke-width="1.90"/>
+<line x1="178.00" y1="493.00" x2="1382.00" y2="493.00" stroke="#555555" stroke-width="1.90"/>
+<text id="t1" data-role="quadrant" data-target="true" x="479.00" y="214.24" font-family="Menlo, Monaco, monospace" font-size="18" fill="#555555" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Invest</text>
+<text id="t2" data-role="quadrant" data-target="true" x="1081.00" y="214.24" font-family="Menlo, Monaco, monospace" font-size="18" fill="#555555" text-anchor="middle" textLength="77.00" lengthAdjust="spacingAndGlyphs">Sustain</text>
+<text id="t3" data-role="quadrant" data-target="true" x="479.00" y="783.76" font-family="Menlo, Monaco, monospace" font-size="18" fill="#555555" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Divest</text>
+<text id="t4" data-role="quadrant" data-target="true" x="1081.00" y="783.76" font-family="Menlo, Monaco, monospace" font-size="18" fill="#555555" text-anchor="middle" textLength="66.00" lengthAdjust="spacingAndGlyphs">Review</text>
+<circle cx="798.50" cy="245.43" r="11.00" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t5" data-role="point" data-target="true" x="798.50" y="227.43" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Pacific</text>
+<circle cx="1128.85" cy="507.00" r="11.00" fill="#eeeeee" stroke="#000000" stroke-width="1.9"/>
+<text id="t6" data-role="point" data-target="true" x="1128.85" y="489.00" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Central</text>
+<circle cx="564.08" cy="682.29" r="11.00" fill="#dddddd" stroke="#000000" stroke-width="1.9"/>
+<text id="t7" data-role="point" data-target="true" x="564.08" y="664.29" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<circle cx="407.53" cy="631.11" r="11.00" fill="#f6f6f6" stroke="#000000" stroke-width="1.9"/>
+<text id="t8" data-role="point" data-target="true" x="407.53" y="613.11" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">South</text>
+<circle cx="618.04" cy="589.40" r="11.00" fill="#e6e6e6" stroke="#000000" stroke-width="1.9"/>
+<text id="t9" data-role="point" data-target="true" x="618.04" y="571.40" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">Baltic</text>
+<circle cx="1101.13" cy="584.88" r="11.00" fill="#cccccc" stroke="#000000" stroke-width="1.9"/>
+<text id="t10" data-role="point" data-target="true" x="1101.13" y="566.88" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">North</text>
+<circle cx="1067.34" cy="521.25" r="11.00" fill="#ffffff" stroke="#000000" stroke-width="1.9"/>
+<text id="t11" data-role="point" data-target="true" x="1067.34" y="503.25" font-family="Menlo, Monaco, monospace" font-size="16.666666666666668" fill="#000000" text-anchor="middle" textLength="50.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<text id="t12" data-role="axis" data-target="true" x="780.00" y="870.00" font-family="Menlo, Monaco, monospace" font-size="17" fill="#555555" text-anchor="middle" textLength="70.00" lengthAdjust="spacingAndGlyphs">Latency</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#555555" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=5829 | rev 16</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Menlo, Monaco, monospace" font-size="15" fill="#555555" text-anchor="end" textLength="45.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Menlo, Monaco, monospace" font-size="14" fill="#555555" text-anchor="end" textLength="120.00" lengthAdjust="spacingAndGlyphs">generated 18/11</text>
+</svg>

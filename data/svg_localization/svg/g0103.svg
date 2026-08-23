@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="404.00" lengthAdjust="spacingAndGlyphs">Fleet Logistics - network 0103</text>
+<line x1="1174.98" y1="492.09" x2="527.10" y2="731.66" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1174.98" y1="492.09" x2="512.36" y2="310.81" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1087.64" y1="642.60" x2="674.23" y2="250.87" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="963.95" y1="760.43" x2="512.36" y2="310.81" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="686.43" y1="769.75" x2="963.95" y2="760.43" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="527.10" y1="731.66" x2="1130.19" y2="372.24" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="305.36" y1="626.00" x2="324.63" y2="407.93" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="324.63" y1="407.93" x2="1174.98" y2="492.09" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="674.23" y1="250.87" x2="963.95" y2="760.43" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="894.89" y1="271.93" x2="674.23" y2="250.87" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1130.19" y1="372.24" x2="512.36" y2="310.81" stroke="#e2ebf6" stroke-width="1.35"/>
+<rect x="1096.99" y="473.09" width="155.98" height="38.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t1" data-role="label" data-target="true" x="1174.98" y="499.09" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="129.98" lengthAdjust="spacingAndGlyphs">Annotate Yard</text>
+<rect x="1003.66" y="623.60" width="167.97" height="38.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t2" data-role="label" data-target="true" x="1087.64" y="649.60" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="141.97" lengthAdjust="spacingAndGlyphs">Resolve Waybill</text>
+<rect x="882.97" y="741.43" width="161.97" height="38.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t3" data-role="label" data-target="true" x="963.95" y="767.43" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="135.97" lengthAdjust="spacingAndGlyphs">Archive Trailer</text>
+<rect x="613.44" y="750.75" width="145.98" height="38.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t4" data-role="label" data-target="true" x="686.43" y="776.75" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="119.98" lengthAdjust="spacingAndGlyphs">Rotate Depot</text>
+<rect x="444.11" y="712.66" width="165.98" height="38.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t5" data-role="label" data-target="true" x="527.10" y="738.66" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="139.98" lengthAdjust="spacingAndGlyphs">Snapshot Route</text>
+<rect x="255.36" y="607.00" width="100.00" height="38.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t6" data-role="label" data-target="true" x="305.36" y="633.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="74.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<rect x="260.13" y="388.93" width="129.00" height="38.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t7" data-role="label" data-target="true" x="324.63" y="414.93" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="103.00" lengthAdjust="spacingAndGlyphs">Merge Dock</text>
+<rect x="448.36" y="291.81" width="127.98" height="38.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t8" data-role="label" data-target="true" x="512.36" y="317.81" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="101.98" lengthAdjust="spacingAndGlyphs">Route Dock</text>
+<rect x="596.24" y="231.87" width="155.98" height="38.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t9" data-role="label" data-target="true" x="674.23" y="257.87" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="129.98" lengthAdjust="spacingAndGlyphs">Resolve Driver</text>
+<rect x="819.90" y="252.93" width="149.98" height="38.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t10" data-role="label" data-target="true" x="894.89" y="278.93" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="123.98" lengthAdjust="spacingAndGlyphs">Purge Waybill</text>
+<rect x="1096.69" y="353.24" width="67.00" height="38.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t11" data-role="label" data-target="true" x="1130.19" y="379.24" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">Hold</text>
+<text id="t12" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#54677f" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=6469 | rev 10</text>
+<text id="t13" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#54677f" text-anchor="end" textLength="67.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t14" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#54677f" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 13/9</text>
+</svg>

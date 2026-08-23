@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="441.00" lengthAdjust="spacingAndGlyphs">Claims Handling - org chart 0054</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="375.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="375.00" y1="328.50" x2="375.00" y2="481.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="750.00" y2="481.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="328.50" x2="1125.00" y2="328.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="1125.00" y1="328.50" x2="1125.00" y2="481.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="375.00" y1="525.00" x2="375.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="375.00" y1="677.50" x2="300.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="300.00" y1="677.50" x2="300.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="375.00" y1="525.00" x2="375.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="375.00" y1="677.50" x2="600.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="600.00" y1="677.50" x2="600.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="750.00" y1="525.00" x2="750.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="750.00" y1="677.50" x2="900.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="900.00" y1="677.50" x2="900.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<line x1="1125.00" y1="525.00" x2="1125.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="1125.00" y1="677.50" x2="1200.00" y2="677.50" stroke="#9aa6b4" stroke-width="1.60"/>
+<line x1="1200.00" y1="677.50" x2="1200.00" y2="830.00" stroke="#9aa6b4" stroke-width="1.60" marker-end="url(#ah)"/>
+<rect x="664.00" y="132.00" width="172.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="161.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="146.00" lengthAdjust="spacingAndGlyphs">Analyst Liability</text>
+<rect x="271.00" y="481.00" width="208.00" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t2" data-role="label" data-target="true" x="375.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="182.00" lengthAdjust="spacingAndGlyphs">Engineer Deductible</text>
+<rect x="621.00" y="481.00" width="258.00" height="44.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t3" data-role="label" data-target="true" x="750.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="232.00" lengthAdjust="spacingAndGlyphs">Coordinator Endorsement</text>
+<rect x="1033.01" y="481.00" width="183.98" height="44.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t4" data-role="label" data-target="true" x="1125.00" y="510.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="157.98" lengthAdjust="spacingAndGlyphs">Manager Adjuster</text>
+<rect x="200.01" y="830.00" width="199.98" height="44.00" rx="4" fill="#1e4650" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t5" data-role="label" data-target="true" x="300.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="173.98" lengthAdjust="spacingAndGlyphs">Architect Appraisal</text>
+<rect x="505.01" y="830.00" width="189.98" height="44.00" rx="4" fill="#5c2b30" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t6" data-role="label" data-target="true" x="600.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="163.98" lengthAdjust="spacingAndGlyphs">Specialist Reserve</text>
+<rect x="828.00" y="830.00" width="144.00" height="44.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t7" data-role="label" data-target="true" x="900.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="118.00" lengthAdjust="spacingAndGlyphs">Lead Salvage</text>
+<rect x="1116.01" y="830.00" width="167.98" height="44.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t8" data-role="label" data-target="true" x="1200.00" y="859.00" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#f2f5f8" text-anchor="middle" textLength="141.98" lengthAdjust="spacingAndGlyphs">Director Payout</text>
+<text id="t9" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=4632 | rev 18</text>
+<text id="t10" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="67.00" lengthAdjust="spacingAndGlyphs">INTERNAL</text>
+<text id="t11" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 11/7</text>
+</svg>

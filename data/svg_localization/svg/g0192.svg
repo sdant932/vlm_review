@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="606.98" lengthAdjust="spacingAndGlyphs">Payment Authorization - flowchart 0192</text>
+<line x1="564.67" y1="156.00" x2="310.34" y2="235.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="805.25" y1="156.00" x2="572.75" y2="235.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t1" data-role="edge" data-target="true" x="689.00" y="191.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="73.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="658.13" y1="156.00" x2="739.37" y2="235.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="894.41" y1="156.00" x2="982.08" y2="235.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="940.29" y1="156.00" x2="1192.70" y2="235.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t2" data-role="edge" data-target="true" x="1066.50" y="191.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="73.00" lengthAdjust="spacingAndGlyphs">over cap</text>
+<line x1="254.71" y1="279.00" x2="309.30" y2="358.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="287.09" y1="279.00" x2="461.01" y2="359.42" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t3" data-role="edge" data-target="true" x="374.05" y="315.21" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="947.83" y1="279.00" x2="737.17" y2="358.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t4" data-role="edge" data-target="true" x="842.50" y="314.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="54.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="580.98" y1="279.00" x2="843.02" y2="358.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t5" data-role="edge" data-target="true" x="712.00" y="314.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">queued</text>
+<line x1="622.01" y1="278.23" x2="1070.99" y2="361.84" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="834.17" y1="402.00" x2="540.33" y2="481.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="866.99" y1="402.00" x2="691.01" y2="481.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="897.21" y1="402.00" x2="829.79" y2="481.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="1143.72" y1="402.00" x2="1054.77" y2="481.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t6" data-role="edge" data-target="true" x="1099.25" y="437.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">retry</text>
+<line x1="737.94" y1="525.00" x2="475.57" y2="604.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t7" data-role="edge" data-target="true" x="606.75" y="560.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="55.00" lengthAdjust="spacingAndGlyphs">partial</text>
+<line x1="771.83" y1="525.00" x2="631.17" y2="604.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t8" data-role="edge" data-target="true" x="701.50" y="560.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">retry</text>
+<line x1="806.89" y1="525.00" x2="792.11" y2="604.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="1023.74" y1="525.00" x2="1001.25" y2="604.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t9" data-role="edge" data-target="true" x="1012.50" y="560.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="41.00" lengthAdjust="spacingAndGlyphs">stale</text>
+<line x1="691.51" y1="515.07" x2="1101.49" y2="615.03" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t10" data-role="edge" data-target="true" x="896.50" y="561.05" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="64.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="401.16" y1="648.00" x2="396.34" y2="727.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t11" data-role="edge" data-target="true" x="398.75" y="683.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="26.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="934.49" y1="645.90" x2="687.89" y2="727.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="1101.49" y1="645.02" x2="907.55" y2="727.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="496.49" y1="642.62" x2="1000.50" y2="731.76" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="439.98" y1="771.00" x2="601.52" y2="850.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="1053.91" y1="771.00" x2="895.59" y2="850.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="638.59" y1="727.00" x2="898.40" y2="402.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="771.83" y1="525.00" x2="631.17" y2="604.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="669.36" y1="850.00" x2="1007.14" y2="525.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="656.31" y1="850.00" x2="801.20" y2="525.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<line x1="897.21" y1="402.00" x2="829.79" y2="481.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<text id="t12" data-role="edge" data-target="true" x="863.50" y="437.50" font-family="Verdana, Geneva, sans-serif" font-size="16.666666666666668" fill="#54677f" text-anchor="middle" textLength="26.00" lengthAdjust="spacingAndGlyphs">fail</text>
+<line x1="352.32" y1="358.00" x2="607.69" y2="156.00" stroke="#54677f" stroke-width="1.35" marker-end="url(#ah)"/>
+<rect x="538.50" y="112.00" width="194.00" height="44.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t13" data-role="label" data-target="true" x="635.50" y="143.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="164.00" lengthAdjust="spacingAndGlyphs">Dispatch Payer</text>
+<rect x="778.50" y="112.00" width="183.00" height="44.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t14" data-role="label" data-target="true" x="870.00" y="143.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="153.00" lengthAdjust="spacingAndGlyphs">Sample Fraud</text>
+<rect x="131.01" y="235.00" width="217.00" height="44.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t15" data-role="label" data-target="true" x="239.51" y="266.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="187.00" lengthAdjust="spacingAndGlyphs">Cluster Merchant</text>
+<rect x="394.01" y="235.00" width="228.00" height="44.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t16" data-role="label" data-target="true" x="508.01" y="266.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="198.00" lengthAdjust="spacingAndGlyphs">Merge Settlement</text>
+<rect x="668.01" y="235.00" width="187.98" height="44.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t17" data-role="label" data-target="true" x="762.00" y="266.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="157.98" lengthAdjust="spacingAndGlyphs">Archive Wallet</text>
+<rect x="901.99" y="235.00" width="209.00" height="44.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t18" data-role="label" data-target="true" x="1006.49" y="266.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="179.00" lengthAdjust="spacingAndGlyphs">Partition Invoice</text>
+<rect x="1156.99" y="235.00" width="212.00" height="44.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t19" data-role="label" data-target="true" x="1262.99" y="266.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="182.00" lengthAdjust="spacingAndGlyphs">Rotate Merchant</text>
+<rect x="234.01" y="358.00" width="181.00" height="44.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t20" data-role="label" data-target="true" x="324.51" y="389.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="151.00" lengthAdjust="spacingAndGlyphs">Enrich Ledger</text>
+<rect x="461.01" y="358.00" width="89.00" height="44.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t21" data-role="label" data-target="true" x="505.51" y="389.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="59.00" lengthAdjust="spacingAndGlyphs">Retry</text>
+<rect x="596.01" y="358.00" width="164.98" height="44.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t22" data-role="label" data-target="true" x="678.50" y="389.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="134.98" lengthAdjust="spacingAndGlyphs">Flush Wallet</text>
+<rect x="806.99" y="358.00" width="218.00" height="44.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t23" data-role="label" data-target="true" x="915.99" y="389.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="188.00" lengthAdjust="spacingAndGlyphs">Publish Merchant</text>
+<rect x="1070.99" y="358.00" width="195.00" height="44.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t24" data-role="label" data-target="true" x="1168.49" y="389.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="165.00" lengthAdjust="spacingAndGlyphs">Sample Ledger</text>
+<rect x="370.51" y="481.00" width="176.00" height="44.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t25" data-role="label" data-target="true" x="458.51" y="512.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="146.00" lengthAdjust="spacingAndGlyphs">Purge Ledger</text>
+<rect x="592.51" y="481.00" width="99.00" height="44.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t26" data-role="label" data-target="true" x="642.01" y="512.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Expire</text>
+<rect x="737.51" y="481.00" width="147.00" height="44.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t27" data-role="label" data-target="true" x="811.01" y="512.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="117.00" lengthAdjust="spacingAndGlyphs">Flush Card</text>
+<rect x="930.51" y="481.00" width="198.98" height="44.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t28" data-role="label" data-target="true" x="1030.00" y="512.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="168.98" lengthAdjust="spacingAndGlyphs">Partition Wallet</text>
+<rect x="308.51" y="604.00" width="187.98" height="44.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t29" data-role="label" data-target="true" x="402.50" y="635.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="157.98" lengthAdjust="spacingAndGlyphs">Validate Payer</text>
+<rect x="542.49" y="604.00" width="99.00" height="44.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t30" data-role="label" data-target="true" x="591.99" y="635.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Reject</text>
+<rect x="687.49" y="604.00" width="201.00" height="44.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t31" data-role="label" data-target="true" x="787.99" y="635.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="171.00" lengthAdjust="spacingAndGlyphs">Resolve Invoice</text>
+<rect x="934.49" y="604.00" width="121.00" height="44.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t32" data-role="label" data-target="true" x="994.99" y="635.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="91.00" lengthAdjust="spacingAndGlyphs">Approve</text>
+<rect x="1101.49" y="604.00" width="90.00" height="44.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t33" data-role="label" data-target="true" x="1146.49" y="635.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="60.00" lengthAdjust="spacingAndGlyphs">Defer</text>
+<rect x="304.50" y="727.00" width="181.00" height="44.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t34" data-role="label" data-target="true" x="395.00" y="758.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="151.00" lengthAdjust="spacingAndGlyphs">Route Invoice</text>
+<rect x="531.50" y="727.00" width="179.00" height="44.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t35" data-role="label" data-target="true" x="621.00" y="758.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="149.00" lengthAdjust="spacingAndGlyphs">Publish Fraud</text>
+<rect x="756.50" y="727.00" width="198.00" height="44.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t36" data-role="label" data-target="true" x="855.50" y="758.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Flush Merchant</text>
+<rect x="1000.50" y="727.00" width="195.00" height="44.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t37" data-role="label" data-target="true" x="1098.00" y="758.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="165.00" lengthAdjust="spacingAndGlyphs">Backfill Invoice</text>
+<rect x="568.00" y="850.00" width="157.00" height="44.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t38" data-role="label" data-target="true" x="646.50" y="881.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="127.00" lengthAdjust="spacingAndGlyphs">Merge Card</text>
+<rect x="771.00" y="850.00" width="161.00" height="44.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t39" data-role="label" data-target="true" x="851.50" y="881.00" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#0c1b2e" text-anchor="middle" textLength="131.00" lengthAdjust="spacingAndGlyphs">Rotate Card</text>
+<text id="t40" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#54677f" text-anchor="start" textLength="244.00" lengthAdjust="spacingAndGlyphs">source: internal | n=6782 | rev 11</text>
+<text id="t41" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Verdana, Geneva, sans-serif" font-size="15" fill="#54677f" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t42" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#54677f" text-anchor="end" textLength="118.00" lengthAdjust="spacingAndGlyphs">generated 12/11</text>
+</svg>

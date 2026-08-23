@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#f5f9ff"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#54677f"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="30" fill="#0c1b2e" text-anchor="start" textLength="395.00" lengthAdjust="spacingAndGlyphs">Fleet Logistics - network 0039</text>
+<line x1="1217.52" y1="538.85" x2="370.91" y2="454.91" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1217.52" y1="538.85" x2="477.96" y2="288.65" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1075.57" y1="645.70" x2="477.96" y2="288.65" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="958.23" y1="779.96" x2="728.32" y2="245.80" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="958.23" y1="779.96" x2="477.96" y2="288.65" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="732.13" y1="825.62" x2="958.23" y2="779.96" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="732.13" y1="825.62" x2="728.32" y2="245.80" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="530.13" y1="731.25" x2="1217.52" y2="538.85" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="297.03" y1="619.84" x2="530.13" y2="731.25" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="370.91" y1="454.91" x2="925.24" y2="264.43" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="477.96" y1="288.65" x2="530.13" y2="731.25" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="728.32" y1="245.80" x2="530.13" y2="731.25" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="925.24" y1="264.43" x2="1217.52" y2="538.85" stroke="#e2ebf6" stroke-width="1.35"/>
+<line x1="1081.67" y1="350.87" x2="530.13" y2="731.25" stroke="#e2ebf6" stroke-width="1.35"/>
+<rect x="1156.02" y="519.85" width="123.00" height="38.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t1" data-role="label" data-target="true" x="1217.52" y="544.85" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="97.00" lengthAdjust="spacingAndGlyphs">Route Fuel</text>
+<rect x="1000.07" y="626.70" width="151.00" height="38.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t2" data-role="label" data-target="true" x="1075.57" y="651.70" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="125.00" lengthAdjust="spacingAndGlyphs">Sample Route</text>
+<rect x="888.24" y="760.96" width="139.98" height="38.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t3" data-role="label" data-target="true" x="958.23" y="785.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="113.98" lengthAdjust="spacingAndGlyphs">Flush Trailer</text>
+<rect x="661.13" y="806.62" width="142.00" height="38.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t4" data-role="label" data-target="true" x="732.13" y="831.62" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="116.00" lengthAdjust="spacingAndGlyphs">Cluster Dock</text>
+<rect x="450.64" y="712.25" width="158.98" height="38.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t5" data-role="label" data-target="true" x="530.13" y="737.25" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="132.98" lengthAdjust="spacingAndGlyphs">Annotate Yard</text>
+<rect x="259.53" y="600.84" width="75.00" height="38.00" rx="4" fill="#f7dde2" stroke="#33506e" stroke-width="1.5"/>
+<text id="t6" data-role="label" data-target="true" x="297.03" y="625.84" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="49.00" lengthAdjust="spacingAndGlyphs">Close</text>
+<rect x="285.92" y="435.91" width="169.98" height="38.00" rx="4" fill="#d8e6f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t7" data-role="label" data-target="true" x="370.91" y="460.91" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="143.98" lengthAdjust="spacingAndGlyphs">Resolve Waybill</text>
+<rect x="412.96" y="269.65" width="130.00" height="38.00" rx="4" fill="#d5ecef" stroke="#33506e" stroke-width="1.5"/>
+<text id="t8" data-role="label" data-target="true" x="477.96" y="294.65" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="104.00" lengthAdjust="spacingAndGlyphs">Purge Dock</text>
+<rect x="646.82" y="226.80" width="163.00" height="38.00" rx="4" fill="#e4e2f7" stroke="#33506e" stroke-width="1.5"/>
+<text id="t9" data-role="label" data-target="true" x="728.32" y="251.80" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="137.00" lengthAdjust="spacingAndGlyphs">Rehydrate Fuel</text>
+<rect x="845.74" y="245.43" width="159.00" height="38.00" rx="4" fill="#dff0e4" stroke="#33506e" stroke-width="1.5"/>
+<text id="t10" data-role="label" data-target="true" x="925.24" y="270.43" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="133.00" lengthAdjust="spacingAndGlyphs">Score Manifest</text>
+<rect x="1022.17" y="331.87" width="119.00" height="38.00" rx="4" fill="#f7e8d8" stroke="#33506e" stroke-width="1.5"/>
+<text id="t11" data-role="label" data-target="true" x="1081.67" y="356.87" font-family="Palatino, 'Palatino Linotype', serif" font-size="20" fill="#0c1b2e" text-anchor="middle" textLength="93.00" lengthAdjust="spacingAndGlyphs">Score Fuel</text>
+<text id="t12" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#54677f" text-anchor="start" textLength="213.00" lengthAdjust="spacingAndGlyphs">source: internal | n=9220 | rev 18</text>
+<text id="t13" data-role="badge" data-target="false" x="1442.00" y="45.96" font-family="Palatino, 'Palatino Linotype', serif" font-size="15" fill="#54677f" text-anchor="end" textLength="51.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t14" data-role="footnote" data-target="false" x="1442.00" y="932.00" font-family="Palatino, 'Palatino Linotype', serif" font-size="14" fill="#54677f" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 6/11</text>
+</svg>

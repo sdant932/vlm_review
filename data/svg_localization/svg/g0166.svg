@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="54.96" font-family="'Courier New', Courier, monospace" font-size="30" fill="#2b2418" text-anchor="start" textLength="594.00" lengthAdjust="spacingAndGlyphs">Telemetry Ingest - org chart 0166</text>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="500.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="500.00" y1="328.50" x2="500.00" y2="481.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="750.00" y1="176.00" x2="750.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="750.00" y1="328.50" x2="1000.00" y2="328.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1000.00" y1="328.50" x2="1000.00" y2="481.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="500.00" y1="677.50" x2="300.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="300.00" y1="677.50" x2="300.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="500.00" y1="525.00" x2="500.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="500.00" y1="677.50" x2="600.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="600.00" y1="677.50" x2="600.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="1000.00" y1="525.00" x2="1000.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1000.00" y1="677.50" x2="900.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="900.00" y1="677.50" x2="900.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<line x1="1000.00" y1="525.00" x2="1000.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1000.00" y1="677.50" x2="1200.00" y2="677.50" stroke="#7a6c56" stroke-width="1.70"/>
+<line x1="1200.00" y1="677.50" x2="1200.00" y2="830.00" stroke="#7a6c56" stroke-width="1.70" marker-end="url(#ah)"/>
+<rect x="629.00" y="132.00" width="242.00" height="44.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="label" data-target="true" x="750.00" y="160.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#2b2418" text-anchor="middle" textLength="216.00" lengthAdjust="spacingAndGlyphs">Specialist Replica</text>
+<rect x="403.00" y="481.00" width="194.00" height="44.00" rx="6" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="label" data-target="true" x="500.00" y="509.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#2b2418" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Auditor Stream</text>
+<rect x="873.00" y="481.00" width="254.00" height="44.00" rx="6" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="label" data-target="true" x="1000.00" y="509.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#2b2418" text-anchor="middle" textLength="228.00" lengthAdjust="spacingAndGlyphs">Engineer Checkpoint</text>
+<rect x="209.00" y="830.00" width="182.00" height="44.00" rx="6" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="label" data-target="true" x="300.00" y="858.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#2b2418" text-anchor="middle" textLength="156.00" lengthAdjust="spacingAndGlyphs">Director Sink</text>
+<rect x="503.00" y="830.00" width="194.00" height="44.00" rx="6" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="label" data-target="true" x="600.00" y="858.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#2b2418" text-anchor="middle" textLength="168.00" lengthAdjust="spacingAndGlyphs">Planner Schema</text>
+<rect x="761.00" y="830.00" width="278.00" height="44.00" rx="6" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="label" data-target="true" x="900.00" y="858.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#2b2418" text-anchor="middle" textLength="252.00" lengthAdjust="spacingAndGlyphs">Coordinator Partition</text>
+<rect x="1121.00" y="830.00" width="158.00" height="44.00" rx="6" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="label" data-target="true" x="1200.00" y="858.00" font-family="'Courier New', Courier, monospace" font-size="20" fill="#2b2418" text-anchor="middle" textLength="132.00" lengthAdjust="spacingAndGlyphs">Lead Offset</text>
+<text id="t8" data-role="footnote" data-target="false" x="58.00" y="930.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#7a6c56" text-anchor="start" textLength="272.00" lengthAdjust="spacingAndGlyphs">source: internal | n=8791 | rev 17</text>
+<text id="t9" data-role="badge" data-target="false" x="1442.00" y="43.96" font-family="'Courier New', Courier, monospace" font-size="15" fill="#7a6c56" text-anchor="end" textLength="63.00" lengthAdjust="spacingAndGlyphs">PREVIEW</text>
+<text id="t10" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Courier New', Courier, monospace" font-size="14" fill="#7a6c56" text-anchor="end" textLength="112.00" lengthAdjust="spacingAndGlyphs">generated 14/8</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#fbf7ef"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#7a6c56"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="58.96" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#2b2418" text-anchor="start" textLength="482.00" lengthAdjust="spacingAndGlyphs">Content Moderation - pie chart 0196</text>
+<path d="M600.00,513.00 L600.00,294.60 A218.40,218.40 0 0 1 797.69,420.16 Z" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t1" data-role="value" data-target="true" x="672.60" y="405.70" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<path d="M600.00,513.00 L797.69,420.16 A218.40,218.40 0 0 1 762.49,658.93 Z" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t2" data-role="value" data-target="true" x="733.96" y="539.75" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="34.00" lengthAdjust="spacingAndGlyphs">18%</text>
+<path d="M600.00,513.00 L762.49,658.93 A218.40,218.40 0 0 1 654.81,724.41 Z" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t3" data-role="value" data-target="true" x="670.36" y="635.70" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">9%</text>
+<path d="M600.00,513.00 L654.81,724.41 A218.40,218.40 0 0 1 528.87,719.49 Z" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t4" data-role="value" data-target="true" x="594.72" y="655.30" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="25.00" lengthAdjust="spacingAndGlyphs">9%</text>
+<path d="M600.00,513.00 L528.87,719.49 A218.40,218.40 0 0 1 388.06,460.26 Z" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t5" data-role="value" data-target="true" x="481.01" y="584.63" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="35.00" lengthAdjust="spacingAndGlyphs">23%</text>
+<path d="M600.00,513.00 L388.06,460.26 A218.40,218.40 0 0 1 600.00,294.60 Z" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t6" data-role="value" data-target="true" x="516.61" y="413.32" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#2b2418" text-anchor="middle" textLength="33.00" lengthAdjust="spacingAndGlyphs">21%</text>
+<rect x="1142.00" y="164.00" width="22.00" height="22.00" rx="3" fill="#f3e6cd" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t7" data-role="legend" data-target="true" x="1178.00" y="181.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2b2418" text-anchor="start" textLength="46.00" lengthAdjust="spacingAndGlyphs">Sahel</text>
+<rect x="1142.00" y="208.00" width="22.00" height="22.00" rx="3" fill="#e6ecdb" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t8" data-role="legend" data-target="true" x="1178.00" y="225.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2b2418" text-anchor="start" textLength="51.00" lengthAdjust="spacingAndGlyphs">North</text>
+<rect x="1142.00" y="252.00" width="22.00" height="22.00" rx="3" fill="#f7e2d5" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t9" data-role="legend" data-target="true" x="1178.00" y="269.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2b2418" text-anchor="start" textLength="52.00" lengthAdjust="spacingAndGlyphs">Andes</text>
+<rect x="1142.00" y="296.00" width="22.00" height="22.00" rx="3" fill="#e8e3f0" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t10" data-role="legend" data-target="true" x="1178.00" y="313.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2b2418" text-anchor="start" textLength="51.00" lengthAdjust="spacingAndGlyphs">Iberia</text>
+<rect x="1142.00" y="340.00" width="22.00" height="22.00" rx="3" fill="#dceaea" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t11" data-role="legend" data-target="true" x="1178.00" y="357.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2b2418" text-anchor="start" textLength="76.00" lengthAdjust="spacingAndGlyphs">Cascadia</text>
+<rect x="1142.00" y="384.00" width="22.00" height="22.00" rx="3" fill="#f5dede" stroke="#5f5340" stroke-width="1.7"/>
+<text id="t12" data-role="legend" data-target="true" x="1178.00" y="401.00" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#2b2418" text-anchor="start" textLength="50.00" lengthAdjust="spacingAndGlyphs">Rhine</text>
+<text id="t13" data-role="footnote" data-target="false" x="58.00" y="932.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#7a6c56" text-anchor="start" textLength="198.00" lengthAdjust="spacingAndGlyphs">source: internal | n=704 | rev 10</text>
+<text id="t14" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#7a6c56" text-anchor="end" textLength="50.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t15" data-role="footnote" data-target="false" x="1442.00" y="933.00" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#7a6c56" text-anchor="end" textLength="95.00" lengthAdjust="spacingAndGlyphs">generated 26/5</text>
+</svg>

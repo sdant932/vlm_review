@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+<rect width="1500" height="950" fill="#151a21"/>
+<defs><marker id="ah" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11,4 L0,8 z" fill="#9aa6b4"/></marker></defs>
+<text id="t0" data-role="title" data-target="false" x="58.00" y="57.96" font-family="'Trebuchet MS', sans-serif" font-size="30" fill="#f2f5f8" text-anchor="start" textLength="411.98" lengthAdjust="spacingAndGlyphs">Build Pipeline - sequence 0058</text>
+<rect x="263.50" y="158.00" width="73.00" height="40.00" rx="4" fill="#25405e" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t1" data-role="actor" data-target="true" x="300.00" y="185.00" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="43.00" lengthAdjust="spacingAndGlyphs">Store</text>
+<line x1="300.00" y1="198.00" x2="300.00" y2="868.00" stroke="#9aa6b4" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="545.00" y="158.00" width="110.00" height="40.00" rx="4" fill="#204a3c" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t2" data-role="actor" data-target="true" x="600.00" y="185.00" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="80.00" lengthAdjust="spacingAndGlyphs">Scheduler</text>
+<line x1="600.00" y1="198.00" x2="600.00" y2="868.00" stroke="#9aa6b4" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="853.01" y="158.00" width="93.98" height="40.00" rx="4" fill="#5a4425" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t3" data-role="actor" data-target="true" x="900.00" y="185.00" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="63.98" lengthAdjust="spacingAndGlyphs">Registry</text>
+<line x1="900.00" y1="198.00" x2="900.00" y2="868.00" stroke="#9aa6b4" stroke-width="1.28" stroke-dasharray="5 4"/>
+<rect x="1150.50" y="158.00" width="99.00" height="40.00" rx="4" fill="#3e2f5a" stroke="#5b6675" stroke-width="1.6"/>
+<text id="t4" data-role="actor" data-target="true" x="1200.00" y="185.00" font-family="'Trebuchet MS', sans-serif" font-size="18" fill="#f2f5f8" text-anchor="middle" textLength="69.00" lengthAdjust="spacingAndGlyphs">Gateway</text>
+<line x1="1200.00" y1="198.00" x2="1200.00" y2="868.00" stroke="#9aa6b4" stroke-width="1.28" stroke-dasharray="5 4"/>
+<line x1="900.00" y1="236.00" x2="1200.00" y2="236.00" stroke="#f2f5f8" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t5" data-role="message" data-target="true" x="1050.00" y="226.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<line x1="1200.00" y1="440.00" x2="900.00" y2="440.00" stroke="#f2f5f8" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t6" data-role="message" data-target="true" x="1050.00" y="430.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="38.00" lengthAdjust="spacingAndGlyphs">retry</text>
+<line x1="900.00" y1="644.00" x2="1200.00" y2="644.00" stroke="#f2f5f8" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t7" data-role="message" data-target="true" x="1050.00" y="634.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="47.00" lengthAdjust="spacingAndGlyphs">match</text>
+<line x1="600.00" y1="848.00" x2="1200.00" y2="848.00" stroke="#f2f5f8" stroke-width="1.60" marker-end="url(#ah)"/>
+<text id="t8" data-role="message" data-target="true" x="900.00" y="838.00" font-family="'Trebuchet MS', sans-serif" font-size="16.666666666666668" fill="#9aa6b4" text-anchor="middle" textLength="57.00" lengthAdjust="spacingAndGlyphs">expired</text>
+<text id="t9" data-role="footnote" data-target="false" x="58.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="start" textLength="212.00" lengthAdjust="spacingAndGlyphs">source: internal | n=7799 | rev 13</text>
+<text id="t10" data-role="badge" data-target="false" x="1442.00" y="46.96" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#9aa6b4" text-anchor="end" textLength="44.00" lengthAdjust="spacingAndGlyphs">DRAFT</text>
+<text id="t11" data-role="footnote" data-target="false" x="1442.00" y="931.00" font-family="'Trebuchet MS', sans-serif" font-size="14" fill="#9aa6b4" text-anchor="end" textLength="97.00" lengthAdjust="spacingAndGlyphs">generated 8/10</text>
+</svg>
