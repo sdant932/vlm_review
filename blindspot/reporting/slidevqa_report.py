@@ -39,7 +39,7 @@ from pathlib import Path
 
 from blindspot.core.scoring import token_f1
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]   # blindspot/reporting/x.py -> repo root
 OUT = ROOT / "outputs"
 ASSETS = OUT / "assets_slidevqa"
 DATA = ROOT / "data" / "slidevqa"

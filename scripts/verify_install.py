@@ -16,7 +16,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[1]   # scripts/verify_install.py -> repo root
 
 
 def check_imports() -> list[str]:
