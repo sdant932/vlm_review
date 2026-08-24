@@ -74,7 +74,6 @@ blindspot/              one flat package -- every module, no subpackages
 
 tests/                  six files, offline and deterministic -- no API key,
                         no downloads, no dependency on results/
-legacy/                 the pre-consolidation modules, reference only
 
 data/svg_localization/  the dataset this study generated (committed, 43MB)
 docs/                   everything below
@@ -109,7 +108,6 @@ a pipeline. Runbooks: [docs/runme/](docs/runme/).
 | [docs/runme/BENCHMARKS.md](docs/runme/BENCHMARKS.md) | Runbook: the public-benchmark pipeline |
 | [docs/runme/SYNTHETIC.md](docs/runme/SYNTHETIC.md) | Runbook: the generated dataset |
 | [docs/runme/FINETUNE.md](docs/runme/FINETUNE.md) | Runbook: the finetuning data |
-| [legacy/README.md](legacy/README.md) | What is in `legacy/` and what it maps to |
 | [data/svg_localization/README.md](data/svg_localization/README.md) | The generated dataset: what it is and what it controls for |
 | [data/svg_localization/EVAL.md](data/svg_localization/EVAL.md) | How to score it, and the traps that make it easy to score wrong |
 | [SETUP.md](SETUP.md) | Install, verify, tests, troubleshooting |

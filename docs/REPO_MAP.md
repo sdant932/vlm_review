@@ -54,7 +54,7 @@ re-scoring.
 | module | loc | subcommands | what it does |
 |---|---:|---|---|
 | `report.py` | 3178 | `data` · `examples` · `tables` · `index` · `paste` · `all` · `summary` · `svgloc` · `svgderived` | The live chain is `data → examples → tables → index → paste`, and `all` runs it. `data` assembles every number the report quotes into `outputs/report/figures.json` — the single auditable artifact; nothing downstream computes its own statistics. `tables` also injects the seven tables into `blindspots.md` between `<!-- Tn -->` markers, leaving hand-written prose untouched. `paste` emits one self-contained HTML file whose tables paste into a document editor as editable tables. `summary` writes `outputs/report/summary.json`, which `data` **reads as a file** — a dependency that is easy to miss, so it is the first step of the `report` stage in `pipelines.py`. `svgloc` and `svgderived` are the standalone per-dataset pages. |
-| `report_pages.py` | 7734 | `causes` · `drilldown` · `slidevqa` · `tasks` · `primitives` · `headline` · `candidates` | The standalone evidence pages — everything the report links out to rather than contains. `causes` writes one page per blind spot plus the index that ranks them; `drilldown` emits every number in an openable tree alongside a `.json` and `.csv` of the same; `tasks` writes one page per perceptual primitive; `primitives` and `headline` are the two overview pages, and both read a summary JSON **as a file**, so their writers must have run first. Each page recomputes its own numbers from `results/*.jsonl` rather than reading `figures.json`, which is what lets them disagree with the report — and on ScreenSpot-Pro they did, correctly. The eight legacy renderers merged here kept three separate `format_equivalent` variants because merging them would have changed three published numbers. |
+| `report_pages.py` | 7734 | `causes` · `drilldown` · `slidevqa` · `tasks` · `primitives` · `headline` · `candidates` | The standalone evidence pages — everything the report links out to rather than contains. `causes` writes one page per blind spot plus the index that ranks them; `drilldown` emits every number in an openable tree alongside a `.json` and `.csv` of the same; `tasks` writes one page per perceptual primitive; `primitives` and `headline` are the two overview pages, and both read a summary JSON **as a file**, so their writers must have run first. Each page recomputes its own numbers from `results/*.jsonl` rather than reading `figures.json`, which is what lets them disagree with the report — and on ScreenSpot-Pro they did, correctly. The eight superseded renderers merged here kept three separate `format_equivalent` variants because merging them would have changed three published numbers. |
 | `report_finetune.py` | 695 | `gallery` · `figures` · `examples` | The Part 3 artefacts. One module because all three share one drawing rule: the outline is stroked strictly *outside* the box, since PIL renders a multi-pixel `rectangle` inward and makes a correct box look like it clips the text. Only the supervision target is ever drawn; the wider `accept_region` stays in the JSON where it cannot be mistaken for ground truth. |
 | `report_worked.py` | 185 | no subcommands (`--dataset --prompts --samples --seed --out --max-spend`) | GRPO group statistics over real model samples. **Calls the API** — roughly 24 calls, capped by its own `--max-spend` (default `$0.50`), which is checked before each call; the module is serial, so the worst overshoot is one call. Its output is model-sampled, so `--seed` selects *which* records are asked about but does not make the artifact reproducible. |
 | `render_markdown.py` | 382 | no subcommands (`--src --out --paste`) | Markdown → self-contained HTML for any document; `part3.html` is generated from `part3.md` and never hand-edited, so the two cannot drift. Its parser is deliberately small — headings, lists, tables, block quotes, fenced code, rules, inline bold/italic/code. No markdown library is installed and one is not worth adding. |
@@ -105,20 +105,23 @@ The structural sweep is shape-based rather than a hand-kept list, because it was
 hand-kept list once and two `sys.path` shims lived undetected in the finetune
 package the whole time the anti-shim test was passing.
 
-## `legacy/`
+## Tracing a merged module back
 
-The pre-consolidation modules, frozen. **Nothing imports them, nothing runs them,
-they are not packaged, and `tests/test_all.py` excludes them from its sweep** —
-they carry `parents[2]` roots and `sys.path` shims that were correct for the nested
-layout they were written in, so sweeping them would fail the structural tests for
-code that no longer executes.
+The modules here are unions: `core.py` is nine files, `report.py` is eight,
+`report_pages.py` is eight, `generate.py` is five. No filename survives to say
+which original a given function came from.
 
-They are there so a merged module can be traced back: `blindspot/core.py` is nine
-files, `report.py` is eight, `generate.py` is five, and no filename survives to say
-which one a given function came from. 70 files, 22,142 loc — every merged original,
-plus the nine superseded renderers that were not carried forward at all. The seven
-modules that moved one-to-one are deliberately absent, since git records those as
-renames. File-by-file mapping: [legacy/README.md](../legacy/README.md).
+The originals are in **git history**, at their pre-consolidation paths — the
+first commit carries the whole nested layout, 904 files:
+
+```bash
+git log --all --oneline -- blindspot/reporting/cause_pages.py
+git show <commit>:blindspot/core/scoring.py
+```
+
+One exception worth knowing: the finetune data-construction modules were never
+committed, so they are not recoverable that way. They were rebuilt against their
+contract rather than restored.
 
 ## Known rough edges
 

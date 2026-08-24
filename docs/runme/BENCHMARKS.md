@@ -250,8 +250,7 @@ The cross-study document that combines these results with Part 2's is
 `blindspots.md`, a separate deliverable that is not in this repository.
 
 The superseded renderers that used to sit beside this chain were deleted in the
-consolidation; git history and [../../legacy/README.md](../../legacy/README.md)
-say which and why. Do not resurrect them.
+consolidation; git history says which and why. Do not resurrect them.
 
 ---
 

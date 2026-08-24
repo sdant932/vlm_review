@@ -212,7 +212,7 @@ not after `report`.
 `assets_slidevqa/` at 3,760 files = 3,760; `candidates.html` is an exact match;
 `tasks` gives 11 pages with identical names, 7 of them byte-identical.
 
-These generators were quarantined in `legacy/` at one point on the reasoning that
+These generators were quarantined out of the package at one point on the reasoning that
 nothing imported them. That was the wrong test: a module whose whole job is to
 write files has no importers by construction. The right question is whether
 anything else produces the artifact — and nothing did.

@@ -70,7 +70,6 @@ vlm_review/
 │
 ├── tests/                         six files: scorers · stats · dataset invariants
 │                                  · structure · pipelines · units
-├── legacy/                        the pre-consolidation modules, reference only
 │
 ├── data/                          one directory per dataset
 ├── docs/                          this directory
@@ -92,18 +91,20 @@ the real price of seventeen. The alternative — splitting each into two by
 sub-role — costs six more files and buys back navigability. Worth revisiting if
 these files are ever going to be edited rather than read.
 
-### `legacy/`
+### Provenance
 
-The pre-consolidation modules, frozen for reference and provenance — 70 files,
-22,142 loc. Nothing imports them, nothing runs them, they are not packaged, and
-`tests/test_all.py` excludes them from its structural sweep on purpose: they carry
-`parents[2]` roots and `sys.path` shims that were correct for the nested layout
-they were written in.
+Merging destroys the one-to-one mapping that would otherwise tell you where a
+function came from. The originals are in **git history** at their
+pre-consolidation paths — the first commit carries the whole nested layout:
 
-Every module that was **merged** is preserved there, because merging destroys the
-one-to-one mapping that would otherwise tell you where a function came from. The
-seven modules that moved one-to-one are not, because git already records those as
-renames. [legacy/README.md](../legacy/README.md) has the file-by-file mapping.
+```bash
+git log --all --oneline -- blindspot/reporting/cause_pages.py
+git show <commit>:blindspot/core/scoring.py
+```
+
+The finetune data-construction modules are the exception: they were never
+committed, so they are not recoverable this way. They were rebuilt against their
+contract, with byte-identical output as the check.
 
 ---
 
@@ -199,8 +200,8 @@ counts and checksums so a regenerated set can be checked against them.
 | `finetune/` exempt from every structural test — its files were not in the test's file list | it is `generate_finetune.py` + `report_finetune.py` in the one package; the sweep covers them |
 | two `sys.path.insert` shims the anti-shim test could not see | one package, no shims; the sweep is shape-based, not a hand-kept list |
 | `judging/judge.py` imported upward into `reporting.report` | `judge.py` carries its own `load_results`; the edge is gone |
-| 9.5k loc of superseded renderers beside the live chain | frozen in `legacy/`, out of the package and out of the test sweep |
-| `gt_quality.py` — 111 loc, zero importers, no entry point | dropped; the original is in `legacy/` |
+| 9.5k loc of superseded renderers beside the live chain | dropped from the package; recoverable from git history |
+| `gt_quality.py` — 111 loc, zero importers, no entry point | dropped; the original is in git history |
 | no single entry point per effort | `python -m blindspot.pipelines <name>` |
 
 ## 6. Design rules that still hold
