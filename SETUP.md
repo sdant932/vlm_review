@@ -47,7 +47,7 @@ Three, plus two more only for downloading benchmarks:
 | `anthropic` | the API client. The study ran on 1.0.0 |
 | `pillow` | all rendering, measurement and downscaling |
 | `numpy` | regression fits in the coordinate diagnostics |
-| `datasets`, `huggingface_hub` | *optional*, only `scripts/download/` needs them |
+| `datasets`, `huggingface_hub` | *optional*, only `python -m blindspot.download` needs them |
 
 This project does **not** need torch, transformers, opencv, scikit-learn, pandas or
 matplotlib. If you are migrating an older environment that had them, they were never
@@ -56,22 +56,28 @@ imported.
 ## Verify
 
 ```bash
-python scripts/verify_install.py
+python -m blindspot.tools verify-install
 ```
 
-Checks three things: every module in both packages imports, every script with an argparse
-CLI parses its arguments, and the shipped dataset loads through the adapter layer. Expect:
+Checks three things: every module in the package imports, every module with an argparse
+CLI parses its arguments, and the shipped dataset loads through the adapter layer.
+Current output:
 
 ```
 ==> imports
    ok
 ==> CLIs
-   7 script(s) take no arguments, skipped: ...
+   14 CLI(s) checked
+   2 module(s) are libraries, skipped: charxiv, flow
    ok
 ==> dataset
    4723 questions, first uid svgloc:0000:small:00 (point)
    ok
 ```
+
+`charxiv.py` is vendored constants and `flow.py` is the launcher framework, so neither
+has a CLI to sweep. It exits non-zero on the first category that fails, so it works in a
+Makefile.
 
 `make verify` runs the same thing with a `compileall` pass and the test suite around it.
 
@@ -81,17 +87,18 @@ CLI parses its arguments, and the shipped dataset loads through the adapter laye
 make test          # or: python -m pytest
 ```
 
-179 tests, a few seconds, entirely offline — no API key, no downloads, no dependency on
-`results/`. They cover the scorers, the statistics helpers, the adapter contract checked
-against the committed dataset, and a set of structural invariants (`core` never imports
-upward, no module writes into the source tree, every `__file__`-relative root resolves to
-the repository root). That last group exists because a path bug survived the
-reorganization: see the module docstring in `tests/test_repo_structure.py`.
+One file, `tests/test_all.py`, a few seconds, entirely offline — no API key, no
+downloads, no dependency on `results/`. It covers the scorers, the statistics helpers,
+the adapter contract checked against the committed dataset, and a set of structural
+invariants: `__file__`-relative roots that must resolve to the repository root, no module
+writing into the source tree, no `sys.path` shims, and every pipeline step that reaches
+the API declaring `needs_api=True`. That last group exists because a path bug survived an
+earlier reorganization — the module docstring in `tests/test_all.py` tells the story.
 
 ## First run
 
 ```bash
-python -m blindspot.core.runner --datasets svg_localization --limit 20 --max-spend 0.10
+python -m blindspot.core --datasets svg_localization --limit 20 --max-spend 0.10
 ```
 
 Twenty localization questions against Haiku 4.5, roughly $0.10. Results append to
@@ -109,14 +116,19 @@ environment `setup.sh` installed into.
 
 **A 400 mentioning `thinking`** — you pointed `--model` at a model whose thinking dialect
 differs from the default. `budget_tokens` was removed on the 4.6+ generation; `adaptive`
-does not exist on 4.5-era models. Add the model to `MODELS` in `blindspot/core/runner.py`
-with its pricing and dialect.
+does not exist on 4.5-era models. Add the model to `MODELS` in `blindspot/core.py` with
+its pricing and dialect.
 
 **A run stops immediately citing credit balance** — that is deliberate. Billing errors are
 fatal rather than retryable, because retrying one burns minutes going nowhere.
 
-**An analysis or reporting module raises `FileNotFoundError` on something under
-`outputs/`** — those modules chain, and each reads what the previous one wrote. The order
-is in [docs/PIPELINE.md](docs/PIPELINE.md). Note that `results/` is not distributed with
-this repository, so the reporting chain cannot run on a fresh clone until you have
-generated results of your own.
+**A `blindspot.eval` or `blindspot.report` subcommand raises `FileNotFoundError` on
+something under `outputs/`** — those subcommands chain, and each reads what the previous
+one wrote. The order is in [docs/PIPELINE.md](docs/PIPELINE.md); `python -m
+blindspot.report all` runs the report chain in the right order for you. Note that
+`results/` is not distributed with this repository, so the reporting chain cannot run on
+a fresh clone until you have generated results of your own.
+
+**`python -m blindspot.pipelines ... --stage run` exits 2 without doing anything** — also
+deliberate. Steps that call the API refuse to start without `--max-spend`, or without
+`ANTHROPIC_API_KEY`. Use `--offline` to skip them.

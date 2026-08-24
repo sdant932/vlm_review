@@ -19,14 +19,16 @@ are provider-agnostic until the actual scoring call.
 
 ## Environment
 
-- Conda env `takehome` (Python 3.11), see `environment.yml` in this repo.
-- Key libs: `datasets` (HF), `anthropic`, `openai`, `pillow`, `opencv-python-headless`,
-  `torch`/`transformers` (only needed if comparing against a locally-run VLM — not
-  required for Haiku itself, which is API-only).
-- API keys go in `.env` (copy from `.env.example`): `ANTHROPIC_API_KEY`,
-  `OPENAI_API_KEY`.
-- Load datasets with `from datasets import load_dataset` — prefer `streaming=True`
-  and `.take(N)` / `.select(range(N))` over full downloads (see Practical notes below).
+- Python 3.11+, installed with `./setup.sh`. `environment.yml` builds the same thing
+  as a conda env named `blindspot`. Full detail: [../SETUP.md](../SETUP.md).
+- Runtime deps are three — `anthropic`, `pillow`, `numpy` — plus `datasets` and
+  `huggingface_hub` in the `download` extra, which only `python -m blindspot.download`
+  needs. The `openai` / `opencv` / `torch` / `transformers` set named in the original
+  plan was never imported and is not installed.
+- API keys go in `.env` (copy from `.env.example`): `ANTHROPIC_API_KEY`, and
+  `OPENAI_API_KEY` only if you swap the CharXiv judge back to GPT-4o.
+- `blindspot.download hf` uses `load_dataset` with `streaming=True` and `.take(N)`
+  rather than full downloads (see Practical notes below).
 
 ## Machine constraints (checked 2026-08-21)
 
@@ -120,7 +122,7 @@ images by hand.
 
 ## Adapters
 
-`blindspot/core/adapters.py` registers eleven:
+`blindspot/core.py` registers eleven:
 
 ```
 charxiv  infographicvqa  ai2d  slidevqa  slidevqa_allpages  screenspot  screenspot_pro

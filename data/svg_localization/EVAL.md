@@ -30,7 +30,7 @@ bounds the expression component.
 
 > The earlier study answered H3 with a *grid control* — a magenta 4×4 grid drawn
 > over the screenshot, with the model naming a cell. That is **not part of
-> ScreenSpot-Pro**; it was a bespoke ablation in `scripts/run/grid_control.py`. It is
+> ScreenSpot-Pro**; it was a bespoke ablation, now `python -m blindspot.run_api grid`. It is
 > deliberately **not** reproduced here: measured on a trial build, the overlay
 > covered the gold text in **746 of 2,400 grid questions (31%)**. Do not add a
 > grid arm to this dataset.
@@ -46,7 +46,7 @@ Conflating the two will produce a wrong report.
 
 * the same `POINT_INSTRUCTION`, the same 0–1000 answer space, the same
   `parse_response`;
-* the same `blindspot.core.scoring.point_in_bbox` against a normalized **widget box**
+* the same `blindspot.core.point_in_bbox` against a normalized **widget box**
   (§3.1);
 * the same analysis structure: precision curve, lenient variant, distance bands,
   area quintiles, Wilson intervals.
@@ -88,10 +88,10 @@ smoothly, as it did on ScreenSpot-Pro" — never about magnitude.
 path rather than writing a new one:
 
 * `question` is the element description only — **prepend
-  `blindspot.core.prompts.POINT_INSTRUCTION`**, do not send it bare.
+  `blindspot.core.POINT_INSTRUCTION`**, do not send it bare.
 * The model answers `{"x": 0..1000, "y": 0..1000}`;
-  `blindspot.core.prompts.parse_response` divides by 1000.
-* Score with `blindspot.core.scoring.point_in_bbox(pred, gold)` against
+  `blindspot.core.parse_response` divides by 1000.
+* Score with `blindspot.core.point_in_bbox(pred, gold)` against
   **`gold_bbox_norm`**.
 
 `relation` and `reverse` are short free-text; send `question` as-is.
@@ -160,7 +160,7 @@ d_box = hypot(max(x0 - x, 0, x - x1), max(y0 - y, 0, y - y1))
 in normalized units, and **0 when the click is inside**. This is the natural
 companion to §3.2: `point_in_bbox` is exactly `d_box == 0`.
 
-Also compute distance to the box centre, since that is what `blindspot.core.scoring`
+Also compute distance to the box centre, since that is what `blindspot.core`
 records as `center_distance` for the ScreenSpot-Pro arm:
 
 ```
@@ -195,7 +195,7 @@ rung. A smooth decay with a rising ratio is the H1 signature; a cliff is not.
 
 Alongside the strict curve, report the forgiving definition the study also
 published: credit for **any cell the target box touches**, via
-`blindspot.reporting.cause_pages.bbox_cells`. The original gave both (4×4: 31.1% strict vs
+`blindspot.core.bbox_cells`. The original gave both (4×4: 31.1% strict vs
 35.4% lenient). Report both columns; do not quietly pick the friendlier one.
 
 ### 3.6 Failure bands
@@ -211,7 +211,7 @@ what transfers, not the numbers.
 ### 3.7 Text answers (`relation`, `reverse`)
 
 Score **exact match and token-F1, side by side**, via
-`blindspot.core.scoring.token_f1`, which returns `(EM, F1)`.
+`blindspot.core.token_f1`, which returns `(EM, F1)`.
 
 Normalize before comparing: lowercase, strip, collapse internal whitespace. Do
 not strip punctuation beyond that, and do not accept substring containment — the
@@ -234,7 +234,7 @@ labels are short and substring matching would credit "Close" for "Close Ledger".
 
 ### 3.9 Sanity probe — run this FIRST
 
-`scripts/run/coord_probe.py` exists because a near-zero localization score has two
+`python -m blindspot.run_api coord-probe` exists because a near-zero localization score has two
 explanations: the model cannot do it, or the harness is broken. On a **dataset
 that has never been run against any model**, that ambiguity is sharper than it
 was on ScreenSpot-Pro, not weaker.
@@ -247,7 +247,7 @@ byte-identical inputs.
 * If **both** models score near zero, suspect the dataset or the harness first —
   check a handful against `verify/index.html` before writing any conclusion.
 
-Run two conditions, as `coord_probe.py` does: native, and handicapped to Haiku's
+Run two conditions, as `run_api coord-probe` does: native, and handicapped to Haiku's
 ~1568px budget. Sonnet's image ceiling is higher (~2576px), so a native win could
 be resolution rather than model — which matters more here than there, because
 `large` is 3000×1900 and the two models would not receive the same thing.

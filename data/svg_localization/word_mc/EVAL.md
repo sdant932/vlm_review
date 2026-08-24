@@ -31,7 +31,7 @@ the answer does not depend on where anything is, only on whether glyphs resolved
 This maps onto the harness's existing multiple-choice path:
 
 * `answer_type` is `choice`; put `options` into `Example.meta["options"]`.
-* `blindspot.core.prompts` prepends `CHOICE_INSTRUCTION` **and appends the lettered
+* `blindspot.core` prepends `CHOICE_INSTRUCTION` **and appends the lettered
   option block** — the manifest stores `question` and `options` separately, and
   the `A.`/`B.`/`C.`/`D.` lines are assembled at prompt time, not stored. Do not
   hand-roll this; use the existing builder or you will send a different prompt.
@@ -59,7 +59,7 @@ thinking enabled, 2000 tokens).
 
 ## 3. Metric
 
-**Exact letter match**, via `blindspot.core.scoring` (`multiple_choice`). Nothing else
+**Exact letter match**, via `blindspot.core` (`multiple_choice`). Nothing else
 — no credit for naming the word instead of the letter, no partial credit.
 
 **Chance is 25%.** Report accuracy against it. An accuracy near 25% means the

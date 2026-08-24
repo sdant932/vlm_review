@@ -17,7 +17,7 @@ findings here from the plausible ones — on AI2D the blind score is 62.7% again
 chance line, which means a naive reading of the sighted score would have credited
 perception with work the question text was doing.
 
-`scripts/run/controls.py` runs these.
+`python -m blindspot.run_api controls` runs these.
 
 ## Scoring by each benchmark's own metric
 
@@ -37,14 +37,14 @@ a per-question-type rubric and asks a judge model to extract the answer and scor
 binary. Our normalized-match scorer is a **lower bound** on the free-text types — a
 correct answer phrased differently is marked wrong.
 
-`core/scoring.py` reports which side of that line each question falls on rather than
-pooling them, and `judging/judge.py` runs the real protocol. The one deviation from
+`blindspot/core.py` reports which side of that line each question falls on rather
+than pooling them, and `python -m blindspot.judge charxiv` runs the real protocol. The one deviation from
 CharXiv's setup: they used GPT-4o as judge, we use a Claude model. That is recorded in
 every output row as `judge_model` rather than glossed over.
 
 ## Ground truth is not free of error
 
-Some of the model's "failures" are the benchmark being wrong. `judging/gt_audit.py` shows
+Some of the model's "failures" are the benchmark being wrong. `blindspot.judge gt-audit` shows
 an adjudicating model the image and asks whether the gold or the prediction is right.
 
 Measured contested-gold floors on the model's *error set*: CharXiv 16.3%,
@@ -80,7 +80,7 @@ Two consequences shaped the design:
    gives a **null control** — a measurable floor for how much apparent effect is just
    run-to-run variance. It came out at 0.13pp.
 
-`core/prompts.py` logs the as-sent resolution on every row, so a resizing artifact can
+`blindspot/core.py` logs the as-sent resolution on every row, so a resizing artifact can
 always be distinguished from a perception failure after the fact.
 
 ## Sampling by the cell you intend to report
@@ -90,7 +90,7 @@ four of nineteen randomly chosen question types, so a 200-figure sample produced
 per-question-type counts between 3 and 16 — numbers with no statistical content that
 nevertheless rendered as confident bars ("count lines: 100%, n=3").
 
-`core/sampling.py` stratifies on whatever axis the report will break results down by.
+`blindspot/core.py`'s `stratify()` works on whatever axis the report will break results down by.
 Cells smaller than the target contribute their whole pool, and the realised n is returned
 so under-filled cells get reported rather than silently shipped.
 
@@ -121,12 +121,12 @@ not a result.
 
 `thinking={"type": "enabled", "budget_tokens": N}` was removed on the 4.6+ generation and
 returns a 400 there; `{"type": "adaptive"}` does not exist on 4.5-era models. `MODELS` in
-`core/runner.py` carries the dialect per model and `thinking_config()` branches on it.
+`blindspot/core.py` carries the dialect per model and `thinking_config()` branches on it.
 Adding a model means adding its pricing and its dialect there.
 
 ## Control models are harness checks, not comparisons
 
-Where a stronger model is run (`scripts/run/coord_probe.py`), the purpose is to establish
+Where a stronger model is run (`blindspot.run_api coord-probe`), the purpose is to establish
 that the harness is sound: if a stronger model lands inside the gold boxes on identical
 inputs, a low score is a capability result rather than a plumbing bug. Model-vs-model
 claims would need matched conditions this study did not run.
@@ -149,7 +149,7 @@ establish.
   adjusted odds ratio is stratified on resolution, target-area tertile and contrast
   tertile, which handles the obvious confounds; it is sensitive to how those strata are
   binned, and the estimate moves with the binning. It is computed in
-  `reporting/report_tables.py::_mh_or` so it can be audited rather than taken on trust.
+  `blindspot/report.py::_mh_or` so it can be audited rather than taken on trust.
 - **One CharXiv figure is unresolved.** Descriptive/reasoning reads 90.7/63.7 through the
   judged path and 91.0/59.4 through the raw path. The tables quote the judged pair; the
   discrepancy has not been chased down.

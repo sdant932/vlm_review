@@ -34,7 +34,7 @@ else
 fi
 
 echo "==> verifying the install"
-python scripts/verify_install.py
+python -m blindspot.tools verify-install
 python -m pytest
 
 cat <<'MSG'
@@ -46,13 +46,13 @@ Next:
   2. Read docs/PIPELINE.md            what to run, in what order
   3. Smallest useful thing to try:
 
-       python -m blindspot.core.runner --datasets svg_localization \
+       python -m blindspot.core --datasets svg_localization \
               --limit 20 --max-spend 0.10
 
      That scores 20 localization questions against Haiku 4.5 and appends to
      results/. It is resumable and stops hard at --max-spend.
 
 Note: the scraped benchmarks (CharXiv, InfographicVQA, ScreenSpot-Pro, ...) are
-NOT in this repo -- they are third-party data. scripts/download/ fetches them;
-see docs/DATASETS.md for what each one is and why it was chosen.
+NOT in this repo -- they are third-party data. `python -m blindspot.download`
+fetches them; see docs/DATASETS.md for what each one is and why it was chosen.
 MSG

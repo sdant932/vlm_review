@@ -2,12 +2,17 @@
 
 A synthetic text-localization set built to isolate what ScreenSpot-Pro conflates.
 
-Regenerate with:
+Regenerate — **into a new directory**, never over this one:
 
 ```
-python scripts/generate/gen_svg_localization.py --count 200 --complexity 4
-python scripts/generate/verify_svg_localization.py --open
+python -m blindspot.generate scenes --count 200 --complexity 4 --out /tmp/svgloc_new
+python -m blindspot.generate audit  --data /tmp/svgloc_new --open
 ```
+
+The generator has drifted from the committed set, and `results/*.jsonl` is keyed
+by uid, so regenerating in place would bind existing answers to different
+questions. See
+[../../docs/runme/SYNTHETIC.md §0](../../docs/runme/SYNTHETIC.md#0-do-not-regenerate-in-place).
 
 **Evaluating this set? Read [EVAL.md](EVAL.md) first** — it pins the metrics to
 ScreenSpot-Pro's click-in-bbox, makes the resolution ladder a primary result, and
@@ -23,7 +28,7 @@ The ScreenSpot-Pro arm of the study could not separate three things:
 
 | confound | how this set separates it |
 |---|---|
-| target size | `target_area_frac` is recorded per question; targets span 0.011%–0.34% of the image |
+| target size | `target_area_frac` is recorded per question; targets span 0.0385%–2.75% of the image, median 0.145% |
 | image size | the same scene is emitted at three resolutions, two of which deliver *identically* after the API downscale |
 | perception vs. coordinate emission | four question types, from "emit x,y" to "name the neighbour" |
 
@@ -53,17 +58,17 @@ There is **no grid arm** — ScreenSpot-Pro has none, and a trial that added one
 had its magenta overlay covering the gold text in 31% of those questions.
 
 `point` follows the **ScreenSpot-Pro convention exactly**, so these rows are
-scorable by `blindspot.core.scoring.score()` unchanged and directly comparable to that
+scorable by `blindspot.core.score()` unchanged and directly comparable to that
 arm:
 
 * `answer_type` is `point`, `gold` is a normalized `[x0,y0,x1,y1]` box;
 * `question` is the element description only -- the harness prepends
-  `POINT_INSTRUCTION` from `blindspot.core.prompts`;
+  `POINT_INSTRUCTION` from `blindspot.core`;
 * the model answers `{"x": 0..1000, "y": 0..1000}`, which `parse_response`
   divides by 1000.
 
 Coordinates are normalized rather than pixel-valued for the reason given in
-`prompts.py`: the model never sees the native resolution, because the API
+`blindspot/core.py`: the model never sees the native resolution, because the API
 downscales first, so asking for pixels would inject a coordinate-space error it
 cannot avoid. `gold_bbox_px` is kept alongside for the visual audit.
 
@@ -154,8 +159,8 @@ Rejection counts are published per row in `rejected_targets`.
 built on a `Scene` sized to the panel, so its builder lays out for the space it
 has and its type stays legible; building full-size and shrinking pushed every
 label under the legibility floor at `small`. This is the densest type -- 60+
-labels, targets around 0.01% of the image -- and the closest analogue to a real
-ScreenSpot-Pro screenshot.
+labels, with the smallest targets in the set (from 0.040% of the image, median
+0.176%) -- and the closest analogue to a real ScreenSpot-Pro screenshot.
 
 `--complexity 1..5` scales node counts, layer widths, extra skip/back edges,
 series and row counts, and adds decoy text (captions, badges, footnotes) that is
@@ -230,8 +235,8 @@ sits on screen.
 * Targets are rendered text, not UI widgets: 2,882 text targets and **zero
   icons**, against ScreenSpot-Pro's 604 icon / 977 text. The study's icon-vs-text
   finding (1.16% vs 1.94%) is untestable here.
-* The hard tail is missing. Targets span 0.0076%–0.376% of the image (median
-  0.056%) against ScreenSpot-Pro's 0.0017%–4.73% (median 0.036%) — a floor 4.5×
+* The hard tail is missing. Targets span 0.0385%–2.75% of the image (median
+  0.145%) against ScreenSpot-Pro's 0.0017%–4.73% (median 0.036%) — a floor ~23×
   larger. Deliberate: a ~0.002% target falls below the 7px legibility floor at
   the `small` rung, which would break the resolution ladder for exactly the
   targets that need it most.

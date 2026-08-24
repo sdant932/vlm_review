@@ -1,156 +1,129 @@
 # Repository map
 
-Every module, what it does, and whether it is part of the current pipeline.
+Every module in `blindspot/`, its subcommands, its size, and what it does. One flat
+package: there are no subpackages, and everything with a `__main__` is one of the
+files below. Line counts are `wc -l`.
 
-Nothing has been deleted. The study ran over about 36 hours and several analyses were
-superseded by later ones; those are kept because some report figures still trace back to
-them and because they document what was tried. The tags say which is which:
-
-| tag | meaning |
-|---|---|
-| **live** | part of the current download → run → score → report chain |
-| **standalone** | works, produces a real diagnostic, not in the current chain |
-| **superseded** | replaced by a later module; kept for provenance |
-| **one-off** | a single experiment, run once, answer recorded |
+The layout rationale is [STRUCTURE.md](STRUCTURE.md); what to run in what order is
+[runme/](runme/).
 
 ---
 
-## `blindspot/core` — the foundation
+## The foundation
 
-Everything else depends on this. Nothing in it imports upward.
-
-| module | loc | | |
+| module | loc | CLI | what it is |
 |---|---:|---|---|
-| `adapters.py` | 607 | **live** | Normalizes each dataset's manifest into a common `Example` record. One `Example` is one scoreable question, which is not the same as one manifest row. Gold boxes are always normalized to `[0,1]` as `(x0,y0,x1,y1)` whatever the source used. Adding a dataset means adding a function here. |
-| `prompts.py` | 241 | **live** | Prompt construction and response schemas, keyed by `answer_type`. Answers come back through structured outputs rather than a regex over free text. |
-| `runner.py` | 352 | **live** | The API runner: self-metering, resumable, safe to kill. Entry point for most evaluation. |
-| `scoring.py` | 246 | **live** | Per-dataset scorers, each following that benchmark's own published metric so numbers stay comparable. |
-| `sampling.py` | 83 | **live** | Stratified sampling by the cell you intend to report on. |
-| `taxonomy.py` | 118 | **live** | One perceptual-primitive taxonomy across datasets — the spine that lets a chart finding and a UI finding be compared. |
-| `failure_modes.py` | 148 | **live** | Classifies *why* an answer scored wrong: wrong value, right value wrong format, right items wrong order, and so on. |
-| `stats.py` | 67 | **live** | Wilson intervals, quantile binning, and coarse-grid helpers. Shared by the analysis layer. |
-| `mermaid.py` | 156 | **live** | Parses FlowLearn's Mermaid ground truth into a graph. Golds are re-derived from it rather than trusted from the shipped QA fields — see the note in `adapters.py`. Lives in `core` because `adapters` needs it. |
-| `vendor/charxiv_constants.py` | — | **live** | CharXiv's own prompts and the seven judge rubrics, vendored verbatim. Do not edit to taste. |
+| `core.py` | 2209 | `python -m blindspot.core --datasets X --max-spend N` | Everything the rest builds on, and it imports none of them. Dataset adapters (one `Example` per scoreable question, gold boxes always normalized to `[0,1]` as `(x0,y0,x1,y1)`), prompt construction and structured-output schemas keyed by `answer_type`, the self-metering resumable API runner, the per-benchmark scorers, stratified sampling, Wilson intervals and grid helpers, the cross-dataset primitive taxonomy, failure-mode classification, and the Mermaid parser FlowLearn's gold needs. Its CLI is the main evaluation entry point. |
+| `charxiv.py` | 595 | — (constants only) | CharXiv's published prompts and the seven judge rubrics, reproduced verbatim so our numbers stay comparable to their paper. Do not edit to taste. Previously mis-named `vendor`. |
 
-## `blindspot/judging` — grading that costs money
-
-Separate from `core.scoring` because these call a model rather than compare strings, so
-they are non-deterministic and metered.
-
-| module | loc | | |
-|---|---:|---:|---|
-| `judge.py` | 198 | **live** | CharXiv's official LLM-judge protocol. Any CharXiv number quoted next to the published one has to come through here — string matching is a lower bound on the free-text question types. |
-| `equiv_judge.py` | 176 | **live** | Meaning-equivalence judge for span answers, plus failure-mode resolution. |
-| `gt_audit.py` | 205 | **live** | Shows the judge the image and asks whether the *benchmark* is wrong. This is how the contested-gold floor was measured. |
-| `gt_quality.py` | 111 | **live** | Rates how trustworthy each question's ground truth is, so scores can be reported against a known noise floor. |
-
-## `blindspot/analysis` — runs into numbers
-
-Reads `results/*.jsonl`, writes JSON. No HTML: keeping rendering out means the numbers
-are independently checkable and a report rebuilds in seconds without re-scoring.
-
-| module | loc | | |
-|---|---:|---:|---|
-| `aggregate.py` | 335 | **live** | Results → `outputs/summary.json`. |
-| `svgloc_eval.py` | 374 | **live** | The generated localization set, following its `EVAL.md`. Produces the precision ladder and the distance bands. |
-| `svgderived_eval.py` | 329 | **live** | The counting and word-presence sets derived from the same scenes. |
-| `svgloc_ablation_eval.py` | 195 | **live** | Scores the prompt/answer-channel ablations against the baseline, paired per item. |
-| `annotate.py` | 536 | standalone | A sidecar JSON per evaluated question, plus the image overlays. Feeds `task_pages`. |
-| `tiling.py` | 202 | one-off | Does sending a screenshot as interleaved native-resolution patches restore the accuracy that downscaling destroys? Asked and answered. |
-
-## `blindspot/reporting` — numbers into pages
-
-The current report build is five modules in this order:
+Adding a dataset means writing one generator function in `core.py` and registering
+it in `ADAPTERS`. Eleven are registered:
 
 ```
-report_data  ->  report_examples  ->  report_tables  ->  report_index  ->  report_paste
+charxiv  infographicvqa  ai2d  slidevqa  slidevqa_allpages  screenspot  screenspot_pro
+flowlearn_sim  svg_localization  svg_counting  svg_word_mc
 ```
 
-| module | loc | | |
-|---|---:|---:|---|
-| `report_data.py` | 312 | **live** | Assembles every number the report quotes into `outputs/report/figures.json`. Nothing downstream computes its own statistics — this is the single auditable artifact. |
-| `report_examples.py` | 445 | **live** | The real-image example figures. |
-| `report_tables.py` | 320 | **live** | The report's six tables, straight from the measured JSON. Also injects them into `blindspots.md` between `<!-- Tn -->` markers, leaving hand-written prose untouched. |
-| `report_index.py` | 119 | **live** | Orders the figures and resolves `[FIG:stem]` tokens to numbered references. Idempotent. |
-| `report_paste.py` | 200 | **live** | One self-contained HTML file: markdown tables become real `<table>` elements and PNGs are inlined as base64, so a document editor pastes them as editable tables. |
-| `aug22_summary.py` | 348 | **live** | Produces `outputs/aug22/summary.json`, which `report_data` reads. A file dependency rather than an import, which is easy to miss. |
-| `report_candidates.py` | 328 | standalone | Contact sheet of four candidate example images per blind spot, for choosing figure panels. Served its purpose; kept so the choice can be revisited. |
-| `cause_pages.py` | 3142 | standalone | Per-cause evidence pages. Nothing imports it any more — its six shared helpers moved to `core/stats.py`. |
-| `svgloc_report.py` | 660 | standalone | Self-contained HTML report for the generated localization set. |
-| `svgderived_report.py` | 382 | standalone | Same, for the counting and word-presence sets. |
-| `drilldown_report.py` | 1651 | standalone | Hierarchical drill-down over every number in the study. |
-| `slidevqa_report.py` | 1540 | standalone | The SlideVQA arm in detail. |
-| `task_pages.py` | 329 | standalone | One page per perceptual primitive: what it tests, how it scores. |
-| `aug22_report.py` | 383 | superseded | The corrected headline report, replaced by the `report_*` chain. |
-| `report.py` | 746 | superseded | The first self-contained HTML report. Still holds `load_results`, which `judging/judge.py` imports. |
-| `summary_report.py` | 375 | superseded | Rendered `outputs/report.html` from `outputs/summary.json`. |
+## Getting data
 
-## `scripts/download`
+| module | loc | subcommands | what it does |
+|---|---:|---|---|
+| `download.py` | 550 | `hf` · `screenspot-pro` · `flowlearn` · `flowlearn-full` · `flowlearn-subset` · `github-sources` | Six benchmark pullers. `hf` is the generic `load_dataset` path; the rest exist because ScreenSpot-Pro (per-app JSON + images), FlowLearn (two subsets, two layouts) and the GitHub-hosted sets are not `load_dataset`-able. Each writes `data/<name>/images/` plus a `manifest.jsonl`. |
+| `generate.py` | 2842 | `scenes` · `questions` · `audit` · `examples` · `examples-derived` | The synthetic dataset. `scenes` procedurally builds charts and diagrams with exact text placement as ground truth, deterministic given `--seed`, drawing with Pillow and emitting matching SVG from the same primitive list so raster and vector cannot drift. `questions` derives the counting and word-presence sets from the *existing* scenes, re-rendering nothing. `audit` draws gold boxes on the images from the manifest alone. `examples` / `examples-derived` are browsable question/answer pages. |
+| `generate_finetune.py` | 762 | `ladder` · `samples` · `audit` (+ class `ExactInk`) | Builds the Part 3 training data; never trains, never calls the API. `ladder` renders six aspect ratios × four sizes, every one delivered exactly as rendered. `ExactInk` recovers pixel-exact boxes by rendering each scene twice — with the label and without — and taking the pixels that changed, because the manifest's `text_ink_bbox` is PIL's *layout* box and clips glyph overhang. `samples` writes the SFT records: the supervision target is a box, not a point. |
 
-| script | loc | |
-|---|---:|---|
-| `download_datasets.py` | 101 | The generic Hugging Face puller, for the datasets that are `load_dataset`-able. |
-| `download_screenspot_pro.py` | 57 | ScreenSpot-Pro is not: raw per-app JSON annotations plus images. |
-| `download_flowlearn.py` | 93 | FlowLearn is not either — two subsets in two different layouts. |
-| `download_flowlearn_full.py` | 113 | The full simulated test sets, both variants, in parallel. |
-| `fetch_flowlearn_subset.py` | 84 | Only the images a stratified run actually needs. |
-| `prepare_github_sources.py` | 115 | Extracts manifests from the repos cloned into `third_party/` (BlindTest, Ferret-UI). |
+## Calling the API
 
-## `scripts/generate` — the synthetic dataset
+| module | loc | subcommands | what it does |
+|---|---:|---|---|
+| `run_api.py` | 1194 | `official` · `ablations` · `probe` · `derived` · `controls` · `grid` · `coord-probe` | Experiment drivers over `core`'s runner, for arms the plain runner does not cover. `official` runs ScreenSpot / ScreenSpot-Pro under the benchmark's own published protocol so the number is leaderboard-comparable (and `--rescore` recomputes it from saved responses with no API calls). `controls` and `grid` isolate *why* an arm fails. `probe` and `coord-probe` put a stronger model on identical inputs as a harness check, not a model comparison. |
+| `judge.py` | 590 | `charxiv` · `equiv` · `gt-audit` | LLM-judge grading — model calls rather than string comparison, so non-deterministic and metered. `charxiv` is CharXiv's official protocol; any CharXiv number quoted next to the published one has to come through it, because string matching is a lower bound on the free-text types. `gt-audit` shows the judge the image and asks whether the *benchmark* is wrong: this is how the contested-gold floor was measured. |
 
-| script | loc | |
-|---|---:|---|
-| `gen_svg_localization.py` | 1699 | Generates the whole dataset: procedural charts and diagrams with exact text placement as ground truth. Deterministic given `--seed`. Draws with Pillow and emits matching SVG from the same geometry, so raster and vector cannot drift. |
-| `gen_svg_derived.py` | 271 | Derives the counting and word-presence question sets from the *existing* scenes, so all three tasks ask about the same images. |
-| `verify_svg_localization.py` | 316 | Visual audit: gold boxes drawn on the images. Run this before trusting any score. |
-| `examples_svg_localization.py` | 310 | Browsable page of example questions and answers. |
-| `examples_svg_derived.py` | 209 | The same, for the derived sets. |
+## Runs into numbers
 
-## `scripts/run` — everything that calls the API
+Reads `results/*.jsonl`, writes JSON. No HTML — keeping rendering out is what makes
+the numbers independently checkable and lets a report rebuild in seconds without
+re-scoring.
 
-| script | loc | |
-|---|---:|---|
-| `official_eval.py` | 311 | ScreenSpot / ScreenSpot-Pro under the benchmark's own published protocol, so the result is leaderboard-comparable. Deliberately differs from `core/runner.py`; the differences are listed in its docstring. |
-| `run_svg_derived.py` | 120 | Runs the counting and word-presence sets. |
-| `svgloc_probe.py` | 160 | Harness sanity probe. Run it before believing a low score is a capability result. |
-| `svgloc_ablations.py` | 234 | Eight prompt-wording and answer-channel ablations on the point questions. |
-| `controls.py` | 119 | Blind, one-page and grid controls that isolate why an arm fails. |
-| `grid_control.py` | 108 | Does the model fail to locate, or fail to say where? |
-| `coord_probe.py` | 87 | A stronger model on identical inputs, as a harness check rather than a model comparison. |
+| module | loc | subcommands | what it does |
+|---|---:|---|---|
+| `eval.py` | 1998 | `aggregate` · `localization` · `derived` · `ablations` · `annotate` · `tiling` | One artifact per subcommand: `outputs/summary.json`, `outputs/svgloc/summary.json`, `outputs/svgderived/summary.json`, `outputs/svgloc/ablations.json`. `localization` produces the precision ladder and the distance bands, following `data/svg_localization/EVAL.md`. Two stated exceptions to the layer's rule, both flagged in its `--help`: `annotate` also emits browsing galleries over its sidecar JSON, and `tiling` **calls the API** — a one-off asking whether interleaved native-resolution patches restore what downscaling destroys. |
 
-## `scripts/analyze` — diagnostics
+## Numbers into pages
 
-| script | loc | |
-|---|---:|---|
-| `failure_analysis.py` | 292 | Is a grounding miss a format problem, an instruction problem, or a vision problem? |
-| `coord_diagnostics.py` | 430 | Annotated PNGs plus a self-contained explainer for the coordinate-compression finding. |
-| `capability_report.py` | 131 | Which axis does UI grounding break along? |
-| `analyse_gtaudit.py` | 93 | Ground-truth quality rates by failure mode and question type. |
-| `annotate_probe.py` | 250 | Draws ground truth against prediction directly onto the screenshots. |
-| `build_datasets_page.py` | 230 | What each dataset is and whether it turned out usable. |
+| module | loc | subcommands | what it does |
+|---|---:|---|---|
+| `report.py` | 2786 | `data` · `examples` · `tables` · `index` · `paste` · `all` · `aug22` · `svgloc` · `svgderived` | The live chain is `data → examples → tables → index → paste`, and `all` runs it. `data` assembles every number the report quotes into `outputs/report/figures.json` — the single auditable artifact; nothing downstream computes its own statistics. `tables` also injects the six tables into `blindspots.md` between `<!-- Tn -->` markers, leaving hand-written prose untouched. `paste` emits one self-contained HTML file whose tables paste into a document editor as editable tables. `aug22` writes `outputs/aug22/summary.json`, which `data` **reads as a file** — a dependency that is easy to miss, so run it first. `svgloc` and `svgderived` are the standalone per-dataset pages. |
+| `report_finetune.py` | 665 | `gallery` · `figures` · `examples` | The Part 3 artefacts. One module because all three share one drawing rule: the outline is stroked strictly *outside* the box, since PIL renders a multi-pixel `rectangle` inward and makes a correct box look like it clips the text. Only the supervision target is ever drawn; the wider `accept_region` stays in the JSON where it cannot be mistaken for ground truth. |
+| `report_worked.py` | 132 | no subcommands (`--dataset --prompts --samples --seed --out`) | GRPO group statistics over real model samples. **Calls the API** — roughly 24 calls, with no `--max-spend` of its own. Its output is model-sampled, so `--seed` selects *which* records are asked about but does not make the artifact reproducible. |
+| `render_markdown.py` | 382 | no subcommands (`--src --out --paste`) | Markdown → self-contained HTML for any document; `part3.html` is generated from `part3.md` and never hand-edited, so the two cannot drift. Its parser is deliberately small — headings, lists, tables, block quotes, fenced code, rules, inline bold/italic/code. No markdown library is installed and one is not worth adding. |
+
+## Diagnostics
+
+| module | loc | subcommands | what it does |
+|---|---:|---|---|
+| `diagnose.py` | 1428 | `failure-modes` · `coordinates` · `capability` · `gt-quality` · `annotate-probe` · `dataset-page` | One diagnostic question per subcommand, each writing a self-contained page. `failure-modes`: is a grounding miss a format problem, an instruction problem, or a vision problem? `coordinates`: annotated PNGs plus the coordinate-compression explainer — the one to read first for ScreenSpot-Pro. `capability`: which axis does UI grounding break along? `gt-quality`: ground-truth quality rates by failure mode and question type. `annotate-probe`: gold box against predicted click, drawn on the screenshots. `dataset-page`: what each dataset is and whether it turned out usable. |
+
+## Plumbing
+
+| module | loc | CLI | what it does |
+|---|---:|---|---|
+| `pipelines.py` | 276 | `python -m blindspot.pipelines <name> --list\|--all\|--stage` | All three pipelines in one file. A pipeline owns no logic — it is an ordered list of steps, each an invocation of one of the modules above with the arguments this effort wants. Keeping them together makes the differences visible on one screen. |
+| `flow.py` | 175 | — (library) | The launcher framework behind `pipelines.py`: stage listing, `--dry-run`, `--from` resume, `--offline`, `--max-spend` split across API steps, optional-step tolerance, fail-fast with a resume hint. Steps that reach the API carry `needs_api=True`, which is what makes the offline skip and the spend gate work. |
+| `tools.py` | 239 | `verify-install` · `compare` | Not pipeline stages. `verify-install` checks that every module imports, every CLI parses and the shipped dataset loads; `setup.sh` and `make verify` both call it. `compare` structurally diffs two JSON artifacts — the schema, not the values, because two runs over different sample sizes produce the same shape and different numbers. |
+
+## The three pipelines
+
+| pipeline | stages | feeds |
+|---|---|---|
+| `literature_eval` | download → run → controls → judge → eval → diagnose → report | `blindspots.md` §1–4 |
+| `synth_localization_eval` | generate → audit → run → eval → report | `blindspots.md` §5–7 |
+| `finetune_data` | ladder → build → verify → report | `part3.md` |
+
+`generate` in pipeline 2 is empty unless `--out DIR` is given: the committed dataset
+is the source of truth and the pipeline refuses an `--out` that resolves to it.
+See [runme/SYNTHETIC.md §0](runme/SYNTHETIC.md#0-do-not-regenerate-in-place).
 
 ## `tests/`
 
-Offline and deterministic — no API calls, no downloads, no dependency on `results/`.
-179 tests, a few seconds on a fresh clone.
+`tests/test_all.py` — offline and deterministic. No API calls, no downloads, no
+dependency on `results/`. It pins:
 
-| file | what it pins |
+| group | what it pins |
 |---|---|
-| `test_scoring.py` | the scorers, which produce every number in the study: the ANLS threshold boundary, ANLS normalization being deliberately stricter than the general one, token-F1 refusing substring containment, click-in-bbox on realistically tiny targets |
-| `test_stats.py` | Wilson intervals, quantile binning and the coarse grid — pinned because these moved packages during the reorganization |
-| `test_dataset_invariants.py` | the adapter contract, against the committed dataset: gold boxes normalized to `[0,1]` with `x0<x1`, no degenerate targets, resolvable image paths, the registry intact |
-| `test_repo_structure.py` | the class of bug that motivated the suite — `__file__`-relative roots that break when a module changes directory, packages writing into the source tree, the layering direction (`core` never imports upward), `sys.path` shims coming back |
+| scoring | every number in the study comes through here: the ANLS threshold boundary, ANLS normalization being deliberately stricter than the general one, token-F1 refusing substring containment, click-in-bbox on realistically tiny targets |
+| stats | Wilson intervals, quantile binning and the coarse grid — pinned because these moved modules during the consolidation |
+| dataset invariants | the adapter contract against the committed dataset: gold boxes normalized to `[0,1]` with `x0<x1`, no degenerate targets, resolvable image paths, the registry intact |
+| structure | the class of bug that motivated the suite — `__file__`-relative roots that break when a module changes directory, modules writing into the source tree, the layering direction, `sys.path` shims coming back, and every pipeline step that reaches the API declaring `needs_api=True` |
 
-`scripts/verify_install.py` is not a pipeline stage — it checks that every module imports,
-every CLI parses and the shipped dataset loads. `setup.sh` and `make verify` both call it.
+The structural sweep is shape-based rather than a hand-kept list, because it was a
+hand-kept list once and two `sys.path` shims lived undetected in the finetune
+package the whole time the anti-shim test was passing.
+
+## `legacy/`
+
+The pre-consolidation modules, frozen. **Nothing imports them, nothing runs them,
+they are not packaged, and `tests/test_all.py` excludes them from its sweep** —
+they carry `parents[2]` roots and `sys.path` shims that were correct for the nested
+layout they were written in, so sweeping them would fail the structural tests for
+code that no longer executes.
+
+They are there so a merged module can be traced back: `blindspot/core.py` is nine
+files, `report.py` is eight, `generate.py` is five, and no filename survives to say
+which one a given function came from. 70 files, 22,142 loc — every merged original,
+plus the nine superseded renderers that were not carried forward at all. The seven
+modules that moved one-to-one are deliberately absent, since git records those as
+renames. File-by-file mapping: [legacy/README.md](../legacy/README.md).
 
 ## Known rough edges
 
-- `judging/judge.py` imports `load_results` from `reporting/report.py`, a superseded
-  module. The dependency points the wrong way. It is a function-local import and works;
-  moving `load_results` into `core` would be the clean fix.
-- Seven scripts under `scripts/analyze/` and `scripts/download/` take no arguments and
-  start work on invocation. `verify_install.py` skips them deliberately rather than
-  running a full analysis to prove they parse.
-- `cause_pages.py` and `drilldown_report.py` are 3,142 and 1,651 lines. Both are single
-  HTML renderers that grew; neither is imported by anything now.
+- `generate.py` and `report.py` are 2,842 and 2,786 lines. Both are unions of five
+  and eight modules; each subcommand is still the original module's code and
+  docstring, but neither file is pleasant to navigate.
+- `report_worked.py` is the only Part 3 step that cannot be regenerated offline,
+  and it takes no `--max-spend`: the framework gates it but cannot cap it mid-run.
+- `report.py`'s `gold_quality()` hardcodes measured constants. Fine for a frozen
+  study, stale the moment the runs are repeated.
+- `download github-sources` takes no arguments. It is in the `--help` sweep, but
+  the underlying puller starts work on invocation, so do not "just check its usage"
+  against the original in git.

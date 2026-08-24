@@ -34,3 +34,6 @@ third_party
 data/*
 !data/svg_localization/
 !data/README.md
+
+# Pre-consolidation module copies, kept locally for reference only.
+legacy

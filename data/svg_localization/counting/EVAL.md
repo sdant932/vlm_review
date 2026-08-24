@@ -30,9 +30,9 @@ floor.
 
 This maps onto the harness's existing count path:
 
-* `answer_type` is `count`; `blindspot.core.prompts` prepends `COUNT_INSTRUCTION`.
-* `blindspot.core.prompts.parse_response` returns `int(obj["answer"])`.
-* Score with `blindspot.core.scoring.count_score`, which returns `score`, `abs_error`
+* `answer_type` is `count`; `blindspot.core` prepends `COUNT_INSTRUCTION`.
+* `blindspot.core.parse_response` returns `int(obj["answer"])`.
+* Score with `blindspot.core.count_score`, which returns `score`, `abs_error`
   **and `signed_error`**. The signed error is the point — see §3.2.
 
 The assembled prompt looks like:

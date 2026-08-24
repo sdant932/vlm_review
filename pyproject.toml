@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 
 # The full dependency surface, verified by grepping every import in
-# blindspot/ and scripts/ rather than copied from an earlier environment.
+# blindspot/ rather than copied from an earlier environment.
 # In particular this project does NOT need torch, transformers, opencv,
 # scikit-learn, pandas or matplotlib: the target model is API-only, and every
 # image is drawn and measured with Pillow.
@@ -21,7 +21,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# Only the scripts under scripts/download/ need these. Evaluating on the
+# Only the `blindspot.download` subcommands need these. Evaluating on the
 # dataset shipped in data/svg_localization requires neither.
 download = [
     "datasets>=2.19",
@@ -31,20 +31,11 @@ dev = [
     "pytest>=8",
 ]
 
+# One flat package, listed explicitly rather than auto-discovered: `legacy/`
+# holds frozen pre-consolidation copies for reference and must never ship, and
+# an explicit list says so without a second exclude directive to keep in sync.
 [tool.setuptools]
-packages = [
-    "blindspot",
-    "blindspot.core",
-    "blindspot.core.vendor",
-    "blindspot.judging",
-    "blindspot.analysis",
-    "blindspot.reporting",
-    "scripts",
-    "scripts.download",
-    "scripts.generate",
-    "scripts.run",
-    "scripts.analyze",
-]
+packages = ["blindspot"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

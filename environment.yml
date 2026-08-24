@@ -1,7 +1,7 @@
 # Conda equivalent of pyproject.toml, for anyone who prefers conda.
 #
-# `pip install -e .` still has to run afterwards to make `blindspot` and
-# `scripts` importable -- setup.sh does both.
+# `pip install -e .` still has to run afterwards to make `blindspot`
+# importable -- setup.sh does both.
 name: blindspot
 channels:
   - conda-forge
@@ -12,6 +12,6 @@ dependencies:
   - pillow>=10
   - pip:
       - anthropic>=1.0.0
-      # optional, only for scripts/download/
+      # optional, only for `python -m blindspot.download`
       - datasets>=2.19
       - huggingface_hub>=0.23
