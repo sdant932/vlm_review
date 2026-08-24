@@ -45,28 +45,31 @@ Split the report by pipeline and the argument breaks in half.
 ```
 vlm_review/
 │
-├── blindspot/                     one flat package, sixteen modules
-│   ├── core.py           2209     adapters · prompts · runner · scoring · sampling
+├── blindspot/                     one flat package, seventeen modules
+│   ├── core.py           2225     adapters · prompts · runner · scoring · sampling
 │   │                              stats · taxonomy · failure_modes · mermaid
 │   ├── charxiv.py         595     CharXiv's prompts and judge rubrics, verbatim.
 │   │                              Separate because it must never be edited to taste.
-│   ├── generate.py       2842     the scene generator, the derived question sets,
+│   ├── generate.py       2918     the scene generator, the derived question sets,
 │   │                              the audit and example pages
 │   ├── generate_finetune.py 762   the resolution ladder, exact-ink recovery, SFT records
-│   ├── eval.py           1998     results/*.jsonl -> JSON. One subcommand per artifact
-│   ├── report.py         2786     the live report chain + the per-dataset pages
-│   ├── report_finetune.py 665     the Part 3 gallery, figures and example strip
+│   ├── eval.py           2119     results/*.jsonl -> JSON. One subcommand per artifact
+│   ├── report.py         3178     the live report chain + the per-dataset pages
+│   ├── report_pages.py   7734     the standalone evidence pages: one per blind
+│   │                              spot, plus drill-down, per-primitive, SlideVQA
+│   ├── report_finetune.py 695     the Part 3 gallery, figures and example strip
 │   ├── report_worked.py   185     GRPO group statistics over real samples (CALLS THE API)
 │   ├── render_markdown.py 382     markdown -> self-contained HTML, any document
-│   ├── run_api.py        1194     official protocol · controls · probes · ablations
+│   ├── run_api.py        1241     official protocol · controls · probes · ablations
 │   ├── judge.py           590     CharXiv judge · equivalence · ground-truth audit
 │   ├── diagnose.py       1428     six diagnostics, one subcommand each
 │   ├── download.py        550     six benchmark pullers
 │   ├── tools.py           239     verify-install + compare
-│   ├── flow.py            175     the launcher framework — library, no CLI
-│   └── pipelines.py       276     all three pipelines
+│   ├── flow.py            198     the launcher framework — library, no CLI
+│   └── pipelines.py       488     all three pipelines
 │
-├── tests/test_all.py              scorers · stats · dataset invariants · structure
+├── tests/                         six files: scorers · stats · dataset invariants
+│                                  · structure · pipelines · units
 ├── legacy/                        the pre-consolidation modules, reference only
 │
 ├── data/                          one directory per dataset
@@ -75,7 +78,7 @@ vlm_review/
 └── third_party/                   clones the GitHub-sourced datasets need
 ```
 
-Sixteen modules, ~16,800 loc, down from 80 files and 25,161.
+Seventeen modules, ~25,600 loc, down from 80 files across eleven directories.
 
 `core.py` is what everything else imports, and it imports nothing from the rest, so
 the harness can be pointed at a new dataset without pulling in any reporting code.
@@ -83,11 +86,11 @@ the harness can be pointed at a new dataset without pulling in any reporting cod
 
 ### The cost, stated plainly
 
-`generate.py` and `report.py` are 2,842 and 2,786 lines. That is past the size
-where a single file is easy to navigate, and it is the real price of sixteen. The
-alternative — splitting each into two by sub-role — costs four more files and buys
-back navigability. Worth revisiting if these files are ever going to be edited
-rather than read.
+`report_pages.py` is 7,734 lines, and `generate.py` and `report.py` are 2,918 and
+3,178. That is past the size where a single file is easy to navigate, and it is
+the real price of seventeen. The alternative — splitting each into two by
+sub-role — costs six more files and buys back navigability. Worth revisiting if
+these files are ever going to be edited rather than read.
 
 ### `legacy/`
 

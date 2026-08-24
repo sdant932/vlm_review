@@ -62,6 +62,8 @@ blindspot/              one flat package -- every module, no subpackages
   judge.py              LLM-judge grading and ground-truth adjudication
   eval.py               runs -> numbers (JSON, never HTML)
   report.py             numbers -> figures, tables, HTML
+  report_pages.py       the standalone evidence pages: one per blind spot, plus
+                        the drill-down, the per-primitive and SlideVQA pages
   report_finetune.py    the Part 3 gallery, figures and example strip
   report_worked.py      GRPO group statistics over real samples (calls the API)
   render_markdown.py    markdown -> self-contained HTML
@@ -70,7 +72,8 @@ blindspot/              one flat package -- every module, no subpackages
   flow.py               the launcher framework (library, no CLI)
   pipelines.py          all three pipelines: which steps, in what order
 
-tests/test_all.py       offline and deterministic
+tests/                  six files, offline and deterministic -- no API key,
+                        no downloads, no dependency on results/
 legacy/                 the pre-consolidation modules, reference only
 
 data/svg_localization/  the dataset this study generated (committed, 43MB)
@@ -98,7 +101,6 @@ a pipeline. Runbooks: [docs/runme/](docs/runme/).
 |---|---|
 | [docs/PIPELINE.md](docs/PIPELINE.md) | What to run, in what order, with real commands |
 | [docs/ARTIFACTS.md](docs/ARTIFACTS.md) | Every generated file, the command that writes it, and what it needs first |
-| [docs/REVIEWS.md](docs/REVIEWS.md) | How the independent agent reviews in `reviews/` are produced |
 | [docs/STRUCTURE.md](docs/STRUCTURE.md) | How the repository is laid out and why |
 | [docs/REPO_MAP.md](docs/REPO_MAP.md) | Every module, its subcommands, one line each |
 | [docs/METHODOLOGY.md](docs/METHODOLOGY.md) | Why the harness is built this way — the decisions that shaped it |
