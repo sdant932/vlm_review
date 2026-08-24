@@ -29,6 +29,7 @@ import argparse
 import colorsys
 import html
 import json
+import os
 import math
 import random
 import re
@@ -2718,7 +2719,14 @@ def cmd_scenes(a: argparse.Namespace) -> int:
     # damage. Resolve against the repository root, not the cwd, or the check silently
     # passes from any other directory.
     committed = (_REPO_ROOT / "data" / "svg_localization").resolve()
-    if Path(a.out).resolve() == committed:
+    # Compare filesystem identity, not resolved strings: resolve() does not
+    # case-fold and macOS is case-insensitive, so `--out DATA/svg_localization`
+    # would otherwise slip past and overwrite the committed dataset.
+    try:
+        same = Path(a.out).samefile(committed)
+    except (OSError, ValueError):
+        same = os.path.normcase(str(Path(a.out).resolve())) == os.path.normcase(str(committed))
+    if same:
         raise SystemExit(
             f"scenes: refusing --out {a.out}\n"
             "That is data/svg_localization, the committed dataset and the source of\n"

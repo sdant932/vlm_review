@@ -103,6 +103,7 @@ import json
 import math
 import os
 import re
+import sys
 import statistics
 from collections import Counter, defaultdict
 from concurrent.futures import ProcessPoolExecutor
@@ -393,9 +394,32 @@ def hit(r: dict, thr: float = 0.5) -> bool:
     return float(r.get("score") or 0.0) >= thr
 
 
+# Below this many scored rows a slice-vs-slice comparison is not a measurement.
+MIN_CAUSE_ROWS = 200
+
+
 def cause_mean(vals) -> float | None:
     vals = list(vals)
     return sum(vals) / len(vals) if vals else None
+
+def pct_or_dash(v, d: int = 1) -> str:
+    """Format a `cause_mean` result, which is None when the sample is too thin.
+
+    `cause_mean` returns None rather than 0.0 for an empty or suppressed group --
+    correctly, because "no measurement" and "measured zero" are different claims
+    and this whole family of pages exists to keep them apart. Every call site then
+    has to remember it. Most did; the ones that did not raised
+    `TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'` and took
+    the page down, but only on a thin `results/` -- which is exactly what a fresh
+    clone has, and never what the full study tree has. So it passed every test
+    against real data and failed for anyone starting from scratch.
+    """
+    return "&mdash;" if v is None else f"{v * 100:.{d}f}%"
+
+
+def pct_bare(v, d: int = 1) -> str:
+    """`pct_or_dash` without the trailing %, for prose that supplies its own."""
+    return "&mdash;" if v is None else f"{v * 100:.{d}f}"
 
 
 # ------------------------------------------------------------- rendering
@@ -767,6 +791,11 @@ THEME_JS = r"""
 
 def pctf(v, d=1) -> str:
     return "&mdash;" if v is None else f"{v * 100:.{d}f}%"
+
+
+def pct_bare(v, d: int = 1) -> str:
+    """`pct_or_dash` without the trailing %, for prose that supplies its own."""
+    return "&mdash;" if v is None else f"{v * 100:.{d}f}"
 
 
 VERDICTS = {
@@ -1189,7 +1218,7 @@ def c_effective_resolution(d: Data, b: Builder) -> Cause:
         a = cause_mean(r["score"] for r in ch)
         px_vals.append(a)
         px_items.append((f"{lo / 1e6:.2f}&ndash;{hi / 1e6:.2f} MP", a, f"n={len(ch)}",
-                         f"{a * 100:.1f}", None, "" if a > 0.66 else "s2"))
+                         pct_bare(a, 1), None, "" if a > 0.66 else "s2"))
     w_vals = [cause_mean(r["score"] for r in ch) for _, _, ch in qw]
     drop = (px_vals[0] - px_vals[-1]) if px_vals else 0.0
 
@@ -1318,7 +1347,7 @@ def c_resolution_precision(d: Data, b: Builder) -> Cause:
     gvals.append(exact)
     cvals.append(area)
     grid_rows.append([("<strong>exact: inside the box</strong>", ""), f"{n}",
-                      f"<strong>{exact * 100:.2f}%</strong>", f"{area * 100:.4f}%",
+                      f"<strong>{pct_bare(exact, 2)}%</strong>", pct_or_dash(area, 4),
                       f"<strong>{exact / area:.0f}&times;</strong>", "&mdash;"])
 
     # grid control: does naming a cell beat clicking, at the same granularity?
@@ -1355,8 +1384,8 @@ def c_resolution_precision(d: Data, b: Builder) -> Cause:
                   f"{v}", f"{100 * v / nf:.1f}%"] for k, v in modes.most_common()]
 
     body = (
-        cause_tiles([("Exact click accuracy", f"{exact * 100:.1f}%",
-                f"n={n}; chance is {area * 100:.3f}% because the mean target is that "
+        cause_tiles([("Exact click accuracy", pct_or_dash(exact, 1),
+                f"n={n}; chance is {pct_bare(area, 3)}% because the mean target is that "
                 f"fraction of the screen", "bad"),
                ("Ratio above chance, 2&times;2", f"{gvals[0] / cvals[0]:.1f}&times;", "coarse quadrant", "warn"),
                ("Ratio above chance, exact", f"{exact / area:.0f}&times;",
@@ -1444,8 +1473,8 @@ def c_resolution_precision(d: Data, b: Builder) -> Cause:
                  "Localization degrades smoothly with the precision demanded of it. Haiku places "
                  "elements in the right quadrant far above chance and in the right 4×4 cell five "
                  "times above chance, but lands inside the actual element only "
-                 f"{exact * 100:.1f}% of the time.",
-                 "PROVEN", f"{exact * 100:.1f}% exact vs {gvals[0] * 100:.0f}% at quadrant level",
+                 f"{pct_bare(exact, 1)}% of the time.",
+                 "PROVEN", f"{pct_bare(exact, 1)}% exact vs {gvals[0] * 100:.0f}% at quadrant level",
                  ["screenspot_pro"], 0.94, body, groups, refute,
                  ["effective_resolution", "label_reference_binding"],
                  one_bench_note="ScreenSpot-Pro is the only benchmark in this study that asks for a "
@@ -1484,7 +1513,7 @@ def c_language_prior_override(d: Data, b: Builder) -> Cause:
         bl = cause_mean(s for _, _, s in v)
         si = cause_mean(float(m.get("score") or 0) for _, m, _ in v)
         chance = 0.25 if k == "ai2d" else None
-        rows.append([NICE[k], f"{len(v)}", f"{bl * 100:.1f}%", f"{si * 100:.1f}%",
+        rows.append([NICE[k], f"{len(v)}", pct_or_dash(bl, 1), pct_or_dash(si, 1),
                      (f"<strong>+{(si - bl) * 100:.1f}pp</strong>", "num"),
                      ("25%" if chance else "&mdash;")])
         series_b.append(bl)
@@ -1496,16 +1525,16 @@ def c_language_prior_override(d: Data, b: Builder) -> Cause:
         v = [x for x in cxp if x[1]["meta"].get("split") == sp_]
         if v:
             split_rows.append([f"CharXiv {sp_}", f"{len(v)}",
-                               f"{cause_mean(s for _, _, s in v) * 100:.1f}%",
-                               f"{cause_mean(float(m.get('score') or 0) for _, m, _ in v) * 100:.1f}%",
+                               pct_or_dash(cause_mean(s for _, _, s in v), 1),
+                               pct_or_dash(cause_mean(float(m.get('score') or 0) for _, m, _ in v), 1),
                                f"+{(cause_mean(float(m.get('score') or 0) for _, m, _ in v) - cause_mean(s for _, _, s in v)) * 100:.1f}pp"])
     aiv = by.get("ai2d") or []
     for qt in ("label_reference", "diagram_reasoning"):
         v = [x for x in aiv if x[1]["meta"].get("qtype") == qt]
         if v:
             split_rows.append([f"AI2D {qt.replace('_', ' ')}", f"{len(v)}",
-                               f"{cause_mean(s for _, _, s in v) * 100:.1f}%",
-                               f"{cause_mean(float(m.get('score') or 0) for _, m, _ in v) * 100:.1f}%",
+                               pct_or_dash(cause_mean(s for _, _, s in v), 1),
+                               pct_or_dash(cause_mean(float(m.get('score') or 0) for _, m, _ in v), 1),
                                f"+{(cause_mean(float(m.get('score') or 0) for _, m, _ in v) - cause_mean(s for _, _, s in v)) * 100:.1f}pp"])
     ai_gain = next((float(r[4].replace("+", "").replace("pp", "")) if isinstance(r[4], str)
                     else 0 for r in rows if r[0] == "AI2D"), 0)
@@ -1513,10 +1542,10 @@ def c_language_prior_override(d: Data, b: Builder) -> Cause:
                - cause_mean(s for _, _, s in aiv)) if aiv else 0
 
     body = (
-        cause_tiles([("AI2D without the diagram", f"{cause_mean(s for _, _, s in aiv) * 100:.1f}%",
+        cause_tiles([("AI2D without the diagram", pct_or_dash(cause_mean(s for _, _, s in aiv), 1),
                 f"chance is 25%; the image adds only {ai_gain * 100:.1f}pp (n={len(aiv)})", "bad"),
                ("CharXiv without the figure",
-                f"{cause_mean(s for _, _, s in cxp) * 100:.1f}%",
+                pct_or_dash(cause_mean(s for _, _, s in cxp), 1),
                 f"vision adds {(cause_mean(float(m.get('score') or 0) for _, m, _ in cxp) - cause_mean(s for _, _, s in cxp)) * 100:.1f}pp "
                 f"(n={len(cxp)})", "good"),
                ("Items answered correctly blind",
@@ -1591,7 +1620,7 @@ def c_language_prior_override(d: Data, b: Builder) -> Cause:
     return Cause("language_prior_override", "Some of these benchmarks barely need the picture",
                  "A large share of benchmark score is recoverable from the question text alone. "
                  "With the image withheld the model still answers "
-                 f"{cause_mean(s for _, _, s in (by.get('ai2d') or [])) * 100:.0f}% of AI2D correctly "
+                 f"{pct_bare(cause_mean(s for _, _, s in (by.get('ai2d') or [])), 0)}% of AI2D correctly "
                  "against 25% chance, so at most a fifth of that score is perception.",
                  "PROVEN",
                  f"vision adds only {ai_gain * 100:.0f}pp on AI2D vs "
@@ -1618,10 +1647,10 @@ def c_label_reference_binding(d: Data, b: Builder) -> Cause:
 
     rows = [["AI2D label-reference (resolve a printed letter to the thing it marks)",
              f"{len(lr)}", f"{a_lr * 100:.1f}%",
-             f"{cause_mean(s for _, _, s in blr) * 100:.1f}%" if blr else "&mdash;",
+             pct_or_dash(cause_mean(s for _, _, s in blr), 1) if blr else "&mdash;",
              f"n={len(blr)}"],
             ["AI2D diagram-reasoning", f"{len(dr)}", f"{a_dr * 100:.1f}%",
-             f"{cause_mean(s for _, _, s in bdr) * 100:.1f}%" if bdr else "&mdash;",
+             pct_or_dash(cause_mean(s for _, _, s in bdr), 1) if bdr else "&mdash;",
              f"n={len(bdr)}"],
             ["CharXiv: name the legend entries (figures that have a legend)",
              f"{len(q13)}", f"{a13 * 100:.1f}%", "&mdash;", "not in blind arm"],
@@ -1634,7 +1663,7 @@ def c_label_reference_binding(d: Data, b: Builder) -> Cause:
                 f"(n={len(lr)} / {len(dr)})", "bad"),
                ("Gap", f"{(a_dr - a_lr) * 100:.1f}pp",
                 "the largest within-benchmark split anywhere in this study", "bad"),
-               ("Blind baseline", f"{cause_mean(s for _, _, s in blr) * 100:.1f}%" if blr else "&mdash;",
+               ("Blind baseline", pct_or_dash(cause_mean(s for _, _, s in blr), 1) if blr else "&mdash;",
                 "label-reference is near chance without the diagram, so this really is perception",
                 "good"),
                ("CharXiv legend naming", f"{a13 * 100:.1f}%",
@@ -1658,10 +1687,10 @@ def c_label_reference_binding(d: Data, b: Builder) -> Cause:
                "mostly world knowledge; the label half is mostly looking.",
                [("label-reference &mdash; sighted", a_lr, f"n={len(lr)}", f"{a_lr * 100:.1f}", 0.25, ""),
                 ("label-reference &mdash; blind", cause_mean(s for _, _, s in blr) if blr else None,
-                 f"n={len(blr)}", f"{cause_mean(s for _, _, s in blr) * 100:.1f}" if blr else "&mdash;", 0.25, "s2"),
+                 f"n={len(blr)}", pct_bare(cause_mean(s for _, _, s in blr), 1) if blr else "&mdash;", 0.25, "s2"),
                 ("diagram-reasoning &mdash; sighted", a_dr, f"n={len(dr)}", f"{a_dr * 100:.1f}", 0.25, ""),
                 ("diagram-reasoning &mdash; blind", cause_mean(s for _, _, s in bdr) if bdr else None,
-                 f"n={len(bdr)}", f"{cause_mean(s for _, _, s in bdr) * 100:.1f}" if bdr else "&mdash;", 0.25, "s2")]))
+                 f"n={len(bdr)}", pct_bare(cause_mean(s for _, _, s in bdr), 1) if bdr else "&mdash;", 0.25, "s2")]))
 
     groups = [
         {"bench": "ai2d",
@@ -1686,9 +1715,9 @@ def c_label_reference_binding(d: Data, b: Builder) -> Cause:
     refute = (
         "<p>This would be refuted if AI2D's label-reference deficit were a knowledge deficit rather "
         "than a perceptual one. The blind control rules that out: withholding the diagram drops "
-        f"label-reference to {cause_mean(s for _, _, s in blr) * 100:.1f}% "
+        f"label-reference to {pct_bare(cause_mean(s for _, _, s in blr), 1)}% "
         f"(chance 25%, n={len(blr)}) while reasoning questions survive at "
-        f"{cause_mean(s for _, _, s in bdr) * 100:.1f}%. Nearly all the label-reference signal comes from "
+        f"{pct_bare(cause_mean(s for _, _, s in bdr), 1)}%. Nearly all the label-reference signal comes from "
         "looking, and most of the looking fails.</p>"
         "<p><strong>Partly refuted by CharXiv,</strong> and that is stated on the page rather than "
         "buried: legend-to-series binding is near-solved, so the claim has to be narrowed to "
@@ -2282,10 +2311,10 @@ def c_cross_page(d: Data, b: Builder) -> Cause:
                 f"F1 {f_m * 100:.1f} vs {f_s * 100:.1f} (n={len(multi)} / {len(single)}); "
                 f"format-corrected {(c_m - c_s) * 100:+.1f}pp", "good"),
                ("Take one of the two slides away", f"{(one - both) * 100:+.1f}pp",
-                f"F1 {both * 100:.1f} &rarr; {one * 100:.1f} on the same {len(paired)} questions",
+                f"F1 {pct_bare(both, 1)} &rarr; {pct_bare(one, 1)} on the same {len(paired)} questions",
                 "bad"),
-               ("Still answerable from one slide", f"{still * 100:.1f}%",
-                f"against {both_ok * 100:.1f}% with both &mdash; the information really is "
+               ("Still answerable from one slide", pct_or_dash(still, 1),
+                f"against {pct_bare(both_ok, 1)}% with both &mdash; the information really is "
                 f"distributed", "warn")])
         + bars("Integration across slides costs almost nothing; losing a slide costs everything",
                "The first two bars are the observational comparison, the second two the ablation. "
@@ -2295,9 +2324,9 @@ def c_cross_page(d: Data, b: Builder) -> Cause:
                [("single-evidence questions", f_s, f"n={len(single)}", f"{f_s * 100:.1f}", None, ""),
                 ("multi-evidence questions", f_m, f"n={len(multi)}", f"{f_m * 100:.1f}", None, ""),
                 ("multi-evidence, both slides sent", both, f"n={len(paired)}",
-                 f"{both * 100:.1f}", None, "good"),
+                 pct_bare(both, 1), None, "good"),
                 ("multi-evidence, first slide only", one, f"n={len(paired)}",
-                 f"{one * 100:.1f}", None, "bad")])
+                 pct_bare(one, 1), None, "bad")])
         + cause_table(["SlideVQA question population (full manifest)", "n"],
                 [["one evidence slide", str(nev.get(1, 0))],
                  ["two evidence slides", str(nev.get(2, 0))],
@@ -2315,7 +2344,7 @@ def c_cross_page(d: Data, b: Builder) -> Cause:
         f'{abs(c_m - c_s) * 100:.0f} once formatting is corrected &mdash; smaller than the '
         'difference between two arbitrary question types. The ablation rules out the deflationary '
         'explanation that the questions were never really multi-page: with one slide removed the '
-        f'same questions fall {abs(one - both) * 100:.0f} points and only {still * 100:.0f}% remain '
+        f'same questions fall {abs(one - both) * 100:.0f} points and only {pct_bare(still, 0)}% remain '
         'answerable. Haiku is carrying information across images.</div>')
 
     hard = sorted([p for p in paired if hit(p[1]) and p[2] < 0.5],
@@ -2405,11 +2434,11 @@ def c_retrieval(d: Data, b: Builder) -> Cause:
         + bars("Twenty slides instead of two costs almost no accuracy",
                "Same questions, same golds; the only difference is whether the harness pre-selects "
                "the evidence slides. Retrieval over a 20-slide deck is close to free.",
-               [("evidence slides only", e_f1, f"n={len(common)}", f"{e_f1 * 100:.1f}", None, ""),
-                ("all 20 slides", a_f1, f"n={len(common)}", f"{a_f1 * 100:.1f}", None, "s2"),
-                ("evidence only, format-corrected", e_fc, f"n={len(common)}", f"{e_fc * 100:.1f}",
+               [("evidence slides only", e_f1, f"n={len(common)}", pct_bare(e_f1, 1), None, ""),
+                ("all 20 slides", a_f1, f"n={len(common)}", pct_bare(a_f1, 1), None, "s2"),
+                ("evidence only, format-corrected", e_fc, f"n={len(common)}", pct_bare(e_fc, 1),
                  None, "good"),
-                ("all 20, format-corrected", a_fc, f"n={len(common)}", f"{a_fc * 100:.1f}", None,
+                ("all 20, format-corrected", a_fc, f"n={len(common)}", pct_bare(a_fc, 1), None,
                  "good")])
         + f'<div class="note warn"><strong>But it does not search &mdash; it skims.</strong> '
         f'Handing the model ten times more input raises input tokens {ti_a / ti_e:.1f}&times; and '
@@ -2527,8 +2556,8 @@ def c_counting(d: Data, b: Builder) -> Cause:
         series_acc.append((name, ["--s1", "--s2", "--s3"][len(series_acc) % 3], acc))
         series_names.append(name)
         overall = cause_mean(hit(r) for r in rs)
-        rows.append([name, f"{len(rs)}", f"{overall * 100:.1f}%"]
-                    + [(f"{a * 100:.0f}%" if a is not None else "&mdash;")
+        rows.append([name, f"{len(rs)}", pct_or_dash(overall, 1)]
+                    + [(pct_or_dash(a, 0) if a is not None else "&mdash;")
                        + (f'<span style="color:var(--muted);font-size:10.5px"> n={len(by[kb])}</span>'
                           if by.get(kb) else "")
                        for kb, a in zip(COUNT_BINS, acc)])
@@ -2545,13 +2574,13 @@ def c_counting(d: Data, b: Builder) -> Cause:
     tick = families[1][2]
 
     body = (
-        cause_tiles([("CharXiv object counting", f"{cause_mean(hit(r) for r in obj) * 100:.1f}%",
+        cause_tiles([("CharXiv object counting", pct_or_dash(cause_mean(hit(r) for r in obj), 1),
                 f"n={len(obj)} &mdash; counting a handful of lines or legend entries is close to "
                 f"solved", "good"),
-               ("CharXiv tick counting", f"{cause_mean(hit(r) for r in tick) * 100:.1f}%",
+               ("CharXiv tick counting", pct_or_dash(cause_mean(hit(r) for r in tick), 1),
                 f"n={len(tick)} &mdash; the same operation over ten to forty small marks", "warn"),
-               ("InfographicVQA counting", f"{cause_mean(r['score'] for r in iv_c) * 100:.1f}%",
-                f"ANLS, n={len(iv_c)}, against {cause_mean(r['score'] for r in iv_rest) * 100:.1f}% for "
+               ("InfographicVQA counting", pct_or_dash(cause_mean(r['score'] for r in iv_c), 1),
+                f"ANLS, n={len(iv_c)}, against {pct_bare(cause_mean(r['score'] for r in iv_rest), 1)}% for "
                 f"everything else on the same benchmark", "warn"),
                ("Dose response",
                 f"{(series_acc[2][2][0] or 0) * 100:.0f}% &rarr; {(series_acc[2][2][-1] or 0) * 100:.0f}%",
@@ -2578,8 +2607,8 @@ def c_counting(d: Data, b: Builder) -> Cause:
         'counting a regular repeating pattern by estimating rather than enumerating. Pooling these '
         'into one &ldquo;counting accuracy&rdquo; number would hide both.</div>'
         + f'<div class="note">On InfographicVQA, counting questions score '
-        f'{cause_mean(r["score"] for r in iv_c) * 100:.1f} against '
-        f'{cause_mean(r["score"] for r in iv_rest) * 100:.1f} for the rest of the benchmark &mdash; a '
+        f'{pct_bare(cause_mean(r["score"] for r in iv_c), 1)} against '
+        f'{pct_bare(cause_mean(r["score"] for r in iv_rest), 1)} for the rest of the benchmark &mdash; a '
         f'{(cause_mean(r["score"] for r in iv_rest) - cause_mean(r["score"] for r in iv_c)) * 100:.1f}-point '
         f'penalty, and the dose-response within it is the steepest of the three families. That is '
         f'the cross-benchmark half of this claim.</div>')
@@ -2643,7 +2672,7 @@ def c_position_bias(d: Data, b: Builder) -> Cause:
                      f"{pick_[L] / n * 100:.1f}%",
                      f"{(pick_[L] - gold[L]) / n * 100:+.1f}pp",
                      f"{pw[L] / max(len(wrong), 1) * 100:.1f}%",
-                     f"{acc * 100:.1f}%"])
+                     pct_or_dash(acc, 1)])
         gv.append(gold[L] / n)
         pv.append(pick_[L] / n)
         wv.append(pw[L] / max(len(wrong), 1))
@@ -2735,7 +2764,7 @@ def c_subplot_scope(d: Data, b: Builder) -> Cause:
         m = re.match(r"For the subplot at row (\d+) and column (\d+)", r["question"])
         if m:
             dist[(int(m.group(1)) - 1) + (int(m.group(2)) - 1)].append(hit(r))
-    drows = [[f"{k} step(s) from the top-left panel", f"{len(v)}", f"{cause_mean(v) * 100:.1f}%"]
+    drows = [[f"{k} step(s) from the top-left panel", f"{len(v)}", pct_or_dash(cause_mean(v), 1)]
              for k, v in sorted(dist.items()) if len(v) >= 40]
 
     # axis confusion: x-axis answer that is really the y-axis label, and vice versa
@@ -2763,11 +2792,11 @@ def c_subplot_scope(d: Data, b: Builder) -> Cause:
         'against. This is recorded as untestable rather than quietly dropped.</div>'
         + cause_table(["how the question addresses the panel (multi-panel figures only)", "n", "accuracy"],
                 [["by row and column (&ldquo;row 2, column 1&rdquo;)", f"{len(named)}",
-                  f"{cause_mean(hit(r) for r in named) * 100:.1f}%"],
+                  pct_or_dash(cause_mean(hit(r) for r in named), 1)],
                  ["verbally (&ldquo;the left-most subplot&rdquo;)", f"{len(verbal)}",
-                  f"{cause_mean(hit(r) for r in verbal) * 100:.1f}%"],
+                  pct_or_dash(cause_mean(hit(r) for r in verbal), 1)],
                  ["no address needed (layout / count questions)", f"{len(noprefix)}",
-                  f"{cause_mean(hit(r) for r in noprefix) * 100:.1f}%"]],
+                  pct_or_dash(cause_mean(hit(r) for r in noprefix), 1)]],
                 "What can be measured is whether addressing a panel costs anything. It costs a "
                 "little, and verbal addressing costs more than coordinates &mdash; but both stay "
                 "close to the single-panel baseline.")
@@ -3091,8 +3120,8 @@ def index_page(causes: list[Cause], d: Data) -> str:
     for k, cnt in d.counts.items():
         acc.append([NICE[k], f"{cnt['lines']}", f"{cnt['unique']}", f"{cnt['unusable']}",
                     f"{cnt['malformed']}", f"{cnt['scored']}",
-                    f"{cause_mean(hit(r) for r in d.rows[k]) * 100:.1f}%",
-                    f"{cause_mean(r['score'] for r in d.rows[k]) * 100:.1f}"])
+                    pct_or_dash(cause_mean(hit(r) for r in d.rows[k]), 1),
+                    pct_bare(cause_mean(r['score'] for r in d.rows[k]), 1)])
     ctrl = [["blind (no image)", f"{d.blind['__meta__']['lines']}",
              f"{d.blind['__meta__']['unique']}", f"{d.blind['__meta__']['malformed']}"],
             ["SlideVQA, first evidence slide only", f"{d.onepage['__meta__']['lines']}",
@@ -3168,14 +3197,36 @@ def index_page(causes: list[Cause], d: Data) -> str:
 
 
 def cmd_causes(a) -> int:
-    PAGES.mkdir(parents=True, exist_ok=True)
-    CAUSE_ASSETS.mkdir(parents=True, exist_ok=True)
-
+    # Directories are created after the precondition check, not before: an abort
+    # should not leave an empty outputs/causes/ behind looking like a half-run.
     print("loading + scoring results ...", flush=True)
     d = Data()
     for k, c in d.counts.items():
         print(f"  {k:20s} {c['scored']:5d} scored  ({c['lines']} lines, "
               f"{c['unusable']} null preds, {c['malformed']} malformed)", flush=True)
+
+    # These pages are per-cause evidence: each one states a claim and then shows
+    # the measurement behind it. On a thin results/ there is no measurement, and
+    # the arithmetic that compares one slice against another has nothing to
+    # subtract -- so the page either dies mid-render or, worse, comes out as a
+    # wall of em-dashes that still *looks* like evidence. Refuse instead, and say
+    # which datasets are short. `report_pages` is the one build that needs a full
+    # scoring run; everything else here degrades gracefully.
+    thin = {k: c["scored"] for k, c in d.counts.items() if c["scored"] < MIN_CAUSE_ROWS}
+    if thin:
+        print("\nABORT: causes needs a full results tree.", file=sys.stderr)
+        for k, n in sorted(thin.items()):
+            print(f"  {k:20s} {n:5d} scored  (need >= {MIN_CAUSE_ROWS})", file=sys.stderr)
+        print("\nThese pages compare slices against each other, so a short run gives\n"
+              "nothing to compare and the page would render as em-dashes that still\n"
+              "read as evidence. Score the benchmarks first:\n"
+              "  python -m blindspot.core --datasets charxiv ai2d slidevqa "
+              "infographicvqa screenspot_pro --max-spend N\n"
+              "Refusing rather than publishing an empty page.", file=sys.stderr)
+        return 2
+
+    PAGES.mkdir(parents=True, exist_ok=True)
+    CAUSE_ASSETS.mkdir(parents=True, exist_ok=True)
 
     b = Builder(d, want_images=not a.no_images)
     causes = []
@@ -6583,13 +6634,23 @@ def _write(prim: str, body: str) -> Path:
 
 def cmd_tasks(a) -> int:
     # The originals relied on outputs/tasks/ already existing; `_write` never
-    # created it, so a fresh clone failed on the first page.
-    TASKS.mkdir(parents=True, exist_ok=True)
+    # created it, so a fresh clone failed on the first page. Create it AFTER the
+    # check below, though: on a thin results/ this used to make an empty
+    # outputs/tasks/ and exit 0, which reads as "ran fine, nothing to say"
+    # rather than "had nothing to work with".
     rows = [r for ds in ("charxiv", "infographicvqa", "screenspot_pro") for r in load_rows(ds)]
     by_prim = defaultdict(list)
     for r in rows:
         if r["primitive"]:
             by_prim[r["primitive"]].append(r)
+    if not by_prim:
+        print(f"ABORT: no scored rows carry a primitive, so there is nothing to build "
+              f"a per-primitive page from\n({len(rows)} rows loaded). Score the "
+              f"benchmarks first:\n"
+              f"  python -m blindspot.core --datasets charxiv infographicvqa "
+              f"screenspot_pro --max-spend N", file=sys.stderr)
+        return 2
+    TASKS.mkdir(parents=True, exist_ok=True)
     for prim in LABELS:
         if prim in by_prim:
             p = build_page(prim, by_prim[prim], a.examples)
@@ -7547,6 +7608,18 @@ def cmd_candidates(a) -> int:
         cards.append(f'<section><h2>{esc(title)}</h2><p class=blurb>{esc(blurb)}</p>'
                      f'<div class=row>{"".join(panels)}</div></section>')
         print(f"  {key}: {len(cands)} candidates")
+
+    # A contact sheet exists to be chosen from. On a thin results/ every pool
+    # comes back empty and this used to write a 2.5 KB page with zero panels and
+    # exit 0 -- indistinguishable from "no good candidates found" when the truth
+    # is "there was nothing to look at". Refuse instead.
+    if not any("<img" in c for c in cards):
+        print(f"ABORT: every candidate pool came back empty, so the contact sheet "
+              f"would have no panels to choose from.\nThis needs a scored run "
+              f"across the benchmarks; score them first:\n"
+              f"  python -m blindspot.core --datasets charxiv ai2d infographicvqa "
+              f"screenspot_pro --max-spend N", file=sys.stderr)
+        return 2
 
     (CAND_OUT / "candidates.html").write_text(
         "<!doctype html><meta charset='utf-8'><title>Blind spot example candidates</title>"

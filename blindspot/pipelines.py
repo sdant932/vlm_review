@@ -22,6 +22,7 @@ Runbooks: docs/runme/{BENCHMARKS,SYNTHETIC,FINETUNE}.md
 
 from __future__ import annotations
 
+import os
 import sys
 import textwrap
 from pathlib import Path
@@ -339,6 +340,36 @@ def _resolutions(p: str) -> set[Path]:
     return {q.resolve(), (flow.ROOT / q).resolve()}
 
 
+
+
+def as_step_would_see(out: str) -> Path:
+    """Resolve --out the way the STEP will, not the way the caller's shell does.
+
+    `flow.main` runs every step with `cwd=ROOT`, so a relative `--out` is
+    relative to the repository, not to wherever the operator happened to be
+    standing. Checking it against the caller's cwd means `cd /tmp && ... --out
+    data/svg_localization` passes the guard and then writes the committed
+    dataset, because the step re-interprets the same string against ROOT.
+    """
+    p = Path(out)
+    return p if p.is_absolute() else flow.ROOT / p
+def same_path(a: Path, b: Path) -> bool:
+    """Is `a` the same location as `b`, whatever the filesystem thinks?
+
+    `Path.resolve()` does not case-fold, and macOS/APFS is case-INSENSITIVE by
+    default. So `outputs/PART3`.resolve() != `outputs/part3`.resolve() as strings
+    while `stat()` reports the same inode -- the two paths ARE one directory. A
+    guard built on string equality therefore waves through
+    `--out outputs/PART3` and writes over the very artifact it exists to protect.
+
+    Ask the filesystem when it can answer (samefile compares device+inode), and
+    fall back to a case-normalised comparison when the path does not exist yet,
+    which is the common case for an --out that has never been created.
+    """
+    try:
+        return a.samefile(b)
+    except (OSError, ValueError):
+        return os.path.normcase(str(a.resolve())) == os.path.normcase(str(b.resolve()))
 def refuse_finetune_out(out: str) -> None:
     """Reject an --out that would land a finetune step on a reference artifact.
 
@@ -346,12 +377,12 @@ def refuse_finetune_out(out: str) -> None:
     never the thing overwritten: `--out outputs/part3` writes
     `outputs/part3/assets`, and `--out data` writes `data/svgloc_mr`.
     """
-    targets = {"--out itself": out}
+    targets = {"--out itself": str(as_step_would_see(out))}
     targets.update({f"the {k} it would write": v for k, v in finetune_out(out).items()})
     for label, target in targets.items():
         hit = _resolutions(target)
         for ref, why in FINETUNE_REFERENCE.items():
-            if (flow.ROOT / ref).resolve() in hit:
+            if any(same_path(h, flow.ROOT / ref) for h in hit):
                 raise SystemExit(
                     f"refusing --out {out}: {label} lands on\n\n"
                     f"    {ref}\n\n"
@@ -409,7 +440,7 @@ if __name__ == "__main__":
         # wherever the process happens to be, so from any other directory an
         # absolute --out pointing straight at the committed dataset compares
         # unequal and the guard silently does not fire.
-        if Path(opts["out"]).resolve() == (flow.ROOT / COMMITTED).resolve():
+        if same_path(as_step_would_see(opts["out"]), flow.ROOT / COMMITTED):
             raise SystemExit(
                 f"refusing --out {COMMITTED}: that is the committed dataset and the source\n"
                 f"of truth for every published number. The generator has drifted from it, so\n"

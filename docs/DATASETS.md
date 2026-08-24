@@ -102,7 +102,7 @@ Five benchmarks, 13,965 questions, all on `claude-haiku-4-5-20251001` with think
 | AI2D | 3,086 | accuracy | 81.6% |
 | SlideVQA | 1,003 | ANLS | 68.8% |
 | InfographicVQA | 2,801 | ANLS | 66.7% |
-| ScreenSpot-Pro | 1,581 | click-in-bbox | 1.8% |
+| ScreenSpot-Pro | 1,581 | click-in-bbox | 1.6% |
 
 Plus a sixth scored arm — SlideVQA all-pages, n=494, 58.5% — which is a retrieval control
 rather than a separate benchmark, and the synthetic dataset generated for this study

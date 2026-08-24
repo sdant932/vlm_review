@@ -195,7 +195,7 @@ wrote outputs/summary.json  (21 KB)
   12468 questions | 11 primitives | 3 with >1 source
   charxiv           84.7%  n=5000
   infographicvqa    66.7%  n=2801
-  screenspot_pro     1.8%  n=1581
+  screenspot_pro     1.6%  n=1581
   ai2d              81.6%  n=3086
 ```
 

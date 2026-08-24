@@ -920,7 +920,43 @@ class _Args:
     pass
 
 
+def monkeypatch_check_fingerprint():
+    """Neutralise the provenance guard for tests that are about rendering.
+
+    `report` refuses to render from a figures.json it cannot tie to the results/
+    on disk -- that is deliberate, and `test_a_stale_figures_json_is_refused`
+    covers it. The bundles these rendering tests use are fixtures or predate the
+    stamp, so the guard would abort before the code under test ever ran.
+    """
+    import blindspot.report as R
+    R.check_fingerprint = lambda *a, **k: None
+
+
+def test_a_stale_figures_json_is_refused(report_module, tmp_path):
+    """A bundle that does not match results/ must not be rendered.
+
+    Measured before this guard existed: with a stale bundle and a thin results/,
+    `report tables` exited 0 and wrote a table carrying the full study's "13,965
+    questions" and "5,000 items" beside live cells reading 0.00% and nan. It read
+    as evidence and described two different runs.
+    """
+    import blindspot.report as R
+    fp = R.results_fingerprint()
+    assert fp, "no results/ to fingerprint"
+    R.check_fingerprint({"_results_fingerprint": fp}, "tables")     # matching: passes
+    k = next(iter(fp))
+    with pytest.raises(SystemExit) as e:
+        R.check_fingerprint({"_results_fingerprint": {**fp, k: [1, 1]}}, "tables")
+    assert "ABORT" in str(e.value)
+    with pytest.raises(SystemExit) as e:                            # unstamped: also refused
+        R.check_fingerprint({}, "tables")
+    assert "no record of the results" in str(e.value)
+
+
 def test_tables_skips_cleanly_without_the_prose_and_still_writes_tables_md(report_module):
+    # This test is about rendering. figures.json's provenance stamp is a
+    # separate guard with its own test, and the bundle on disk predates it.
+    monkeypatch_check_fingerprint()
     R, out = report_module
     if not Path("outputs/report/figures.json").exists():
         pytest.skip("outputs/report/figures.json is not present")
@@ -991,6 +1027,9 @@ def test_pct_uses_a_literal_em_dash_and_pct_html_uses_the_entity():
 
 
 def test_the_generated_markdown_tables_contain_no_html_entities(report_module):
+    # This test is about rendering. figures.json's provenance stamp is a
+    # separate guard with its own test, and the bundle on disk predates it.
+    monkeypatch_check_fingerprint()
     """The end-to-end statement of the rule above: tables.md is markdown, so an
     HTML entity anywhere in it is a rendering bug."""
     R, out = report_module
@@ -1047,6 +1086,9 @@ def test_the_ablations_table_is_computed_from_figures_json_not_from_literals():
 
 
 def test_the_ablations_table_reaches_tables_md(report_module):
+    # This test is about rendering. figures.json's provenance stamp is a
+    # separate guard with its own test, and the bundle on disk predates it.
+    monkeypatch_check_fingerprint()
     R, out = report_module
     if not Path("outputs/report/figures.json").exists():
         pytest.skip("outputs/report/figures.json is not present")

@@ -116,10 +116,16 @@ def test_the_builders_declare_the_studys_fifteen_causes():
 class _FakeData:
     """The four attributes `index_page` reads, and nothing else."""
 
-    def __init__(self, benchmarks):
-        meta = {"lines": 2, "unique": 2, "malformed": 0}
-        self.counts = {b: {"lines": 2, "unique": 2, "unusable": 0,
-                           "malformed": 0, "scored": 2} for b in benchmarks}
+    def __init__(self, benchmarks, scored=None):
+        # `causes` refuses below MIN_CAUSE_ROWS, because a slice-vs-slice
+        # comparison over a handful of rows is not a measurement. Default to a
+        # sufficient run: this fixture is about page generation, and the refusal
+        # has its own test below.
+        import blindspot.report_pages as rp   # imported per-use, as elsewhere here
+        n = rp.MIN_CAUSE_ROWS if scored is None else scored
+        meta = {"lines": n, "unique": n, "malformed": 0}
+        self.counts = {b: {"lines": n, "unique": n, "unusable": 0,
+                           "malformed": 0, "scored": n} for b in benchmarks}
         self.rows = {b: [{"score": 1.0}, {"score": 0.0}] for b in benchmarks}
         self.blind = {"__meta__": dict(meta)}
         self.onepage = {"__meta__": dict(meta)}
@@ -238,3 +244,28 @@ def test_nothing_here_reimports_the_pre_consolidation_layout():
     src = MODULE.read_text()
     stale = re.findall(r"blindspot\.(core|analysis|reporting|judging)\.\w+", src)
     assert stale == [], f"pre-consolidation imports are back: {sorted(set(stale))}"
+
+
+def test_causes_refuses_a_run_too_thin_to_compare(tmp_path, monkeypatch, capsys):
+    """A short results/ must abort, not render a page of em-dashes.
+
+    These pages state a claim and then show the measurement behind it. On a thin
+    run there is no measurement, and the arithmetic comparing one slice against
+    another has nothing to subtract -- so the page used to die mid-render with
+    `TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'`, and the
+    near miss was worse: a wall of em-dashes that still reads as evidence.
+
+    This only ever bit a sparse results/ -- which is exactly what a fresh clone
+    has, and never what the full study tree has. It passed every check against
+    real data and failed for anyone starting from scratch.
+    """
+    import blindspot.report_pages as rp
+
+    monkeypatch.setattr(rp, "Data", lambda: _FakeData(["charxiv"], scored=3))
+    monkeypatch.chdir(tmp_path)
+
+    assert rp.main(["causes", "--no-images"]) == 2
+    err = capsys.readouterr().err
+    assert "ABORT" in err
+    assert "charxiv" in err and "3" in err          # names the short dataset
+    assert not (tmp_path / "outputs" / "causes").exists()   # wrote nothing
