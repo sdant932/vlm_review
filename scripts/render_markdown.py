@@ -22,7 +22,7 @@ import html
 import re
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[2]
+REPO = Path(__file__).resolve().parents[1]
 
 CSS = """
 :root{--bg:#fcfcfb;--fg:#1b1b19;--mut:#6a6a66;--line:#e4e4e0;--card:#fff;

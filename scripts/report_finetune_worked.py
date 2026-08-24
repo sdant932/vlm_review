@@ -26,7 +26,7 @@ from pathlib import Path
 
 import anthropic
 
-REPO = Path(__file__).resolve().parents[2]
+REPO = Path(__file__).resolve().parents[1]
 MODEL = "claude-haiku-4-5-20251001"
 
 PROMPT = (

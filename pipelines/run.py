@@ -178,36 +178,36 @@ MR_DATA = "data/svgloc_mr"
 def finetune_data(_opts) -> dict[str, list[Step]]:
     return {
         "ladder": [
-            Step("gen-multires", ["-m", "scripts.generate.finetune_data", "ladder",
+            Step("gen-multires", ["-m", "scripts.generate_finetune", "ladder",
                                   "--out", MR_DATA],
                  note="6 aspect ratios x 4 sizes, up to the largest that reaches the "
                       "model without downscaling (1568px edge, ~1.15MP)"),
         ],
         "build": [
-            Step("sft-bbox", ["-m", "scripts.generate.finetune_data", "samples",
+            Step("sft-bbox", ["-m", "scripts.generate_finetune", "samples",
                               "--n", "20", "--seed", "0",
                               "--out", "data/sft_bbox/sft_bbox_20.jsonl"],
                  note="target is a BOX, not a point: a point has thousands of equally "
                       "correct answers, a box has one and overlap is a graded signal"),
         ],
         "verify": [
-            Step("multires-audit", ["-m", "scripts.generate.finetune_data", "audit",
+            Step("multires-audit", ["-m", "scripts.generate_finetune", "audit",
                                     "--dataset", MR_DATA]),
-            Step("gallery", ["-m", "scripts.report.finetune", "gallery"],
+            Step("gallery", ["-m", "scripts.report_finetune", "gallery"],
                  note="every record shown twice -- full frame and a zoom -- because at "
                       "900x570 a 0.02% target is a few pixels"),
         ],
         "report": [
-            Step("figures", ["-m", "scripts.report.finetune", "figures"]),
-            Step("examples", ["-m", "scripts.report.finetune", "examples"]),
+            Step("figures", ["-m", "scripts.report_finetune", "figures"]),
+            Step("examples", ["-m", "scripts.report_finetune", "examples"]),
             # CALLS THE API. The script has no --max-spend of its own, so the
             # framework can gate it (key check, --offline, ceiling prompt) but
             # cannot cap it mid-run. Output is model-sampled: --seed picks WHICH
             # records are asked about, not what comes back.
-            Step("worked-examples", ["-m", "scripts.report.finetune_worked"],
+            Step("worked-examples", ["-m", "scripts.report_finetune_worked"],
                  needs_api=True, optional=True,
                  note="~24 model calls; no internal spend cap"),
-            Step("render", ["-m", "scripts.report.render_markdown",
+            Step("render", ["-m", "scripts.render_markdown",
                             "--src", "outputs/part3/part3.md", "--paste"],
                  note="HTML generated from the markdown, never hand-edited"),
         ],
