@@ -370,6 +370,33 @@ def same_path(a: Path, b: Path) -> bool:
         return a.samefile(b)
     except (OSError, ValueError):
         return os.path.normcase(str(a.resolve())) == os.path.normcase(str(b.resolve()))
+def within_path(child: Path, parent: Path) -> bool:
+    """Is `child` `parent`, or anywhere INSIDE it?
+
+    `same_path` answers identity, and identity was the whole guard. It says
+    nothing about containment, so `--out data/svg_localization/subdir` passed
+    every check and the printed plan claimed "the committed set is untouched"
+    while scheduling writes inside the committed set. Nothing gets clobbered
+    that way -- a subdirectory cannot overwrite its siblings -- but it drops
+    untracked files into a git-tracked dataset that every published number is
+    read from, which is the state the guard exists to prevent.
+
+    A guard whose job is keeping writes out of a directory has to test the
+    directory, not just its name.
+    """
+    if same_path(child, parent):
+        return True
+    # `os.path.normcase` is a NO-OP on POSIX -- it only folds case on Windows.
+    # So a normcase string compare cannot see that DATA/SVG_LOCALIZATION/sub is
+    # inside data/svg_localization on a case-insensitive APFS volume, which is
+    # exactly the bypass this function was added to close. Walk up to the
+    # nearest ancestor that exists and ask the filesystem, which does know;
+    # fall back to an explicit casefold for the part that does not exist yet.
+    here = child.resolve()
+    for ancestor in here.parents:
+        if same_path(ancestor, parent):
+            return True
+    return str(here).casefold().startswith(str(parent.resolve()).casefold() + os.sep)
 def refuse_finetune_out(out: str) -> None:
     """Reject an --out that would land a finetune step on a reference artifact.
 
@@ -382,9 +409,13 @@ def refuse_finetune_out(out: str) -> None:
     for label, target in targets.items():
         hit = _resolutions(target)
         for ref, why in FINETUNE_REFERENCE.items():
-            if any(same_path(h, flow.ROOT / ref) for h in hit):
+            # within_path, not same_path: `--out data/svgloc_mr/subdir` lands
+            # nothing ON a reference artifact and so passed an identity check,
+            # while still writing inside one of the directories this refuses to
+            # touch. Containment is the property being protected.
+            if any(within_path(h, flow.ROOT / ref) for h in hit):
                 raise SystemExit(
-                    f"refusing --out {out}: {label} lands on\n\n"
+                    f"refusing --out {out}: {label} lands on, or inside,\n\n"
                     f"    {ref}\n\n"
                     + textwrap.fill(
                         f"which is {why}. It is gitignored and untracked, so there "
@@ -440,11 +471,14 @@ if __name__ == "__main__":
         # wherever the process happens to be, so from any other directory an
         # absolute --out pointing straight at the committed dataset compares
         # unequal and the guard silently does not fire.
-        if same_path(as_step_would_see(opts["out"]), flow.ROOT / COMMITTED):
+        if within_path(as_step_would_see(opts["out"]), flow.ROOT / COMMITTED):
             raise SystemExit(
-                f"refusing --out {COMMITTED}: that is the committed dataset and the source\n"
-                f"of truth for every published number. The generator has drifted from it, so\n"
-                f"regenerating in place would rebind uids to different questions.\n"
+                f"refusing --out {opts['out']}: that is {COMMITTED}, or a path inside it.\n"
+                f"That is the committed dataset and the source of truth for every published\n"
+                f"number. The generator has drifted from it, so regenerating in place would\n"
+                f"rebind uids to different questions -- and writing to a SUBDIRECTORY of it\n"
+                f"leaves untracked files in a git-tracked dataset even though it clobbers\n"
+                f"nothing. Build into a directory outside it.\n"
                 f"See docs/runme/SYNTHETIC.md section 0.")
         if name == "finetune_data":
             refuse_finetune_out(opts["out"])

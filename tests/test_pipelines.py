@@ -577,6 +577,52 @@ def test_the_cli_refuses_to_generate_into_the_committed_dataset(out):
     assert "refusing" in (r.stderr + r.stdout)
 
 
+@pytest.mark.parametrize("suffix", [
+    "subdir",                 # the plain case: one level inside
+    "a/b/c",                  # several levels, none of which exist
+    "sub/",                   # trailing separator
+])
+def test_the_guard_refuses_a_path_INSIDE_the_committed_dataset(suffix):
+    """Identity is not containment, and the guard used to test only identity.
+
+    `--out data/svg_localization/subdir` is not the committed dataset, so
+    `samefile` said no and the printed plan claimed "the committed set is
+    untouched" while scheduling writes inside it. Nothing gets clobbered -- a
+    subdirectory cannot overwrite its siblings -- but it leaves untracked files
+    in the git-tracked dataset every published number is read from.
+    """
+    out = f"{pipelines.COMMITTED}/{suffix}"
+    r = _cli("synth_localization_eval", "--out", out, "--list", cwd=str(ROOT))
+    assert r.returncode != 0, f"--out {out} was accepted:\n{r.stdout}"
+    assert "refusing" in (r.stderr + r.stdout)
+
+
+def test_the_containment_guard_folds_case_because_normcase_does_not():
+    """`os.path.normcase` is a no-op on POSIX -- it folds case on Windows only.
+
+    So the string half of the guard could not see that DATA/SVG_LOCALIZATION/sub
+    is inside data/svg_localization on a case-insensitive APFS volume, which is
+    the bypass that survived the first containment fix.
+    """
+    out = f"{pipelines.COMMITTED.upper()}/sub"
+    r = _cli("synth_localization_eval", "--out", out, "--list", cwd=str(ROOT))
+    assert r.returncode != 0, f"--out {out} was accepted:\n{r.stdout}"
+
+
+@pytest.mark.parametrize("out", [
+    "data/svg_localization_other",   # shares the prefix, is NOT inside
+    "data/svgloc2",
+])
+def test_the_containment_guard_does_not_over_reach(out, tmp_path):
+    """A sibling that merely shares the prefix must still be allowed.
+
+    A `startswith` without the separator would swallow
+    data/svg_localization_other, which is a different directory.
+    """
+    r = _cli("synth_localization_eval", "--out", out, "--list", cwd=str(ROOT))
+    assert r.returncode == 0, f"--out {out} was wrongly refused:\n{r.stderr}"
+
+
 # ----------------------------------------------- the same rule, for finetune_data
 """`finetune_data` writes six artifacts that are not in git and do not come back.
 

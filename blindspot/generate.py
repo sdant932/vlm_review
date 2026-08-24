@@ -2722,15 +2722,33 @@ def cmd_scenes(a: argparse.Namespace) -> int:
     # Compare filesystem identity, not resolved strings: resolve() does not
     # case-fold and macOS is case-insensitive, so `--out DATA/svg_localization`
     # would otherwise slip past and overwrite the committed dataset.
+    # Identity is not enough: `--out data/svg_localization/subdir` is not the
+    # committed dataset and clobbers nothing, but it does drop untracked files
+    # into the git-tracked dataset every published number is read from. Test
+    # containment, not just equality.
     try:
         same = Path(a.out).samefile(committed)
     except (OSError, ValueError):
         same = os.path.normcase(str(Path(a.out).resolve())) == os.path.normcase(str(committed))
+    if not same:
+        # normcase folds case on Windows only, so on APFS it cannot see that
+        # DATA/SVG_LOCALIZATION/sub is inside the committed set. Ask the
+        # filesystem about each existing ancestor, then casefold the remainder.
+        here = Path(a.out).resolve()
+        for ancestor in here.parents:
+            try:
+                if ancestor.samefile(committed):
+                    same = True
+                    break
+            except (OSError, ValueError):
+                continue
+        same = same or str(here).casefold().startswith(str(committed).casefold() + os.sep)
     if same:
         raise SystemExit(
             f"scenes: refusing --out {a.out}\n"
-            "That is data/svg_localization, the committed dataset and the source of\n"
-            "truth for every published number. The generator has drifted from it: the\n"
+            "That is data/svg_localization, or a path inside it: the committed dataset\n"
+            "and the source of truth for every published number.\n"
+            "The generator has drifted from it: the\n"
             "same seed now yields different ground truth for ~73% of shared uids, and\n"
             "some uids bind to a different question entirely. results/*.jsonl is keyed\n"
             "by uid, so rebuilding in place would join every existing answer to the\n"
