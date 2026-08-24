@@ -7,22 +7,30 @@ into `outputs/report/figures.json`, and everything downstream reads it, so no
 number is recomputed in two places and no figure or sentence carries a value
 that cannot be traced back to `results/*.jsonl`.
 
+One documented exception, and it is documented because it was once silent: a
+few T2 fragments (CharXiv descriptive-vs-reasoning, the SlideVQA format
+correction, InfographicVQA by count bin) are hand-entered from the analysis
+notes, because nothing here computes them. `t2` marks each with a dagger and
+names it in the table's footnote, and `tables.md` says so at the top. Anything
+unmarked is read from figures.json.
+
     report data       -> outputs/report/figures.json          (the auditable artifact)
     report examples   -> outputs/report/figures/*.png         (real scored items)
-    report tables     -> outputs/report/tables.md             (six tables, + injection)
+    report tables     -> outputs/report/tables.md             (seven tables, + injection)
     report index      -> outputs/report/figures.md, figures/index.html
     report paste      -> outputs/report/paste_into_docs.html  (self-contained, base64)
     report all        -> the five above, in that order
 
-    report aug22      -> outputs/aug22/summary.json
+    report summary    -> outputs/report/summary.json
     report svgloc     -> outputs/svgloc/{report.html,summary.json}
     report svgderived -> outputs/svgderived/{report.html,summary.json}
 
-`aug22` is NOT part of `all`, but `data` reads `outputs/aug22/summary.json` at
-runtime -- a **file dependency, not an import**, and easy to miss. Run `report
-aug22` first whenever the results change, or `data` will assemble figures.json
-from a stale (or absent) summary. `all` prints this ordering note before it
-starts.
+`summary` is NOT part of `all`, but `data` reads `outputs/report/summary.json`
+at runtime -- a **file dependency, not an import**, and easy to miss. Run
+`report summary` first whenever the results change, or `data` will assemble
+figures.json from a stale (or absent) summary. `all` prints this ordering note
+before it starts, and the `report` stage of `blindspot.pipelines` runs
+`summary` as its first step so the dependency is satisfied there.
 
 Three things were unified when the eight modules merged:
 
@@ -86,7 +94,7 @@ from blindspot.eval import (analyse_counting, analyse_word_mc, COUNT_BINS,
 RESULTS = Path("results")
 REPORT_OUT = Path("outputs/report")
 FIGS_OUT = REPORT_OUT / "figures"
-AUG22_OUT = Path("outputs/aug22")
+SUMMARY_OUT = REPORT_OUT / "summary.json"
 SVGLOC_OUT = Path("outputs/svgloc")
 SVGLOC_ASSETS = SVGLOC_OUT / "assets"
 SVGDERIVED_OUT = Path("outputs/svgderived")
@@ -127,6 +135,27 @@ def pct_html(x, d=1) -> str:
     return pct(x, d, null="&mdash;")
 
 
+# McNemar has nothing to test when no pair is discordant, and `eval` reports
+# that as `mcnemar_chi2: None` rather than inventing a number. That is not an
+# edge case to tolerate: it is what a perfect score at both rungs produces, and
+# word presence and counting both hit 100% in the published Table 4. Rendering
+# it as 0.00 would read as a computed non-result -- a test that ran and found
+# nothing -- when the fact is that the test could not run, and *why* it could
+# not run is itself the finding.
+NO_DISCORDANT = ("&chi;&sup2; &mdash; not computable: no discordant pairs, so every "
+                 "question answered correctly at one rung was answered correctly at "
+                 "the other")
+
+
+def mcnemar_html(p: dict) -> str:
+    """The McNemar clause for a paired comparison, degenerate case included."""
+    chi = p.get("mcnemar_chi2")
+    if chi is None:
+        return NO_DISCORDANT
+    verdict = "significant" if p.get("significant") else "not significant"
+    return f'&chi;&sup2;={chi:.2f} &mdash; {verdict} at p&lt;.05'
+
+
 def read_prose(skipped: str) -> str | None:
     """`blindspots.md` if it is here, otherwise None and a one-line explanation.
 
@@ -139,7 +168,7 @@ def read_prose(skipped: str) -> str | None:
     return PROSE.read_text()
 
 
-# ============================================= aug22: outputs/aug22/summary.json
+# ========================================= summary: outputs/report/summary.json
 DATASETS = ["charxiv", "infographicvqa", "screenspot_pro", "ai2d", "slidevqa", "slidevqa_allpages"]
 
 # Scale words must be normalised before two numbers can be compared: a model that
@@ -565,6 +594,138 @@ def absence_detection() -> dict:
     return out
 
 
+# --------------------- resolution gradient, and the control that makes it causal
+# T2's second headline blind spot -- accuracy falls as the image gets larger,
+# and does *not* fall as the text on it gets denser -- was carried as four
+# string literals with no module behind them. Both halves are measurements, so
+# they are measured here: `sent_image_sizes` is the size the API actually
+# received, recorded per row by the runner, and text volume is the OCR word
+# count that ships in the InfographicVQA manifest.
+
+def _sent_megapixels(row: dict) -> float | None:
+    """Megapixels as sent, not as stored. The preflight downscale runs before
+    the request, so the on-disk size is not what the model saw."""
+    s = (row.get("sent_image_sizes") or [None])[0]
+    return (s[0] * s[1] / 1e6) if s else None
+
+
+def _infovqa_word_counts() -> dict[str, int]:
+    """uid -> OCR word count, from the manifest InfographicVQA ships.
+
+    The `ocr` field is a repr'd list of Textract JSON, so WORD blocks are
+    counted lexically rather than parsed: the count is all that is wanted, and
+    a strict parse of 2,801 nested blobs buys nothing it would not also risk.
+    """
+    out: dict[str, int] = {}
+    for r in _rows(Path("data/infographicvqa/manifest.jsonl")):
+        ocr = r.get("ocr") or ""
+        if not isinstance(ocr, str):
+            ocr = json.dumps(ocr)
+        out[f"infographicvqa:{r['questionId']}"] = ocr.count('"BlockType": "WORD"')
+    return out
+
+
+def _score_quintiles(rows: list[dict], keyfn, unit: str) -> dict | None:
+    """Mean score in each of five equal-count bins, plus the shape of the run.
+
+    `monotone` is stored rather than asserted in prose: the size cut falls in
+    every bin and the text-volume cut does not, and that difference is the
+    whole argument for the control.
+    """
+    from blindspot.core import quantiles
+    from blindspot.eval import MIN_CELL
+    qs = quantiles(rows, keyfn, 5)
+    # EVAL.md 5: a cell under n=30 is noise, not a measurement. A partial
+    # checkout therefore yields None here and the table says the figure was not
+    # computed, rather than publishing a quintile drawn from four rows.
+    if len(qs) < 5 or any(len(ch) < MIN_CELL for _, _, ch in qs):
+        return None
+    bins = [{"lo": lo, "hi": hi, "n": len(ch),
+             "acc": sum(r["score"] for r in ch) / len(ch)} for lo, hi, ch in qs]
+    accs = [b["acc"] for b in bins]
+    return {"unit": unit, "n": sum(b["n"] for b in bins), "bins": bins,
+            "first": accs[0], "last": accs[-1],
+            "drop_pp": (accs[0] - accs[-1]) * 100,
+            "spread_pp": (max(accs) - min(accs)) * 100,
+            "monotone": all(a >= b for a, b in zip(accs, accs[1:]))}
+
+
+def resolution_gradient() -> dict:
+    """InfographicVQA ANLS by as-sent image size, with its text-volume control.
+
+    Returns {} when the run or the manifest is absent, so a partial checkout
+    renders a table that says the cell was not computed rather than one that
+    quietly restates a remembered number.
+    """
+    from blindspot.eval import load_rows
+    try:
+        rows = load_rows("infographicvqa")
+    except Exception:
+        return {}
+    if not rows:
+        return {}
+    words = _infovqa_word_counts()
+    with_words = [r for r in rows if r["uid"] in words]
+    return {
+        "image_size": _score_quintiles(rows, _sent_megapixels, "megapixels as sent"),
+        "text_volume": _score_quintiles(with_words, lambda r: words[r["uid"]],
+                                        "OCR words on the image"),
+    }
+
+
+def charxiv_panels() -> dict:
+    """CharXiv accuracy on single-panel figures against 13-panel-and-up ones.
+
+    The cut is the one T2 states. `num_subplots` is a manifest field carried on
+    every CharXiv example, so nothing here is a judgement call.
+    """
+    from blindspot.eval import load_rows, MIN_CELL
+    try:
+        rows = load_rows("charxiv")
+    except Exception:
+        return {}
+    panels = lambda r: r["_ex"].meta.get("num_subplots")
+    cell = lambda rs: {"n": len(rs),
+                       "acc": (sum(r["score"] for r in rs) / len(rs)) if rs else None}
+    one, many = cell([r for r in rows if panels(r) == 1]), \
+        cell([r for r in rows if (panels(r) or 0) >= 13])
+    if min(one["n"], many["n"]) < MIN_CELL:      # EVAL.md 5, as above
+        return {}
+    return {"cut": "1 panel vs 13+", "one_panel": one, "thirteen_plus": many,
+            "delta_pp": (many["acc"] - one["acc"]) * 100}
+
+
+# CharXiv descriptive templates that ask for a count. Splitting them by what is
+# being counted is the measurement: ticks are small repeated marks, the other
+# three are large distinct objects, and the same model on the same charts is
+# far better at the second kind.
+TICK_COUNT_QIDS = (17,)              # explicitly labeled ticks across all axes
+OBJECT_COUNT_QIDS = (10, 12, 19)     # lines / discrete legend labels / subplots
+
+
+def charxiv_counting() -> dict:
+    """Counting ticks vs counting objects, answerable items only.
+
+    "Not Applicable" items are excluded because a template's NA share is a
+    different measurement (that one is `absence_detection`), and pooling the
+    two makes a template look weak when it is merely often unanswerable.
+    """
+    from blindspot.eval import load_rows, MIN_CELL
+    try:
+        rows = [r for r in load_rows("charxiv") if not r["not_applicable"]]
+    except Exception:
+        return {}
+    out = {}
+    for name, qids in (("ticks", TICK_COUNT_QIDS), ("objects", OBJECT_COUNT_QIDS)):
+        rs = [r for r in rows if r["_ex"].meta.get("qid") in qids]
+        if len(rs) < MIN_CELL:                   # EVAL.md 5, as above
+            return {}
+        out[name] = {"qids": list(qids), "n": len(rs),
+                     "acc": sum(r["score"] for r in rs) / len(rs)}
+    out["delta_pp"] = (out["objects"]["acc"] - out["ticks"]["acc"]) * 100
+    return out
+
+
 # ------------------------------------------------------------ ground truth + expression
 def gold_quality() -> dict:
     out = {}
@@ -575,19 +736,39 @@ def gold_quality() -> dict:
         contested = [r for r in rows
                      if r.get("verdict") in ("prediction_correct", "both_acceptable")
                      or r.get("gt_quality") in ("wrong", "ambiguous")]
-        rate = len(contested) / len(rows) if rows else 0.0
+        # A missing audit file is not a measurement of zero. `_rows` returns []
+        # for an absent path, and dividing that away as 0.0 published "we
+        # measured no contested gold" -- the most favourable value available --
+        # for a dataset nobody audited. It has to stay distinguishable from
+        # screenspot_pro's rate, which is a real zero: 0 contested of 35 rows.
+        # None here, "not measured" downstream.
+        rate = len(contested) / len(rows) if rows else None
+        whole_set = {"charxiv": 5000, "infographicvqa": 2801, "screenspot_pro": 1581}[ds]
         out[ds] = {"audited": len(rows), "contested": len(contested),
                    "contested_error_rate": rate,
                    "total_failures": total_failures,
-                   "implied_floor": rate * total_failures / {"charxiv": 5000,
-                                                             "infographicvqa": 2801,
-                                                             "screenspot_pro": 1581}[ds],
+                   "implied_floor": None if rate is None
+                                    else rate * total_failures / whole_set,
                    "examples": [{"uid": r["uid"], "question": r.get("question"),
                                  "gold": r.get("gold"), "pred": r.get("pred"),
                                  "verdict": r.get("verdict"),
                                  "gt_quality": r.get("gt_quality")}
                                 for r in contested[:12]]}
     return out
+
+
+def gold_quality_line(ds: str, v: dict) -> str:
+    """One dataset's contested-gold line, absent case included.
+
+    `contested_error_rate is None` means the audit file was not there at all,
+    which is not the same claim as screenspot_pro's measured 0 of 35 and must
+    not print as one.
+    """
+    if v["contested_error_rate"] is None:
+        return f"   {ds:16s} not measured (no ground-truth audit file)"
+    return (f"   {ds:16s} {v['contested']}/{v['audited']} = "
+            f"{v['contested_error_rate']*100:.1f}%  "
+            f"-> whole-set floor {v['implied_floor']*100:.1f}%")
 
 
 # ------------------------------------------------------------------- the synthetic set
@@ -674,7 +855,7 @@ def synthetic() -> dict:
 
 
 def build_figures() -> dict:
-    a = json.load(open("outputs/aug22/summary.json"))
+    a = json.loads(SUMMARY_OUT.read_text())
     return {
         "model": a.get("model"), "generated": a.get("generated"),
         "benchmarks": {k: {"acc": v["acc"], "n": v["n"],
@@ -685,6 +866,12 @@ def build_figures() -> dict:
         "gold_quality": gold_quality(),
         "ai2d_binding": ai2d_binding(),
         "absence_detection": absence_detection(),
+        "resolution_gradient": resolution_gradient(),
+        "charxiv_panels": charxiv_panels(),
+        "charxiv_counting": charxiv_counting(),
+        # Already measured by `eval aggregate`; carried through so T2's
+        # smallest-target cell reads the JSON instead of a remembered 0.0%.
+        "screenspot_target_size": (a.get("localization") or {}).get("by_target_size"),
         "synthetic": synthetic(),
     }
 
@@ -1157,44 +1344,104 @@ def t1(f: dict) -> str:
         f'benchmark.')
 
 
+# T2 fragments that no module computes. Each one is restated from the analysis
+# notes, is marked with the dagger in the rendered table, and is named in the
+# footnote -- because a table that looks uniformly derived while a third of it
+# is remembered is worse than one that says which third.
+HAND_ENTERED_MARK = "\u2020"
+MINUS = "\u2212"          # the prose uses a typographic minus, not a hyphen
+
+
+def signed_pp(pp: float) -> str:
+    """A signed percentage-point delta, with U+2212 for a negative one."""
+    return f'{MINUS if pp < 0 else "+"}{abs(pp):.1f}pp'
+
+
 def t2(f: dict) -> str:
     bind, absd = f["ai2d_binding"], f["absence_detection"]
     mark, nomark = bind["sighted"]["refers_to_mark"], bind["sighted"]["no_mark"]
     pb = bind["paired_blind"]
     pa = absd["paired_blind"]["absent"]
+    hand: list[str] = []
+
+    def by_hand(text: str, what: str) -> str:
+        """A fragment with no module behind it, or whose module found no data."""
+        hand.append(what)
+        return f"{text}{HAND_ENTERED_MARK}"
+
+    grad = f.get("resolution_gradient") or {}
+    size, textvol = grad.get("image_size"), grad.get("text_volume")
+    panels, cnt = f.get("charxiv_panels") or {}, f.get("charxiv_counting") or {}
+    sizes = {c["label"]: c for c in (f.get("screenspot_target_size") or [])}
+    smallest = sizes.get("<12px")
+    worst_tpl = max((absd.get("by_template") or []),
+                    key=lambda c: c["acc"] or 0, default=None)
+
+    size_txt = (f'ANLS {pct(size["first"])} → {pct(size["last"])} across image-size '
+                f'quintiles (n={size["n"]:,})') if size else by_hand(
+        "ANLS 74.3% → 59.4% across image-size quintiles (n=2,801)",
+        "InfographicVQA ANLS by image-size quintile")
+    # A typographic minus, not a hyphen: the rest of the prose uses U+2212 and
+    # a hyphen here reads as a bullet in the rendered table.
+    panel_txt = (f'CharXiv {signed_pp(panels["delta_pp"])}, {panels["cut"]}') if panels \
+        else by_hand(f"CharXiv {MINUS}9.5pp, 1 panel vs 13+",
+                     "CharXiv accuracy by panel count")
+    control_txt = (
+        f'text-volume control {"falls too" if textvol["monotone"] else "flat"} — '
+        f'{textvol["spread_pp"]:.1f}pp spread, '
+        f'{"monotone" if textvol["monotone"] else "no trend"}') if textvol else by_hand(
+        "text-volume control flat — 6.7pp spread, no trend",
+        "InfographicVQA ANLS by text volume (the control)")
+    small_txt = (f'{pct(smallest["acc"])} on targets under 12px as delivered '
+                 f'(n={smallest["n"]:,})') if smallest else by_hand(
+        "0.0% on targets under 12px as delivered",
+        "ScreenSpot-Pro accuracy on sub-12px targets")
+    worst_txt = (f'{pct(worst_tpl["acc"])} on the worst template') if worst_tpl \
+        else by_hand("45.7% on the worst template",
+                     "CharXiv invention rate on the worst template")
+    cnt_txt = (f'CharXiv ticks {pct(cnt["ticks"]["acc"])} (n={cnt["ticks"]["n"]:,}) vs '
+               f'objects {pct(cnt["objects"]["acc"])} (n={cnt["objects"]["n"]:,})') if cnt \
+        else by_hand("CharXiv ticks 78.1% (n=224) vs objects 93.3% (n=314)",
+                     "CharXiv counting, ticks vs objects")
+
     rows = [
         ["**Resolution bias**", "InfographicVQA, CharXiv",
-         "ANLS 74.3% → 59.4% across image-size quintiles (n=2,801); CharXiv −9.5pp, "
-         "1 panel vs 13+",
-         "text-volume control flat — 6.7pp spread, no trend"],
+         f'{size_txt}; {panel_txt}', control_txt],
         ["**Localization**", "ScreenSpot-Pro",
          f'{pct(f["benchmarks"]["screenspot_pro"]["acc"])} click-in-bbox '
-         f'(n={f["benchmarks"]["screenspot_pro"]["n"]:,}); 0.0% on targets under 12px '
-         f'as delivered', "—"],
+         f'(n={f["benchmarks"]["screenspot_pro"]["n"]:,}); {small_txt}', "—"],
         ["**Label–object matching**", "AI2D",
          f'{pct(mark["acc"])} when the question names a printed mark (n={mark["n"]:,}) '
          f'vs {pct(nomark["acc"])} when it does not (n={nomark["n"]:,})',
          f'{pct(pb["refers_to_mark"]["blind"])} vs {pct(pb["no_mark"]["blind"])} — '
          f'mark-referring sits **below the {pct(bind["chance"], 0)} chance line**'],
         ["**General OCR reasoning**", "CharXiv, SlideVQA",
-         "CharXiv 90.7% descriptive vs 63.7% reasoning (27.0pp); SlideVQA 26.5pp as "
-         "scored, **3.8pp** format-corrected", "—"],
+         by_hand("CharXiv 90.7% descriptive vs 63.7% reasoning (27.0pp); SlideVQA "
+                 "26.5pp as scored, **3.8pp** format-corrected",
+                 "CharXiv descriptive-vs-reasoning and the SlideVQA format correction"),
+         "—"],
         ["**Hallucination**", "CharXiv",
          f'{pct(absd["full_set"]["absent"]["invention_rate"])} invention on '
-         f'{absd["full_set"]["absent"]["n"]:,} "Not Applicable" items, 45.7% on the '
-         f'worst template; over-abstention '
+         f'{absd["full_set"]["absent"]["n"]:,} "Not Applicable" items, {worst_txt}; '
+         f'over-abstention '
          f'{pct(absd["full_set"]["over_abstention"]["rate"], 2)}',
          f'abstains **{pct(pa["abstains_blind"])} blind vs '
          f'{pct(pa["abstains_sighted"])} sighted** (n={pa["n"]}) — the image adds nothing'],
         ["**Counting**", "InfographicVQA, CharXiv",
-         "InfoVQA 63% → 33% across count bins; CharXiv ticks 78.1% (n=224) vs objects "
-         "93.3% (n=314)", "—"],
+         by_hand("InfoVQA 63% → 33% across count bins",
+                 "InfographicVQA accuracy by count bin") + f'; {cnt_txt}', "—"],
     ]
+    note = ("The blind control asks the same question with the image withheld. A "
+            "candidate is a perception blind spot only where withholding the image "
+            "changes the answer.")
+    if hand:
+        note += (f" {HAND_ENTERED_MARK} marks a figure that is **hand-entered, not "
+                 f"derived**: no module in this repository computes it from "
+                 f"`results/`, so it cannot be checked against a rerun and may be "
+                 f"stale. In this build that is "
+                 f"{'; '.join(sorted(set(hand)))}.")
     return md_table(["Blind spot", "Benchmark", "Public-benchmark result", "Blind control"],
-                 rows,
-                 "The blind control asks the same question with the image withheld. A "
-                 "candidate is a perception blind spot only where withholding the image "
-                 "changes the answer.")
+                 rows, note)
 
 
 # ------------------------------------------------------------------ T3, T4
@@ -1335,11 +1582,89 @@ def t7(f: dict) -> str:
                  "move, and in the opposite direction.")
 
 
+# ------------------------------------------------------------------ T7
+# (key, what the arm changed) in reporting order. Any arm present in the JSON
+# but missing here is appended rather than dropped, so an arm added upstream
+# cannot silently vanish from the table.
+ABLATIONS = [
+    ("repeat", "the identical request, twice"),
+    ("careful", "same ask, told to be precise and read the edges"),
+    ("describe", "narrate the position in words first, then convert"),
+    ("landmark", "anchor to a big landmark, then offset from it"),
+    ("crop", "same ask on a quarter-frame crop containing the target"),
+    ("bbox", "ask for the box instead of the centre"),
+    ("cell_then_point", "4×4 cell, then sub-cell within it, then point"),
+    ("quadrant_mc", "which quarter? a 4-way letter, no coordinates at all"),
+]
+
+
+def t8(f: dict) -> str:
+    """The eight prompt / answer-channel arms, and the two that move the number.
+
+    All eight were run, scored and stored in `figures.json`; none of them
+    reached the report. Section 4 names the coordinate-emission format as one
+    of the three confounds the generated dataset was built to separate, and
+    these are the arms that separate it, so the result belongs in the tables
+    rather than in the JSON only.
+    """
+    ab = f["synthetic"]["ablations"]
+    arms, why = ab["arms"], dict(ABLATIONS)
+    order = [k for k, _ in ABLATIONS] + [k for k in arms if k not in why]
+    rows = []
+    for k in order:
+        r = arms.get(k)
+        if r is None:
+            continue
+        bold = (lambda t: f"**{t}**") if r["significant"] else (lambda t: t)
+        rows.append([f"`{k}`", why.get(k, "—"), f'{r["n"]:,}',
+                     bold(pct(r["acc"], 2)), pct(r["baseline_acc"], 2),
+                     bold(f'{r["delta_pp"]:+.2f}pp'),
+                     pct(None) if r["chi2"] is None else f'{r["chi2"]:.2f}',
+                     "**yes**" if r["significant"] else pct(None)])
+    out = md_table(["Arm", "What changed", "n", "Accuracy", "Baseline", "Delta",
+                    "McNemar χ²", "Significant"], rows,
+                   f'One shared sample of {ab["n_sample"]} point questions, each arm paired '
+                   f'against its own baseline item by item; image encoding, schema, model and '
+                   f'thinking budget are identical across arms, and only the ask changes. '
+                   f'Significance is McNemar on the discordant pairs against the 3.841 critical '
+                   f'value (p < 0.05, 1 df). `quadrant_mc` is scored as a quadrant letter '
+                   f'against the baseline click bucketed to that same 2×2 grid; `bbox` is '
+                   f'scored as the centre of the predicted box falling inside the gold box, so '
+                   f'it stays in click-in-bbox units.')
+
+    said = []
+    cp = arms.get("cell_then_point")
+    if cp and cp["significant"]:
+        said.append(
+            f'`cell_then_point` changes the answer format and nothing else — name the '
+            f'4×4 cell, then the sub-cell, then convert to a point — and moves exact '
+            f'localization from {pct(cp["baseline_acc"], 2)} to {pct(cp["acc"], 2)} '
+            f'({cp["delta_pp"]:+.2f}pp, χ²={cp["chi2"]:.2f}) on the same images, the '
+            f'same model and the same encoding. A change to the prompt format therefore recovers '
+            f'a large part of the localization gap without any change to the model, and it does '
+            f'so along exactly the axis section 4 lists as a confound, the coordinate-emission '
+            f'format.')
+    bb = arms.get("bbox")
+    if bb and bb["significant"]:
+        ratio = bb["baseline_acc"] / bb["acc"] if bb["acc"] else float("inf")
+        said.append(
+            f'`bbox` asks for a box instead of a point and scores {pct(bb["acc"], 2)} against '
+            f'the same {pct(bb["baseline_acc"], 2)} baseline ({bb["delta_pp"]:+.2f}pp, '
+            f'χ²={bb["chi2"]:.2f}) — {ratio:.1f}× worse. Part 3 selects a box '
+            f'rather than a point as the supervision target on the grounds that a box is easier '
+            f'to train; on this measurement the box channel is the weaker of the two before '
+            f'training, so that choice should be weighed against this number.')
+    if said:
+        out += "\n**What the significant arms imply.** " + " ".join(said) + "\n"
+    return out
+
+
 TABLES = [("T1", "The benchmark suite", t1), ("T2", "Result per blind spot", t2),
           ("T3", "Localization accuracy against required precision", t3),
           ("T4", "Where the misses land", t4),
           ("T5", "Localization by background polarity", t6),
-          ("T6", "Reading, counting and pointing on the same scenes", t7)]
+          ("T6", "Reading, counting and pointing on the same scenes", t7),
+          ("T7", "Prompt and answer-channel ablations", t8)]
 
 
 def build_tables() -> dict[str, str]:
@@ -2219,6 +2544,21 @@ def _breakdowns(s: dict, specs) -> list[str]:
     return b
 
 
+def _counting_chi_clause(p: dict) -> str:
+    """The counting chi-square where it is read inside a sentence, not a table.
+
+    With no discordant pairs there is no chi-square, and the surrounding claim
+    -- "nominally significant, but rests on 21 errors" -- would be false as well
+    as unprintable, so the whole clause switches rather than just the number.
+    """
+    chi = p.get("mcnemar_chi2")
+    if chi is None:
+        return ("has no discordant pair behind it &mdash; not one question was answered "
+                "correctly at one rung and wrongly at the other, so there is no McNemar "
+                "test to report")
+    return f'is nominally significant (&chi;&sup2;={chi:.2f}) but rests on 21 errors in total'
+
+
 def svgderived_render(cnt: dict, mc: dict) -> str:
     b = []
     A = b.append
@@ -2275,8 +2615,7 @@ def svgderived_render(cnt: dict, mc: dict) -> str:
           f'(n={p["n"]:,}, every question appears at both rungs).</b> '
           f'{pct_html(p["acc_a"],2)} &rarr; {pct_html(p["acc_b"],2)}, <b>{p["delta_pp"]:+.2f}pp</b>. '
           f'Discordant {p["discordant_b"]}/{p["discordant_c"]}, McNemar '
-          f'&chi;&sup2;={p["mcnemar_chi2"]:.2f} &mdash; '
-          f'{"significant at p&lt;.05" if p["significant"] else "not significant at p&lt;.05"}.</div>')
+          f'{mcnemar_html(p)}.</div>')
 
     A("<h3>Dose-response: accuracy against the true count</h3>")
     A("<p>The primary result. A monotone decline is a finding; a flat curve is also a finding and "
@@ -2413,9 +2752,7 @@ def svgderived_render(cnt: dict, mc: dict) -> str:
         A(f'<div class="callout"><b>Paired <code>small</code> &rarr; <code>large</code> '
           f'(n={p["n"]:,}, on (graph_id, answer_text)).</b> {pct_html(p["acc_a"],2)} &rarr; '
           f'{pct_html(p["acc_b"],2)}, <b>{p["delta_pp"]:+.2f}pp</b>. Discordant '
-          f'{p["discordant_b"]}/{p["discordant_c"]}, McNemar &chi;&sup2;='
-          f'{p["mcnemar_chi2"]:.2f} &mdash; '
-          f'{"significant at p&lt;.05" if p["significant"] else "not significant at p&lt;.05"}. '
+          f'{p["discordant_b"]}/{p["discordant_c"]}, McNemar {mcnemar_html(p)}. '
           f'Because the answer has no spatial component, a gap here is glyph legibility and '
           f'nothing else.</div>')
 
@@ -2507,8 +2844,7 @@ def svgderived_render(cnt: dict, mc: dict) -> str:
           '94&ndash;97%, so neither has the headroom to resolve a resolution effect. word_mc\'s '
           f'{mc["paired"]["delta_pp"]:+.2f}pp small&rarr;large is measured against a ceiling with '
           'one error in the entire set; counting\'s '
-          f'{cnt["paired"]["delta_pp"]:+.2f}pp is nominally significant '
-          f'(&chi;&sup2;={cnt["paired"]["mcnemar_chi2"]:.2f}) but rests on 21 errors in total and '
+          f'{cnt["paired"]["delta_pp"]:+.2f}pp {_counting_chi_clause(cnt["paired"])} and '
           'has no in-set noise floor to be judged against. The resolution question is answered by '
           'the localization set, which has the dynamic range; these two establish that reading and '
           'counting are <i>not</i> the bottleneck.</div>')
@@ -2548,15 +2884,14 @@ def svgderived_render(cnt: dict, mc: dict) -> str:
 
 
 # ================================================================ subcommands
-def cmd_aug22(a) -> int:
-    AUG22_OUT.mkdir(parents=True, exist_ok=True)
+def cmd_summary(a) -> int:
+    SUMMARY_OUT.parent.mkdir(parents=True, exist_ok=True)
     s = summarize(DATASETS)
     s["controls"] = controls()
     s["generated"] = "2026-08-22"
     s["totals"]["questions"] = sum(d["n"] for d in s["datasets"].values() if d.get("n"))
-    p = AUG22_OUT / "summary.json"
-    p.write_text(json.dumps(s, indent=1, default=str))
-    print(f"wrote {p} ({p.stat().st_size/1024:.0f} KB)")
+    SUMMARY_OUT.write_text(json.dumps(s, indent=1, default=str))
+    print(f"wrote {SUMMARY_OUT} ({SUMMARY_OUT.stat().st_size/1024:.0f} KB)")
     for ds, d in s["datasets"].items():
         if d.get("acc") is not None:
             print(f"  {ds:20} {d['acc']*100:5.2f}%  n={d['n']}")
@@ -2586,8 +2921,7 @@ def cmd_data(a) -> int:
               f"sighted {v['abstains_sighted']*100:5.1f}%")
     print("\nGold quality (share of the model's ERRORS that are contested):")
     for ds, v in data["gold_quality"].items():
-        print(f"   {ds:16s} {v['contested']}/{v['audited']} = {v['contested_error_rate']*100:.1f}%  "
-              f"-> whole-set floor {v['implied_floor']*100:.1f}%")
+        print(gold_quality_line(ds, v))
     L = data["synthetic"]["ladder"]
     print("\nPrecision ladder:", {k: (round(v * 100, 1) if isinstance(v, float) else v)
                                   for k, v in L.items() if k != "note"})
@@ -2613,8 +2947,13 @@ def cmd_examples(a) -> int:
 def cmd_tables(a) -> int:
     f = load_json("outputs/report/figures.json")
     md = ["# Tables\n",
-          "Generated by `python -m blindspot.report tables`. Every cell is read from "
-          "the measured JSON, so these cannot drift from the results.\n"]
+          "Generated by `python -m blindspot.report tables`. Almost every cell is read "
+          "from `outputs/report/figures.json`, so those cannot drift from the results. "
+          "The exceptions are marked in the table that carries them: a "
+          f"{HAND_ENTERED_MARK} means the figure is hand-entered from the analysis "
+          "notes because no module in this repository computes it, and the footnote "
+          "under that table names each one. A hand-entered figure is not checkable "
+          "against a rerun and may be stale.\n"]
     for tid, title, fn in TABLES:
         md += [f"\n## {tid} \u2014 {title}\n\n", fn(f), "\n"]
     REPORT_OUT.mkdir(parents=True, exist_ok=True)
@@ -2635,7 +2974,8 @@ def cmd_index(a) -> int:
           "neither is baked into the image.\n",
           f"\n{n_ex} of {len(ORDER)} figures are photographs of real scored items. "
           "The report's quantitative content is in `tables.md`, which is generated "
-          "from the measured JSON rather than written by hand.\n"]
+          "from the measured JSON except for the few figures it marks with a "
+          f"{HAND_ENTERED_MARK} and names in a footnote.\n"]
     cards, missing = [], []
     for i, (stem, kind, sec, cap, strip) in enumerate(ORDER, 1):
         png = FIGS_OUT / f"{stem}@2x.png"
@@ -2716,14 +3056,14 @@ CHAIN = [("data", cmd_data), ("examples", cmd_examples), ("tables", cmd_tables),
 def cmd_all(a) -> int:
     """The live report chain, in dependency order.
 
-    `aug22` is not in the chain but comes before it: `data` reads
-    outputs/aug22/summary.json at runtime. That is a file dependency, not an
+    `summary` is not in the chain but comes before it: `data` reads
+    outputs/report/summary.json at runtime. That is a file dependency, not an
     import, so nothing here will complain if it is stale -- only wrong.
     """
     print("report all:  " + "  ->  ".join(n for n, _ in CHAIN))
-    print("  ordering note: `data` READS outputs/aug22/summary.json, which is written")
-    print("  by `report aug22`. It is a file dependency, not an import, and nothing")
-    print("  checks it. Run `report aug22` first if the results have changed.")
+    print("  ordering note: `data` READS outputs/report/summary.json, which is written")
+    print("  by `report summary`. It is a file dependency, not an import, and nothing")
+    print("  checks it. Run `report summary` first if the results have changed.")
     for name, fn in CHAIN:
         print(f"\n--- {name} " + "-" * (70 - len(name)))
         rc = fn(a)
@@ -2737,13 +3077,13 @@ EPILOG = """\
 the live chain, in order:
   data       assemble every quoted number into outputs/report/figures.json
   examples   render the real-image example figures
-  tables     the six tables, and inject them into blindspots.md
+  tables     the seven tables, and inject them into blindspots.md
   index      order the figures and resolve [FIG:stem] references
   paste      one self-contained HTML file for a document editor
   all        all five of the above, in that order
 
 standalone:
-  aug22      outputs/aug22/summary.json -- READ BY `data`, so run it first
+  summary    outputs/report/summary.json -- READ BY `data`, so run it first
   svgloc     the generated localization set
   svgderived the counting and word-presence sets derived from the same scenes
 
@@ -2769,7 +3109,7 @@ def main(argv=None) -> int:
     add("index", cmd_index, "write outputs/report/figures.md and figures/index.html")
     add("paste", cmd_paste, "write outputs/report/paste_into_docs.html")
     add("all", cmd_all, "data -> examples -> tables -> index -> paste")
-    add("aug22", cmd_aug22, "write outputs/aug22/summary.json (read by `data`)")
+    add("summary", cmd_summary, "write outputs/report/summary.json (read by `data`)")
 
     p = add("svgloc", cmd_svgloc, "the svg_localization report and summary")
     p.add_argument("--tag", default=RUN)

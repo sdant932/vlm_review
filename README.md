@@ -14,60 +14,6 @@ deliverable and is not in this repository.
 
 ---
 
-## What the study found
-
-Five public benchmarks, each scored by its own published metric.
-
-| Benchmark | Operation measured | Items | Metric | Haiku 4.5 |
-|---|---|---|---:|---|
-| CharXiv | Read a value or a structure off a scientific chart | 5,000 | judged exact match | 84.7% |
-| AI2D | Answer a question about a diagram, 4-way multiple choice | 3,086 | accuracy | 81.6% |
-| SlideVQA | Answer from evidence inside a slide deck | 1,003 | ANLS | 68.8% |
-| InfographicVQA | Read a dense, large-format infographic | 2,801 | ANLS | 66.7% |
-| ScreenSpot-Pro | Point at an element described by its function | 1,581 | click-in-bbox | 1.8% |
-
-A sixth scored arm — SlideVQA all-pages, n=494, 58.5% — is a retrieval control rather
-than a separate benchmark.
-
-The gap in that last row is the finding. Reading a chart and pointing at a chart are not
-the same operation, and the second one fails almost completely. Because ScreenSpot-Pro
-confounds three things at once — target size, image size, and the coordinate-emission
-format — the study built a synthetic dataset that separates them
-(`data/svg_localization`, 200 scenes, 16 chart types, rendered at three sizes).
-
-Asking the same questions about the same generated scenes:
-
-| Task on the same 200 scenes | Small | Large | Blind control | Items |
-|---|---|---|---|---:|
-| Is this word present? (4-way choice) | 99.73% | 100.00% | 22.6% | 736 |
-| How many times does it appear? | 94.12% | 97.06% | 12.0% | 476 |
-| Point at it (exact target box) | 6.68% | 4.41% | — | 1,587 |
-
-The model reads the text and counts its occurrences near-perfectly, then cannot say
-where it is. The blind controls confirm the first two rows depend on the image rather
-than on a language prior.
-
-Localization does not fail uniformly — it degrades with the precision demanded:
-
-| Required precision | Chance | Accuracy | Ratio to chance |
-|---|---:|---:|---:|
-| 2×2 cell | 25.00% | 65.66% | 2.6× |
-| 3×3 cell | 11.11% | 52.05% | 4.7× |
-| 4×4 cell | 6.25% | 40.58% | 6.5× |
-| 8×8 cell | 1.56% | 17.96% | 11.5× |
-| 16×16 cell | 0.39% | 6.36% | 16.3× |
-| the exact target box | 0.26% | 5.55% | 21.7× |
-
-One set of predictions read at six tolerances, not six experiments. The signal is real —
-21.7× chance is not guessing — but it is coarse. Coarse position is available; precise
-position is not.
-
-Full numbers, the other blind-spot candidates (label–object matching on AI2D,
-hallucination on unanswerable questions, counting, resolution sensitivity), their blind
-controls, and the limits of each claim are in the report.
-
----
-
 ## Quickstart
 
 ```bash
@@ -151,6 +97,8 @@ a pipeline. Runbooks: [docs/runme/](docs/runme/).
 | | |
 |---|---|
 | [docs/PIPELINE.md](docs/PIPELINE.md) | What to run, in what order, with real commands |
+| [docs/ARTIFACTS.md](docs/ARTIFACTS.md) | Every generated file, the command that writes it, and what it needs first |
+| [docs/REVIEWS.md](docs/REVIEWS.md) | How the independent agent reviews in `reviews/` are produced |
 | [docs/STRUCTURE.md](docs/STRUCTURE.md) | How the repository is laid out and why |
 | [docs/REPO_MAP.md](docs/REPO_MAP.md) | Every module, its subcommands, one line each |
 | [docs/METHODOLOGY.md](docs/METHODOLOGY.md) | Why the harness is built this way — the decisions that shaped it |

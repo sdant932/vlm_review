@@ -1,23 +1,26 @@
-"""Generic launcher framework. Shared by every flow's `run.py`.
+"""Generic launcher framework. Shared by every pipeline in `blindspot.pipelines`.
 
-A *flow* is an aggregation, not a code container: it declares an ordered list of
-stages, each stage a list of steps, each step an invocation of a **generic**
-script under `blindspot/<module>.py`. Nothing flow-specific lives here, and nothing
-generic lives in a flow.
+A *pipeline* (historically "flow") is an aggregation, not a code container: it
+declares an ordered list of stages, each stage a list of steps, each step an
+invocation of a **generic** script under `blindspot/<module>.py`. Nothing
+pipeline-specific lives here, and nothing generic lives in a pipeline.
 
-    blindspot/   generic, dataset-agnostic, reusable
-    <flow>/run.py         declares which of them to call, in what order, with what args
+    blindspot/<module>.py   generic, dataset-agnostic, reusable
+    blindspot/pipelines.py  declares which of them to call, in what order, with what args
 
-A flow's `run.py` builds a `{stage_name: [Step, ...]}` mapping and hands it to
+A pipeline builds a `{stage_name: [Step, ...]}` mapping and hands it to
 `main()`. Everything below -- listing, dry-running, resuming from a stage,
-propagating --max-spend, failing fast -- is the same for all three flows and is
-implemented once, here.
+propagating --max-spend, failing fast -- is the same for all three pipelines and
+is implemented once, here.
 
-Usage from a flow:
+Usage:
 
     from blindspot.flow import Step, main
     STAGES = {"download": [Step("charxiv", [...])], ...}
-    raise SystemExit(main("benchmarks", STAGES, __doc__))
+    raise SystemExit(main("literature_eval", STAGES, __doc__))
+
+The name passed to `main()` is the pipeline's name as `blindspot.pipelines`
+knows it, because that is what `--help` prints back as the command to retype.
 """
 
 from __future__ import annotations
@@ -31,6 +34,21 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# The one entry point. `main()` is handed a pipeline name, and the command that
+# runs that pipeline is this module path plus that name -- so `--help` can print
+# something the reader can retype verbatim.
+ENTRY_POINT = "python -m blindspot.pipelines"
+
+
+def prog_for(flow: str) -> str:
+    """The command line that reaches this pipeline, for argparse's `prog`.
+
+    This used to read `python -m {flow}.run`, left over from when each pipeline
+    was its own package with a `run.py`. Those packages are gone, so every
+    `--help` was advertising a module that does not exist.
+    """
+    return f"{ENTRY_POINT} {flow}"
 
 
 @dataclass
@@ -88,7 +106,7 @@ def _print_plan(flow: str, stages: dict[str, list[Step]], chosen: list[str]) -> 
 def main(flow: str, stages: dict[str, list[Step]], doc: str | None = None) -> int:
     order = list(stages)
     ap = argparse.ArgumentParser(
-        prog=f"python -m {flow}.run",
+        prog=prog_for(flow),
         description=(doc or "").strip().splitlines()[0] if doc else None,
     )
     ap.add_argument("--stage", nargs="+", choices=order, help="run only these stages")
@@ -150,13 +168,18 @@ def main(flow: str, stages: dict[str, list[Step]], doc: str | None = None) -> in
             rc = subprocess.call(cmd, cwd=ROOT, env={**_environ(), **s.env})
             if rc != 0:
                 label = f"{stage}/{s.name} (exit {rc})"
+                # A step's note is the one place that says what it needs. Echo it
+                # on failure so a missing prerequisite reads as a precondition
+                # rather than as whatever traceback the script happened to emit.
+                why = f"\n      why: {s.note}" if s.note else ""
                 if s.optional:
-                    print(f"    ! optional step failed, continuing: {label}")
+                    print(f"    ! optional step failed, continuing: {label}{why}")
                 elif a.continue_on_error:
                     failures.append(label)
-                    print(f"    ! FAILED, continuing: {label}")
+                    print(f"    ! FAILED, continuing: {label}{why}")
                 else:
-                    print(f"\n!! {label} -- aborting. Re-run with --from {stage} after fixing.", file=sys.stderr)
+                    print(f"\n!! {label} -- aborting. Re-run with --from {stage} after fixing.{why}",
+                          file=sys.stderr)
                     return rc
 
     dt = time.time() - t0

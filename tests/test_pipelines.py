@@ -14,7 +14,7 @@ So this file tests the seams, not the arithmetic:
     2. RESOLVABLE ARGV -- every step's argv is accepted by its module's parser
     3. SPEND GATING    -- the only thing standing between a typo and real money
     4. TASK PRUNING    -- --task really removes work, and fails loudly if wrong
-    5. COMMITTED DATA  -- the generate stage cannot overwrite the shipped set
+    5. COMMITTED DATA  -- no stage can overwrite a shipped or reference artifact
     6. STAGE SELECTION -- --list / --stage / --from pick the right subsets
     7. OPTIONAL STEPS  -- a step marked optional must not abort the run
 
@@ -24,11 +24,14 @@ plan is inspected as data rather than parsed out of a log. Groups 4-6 shell out,
 because the options they cover are parsed in `__main__` and cannot be imported;
 they only ever pass `--list`, which returns before a single step is executed.
 
-Two failures found while writing these, both since fixed, are the reason the
+Three failures found while writing these, all since fixed, are the reason the
 groups exist in this shape: every `blindspot.eval` / `blindspot.report` step was
-missing its subcommand after those modules were merged (group 2), and the
-`worked-examples` step reaches the API with no declared spend, so `--max-spend`
-cannot reach it (group 3 pins that it stays optional and documented).
+missing its subcommand after those modules were merged (group 2); the
+`worked-examples` step reached the API with no declared spend, so `--max-spend`
+could not reach it (group 3 now pins that the ceiling both is appended and
+parses); and `finetune_data --all` -- the command its own runbook gives --
+rebuilt every reference artifact of Part 3 in place, none of which is in git and
+none of which regenerates (group 5).
 """
 
 import argparse
@@ -369,9 +372,10 @@ def test_api_steps_without_a_declared_spend_stay_optional_and_documented():
     """--max-spend can only reach a step that declares a share of it.
 
     `Step.rendered` appends the ceiling only when `spend` is set, so an API step
-    with no `spend` runs uncapped no matter what the operator passes. One such
-    step exists on purpose (worked-examples has no internal cap to hand a
-    ceiling to); the requirement is that it cannot be added silently.
+    with no `spend` runs uncapped no matter what the operator passes. There is no
+    such step left -- `worked-examples` was the one, and it now owns a
+    `--max-spend` of its own -- so this holds vacuously today. It stays because
+    the next one must not be added silently.
     """
     for label, s in _every_step():
         if s.needs_api and s.spend is None:
@@ -381,6 +385,34 @@ def test_api_steps_without_a_declared_spend_stay_optional_and_documented():
                 f"{label}/{s.name} reaches the API with no declared spend, so "
                 f"--max-spend cannot cap it. Give it a spend, or mark it "
                 f"optional=True and say so in its note.")
+
+
+def test_the_worked_examples_step_declares_a_spend_and_can_be_capped():
+    """The B7 seam, from the launcher's side.
+
+    `blindspot.report_worked` is `--prompts x --samples` calls with no natural
+    end -- 100 x 100 is ten thousand of them. It used to declare no `spend`, and
+    `Step.rendered` appends `--max-spend` only to a step that declares one, so
+    the operator's ceiling could not reach it even when they passed one.
+    """
+    step = next(s for _, s in _steps("finetune_data", out=SCRATCH_OUT)
+                if s.name == "worked-examples")
+    assert step.needs_api, "the step that samples the model must say so"
+    assert step.spend, "no declared spend means --max-spend is never appended"
+    assert "--max-spend" in step.rendered(0.25), step.rendered(0.25)
+
+
+def test_the_ceiling_the_launcher_appends_is_one_report_worked_accepts():
+    """Appending a flag the callee rejects is the same as having no cap.
+
+    Asserted against the module's real parser, so renaming the flag on either
+    side fails here instead of at the end of a paid run.
+    """
+    step = next(s for _, s in _steps("finetune_data", out=SCRATCH_OUT)
+                if s.name == "worked-examples")
+    _, parser = _module_and_parser("blindspot.report_worked")
+    args = parser.parse_args(step.rendered(0.25)[3:])     # [python, -m, module, ...]
+    assert args.max_spend == 0.25
 
 
 def test_flow_refuses_to_start_api_steps_without_max_spend(monkeypatch, capsys):
@@ -543,6 +575,156 @@ def test_the_cli_refuses_to_generate_into_the_committed_dataset(out):
     r = _cli("synth_localization_eval", "--out", out, "--list", cwd=str(ROOT))
     assert r.returncode != 0, f"--out {out} was accepted:\n{r.stdout}"
     assert "refusing" in (r.stderr + r.stdout)
+
+
+# ----------------------------------------------- the same rule, for finetune_data
+"""`finetune_data` writes six artifacts that are not in git and do not come back.
+
+`python -m blindspot.pipelines finetune_data --all` -- the command printed in
+docs/runme/FINETUNE.md -- used to rebuild all of them in place: the ladder, the
+SFT records, the gallery, the worked examples, the part3 assets and part3.html.
+Every one is gitignored, and regeneration is not restoration: a fresh `ladder`
+emits the same uids with different boxes, `samples --seed 0` reproduces a
+quarter of the shipped records, and `report_worked` samples the model.
+
+So the same two-sided rule as above: writing is opt-in behind --out, and an
+--out that would land a step on one of those artifacts is refused by name.
+"""
+
+# A writing flag; anything else in an argv is an input the step only reads.
+WRITE_FLAGS = ("--out", "--out-dir")
+
+
+def _write_targets(step):
+    return [v for f, v in zip(step.argv, step.argv[1:]) if f in WRITE_FLAGS]
+
+
+def _on_a_reference_artifact(path):
+    return next((ref for ref in pipelines.FINETUNE_REFERENCE
+                 if (ROOT / ref).resolve() in pipelines._resolutions(path)), None)
+
+
+def test_finetune_writing_steps_are_opt_in():
+    """Without --out, nothing that writes a reference artifact is scheduled."""
+    stages = _stages("finetune_data")
+    hits = [(stage, s.name, t, ref)
+            for stage, steps in stages.items() for s in steps
+            for t in _write_targets(s) if (ref := _on_a_reference_artifact(t))]
+    assert not hits, (
+        "a plain --all would overwrite unrecoverable artifacts:\n  "
+        + "\n  ".join(f"{stage}/{name} writes {t} -> {ref}" for stage, name, t, ref in hits))
+
+
+def test_the_bare_pipeline_still_audits_the_committed_ladder():
+    """The other half of opt-in: read-only work is not thrown away with it."""
+    verify = _stages("finetune_data")["verify"]
+    assert [s.name for s in verify] == ["multires-audit"], [s.name for s in verify]
+    assert pipelines.MR_DATA in verify[0].argv, verify[0].argv
+    assert "--out" in verify[0].note or "FINETUNE.md" in verify[0].note, (
+        "the bare plan must say how to get the omitted steps back")
+
+
+def test_every_finetune_step_writes_under_out_when_one_is_given():
+    stages = _stages("finetune_data", out=SCRATCH_OUT)
+    assert all(stages[k] for k in ("ladder", "build", "verify", "report")), (
+        "--out was given and some stage still has nothing to do")
+    for stage, steps in stages.items():
+        for s in steps:
+            targets = _write_targets(s)
+            assert targets, f"{stage}/{s.name} writes nowhere: {s.argv}"
+            for t in targets:
+                assert t.startswith(SCRATCH_OUT), (
+                    f"{stage}/{s.name} ignores --out and writes {t}")
+
+
+@pytest.mark.parametrize("ref", sorted(pipelines.FINETUNE_REFERENCE))
+def test_the_guard_refuses_an_out_that_lands_on_any_reference_artifact(ref):
+    """Both readings: --out AT the artifact, and an --out that derives it.
+
+    Derived by inverting `finetune_out`, so an artifact that the steps can no
+    longer produce -- or a step whose destination moved out from under an entry
+    here -- fails this rather than leaving an unenforceable line in the table.
+    """
+    with pytest.raises(SystemExit) as e:
+        pipelines.refuse_finetune_out(ref)
+    assert ref in str(e.value), f"the refusal must name {ref}: {e.value}"
+    # the reason is wrapped to the terminal, so compare it unwrapped
+    said = " ".join(str(e.value).split())
+    assert " ".join(pipelines.FINETUNE_REFERENCE[ref].split()) in said, "and say why"
+
+    layout = pipelines.finetune_out("BASE")
+    bases = [ref[: -len(suffix)] for suffix in
+             (t[len("BASE"):] for t in layout.values()) if ref.endswith(suffix)]
+    assert bases, f"no --out produces {ref} any more -- the guard cannot fire"
+    for base in bases:
+        with pytest.raises(SystemExit):
+            pipelines.refuse_finetune_out(base)
+
+
+def test_a_scratch_out_is_accepted():
+    pipelines.refuse_finetune_out(SCRATCH_OUT)          # must not raise
+
+
+@pytest.mark.parametrize("out", ["data", "outputs/finetune", "outputs/part3",
+                                 pipelines.MR_DATA,
+                                 str(ROOT / "outputs/part3")])
+def test_the_cli_refuses_a_destructive_finetune_out(out):
+    # from ROOT, since a relative --out only names a repository path from there
+    r = _cli("finetune_data", "--out", out, "--list", cwd=str(ROOT))
+    assert r.returncode != 0, f"--out {out} was accepted:\n{r.stdout}"
+    assert "refusing" in (r.stderr + r.stdout)
+    assert "FINETUNE.md" in (r.stderr + r.stdout), "the refusal must say where to read"
+
+
+def test_the_bare_cli_plan_schedules_no_writing_step():
+    """End to end, through the argument parsing that only `__main__` does."""
+    r = _cli("finetune_data", "--list", cwd=str(ROOT))
+    assert r.returncode == 0, r.stderr
+    _, steps = _parse_plan(r.stdout)
+    assert list(steps) == ["multires-audit"], steps
+    for ref in pipelines.FINETUNE_REFERENCE:
+        assert f"--out {ref}" not in r.stdout and f"--out-dir {ref}" not in r.stdout
+
+
+# ------------------------------------------ and for the generator underneath it
+"""`generate scenes --out` used to default to the committed dataset.
+
+The pipeline refused that path and the Makefile refused it, but the callee they
+both wrap still pointed at it, so typing the documented command by hand -- which
+the Makefile header invites -- went straight past both guards. The default is
+gone; the flag is required.
+"""
+
+
+def _tree(d: Path):
+    return {str(p.relative_to(d)): (p.stat().st_size, p.stat().st_mtime_ns)
+            for p in d.rglob("*") if p.is_file()}
+
+
+def test_scenes_out_has_no_default():
+    _, parser = _module_and_parser("blindspot.generate")
+    out = next(a for a in _subcommands(parser)["scenes"]._actions
+               if "--out" in a.option_strings)
+    assert out.default is None, (
+        f"scenes --out defaults to {out.default!r}; a bare run would write there")
+
+
+def test_a_bare_scenes_run_exits_non_zero_and_writes_nothing():
+    committed = ROOT / pipelines.COMMITTED
+    before = _tree(committed)
+    r = subprocess.run([sys.executable, "-m", "blindspot.generate", "scenes",
+                        "--count", "1"], capture_output=True, text=True, cwd=str(ROOT))
+    assert r.returncode != 0, "a bare `scenes` ran and produced a dataset somewhere"
+    assert "--out" in (r.stdout + r.stderr)
+    assert _tree(committed) == before, "the committed dataset changed"
+
+
+def test_list_types_still_works_without_an_out():
+    """The one thing `scenes` does that writes nothing keeps working bare."""
+    r = subprocess.run([sys.executable, "-m", "blindspot.generate", "scenes",
+                        "--list-types"], capture_output=True, text=True, cwd=str(ROOT))
+    assert r.returncode == 0, r.stderr
+    assert len(r.stdout.split()) > 5, r.stdout
 
 
 # =============================================================================

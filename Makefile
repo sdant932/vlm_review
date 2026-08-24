@@ -1,5 +1,7 @@
 # Thin wrappers over the commands in docs/PIPELINE.md. Nothing here is magic --
-# every target is one line you could type yourself.
+# every target is one line you could type yourself. Typing it yourself is safe:
+# the commands below carry no destructive default, and neither do the CLIs under
+# them.
 
 PY ?= python
 # Trailing comments would land inside the value (make keeps the whitespace
@@ -25,10 +27,12 @@ verify:           ## compile + import every module, check each CLI, load the dat
 	$(PY) -m blindspot.tools verify-install
 	$(PY) -m pytest
 
-# OUT is mandatory and has no default. The generator has drifted from the
-# committed data/svg_localization, and results/*.jsonl is keyed by uid, so
-# regenerating in place would bind existing answers to different questions.
-# blindspot.pipelines refuses that; this target must not be the way around it.
+# OUT is mandatory and has no default, and so is the `--out` it passes through:
+# `generate scenes` no longer defaults to the committed data/svg_localization.
+# The generator has drifted from that set and results/*.jsonl is keyed by uid, so
+# regenerating in place would bind existing answers to different questions. All
+# three -- this target, blindspot.pipelines and the generator itself -- now
+# refuse it, so no one of them is the way around the others.
 dataset:          ## build a NEW dataset: make dataset OUT=/tmp/svgloc_new
 ifndef OUT
 	@echo "OUT is required: make dataset OUT=/tmp/svgloc_new"

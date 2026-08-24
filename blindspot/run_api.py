@@ -72,6 +72,45 @@ BLIND_NOTE = (
 SDK_DEFAULTS = object()
 
 
+def metered(pool, work, submit, budget, on_result, total=None, label=""):
+    """Submit through a sliding window so `--max-spend` can actually stop a run.
+
+    Queueing every future up front does not work. `break`ing out of
+    `as_completed` leaves the queue full, and `ThreadPoolExecutor.__exit__`
+    calls `shutdown(wait=True)`, so every remaining call still runs and still
+    bills. A measured run asked for a $0.10 ceiling and spent $3.24 -- 1,461
+    calls, of which 1,417 were billed and their results discarded.
+
+    `blindspot.core` already solved this; the fix simply never reached here.
+    Only as many futures are in flight as the window allows, so once the budget
+    is exhausted nothing further is submitted and the pool drains in one wave.
+    """
+    # One wave, not four: every call in flight when the ceiling trips still
+    # bills, so the window IS the overspend bound. Start narrower still, until
+    # a returned call has priced itself.
+    window = max(getattr(pool, "_max_workers", 8), 1)
+    window = min(window, 8)
+    pending, live, done = iter(work), {}, 0
+    for e in pending:
+        live[submit(e)] = e
+        if len(live) >= window:
+            break
+    while live:
+        for f in as_completed(list(live)):
+            e = live.pop(f)
+            done += 1
+            if on_result(f, e, done) is False:
+                for g in live:                      # nothing else has started
+                    g.cancel()
+                live.clear()
+                return done
+            if not budget.exhausted():
+                nxt = next(pending, None)
+                if nxt is not None:
+                    live[submit(nxt)] = nxt
+            break                                    # re-derive as_completed
+    return done
+
 def make_client(max_retries=0, timeout=120.0):
     """The single Anthropic client construction point for every arm here.
 
@@ -781,24 +820,32 @@ def derived_run(client, examples, out: Path, budget: Budget, thinking: int, conc
     lock = threading.Lock()
     written = failed = 0
     with open(out, "a") as fh, ThreadPoolExecutor(max_workers=concurrency) as pool:
-        futs = {pool.submit(run_one, client, e, budget, thinking, None, model): e for e in todo}
-        for f in as_completed(futs):
+        state = {"written": 0, "failed": 0}
+
+        def handle(f, _e, _done):
             try:
                 rec = f.result()
             except FatalBillingError:
                 print("  !! billing error -- stopping")
-                break
+                return False
             with lock:
                 fh.write(json.dumps(rec) + "\n")
                 fh.flush()
-                written += 1
-                failed += rec.get("pred") is None
-                if written % 100 == 0:
-                    print(f"    {written}/{len(todo)} | ${budget.spent:.3f} | "
-                          f"no-pred {failed}", flush=True)
+                state["written"] += 1
+                state["failed"] += rec.get("pred") is None
+                if state["written"] % 100 == 0:
+                    print(f"    {state['written']}/{len(todo)} | ${budget.spent:.3f} | "
+                          f"no-pred {state['failed']}", flush=True)
             if budget.exhausted():
-                print(f"  !! budget ceiling ${budget.limit} reached")
-                break
+                print(f"  !! budget ceiling ${budget.limit} reached -- "
+                      f"not submitting anything further")
+                return False
+            return True
+
+        metered(pool, todo,
+                lambda e: pool.submit(run_one, client, e, budget, thinking, None, model),
+                budget, handle)
+        written, failed = state["written"], state["failed"]
     print(f"  {out.name}: +{written} rows (${budget.spent:.3f} total, {failed} without a prediction)")
 
 

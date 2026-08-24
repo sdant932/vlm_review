@@ -10,7 +10,12 @@ report chain, and only the argument lists differ.
     python -m blindspot.pipelines literature_eval --list
     python -m blindspot.pipelines literature_eval --all --max-spend 40
     python -m blindspot.pipelines synth_localization_eval --task counting --stage run eval --max-spend 3
-    python -m blindspot.pipelines finetune_data --all --offline
+    python -m blindspot.pipelines finetune_data --all --out /tmp/finetune_dev --offline
+
+Two pipelines take `--out`, and both mean the same thing by it: build somewhere
+new. `synth_localization_eval --out` and `finetune_data --out` are opt-in --
+without one, the steps that would write over a committed or reference artifact
+are not scheduled at all, and an --out that resolves onto one is refused by name.
 
 Runbooks: docs/runme/{BENCHMARKS,SYNTHETIC,FINETUNE}.md
 """
@@ -18,6 +23,7 @@ Runbooks: docs/runme/{BENCHMARKS,SYNTHETIC,FINETUNE}.md
 from __future__ import annotations
 
 import sys
+import textwrap
 from pathlib import Path
 
 from blindspot import flow
@@ -83,11 +89,40 @@ def literature_eval(_opts) -> dict[str, list[Step]]:
             Step("dataset-page", ["-m", "blindspot.diagnose", "dataset-page"]),
         ],
         "report": [
+            Step("summary", ["-m", "blindspot.report", "summary"],
+                 note="-> outputs/report/summary.json, which `data` READS as a FILE, "
+                      "not an import -- so it has to come first or `data` assembles "
+                      "figures.json from a stale (or absent) summary"),
             Step("figures-json", ["-m", "blindspot.report", "data"]),
             Step("figures-png", ["-m", "blindspot.report", "examples"]),
             Step("tables", ["-m", "blindspot.report", "tables"]),
             Step("index", ["-m", "blindspot.report", "index"]),
             Step("paste-html", ["-m", "blindspot.report", "paste"], optional=True),
+        ],
+        # The standalone pages: everything the report links out to rather than
+        # contains. They read results/*.jsonl directly and recompute their own
+        # numbers, so only the two summary-fed ones care about ordering --
+        # `primitives` after `eval:aggregate`, `headline` after `report:summary`,
+        # both of which this stage already follows.
+        "pages": [
+            Step("causes", ["-m", "blindspot.report_pages", "causes"],
+                 note="-> outputs/causes/*.html + assets_causes/ -- 15 blind spots, "
+                      "one page each, plus the index that ranks them"),
+            Step("drilldown", ["-m", "blindspot.report_pages", "drilldown"],
+                 note="-> outputs/drilldown.{html,json,csv}"),
+            Step("slidevqa", ["-m", "blindspot.report_pages", "slidevqa"],
+                 note="-> outputs/slidevqa.html + assets_slidevqa/"),
+            Step("tasks", ["-m", "blindspot.report_pages", "tasks"],
+                 note="-> outputs/tasks/*.html, one per perceptual primitive"),
+            Step("primitives", ["-m", "blindspot.report_pages", "primitives"],
+                 note="-> outputs/report.html, the overview the four pages above "
+                      "crumb back to; reads outputs/summary.json as a FILE"),
+            Step("headline", ["-m", "blindspot.report_pages", "headline"],
+                 note="-> outputs/aug22/report.html; reads outputs/report/summary.json "
+                      "as a FILE, so `report:summary` has to have run"),
+            Step("candidates", ["-m", "blindspot.report_pages", "candidates"], optional=True,
+                 note="-> outputs/report/candidates.html; optional because one of its "
+                      "six pools needs the synth_localization_eval results"),
         ],
     }
 
@@ -135,11 +170,11 @@ def synth_localization_eval(opts) -> dict[str, list[Step]]:
 
     audit = [Step("ground-truth",
                   ["-m", "blindspot.generate", "audit", "--data", data,
-                   "--out", f"{data}/verify"],
+                   "--out", f"{data}/verify/index.html"],
                   note="overlays positioned from manifest.jsonl ALONE, so a bug in the "
                        "layout code cannot cancel itself out"),
              Step("examples", ["-m", "blindspot.generate", "examples",
-                               "--data", data, "--out", f"{data}/examples"], optional=True)]
+                               "--data", data, "--out", f"{data}/examples/index.html"], optional=True)]
 
     run: list[Step] = []
     if "localization" in tasks:
@@ -171,7 +206,16 @@ def synth_localization_eval(opts) -> dict[str, list[Step]]:
             seen_r.add(tuple(TASKS[k]["report"]))
             rep.append(Step(k, ["-m", *TASKS[k]["report"]], optional=True))
     if "localization" in tasks:
-        ev.append(Step("localization:ablations", ["-m", "blindspot.eval", "ablations"]))
+        # Optional because its only input, results/svgloc_ablation_uids.json, is
+        # written by the `run` stage's `localization:ablations` API pass. Offline,
+        # or on a clone that never spent the money, that file is simply absent --
+        # which is not a broken pipeline and must not abort one. Documented at
+        # docs/runme/SYNTHETIC.md, whose `--from eval --offline` line used to die here.
+        ev.append(Step("localization:ablations", ["-m", "blindspot.eval", "ablations"],
+                       optional=True,
+                       note="the ablations were never run: this reads "
+                            "results/svgloc_ablation_uids.json, which only a prior "
+                            "`run_api ablations` pass (the `run` stage, needs the API) writes"))
 
     return {"generate": gen, "audit": audit, "run": run, "eval": ev, "report": rep}
 
@@ -180,45 +224,143 @@ def synth_localization_eval(opts) -> dict[str, list[Step]]:
 # Build the SFT / GRPO training data. Feeds part3.md. Constructs data, never trains.
 
 MR_DATA = "data/svgloc_mr"
+PART3_MD = "outputs/part3/part3.md"      # prose, hand-written: read, never written
+
+# Every artifact this pipeline used to overwrite on a bare `--all`. All six are
+# gitignored and untracked, so an overwrite is unrecoverable -- and regeneration
+# does NOT reproduce them: a fresh `ladder` emits the same 1513 uids with a
+# different target_text/box_px for 91% of them, and `samples --seed 0` reproduces
+# 5 of the 20 shipped records. So the steps that write them are scheduled ONLY
+# against an explicit --out, exactly as synth_localization_eval's generate stage
+# is. The irony this replaces: `generate_finetune samples` already refuses to
+# default its --out, and this file used to hand the reference path straight back.
+FINETUNE_REFERENCE = {
+    MR_DATA: "the committed multi-resolution ladder; a rerun keeps the uids and "
+             "changes 91% of the boxes",
+    "data/sft_bbox/sft_bbox_20.jsonl": "the shipped SFT records; --seed 0 "
+                                       "reproduces 5 of the 20",
+    "outputs/finetune/gallery.html": "the gallery of those records",
+    "outputs/finetune/worked_examples.json": "real model samples; not "
+                                             "reproducible at all",
+    "outputs/part3/assets": "the figures and example strip part3.md embeds",
+    "outputs/part3/part3.html": "the rendered deliverable",
+}
 
 
-def finetune_data(_opts) -> dict[str, list[Step]]:
+def finetune_out(base: str) -> dict[str, str]:
+    """Where each writing step goes, given an --out base directory.
+
+    One place, so the guard below checks the paths the steps will actually be
+    given rather than a hand-kept copy of them.
+    """
     return {
-        "ladder": [
+        "ladder": f"{base}/svgloc_mr",
+        "sft-records": f"{base}/sft_bbox/sft_bbox_20.jsonl",
+        "audit-gallery": f"{base}/gallery_svgloc_mr.html",
+        "gallery": f"{base}/gallery.html",
+        "assets": f"{base}/assets",
+        "worked-examples": f"{base}/worked_examples.json",
+        "part3-html": f"{base}/part3.html",
+    }
+
+
+def finetune_data(opts) -> dict[str, list[Step]]:
+    out = opts.get("out")
+    p = finetune_out(out) if out else None
+    data = p["ladder"] if p else MR_DATA
+
+    ladder: list[Step] = []
+    build: list[Step] = []
+    report: list[Step] = []
+    if p:
+        ladder = [
             Step("gen-multires", ["-m", "blindspot.generate_finetune", "ladder",
-                                  "--out", MR_DATA],
+                                  "--out", p["ladder"]],
                  note="6 aspect ratios x 4 sizes, up to the largest that reaches the "
                       "model without downscaling (1568px edge, ~1.15MP)"),
-        ],
-        "build": [
+        ]
+        build = [
             Step("sft-bbox", ["-m", "blindspot.generate_finetune", "samples",
                               "--n", "20", "--seed", "0",
-                              "--out", "data/sft_bbox/sft_bbox_20.jsonl"],
+                              "--out", p["sft-records"]],
                  note="target is a BOX, not a point: a point has thousands of equally "
                       "correct answers, a box has one and overlap is a graded signal"),
-        ],
-        "verify": [
-            Step("multires-audit", ["-m", "blindspot.generate_finetune", "audit",
-                                    "--dataset", MR_DATA]),
-            Step("gallery", ["-m", "blindspot.report_finetune", "gallery"],
-                 note="every record shown twice -- full frame and a zoom -- because at "
-                      "900x570 a 0.02% target is a few pixels"),
-        ],
-        "report": [
-            Step("figures", ["-m", "blindspot.report_finetune", "figures"]),
-            Step("examples", ["-m", "blindspot.report_finetune", "examples"]),
-            # CALLS THE API. The script has no --max-spend of its own, so the
-            # framework can gate it (key check, --offline, ceiling prompt) but
-            # cannot cap it mid-run. Output is model-sampled: --seed picks WHICH
-            # records are asked about, not what comes back.
-            Step("worked-examples", ["-m", "blindspot.report_worked"],
-                 needs_api=True, optional=True,
-                 note="~24 model calls; no internal spend cap"),
-            Step("render", ["-m", "blindspot.render_markdown",
-                            "--src", "outputs/part3/part3.md", "--paste"],
+        ]
+        report = [
+            Step("figures", ["-m", "blindspot.report_finetune", "figures",
+                             "--dataset", data, "--out-dir", p["assets"]]),
+            Step("examples", ["-m", "blindspot.report_finetune", "examples",
+                              "--dataset", data, "--out-dir", p["assets"]]),
+            # CALLS THE API. It now owns a --max-spend of its own and checks the
+            # ceiling before every call, so the `spend` declared here reaches it:
+            # Step.rendered appends the share only to a step that declares one.
+            # Output is model-sampled: --seed picks WHICH records are asked
+            # about, not what comes back.
+            Step("worked-examples", ["-m", "blindspot.report_worked",
+                                     "--dataset", data,
+                                     "--out", p["worked-examples"]],
+                 needs_api=True, optional=True, spend=0.5,
+                 note="~24 model calls, capped by its own --max-spend"),
+            Step("render", ["-m", "blindspot.render_markdown", "--src", PART3_MD,
+                            "--out", p["part3-html"], "--paste"],
                  note="HTML generated from the markdown, never hand-edited"),
-        ],
-    }
+        ]
+
+    verify = [
+        # Read-only against the ladder, so it runs with or without --out. Its
+        # gallery follows the dataset audited and never lands on gallery.html.
+        Step("multires-audit", ["-m", "blindspot.generate_finetune", "audit",
+                                "--dataset", data]
+             + (["--out", p["audit-gallery"]] if p else []),
+             note=("checks every box against the pixels" if p else
+                   "checks every box against the pixels of the COMMITTED ladder. "
+                   "The steps that would write are omitted: pass --out DIR to "
+                   "build a new set (docs/runme/FINETUNE.md section 0)")),
+    ]
+    if p:
+        verify.append(
+            Step("gallery", ["-m", "blindspot.report_finetune", "gallery",
+                             "--records", p["sft-records"], "--out", p["gallery"]],
+                 note="every record shown twice -- full frame and a zoom -- because at "
+                      "900x570 a 0.02% target is a few pixels"))
+
+    return {"ladder": ladder, "build": build, "verify": verify, "report": report}
+
+
+def _resolutions(p: str) -> set[Path]:
+    """Every filesystem location the string `p` could name, resolved.
+
+    A relative --out means one thing to the shell that typed it (its own cwd)
+    and another to the steps, which `flow.main` always runs with cwd=ROOT.
+    Checking one reading and not the other is exactly how a guard silently fails
+    to fire, so both are checked.
+    """
+    q = Path(p)
+    return {q.resolve(), (flow.ROOT / q).resolve()}
+
+
+def refuse_finetune_out(out: str) -> None:
+    """Reject an --out that would land a finetune step on a reference artifact.
+
+    The guard is on the DERIVED paths, not just the base, because the base is
+    never the thing overwritten: `--out outputs/part3` writes
+    `outputs/part3/assets`, and `--out data` writes `data/svgloc_mr`.
+    """
+    targets = {"--out itself": out}
+    targets.update({f"the {k} it would write": v for k, v in finetune_out(out).items()})
+    for label, target in targets.items():
+        hit = _resolutions(target)
+        for ref, why in FINETUNE_REFERENCE.items():
+            if (flow.ROOT / ref).resolve() in hit:
+                raise SystemExit(
+                    f"refusing --out {out}: {label} lands on\n\n"
+                    f"    {ref}\n\n"
+                    + textwrap.fill(
+                        f"which is {why}. It is gitignored and untracked, so there "
+                        f"is no copy to restore, and rerunning this pipeline does "
+                        f"not reproduce it. Point --out at a scratch directory "
+                        f"instead, e.g. --out /tmp/finetune_dev.", 78)
+                    + "\nSee docs/runme/FINETUNE.md section 0.")
 
 
 PIPELINES = {
@@ -258,7 +400,10 @@ if __name__ == "__main__":
             raise SystemExit(f"unknown task(s): {bad}. choose from {list(TASKS)}")
         opts["tasks"] = picked or opts["tasks"]; del argv[i:j]
     if "--out" in argv:
-        i = argv.index("--out"); opts["out"] = argv[i + 1]; del argv[i:i + 2]
+        i = argv.index("--out")
+        if i + 1 >= len(argv):
+            raise SystemExit("--out needs a directory")
+        opts["out"] = argv[i + 1]; del argv[i:i + 2]
         # Resolve BOTH against the repository root, not the cwd. Comparing
         # `Path(COMMITTED).resolve()` resolves the guard's own reference against
         # wherever the process happens to be, so from any other directory an
@@ -270,6 +415,8 @@ if __name__ == "__main__":
                 f"of truth for every published number. The generator has drifted from it, so\n"
                 f"regenerating in place would rebind uids to different questions.\n"
                 f"See docs/runme/SYNTHETIC.md section 0.")
+        if name == "finetune_data":
+            refuse_finetune_out(opts["out"])
 
     sys.argv = [f"blindspot.pipelines {name}", *argv]
     stages = {k: v for k, v in PIPELINES[name][0](opts).items() if v}

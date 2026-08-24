@@ -42,6 +42,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 from blindspot import generate as G
+from blindspot import generate_finetune as GF
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -70,19 +71,12 @@ EX_ZOOM_SCALE = 2                 # ... shown at 2x, so 300x250
 EX_GAP = 14                       # white gutter between the two panels
 EX_COUNT = 9
 EX_SEED = 17                      # the generator's seed, reused for the strip
-G_SEED = 17                       # the ladder was built with the generator's default
 
-# the size/shape ladder, r100 canvases and the three lower rungs (see part3.md).
-# Verified against every row of data/svgloc_mr/manifest.jsonl.
-RUNGS = {"r55": 0.55, "r70": 0.70, "r85": 0.85, "r100": 1.00}
-ASPECTS = [
-    ("ultrawide", 1568, 671),
-    ("wide", 1429, 804),
-    ("standard", 1347, 853),
-    ("classic", 1238, 928),
-    ("square", 1072, 1072),
-    ("portrait", 928, 1238),
-]
+# The size/shape ladder: taken from the module that builds it, never restated.
+# A second, hand-copied copy of these numbers is exactly how `_scene` came to
+# rebuild a scene the ladder never shipped -- see its docstring.
+RUNGS = GF.RUNGS
+ASPECTS = [(name, *GF.canvas_for(ratio)) for name, ratio in GF.ASPECTS]
 RUNG_INK = {                      # darkest = the largest frame
     "r55": (210, 210, 222),
     "r70": (168, 168, 180),
@@ -103,12 +97,16 @@ CHART_LABEL = {
 
 # The record the shipped figure is drawn from. Pinned rather than sampled: the
 # figure is an explanation, and it should not change shape because the dataset
-# was regenerated. Falls back to the first row if the dataset does not have it.
+# was regenerated. It is a preference, not a requirement -- see `_fig_row`,
+# which picks a substitute from whatever dataset it is handed. Graph 89 does not
+# exist in a 24-scene dev ladder, and requiring it made the workflow the docs
+# recommend die on `rows[0]` with an IndexError.
 FIG_UID = "mr:0089:portrait:r70:03"
 
 FIG_PANEL = (250, 140)            # one panel of fig_box_extraction
 FIG_GAP = 20
 FIG_HEAD = 44                     # height of the title/subtitle band
+FIG_FIT_PAD = 30                  # clearance the target must have inside a panel
 
 FRAME_CELL = (263, 223)           # one aspect's cell in fig_frames
 FRAME_ORIGIN = (29, 33)           # shared corner of the nested frames, in-cell
@@ -337,36 +335,56 @@ def _manifest(dataset: Path) -> list[dict]:
         return [json.loads(line) for line in fh if line.strip()]
 
 
-def _scene(gid: int):
-    """Rebuild scene `gid` of the ladder from its seed.
+def _scene(row: dict):
+    """Rebuild the ladder scene that manifest `row` was measured on.
 
     The ladder stores images and a manifest but not the scenes, so a figure that
-    needs a second render of the same scene has to reconstruct it. The recipe is
-    the generator's own: one RNG per graph, chart type by position, aspect by
-    block of sixteen.
-    """
-    fonts = G.available_fonts()
-    types = list(G.BUILDERS)
-    rng = random.Random(G_SEED * 100003 + gid * 7919)
-    ctype = types[gid % len(types)]
-    theme = G.THEMES[rng.randrange(len(G.THEMES))]
-    fpath, fidx, fam = fonts[rng.randrange(len(fonts))]
-    dom, nouns = rng.choice(G.DOMAINS)
-    _, W, H = ASPECTS[gid // 16 % len(ASPECTS)]
+    needs a second render of the same scene has to reconstruct it. It does that
+    by calling the ladder's own constructor, not by restating its recipe: an
+    earlier version reimplemented the recipe here and drifted from it (chart
+    type by global position instead of position within the aspect, canvas by a
+    hard-coded block of sixteen, and `complexity = 1` against the ladder's 4).
+    The scenes it produced were not the shipped ones, so `target_idx` indexed a
+    different list of labels -- 268 of the 1513 shipped rows out of range and a
+    further 159 pointing at a different string, with no error raised anywhere.
 
-    sc = G.Scene(gid=gid, title=f"{dom} - {ctype.replace('_', ' ')} {gid:04d}",
-                 ctype=ctype, theme=theme, font_file=fpath, font_index=fidx,
-                 font_family=fam, w=W, h=H)
-    sc.domain = (dom, nouns)
-    sc.complexity = 1
-    probe = ImageDraw.Draw(Image.new("RGB", (8, 8)))
-    F = G.load(fpath, fidx, G.BASE_FONT)
-    G._title(sc, probe, F)
-    if G.BUILDERS[ctype](sc, rng, probe, F) is None:
-        return None
-    G._decorate(sc, rng, probe)
-    G.enforce_legibility(sc, min(RUNGS.values()))
-    return sc
+    Every argument comes from the row itself, so a scene rebuilt here is the one
+    that row describes even if the ladder's own layout of gids ever changes.
+    Returns None when the builder declines the scene.
+    """
+    return GF.build_scene(row["graph_id"], row["chart_type"], G.available_fonts(),
+                          GF.SEED, tuple(row["canvas_px"]), GF.COMPLEXITY,
+                          min(RUNGS.values()))
+
+
+def _fig_row(rows: list[dict]) -> dict:
+    """The record `fig_box_extraction` draws, given the rows it was handed.
+
+    `FIG_UID` when the dataset has it, so the shipped figure is stable across
+    regenerations of the committed ladder. When it does not -- a dev ladder
+    built with `--scenes-per-aspect 4` has 24 scenes and no graph 89 -- a
+    substitute is chosen rather than the first row blindly taken, because the
+    first row is whatever the ladder happened to emit first and its target may
+    not even fit in a panel.
+
+    The substitute is the largest rung available (bigger delivered glyphs, so
+    the four panels are readable at figure scale) whose target clears the panel
+    edges, tie-broken on uid. Deterministic: the same dataset always yields the
+    same figure.
+    """
+    pinned = next((r for r in rows if r["uid"] == FIG_UID), None)
+    if pinned is not None:
+        return pinned
+    if not rows:
+        raise SystemExit("dataset manifest is empty: nothing to draw")
+
+    def fits(r: dict) -> bool:
+        x0, y0, x1, y1 = r["box_px"]
+        return (x1 - x0 <= FIG_PANEL[0] - 2 * FIG_FIT_PAD
+                and y1 - y0 <= FIG_PANEL[1] - 2 * FIG_FIT_PAD)
+
+    candidates = [r for r in rows if fits(r)] or rows
+    return min(candidates, key=lambda r: (-r["scale"], r["uid"]))
 
 
 def _panel(im: Image.Image, box, size=FIG_PANEL) -> tuple[Image.Image, tuple[int, int]]:
@@ -392,11 +410,23 @@ def fig_box_extraction(out_path: Path, dataset: str = "data/svgloc_mr") -> Path:
     """
     ds = REPO / dataset if not Path(dataset).is_absolute() else Path(dataset)
     rows = _manifest(ds)
-    row = next((r for r in rows if r["uid"] == FIG_UID), rows[0])
+    row = _fig_row(rows)
 
-    sc = _scene(row["graph_id"])
+    sc = _scene(row)
     if sc is None:                                   # builder declined this seed
         raise SystemExit(f"could not rebuild scene {row['graph_id']}")
+    # The rebuilt scene must be the one the row was measured on, or `target_idx`
+    # below indexes a different list of labels and the figure boxes the wrong
+    # string while captioning it as the delivered image. Checked rather than
+    # assumed: that failure is silent, and it shipped once already.
+    texts = sc.texts
+    ti = row["target_idx"]
+    got = texts[ti]["s"] if ti < len(texts) else None
+    if got != row["target_text"]:
+        raise SystemExit(
+            f"{row['uid']}: rebuilt scene does not match the manifest -- "
+            f"target {ti} of {len(texts)} is {got!r}, manifest says "
+            f"{row['target_text']!r}")
     scale = RUNGS[row["rung"]]
 
     # Three renders of one scene: everything, nothing, and this label alone.
@@ -406,7 +436,7 @@ def fig_box_extraction(out_path: Path, dataset: str = "data/svgloc_mr") -> Path:
     whole = G.render(sc, scale)[0].convert("RGB")
     blank = G.render(sc, scale, skip_text=True)[0].convert("RGB")
     solo = copy.copy(sc)
-    keep = sc.texts[row["target_idx"]]
+    keep = texts[ti]
     solo.prims = [p for p in sc.prims if p["k"] != "text" or p is keep]
     only = G.render(solo, scale)[0].convert("RGB")
 

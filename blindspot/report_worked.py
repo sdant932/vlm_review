@@ -9,9 +9,17 @@ Nothing here is illustrative. The boxes are the model's, the scores are computed
 from them, and a group where every sample scores zero is reported as such rather
 than replaced with a tidier one.
 
+Spending
+--------
+`--prompts P --samples S` is P*S calls, so the arguments alone are not a budget:
+`--prompts 100 --samples 100` is ten thousand of them. Every call is therefore
+priced into a `core.Budget` and the ceiling is checked BEFORE each one. The
+module is serial by construction -- one request in flight at a time -- so the
+worst overshoot is a single call. See the comment on the check in `main`.
+
 Usage
 -----
-    python -m blindspot.report.finetune_worked --prompts 3 --samples 8
+    python -m blindspot.report_worked --prompts 3 --samples 8 --max-spend 0.50
 """
 
 from __future__ import annotations
@@ -26,8 +34,9 @@ from pathlib import Path
 
 import anthropic
 
+from blindspot.core import MODEL, Budget
+
 REPO = Path(__file__).resolve().parents[1]
-MODEL = "claude-haiku-4-5-20251001"
 
 PROMPT = (
     "Return the bounding box of {q}.\n"
@@ -62,7 +71,7 @@ def parse(text: str):
     return v
 
 
-def ask(client, img_b64: str, media: str, q: str) -> str:
+def ask(client, budget: Budget, img_b64: str, media: str, q: str) -> str:
     r = client.messages.create(
         model=MODEL,
         max_tokens=2000 + 1024,
@@ -73,6 +82,10 @@ def ask(client, img_b64: str, media: str, q: str) -> str:
             {"type": "text", "text": PROMPT.format(q=q)},
         ]}],
     )
+    # Priced from the response's own usage, not an estimate, and charged before
+    # the text is handed back so no path can consume an answer without paying
+    # for it.
+    budget.add(r.usage.input_tokens, r.usage.output_tokens, MODEL)
     return "".join(b.text for b in r.content if b.type == "text")
 
 
@@ -83,6 +96,10 @@ def main() -> int:
     ap.add_argument("--samples", type=int, default=8)
     ap.add_argument("--seed", type=int, default=17)
     ap.add_argument("--out", default="outputs/finetune/worked_examples.json")
+    ap.add_argument("--max-spend", type=float, default=0.50,
+                    help="USD ceiling for this run (default 0.50). --prompts x "
+                         "--samples is a call count, not a budget; this is the "
+                         "budget. Pass 0 to make the run a no-op.")
     a = ap.parse_args()
 
     root = REPO / a.dataset
@@ -95,19 +112,35 @@ def main() -> int:
     picks = [rows[rng.randrange(i * n // a.prompts, (i + 1) * n // a.prompts)]
              for i in range(a.prompts)]
 
+    budget = Budget(a.max_spend)
+    print(f"{a.prompts} prompt(s) x {a.samples} sample(s) = "
+          f"{a.prompts * a.samples} call(s), ceiling ${a.max_spend:.4g}")
+
     client = anthropic.Anthropic(max_retries=2, timeout=180.0)
-    out = []
+    out, capped = [], False
     for rec in picks:
         b64 = base64.b64encode((root / rec["image"]).read_bytes()).decode()
         samples = []
         for _ in range(a.samples):
+            # Checked BEFORE the call, not after: a call already issued when the
+            # ceiling trips still completes and still bills. `core`'s runner
+            # needs a sliding submission window for that reason -- a wide window
+            # once carried a $0.029 cap 12.8x over. Here there is exactly one
+            # request in flight, so this check bounds the overshoot at one call.
+            # Do not put these calls in a thread pool without reading the
+            # `window = max(args.concurrency, 1)` comment in core.py first.
+            if budget.exhausted():
+                capped = True
+                break
             try:
-                box = parse(ask(client, b64, "image/png", rec["question"]))
+                box = parse(ask(client, budget, b64, "image/png", rec["question"]))
             except Exception as e:                       # noqa: BLE001
                 print(f"    call failed: {e}")
                 box = None
             samples.append({"box": box,
                             "iou": iou(box, rec["box_norm"]) if box else 0.0})
+        if not samples:                 # the cap hit before this group started
+            break
         r = [s["iou"] for s in samples]
         mean, sd = st.mean(r), (st.pstdev(r) or 0.0)
         for s in samples:
@@ -116,15 +149,35 @@ def main() -> int:
                     "aspect": rec["aspect"], "image_px": rec["image_px"],
                     "area_frac": rec["box_area_frac"], "true_box": rec["box_norm"],
                     "samples": samples, "mean_iou": mean, "std_iou": sd,
-                    "usable_group": sd > 1e-9})
+                    "usable_group": sd > 1e-9,
+                    # A group cut short by the ceiling is a smaller group, and a
+                    # group statistic over 3 of 8 samples is not the one asked
+                    # for. Say so in the record rather than let it read as whole.
+                    "n_samples": len(samples), "truncated": len(samples) < a.samples})
         print(f"  {rec['uid']}  area {rec['box_area_frac']*100:.3f}%  "
               f"mean IoU {mean:.3f}  std {sd:.3f}  "
-              f"{'usable' if sd > 1e-9 else 'DEAD GROUP'}")
+              f"{'usable' if sd > 1e-9 else 'DEAD GROUP'}"
+              f"{f'  [TRUNCATED {len(samples)}/{a.samples}]' if len(samples) < a.samples else ''}")
+        if capped:
+            break
+
+    print(f"\n{budget.calls} call(s), ${budget.spent:.4f} of ${a.max_spend:.4g}")
+
+    if not out:
+        # An empty run must not truncate the artifact it was going to replace:
+        # `[]` on disk is indistinguishable from a run that found nothing.
+        print(f"!! no sample was taken -- ${a.max_spend:.4g} left no room for a "
+              f"single call. {a.out} left untouched.")
+        return 2
+    if capped:
+        print(f"!! spend cap ${a.max_spend:.4g} reached -- stopped after "
+              f"{len(out)}/{len(picks)} prompt(s). The file below is PARTIAL; "
+              f"re-run with a higher --max-spend for the whole table.")
 
     p = REPO / a.out
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(out, indent=1))
-    print(f"\nwrote {p}")
+    print(f"wrote {p}")
     return 0
 
 

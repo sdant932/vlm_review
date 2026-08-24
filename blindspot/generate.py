@@ -15,7 +15,8 @@ original module docstrings, kept verbatim; each is also the `--help` text of its
 subcommand.
 
 Usage:
-    python -m blindspot.generate scenes --count 200 --complexity 4 --seed 17
+    python -m blindspot.generate scenes --count 200 --complexity 4 --seed 17 \
+                                         --out /tmp/svgloc_new
     python -m blindspot.generate questions
     python -m blindspot.generate audit --open
     python -m blindspot.generate examples --per-type 4
@@ -91,9 +92,13 @@ Question types deliberately span the perception/expression axis:
 
 Usage
 -----
-    python -m blindspot.generate scenes --count 10
-    python -m blindspot.generate scenes --count 500 --seed 7
+    python -m blindspot.generate scenes --count 10 --out /tmp/svgloc_dev
+    python -m blindspot.generate scenes --count 500 --seed 7 --out /tmp/svgloc_500
     python -m blindspot.generate scenes --list-types
+
+`--out` is required and has no default: it once defaulted to the committed
+data/svg_localization, so a bare run rebuilt the study's dataset in place.
+`--list-types` writes nothing and needs no --out.
 """
 
 
@@ -2660,7 +2665,18 @@ def build_examples_derived(data: Path, which: str, out: Path, per_type: int) -> 
 def _args_scenes(ap: argparse.ArgumentParser) -> None:
     ap.add_argument("--count", type=int, default=10)
     ap.add_argument("--seed", type=int, default=17)
-    ap.add_argument("--out", type=Path, default=Path("data/svg_localization"))
+    # REQUIRED, with no default -- the same rule `generate_finetune samples`
+    # follows. This used to default to data/svg_localization, so a bare `scenes`
+    # rebuilt the committed dataset in place: the source of truth for every
+    # published number, which the generator has drifted from. The guard lived
+    # only in the two CALLERS (blindspot.pipelines and the Makefile) while the
+    # callee still pointed at the destructive path, so typing the command by
+    # hand -- which the Makefile header invites -- went straight past it.
+    # Enforced in cmd_scenes rather than by argparse so `--list-types`, which
+    # writes nothing, still runs on its own.
+    ap.add_argument("--out", type=Path, default=None,
+                    help="REQUIRED: directory for the new set. No default; it "
+                         "must not be an existing dataset you care about.")
     ap.add_argument("--questions-per-graph", type=int, default=4)
     ap.add_argument("--scales", default="small=0.6,medium=1.0,large=2.0")
     ap.add_argument("--types", default="all", help="comma list, or 'all'")
@@ -2674,11 +2690,45 @@ def _args_scenes(ap: argparse.ArgumentParser) -> None:
                     help="reject targets rendered below this pixel size")
 
 
+_REPO_ROOT = Path(__file__).resolve().parents[1]
+
+
 def cmd_scenes(a: argparse.Namespace) -> int:
     if a.list_types:
         for k in BUILDERS:
             print(k)
         return 0
+
+    if a.out is None:
+        raise SystemExit(
+            "scenes: --out is required and has no default.\n"
+            "It used to default to data/svg_localization -- the committed dataset and\n"
+            "the source of truth for every published number. The generator has drifted\n"
+            "from it and results/*.jsonl is keyed by uid, so rebuilding it in place would\n"
+            "bind existing answers to different questions.\n"
+            "Build a NEW set into a NEW directory:\n"
+            "  python -m blindspot.generate scenes --count 200 --complexity 4 "
+            "--seed 17 --out /tmp/svgloc_new\n"
+            "See docs/runme/SYNTHETIC.md section 0.")
+
+    # Requiring --out is only half the guard. Removing the default stopped a BARE
+    # invocation from writing the committed dataset; it did nothing about someone
+    # typing the path. `pipelines` and the Makefile check the VALUE, but a hand-typed
+    # command reaches this function directly, and this is the code that does the
+    # damage. Resolve against the repository root, not the cwd, or the check silently
+    # passes from any other directory.
+    committed = (_REPO_ROOT / "data" / "svg_localization").resolve()
+    if Path(a.out).resolve() == committed:
+        raise SystemExit(
+            f"scenes: refusing --out {a.out}\n"
+            "That is data/svg_localization, the committed dataset and the source of\n"
+            "truth for every published number. The generator has drifted from it: the\n"
+            "same seed now yields different ground truth for ~73% of shared uids, and\n"
+            "some uids bind to a different question entirely. results/*.jsonl is keyed\n"
+            "by uid, so rebuilding in place would join every existing answer to the\n"
+            "wrong question -- silently, with no error and no way to notice.\n"
+            "Build a NEW set into a NEW directory instead.\n"
+            "See docs/runme/SYNTHETIC.md section 0.")
 
     scales = {}
     for part in a.scales.split(","):

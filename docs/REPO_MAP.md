@@ -53,9 +53,9 @@ re-scoring.
 
 | module | loc | subcommands | what it does |
 |---|---:|---|---|
-| `report.py` | 2786 | `data` · `examples` · `tables` · `index` · `paste` · `all` · `aug22` · `svgloc` · `svgderived` | The live chain is `data → examples → tables → index → paste`, and `all` runs it. `data` assembles every number the report quotes into `outputs/report/figures.json` — the single auditable artifact; nothing downstream computes its own statistics. `tables` also injects the six tables into `blindspots.md` between `<!-- Tn -->` markers, leaving hand-written prose untouched. `paste` emits one self-contained HTML file whose tables paste into a document editor as editable tables. `aug22` writes `outputs/aug22/summary.json`, which `data` **reads as a file** — a dependency that is easy to miss, so run it first. `svgloc` and `svgderived` are the standalone per-dataset pages. |
+| `report.py` | 2786 | `data` · `examples` · `tables` · `index` · `paste` · `all` · `summary` · `svgloc` · `svgderived` | The live chain is `data → examples → tables → index → paste`, and `all` runs it. `data` assembles every number the report quotes into `outputs/report/figures.json` — the single auditable artifact; nothing downstream computes its own statistics. `tables` also injects the seven tables into `blindspots.md` between `<!-- Tn -->` markers, leaving hand-written prose untouched. `paste` emits one self-contained HTML file whose tables paste into a document editor as editable tables. `summary` writes `outputs/report/summary.json`, which `data` **reads as a file** — a dependency that is easy to miss, so it is the first step of the `report` stage in `pipelines.py`. `svgloc` and `svgderived` are the standalone per-dataset pages. |
 | `report_finetune.py` | 665 | `gallery` · `figures` · `examples` | The Part 3 artefacts. One module because all three share one drawing rule: the outline is stroked strictly *outside* the box, since PIL renders a multi-pixel `rectangle` inward and makes a correct box look like it clips the text. Only the supervision target is ever drawn; the wider `accept_region` stays in the JSON where it cannot be mistaken for ground truth. |
-| `report_worked.py` | 132 | no subcommands (`--dataset --prompts --samples --seed --out`) | GRPO group statistics over real model samples. **Calls the API** — roughly 24 calls, with no `--max-spend` of its own. Its output is model-sampled, so `--seed` selects *which* records are asked about but does not make the artifact reproducible. |
+| `report_worked.py` | 185 | no subcommands (`--dataset --prompts --samples --seed --out --max-spend`) | GRPO group statistics over real model samples. **Calls the API** — roughly 24 calls, capped by its own `--max-spend` (default `$0.50`), which is checked before each call; the module is serial, so the worst overshoot is one call. Its output is model-sampled, so `--seed` selects *which* records are asked about but does not make the artifact reproducible. |
 | `render_markdown.py` | 382 | no subcommands (`--src --out --paste`) | Markdown → self-contained HTML for any document; `part3.html` is generated from `part3.md` and never hand-edited, so the two cannot drift. Its parser is deliberately small — headings, lists, tables, block quotes, fenced code, rules, inline bold/italic/code. No markdown library is installed and one is not worth adding. |
 
 ## Diagnostics
@@ -80,9 +80,13 @@ re-scoring.
 | `synth_localization_eval` | generate → audit → run → eval → report | `blindspots.md` §5–7 |
 | `finetune_data` | ladder → build → verify → report | `part3.md` |
 
-`generate` in pipeline 2 is empty unless `--out DIR` is given: the committed dataset
-is the source of truth and the pipeline refuses an `--out` that resolves to it.
-See [runme/SYNTHETIC.md §0](runme/SYNTHETIC.md#0-do-not-regenerate-in-place).
+Both pipelines that build data are opt-in behind `--out`. `generate` in pipeline 2
+is empty unless `--out DIR` is given: the committed dataset is the source of truth
+and the pipeline refuses an `--out` that resolves to it. Pipeline 3 follows the
+same rule for all six of its reference artifacts — without `--out` it schedules
+only the read-only audit, and an `--out` that would land a step on one of them is
+refused by name. See [runme/SYNTHETIC.md §0](runme/SYNTHETIC.md#0-do-not-regenerate-in-place)
+and [runme/FINETUNE.md §0](runme/FINETUNE.md#0-building-is-opt-in).
 
 ## `tests/`
 
@@ -120,8 +124,8 @@ renames. File-by-file mapping: [legacy/README.md](../legacy/README.md).
 - `generate.py` and `report.py` are 2,842 and 2,786 lines. Both are unions of five
   and eight modules; each subcommand is still the original module's code and
   docstring, but neither file is pleasant to navigate.
-- `report_worked.py` is the only Part 3 step that cannot be regenerated offline,
-  and it takes no `--max-spend`: the framework gates it but cannot cap it mid-run.
+- `report_worked.py` is the only Part 3 step that cannot be regenerated offline:
+  the boxes come from the model, so no seed makes the artifact reproducible.
 - `report.py`'s `gold_quality()` hardcodes measured constants. Fine for a frozen
   study, stale the moment the runs are repeated.
 - `download github-sources` takes no arguments. It is in the `--help` sweep, but

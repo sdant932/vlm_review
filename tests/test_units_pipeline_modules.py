@@ -636,6 +636,121 @@ def test_the_gallery_draws_only_the_supervision_target(tmp_path):
     assert page.count("supervision target") >= 1
 
 
+# ------------------------------------------------- the figures' scene rebuild
+"""`fig_box_extraction` re-renders the scene a manifest row was measured on and
+indexes it with the row's `target_idx`. If the rebuilt scene is not the one the
+ladder shipped, that index lands on a different label and the figure draws a box
+around the wrong string while captioning the panel "as delivered to the model".
+Nothing raises. It happened: `_scene` restated the ladder's recipe instead of
+calling it, with `complexity = 1` against the ladder's 4, chart type by global
+position instead of position within the aspect, and the canvas taken from a
+hard-coded block of sixteen. 268 of the 1,513 shipped rows indexed out of range
+and another 159 pointed at a different string.
+"""
+
+
+def test_the_rebuilt_scene_matches_the_manifest_on_every_sampled_row(ladder_rows):
+    """The check that says the figure boxes the label the manifest names.
+
+    Every 13th row, so the sample spans all six aspects and all four rungs. The
+    label at `target_idx` in the rebuilt scene must be the manifest's
+    `target_text` -- not merely in range, the same string.
+    """
+    scenes: dict[tuple, object] = {}
+    checked = 0
+    for row in ladder_rows[::13]:
+        key = (row["graph_id"], row["chart_type"], tuple(row["canvas_px"]))
+        if key not in scenes:
+            scenes[key] = RF._scene(row)
+        sc = scenes[key]
+        assert sc is not None, row["uid"]
+        assert (sc.w, sc.h) == tuple(row["canvas_px"]), row["uid"]
+        texts = sc.texts
+        assert row["target_idx"] < len(texts), (
+            f"{row['uid']}: target_idx {row['target_idx']} of {len(texts)} labels")
+        assert texts[row["target_idx"]]["s"] == row["target_text"], row["uid"]
+        checked += 1
+    assert checked >= 100
+
+
+def test_the_rebuilt_scene_is_the_image_the_model_was_given(ladder_rows):
+    """Panel 1 is captioned "as delivered to the model", so it has to be.
+
+    Re-rendering the rebuilt scene at the row's rung must reproduce the shipped
+    PNG byte for byte, which is the strongest available statement that the
+    reconstruction is the delivered image and not a lookalike.
+    """
+    row = next(r for r in ladder_rows if r["uid"] == RF.FIG_UID)
+    if not (LADDER / row["image"]).exists():
+        pytest.skip("data/svgloc_mr images are not present")
+    im = G.render(RF._scene(row), RF.RUNGS[row["rung"]])[0]
+    buf = io.BytesIO()
+    im.save(buf, format="PNG", optimize=True)
+    assert buf.getvalue() == (LADDER / row["image"]).read_bytes()
+
+
+def test_the_ladder_constants_are_the_ladders_own(ladder_rows):
+    """Not a second hand-copied table. The copy is what drifted."""
+    assert RF.RUNGS is GF.RUNGS
+    assert RF.ASPECTS == [(n, *GF.canvas_for(r)) for n, r in GF.ASPECTS]
+
+
+def _small_ladder(tmp_path: Path, rows: list[dict], keep_pinned: bool = False) -> Path:
+    """A manifest-only ladder in tmp_path, standing in for a dev-sized build.
+
+    `fig_box_extraction` reads the manifest and re-renders from the scene, so it
+    never opens an image and the images need not be copied. Rows are taken from
+    the shipped manifest, so the reconstruction they exercise is the real one.
+    """
+    keep = [r for r in rows if r["graph_id"] < 4 or (keep_pinned and r["uid"] == RF.FIG_UID)]
+    ds = tmp_path / "ladder"
+    ds.mkdir(parents=True, exist_ok=True)
+    (ds / "manifest.jsonl").write_text("".join(json.dumps(r) + "\n" for r in keep))
+    return ds
+
+
+def test_figures_builds_on_a_ladder_that_has_no_pinned_record(tmp_path, ladder_rows):
+    """`--scenes-per-aspect 4` is the workflow docs/runme/FINETUNE.md recommends,
+    and it produces 24 scenes -- no graph 89, so no `FIG_UID`. Requiring it fell
+    through to `rows[0]`, whose `target_idx` then indexed off the end of a
+    different scene: `IndexError` on the documented dev path."""
+    ds = _small_ladder(tmp_path, ladder_rows)
+    assert not any(r["uid"] == RF.FIG_UID for r in RF._manifest(ds))
+
+    out = tmp_path / "assets"
+    rc, _text = _run(RF.main, ["figures", "--out-dir", str(out), "--dataset", str(ds)])
+    assert rc == 0
+    assert (out / "fig_box_extraction.png").stat().st_size > 0
+    assert (out / "fig_frames.png").stat().st_size > 0
+
+
+def test_the_substitute_record_is_deterministic_and_fits_the_panel(tmp_path, ladder_rows):
+    ds = _small_ladder(tmp_path, ladder_rows)
+    rows = RF._manifest(ds)
+    picked = RF._fig_row(rows)
+    assert RF._fig_row(list(reversed(rows)))["uid"] == picked["uid"]
+    x0, y0, x1, y1 = picked["box_px"]
+    assert x1 - x0 <= RF.FIG_PANEL[0] - 2 * RF.FIG_FIT_PAD
+    assert y1 - y0 <= RF.FIG_PANEL[1] - 2 * RF.FIG_FIT_PAD
+    # and the substitute is only a substitute: the pin wins whenever it is there
+    with_pin = RF._manifest(_small_ladder(tmp_path / "b", ladder_rows, keep_pinned=True))
+    assert RF._fig_row(with_pin)["uid"] == RF.FIG_UID
+
+
+def test_a_scene_that_does_not_match_its_row_is_refused_not_drawn(tmp_path, ladder_rows):
+    """The failure this whole section exists for is silent, so it is asserted to
+    be loud: a row whose `target_idx` does not name the manifest's own
+    `target_text` must stop the figure rather than box the wrong label."""
+    ds = _small_ladder(tmp_path, ladder_rows)
+    rows = RF._manifest(ds)
+    for r in rows:
+        r["target_text"] = "definitely not the label"
+    (ds / "manifest.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+    with pytest.raises(SystemExit) as e:
+        RF.fig_box_extraction(tmp_path / "x.png", str(ds))
+    assert "does not match the manifest" in str(e.value)
+
+
 # =============================================================================
 # D. blindspot.render_markdown
 # =============================================================================
@@ -886,3 +1001,161 @@ def test_the_generated_markdown_tables_contain_no_html_entities(report_module):
     text = (out / "tables.md").read_text()
     assert re.search(r"&[a-zA-Z]+;", text) is None
     assert "&quot;" not in text and "&mdash;" not in text
+
+
+def test_the_ablations_table_is_computed_from_figures_json_not_from_literals():
+    """T7 reports eight arms that were run, scored and then left out of the
+    report. Two of them are significant and both bear on conclusions stated
+    elsewhere, so the table has to track `figures.json` rather than restate a
+    remembered number: feeding it altered measurements must alter the table."""
+    import blindspot.report as R
+    if not Path("outputs/report/figures.json").exists():
+        pytest.skip("outputs/report/figures.json is not present")
+
+    f = R.load_json("outputs/report/figures.json")
+    arms = f["synthetic"]["ablations"]["arms"]
+    assert ("T7", "Prompt and answer-channel ablations", R.t8) in R.TABLES
+
+    # every arm in the JSON is on the page, with the JSON's own numbers
+    real = R.t8(f)
+    for k, r in arms.items():
+        assert f"`{k}`" in real
+        assert R.pct(r["acc"], 2) in real
+        assert f'{r["delta_pp"]:+.2f}pp' in real
+        assert f'{r["chi2"]:.2f}' in real
+    # the marker is the stored verdict, not a hand-kept list of arm names
+    sig = {k for k, r in arms.items() if r["significant"]}
+    assert sig == {"bbox", "cell_then_point", "quadrant_mc"}
+    for k in sig:
+        assert f'**{R.pct(arms[k]["acc"], 2)}**' in real
+    for k in set(arms) - sig:
+        assert f'**{R.pct(arms[k]["acc"], 2)}**' not in real
+
+    # and nothing is baked in: perturbed input, perturbed table and note
+    g = copy.deepcopy(f)
+    a = g["synthetic"]["ablations"]["arms"]
+    a["cell_then_point"].update(acc=0.4242, delta_pp=35.75, chi2=99.99)
+    a["bbox"].update(acc=0.0333, delta_pp=-3.33, chi2=7.77)
+    a["quadrant_mc"]["significant"] = False
+    moved = R.t8(g)
+    for gone in ("19.00%", "24.45", "+12.33pp", "1.33%", "10.23", "**80.33%**"):
+        assert gone not in moved
+    for shown in ("42.42%", "99.99", "+35.75pp", "3.33%", "7.77", "2.0×"):
+        assert shown in moved
+    # the marker follows the flag: unflagged, quadrant_mc keeps its row unbolded
+    assert "80.33%" in moved and "**+14.00pp**" not in moved
+
+
+def test_the_ablations_table_reaches_tables_md(report_module):
+    R, out = report_module
+    if not Path("outputs/report/figures.json").exists():
+        pytest.skip("outputs/report/figures.json is not present")
+    with contextlib.redirect_stdout(io.StringIO()):
+        R.cmd_tables(_Args())
+    text = (out / "tables.md").read_text()
+    assert "## T7 — Prompt and answer-channel ablations" in text
+    assert "cell_then_point" in text and "McNemar" in text
+
+
+# ------------------------------------------- degenerate statistics and absent inputs
+"""Two ways a report can publish something it did not measure.
+
+`svgderived` formatted the McNemar chi-square unconditionally, and `eval` sets
+it to None when no pair is discordant -- which is exactly what a perfect score
+at both rungs produces, and word presence and counting both reach one in the
+published Table 4. The page therefore died with a TypeError at precisely the
+result it was built to report.
+
+`gold_quality()` turned a missing ground-truth audit file into a contested rate
+of 0.0 and carried it into `implied_floor`: an unmeasured dataset published as
+"we found no contested gold", which is the most favourable value there is, and
+indistinguishable from screenspot_pro's real 0 of 35.
+"""
+
+ZERO_DISCORDANT = {"a": "small", "b": "large", "n": 476, "acc_a": 1.0, "acc_b": 1.0,
+                   "delta_pp": 0.0, "discordant_b": 0, "discordant_c": 0,
+                   "mcnemar_chi2": None, "significant": False}
+
+
+def test_mcnemar_with_no_discordant_pairs_says_so_instead_of_printing_zero():
+    """0.00 would read as a computed non-result. The fact is that the test could
+    not run, and why it could not run is the informative part."""
+    import blindspot.report as R
+    out = R.mcnemar_html(ZERO_DISCORDANT)
+    assert "no discordant pairs" in out
+    assert "&mdash;" in out
+    assert "0.00" not in out and "0.0" not in out
+    assert "not significant at p&lt;.05" not in out     # no verdict was reached
+    # and the ordinary path is untouched
+    assert R.mcnemar_html({"mcnemar_chi2": 4.567, "significant": True}) == \
+        "&chi;&sup2;=4.57 &mdash; significant at p&lt;.05"
+    assert R.mcnemar_html({"mcnemar_chi2": 1.2, "significant": False}) == \
+        "&chi;&sup2;=1.20 &mdash; not significant at p&lt;.05"
+
+
+def test_the_counting_prose_clause_drops_its_claim_when_there_is_no_test():
+    """The sentence around the number asserts "nominally significant", which is
+    not merely unprintable but false when no pair is discordant."""
+    import blindspot.report as R
+    out = R._counting_chi_clause(ZERO_DISCORDANT)
+    assert "no discordant pair" in out
+    assert "significant" not in out and "&chi;&sup2;=" not in out
+    assert "nominally significant (&chi;&sup2;=4.57)" in \
+        R._counting_chi_clause({"mcnemar_chi2": 4.567})
+
+
+def test_a_hundred_percent_at_both_rungs_renders_instead_of_crashing():
+    """End to end on the real summary, forced into the degenerate case.
+
+    `eval derived` already handles a None chi-square; only the HTML step died,
+    so the crash appeared for the first time at the point of publication.
+    """
+    import blindspot.report as R
+    summary = ROOT / "outputs" / "svgderived" / "summary.json"
+    if not summary.exists():
+        pytest.skip("outputs/svgderived/summary.json is not present")
+    d = json.loads(summary.read_text())
+    cnt, mc = copy.deepcopy(d["counting"]), copy.deepcopy(d["word_mc"])
+    for s in (cnt, mc):
+        s["paired"].update(ZERO_DISCORDANT, n=s["paired"].get("n") or 1)
+
+    page = R.svgderived_render(cnt, mc)          # used to raise TypeError
+    assert page.count("no discordant pairs") == 2
+    assert "Discordant 0/0, McNemar &chi;&sup2; &mdash; not computable" in page
+
+
+def test_a_missing_gt_audit_is_absent_not_a_measured_zero(monkeypatch, tmp_path):
+    """Absent and zero must not render the same, because they do not mean the
+    same thing: one is a measurement, the other is the lack of one."""
+    import blindspot.report as R
+    monkeypatch.setattr(R, "RESULTS", tmp_path)
+
+    absent = R.gold_quality()
+    for ds, v in absent.items():
+        assert v["audited"] == 0, ds
+        assert v["contested_error_rate"] is None, ds
+        assert v["implied_floor"] is None, ds
+
+    # the same function, given a real audit in which nothing was contested
+    rows = [{"uid": f"u{i}", "verdict": "gold_correct"} for i in range(35)]
+    (tmp_path / "screenspot_pro__gtaudit.jsonl").write_text(
+        "".join(json.dumps(r) + "\n" for r in rows))
+    measured = R.gold_quality()["screenspot_pro"]
+    assert measured["audited"] == 35
+    assert measured["contested_error_rate"] == 0.0
+    assert measured["implied_floor"] == 0.0
+
+
+def test_the_gold_quality_line_reports_absence_as_absence():
+    import blindspot.report as R
+    absent = R.gold_quality_line(
+        "charxiv", {"audited": 0, "contested": 0, "contested_error_rate": None,
+                    "implied_floor": None})
+    assert "not measured" in absent
+    assert "0.0%" not in absent
+
+    real_zero = R.gold_quality_line(
+        "screenspot_pro", {"audited": 35, "contested": 0,
+                           "contested_error_rate": 0.0, "implied_floor": 0.0})
+    assert "0/35 = 0.0%" in real_zero
+    assert "not measured" not in real_zero

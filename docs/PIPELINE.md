@@ -145,7 +145,7 @@ exactly these five. `tables` both writes `tables.md` and injects the tables into
 is hand-written and never touched.
 
 ```bash
-python -m blindspot.report aug22       # -> outputs/aug22/summary.json  (read by `data`)
+python -m blindspot.report summary     # -> outputs/report/summary.json  (read by `data`)
 python -m blindspot.report data        # -> outputs/report/figures.json
 python -m blindspot.report examples    # -> outputs/report/figures/*.png
 python -m blindspot.report tables      # -> outputs/report/tables.md
@@ -153,8 +153,9 @@ python -m blindspot.report index       # -> outputs/report/figures.md
 python -m blindspot.report paste       # -> outputs/report/paste_into_docs.html
 ```
 
-`aug22` is a **file** dependency of `data`, not an import, which is easy to miss: run
-it first or `data` reads a stale `outputs/aug22/summary.json`.
+`summary` is a **file** dependency of `data`, not an import, which is easy to miss: run
+it first or `data` reads a stale `outputs/report/summary.json`. The `report` stage of
+`blindspot.pipelines literature_eval` runs it as its first step for that reason.
 
 `figures.json` is the auditable bundle: every number the report quotes, in one file,
 each traceable to `results/*.jsonl`. Nothing downstream computes its own statistics.

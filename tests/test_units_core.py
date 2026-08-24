@@ -34,14 +34,19 @@ import collections
 import contextlib
 import json
 import math
+import importlib
 import os
 import random
+import re
+import subprocess
+import sys
 from pathlib import Path
 
 import pytest
 
 from blindspot import core
 from blindspot import eval as bs_eval
+from blindspot import flow, pipelines
 from blindspot.core import (
     ADAPTERS,
     AI2D_QTYPE,
@@ -88,8 +93,13 @@ from blindspot.core import summarize as summarize_failure_modes
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Adapters whose manifest is committed. Everything else is downloaded on
-# demand, so those datasets are skipped rather than failed.
+# Datasets these tests know how to exercise. Only `svg_localization` and the two
+# sets derived from it are committed: `.gitignore` ignores `data/*` with a single
+# negation for `data/svg_localization`, so on a fresh clone `charxiv` and `ai2d`
+# are simply not there. Membership here is therefore a *candidate* list -- each
+# test gates on the manifest actually existing (`_require_manifest`) and skips
+# with a reason rather than failing, which is what lets this suite hold to the
+# promise pyproject makes for it: "runs on a fresh clone in a few seconds".
 SHIPPED = [ds for ds in ("charxiv", "ai2d", "svg_localization",
                          "svg_counting", "svg_word_mc")
            if ds in ADAPTERS]
@@ -107,7 +117,40 @@ def at_repo_root():
         os.chdir(prev)
 
 
+def _manifest_path(dataset: str) -> Path | None:
+    """Where `dataset`'s manifest would live, or None if this checkout lacks it.
+
+    Resolved through `core.DATA` rather than a hard-coded `data/`, so a test
+    that redirects the data root is gated on the same directory the adapters
+    actually read. `core.DATA` is relative, hence the join with ROOT.
+    """
+    root = ROOT / core.DATA
+    return next(
+        (p for p in (root / dataset / "manifest.jsonl",
+                     # svg_counting / svg_word_mc are nested under svg_localization
+                     root / "svg_localization" / dataset.replace("svg_", "") / "manifest.jsonl")
+         if p.exists()),
+        None,
+    )
+
+
+def _require_manifest(dataset: str) -> Path:
+    """Skip -- never fail -- when a dataset was never downloaded.
+
+    Only `data/svg_localization` is committed. A missing `data/charxiv` says
+    nothing about the code under test, so it must not be the difference between
+    a green suite here and a red one on a fresh clone or in CI.
+    """
+    path = _manifest_path(dataset)
+    if path is None:
+        pytest.skip(f"{dataset}: no manifest under {core.DATA}/ -- not committed "
+                    f"(only data/svg_localization is); fetch it with "
+                    f"`python -m blindspot.download hf --only {dataset}`")
+    return path
+
+
 def _load(dataset: str):
+    _require_manifest(dataset)
     with at_repo_root():
         return load(dataset)
 
@@ -461,19 +504,29 @@ a *question* rather than a manifest row, and a gold box is always [0,1] as
 """
 
 
+class _RowsByDataset(dict):
+    """Loads a dataset on first access, and caches it.
+
+    Deliberately lazy: loading all of SHIPPED up front would mean one absent
+    download skips every test in this section, including the ones for
+    `svg_localization`, which *is* committed and must always run. Because
+    `_load` raises pytest's `Skipped`, a missing manifest skips exactly the
+    parametrisation that asked for it.
+    """
+
+    def __missing__(self, dataset: str):
+        rows = _load(dataset)
+        self[dataset] = rows
+        return rows
+
+
 @pytest.fixture(scope="module")
 def shipped_rows():
-    return {ds: _load(ds) for ds in SHIPPED}
+    return _RowsByDataset()
 
 
 def _manifest_line_count(dataset: str) -> int:
-    # svg_counting / svg_word_mc read a manifest nested under svg_localization.
-    candidates = [ROOT / "data" / dataset / "manifest.jsonl",
-                  ROOT / "data" / "svg_localization" / dataset.replace("svg_", "") / "manifest.jsonl"]
-    path = next((p for p in candidates if p.exists()), None)
-    if path is None:
-        pytest.skip(f"no committed manifest for {dataset}")
-    return sum(1 for line in path.read_text().splitlines() if line.strip())
+    return sum(1 for line in _require_manifest(dataset).read_text().splitlines() if line.strip())
 
 
 @pytest.mark.parametrize("dataset", SHIPPED)
@@ -1154,6 +1207,7 @@ GOOD_SUMMARY = '{"headline": "a real result that must survive"}'
 @pytest.fixture
 def loc_run(tmp_path, monkeypatch):
     """Point the localization analysis at a scratch results/ directory."""
+    _require_manifest(bs_eval.DS)   # the analysis joins results against the dataset
     monkeypatch.setattr(bs_eval, "RESULTS", tmp_path)
     out = tmp_path / "summary.json"
     out.write_text(GOOD_SUMMARY)
@@ -1264,7 +1318,7 @@ def derived_run(tmp_path, monkeypatch):
 
     def run(dataset, analyse, n_per_rung=(5, 4, 3)):
         with at_repo_root():
-            rows = load(dataset)
+            rows = _load(dataset)          # skips if the manifest was never downloaded
             by_rung = collections.defaultdict(list)
             for e in rows:
                 by_rung[e.meta["resolution"]].append(e)
@@ -1626,3 +1680,328 @@ def test_loc_cell_and_derived_cell_flag_a_cell_too_thin_to_interpret():
 
     assert bs_eval.derived_cell([{"hit": True}] * 3, "d")["suppressed"] is True
     assert bs_eval.derived_cell([], "d")["acc"] is None
+
+
+# =============================================================================
+# B5. `load_rows` MUST NOT POOL PROTOCOLS OR MODELS
+# =============================================================================
+"""The regression guard for a published number that was three experiments.
+
+`load_rows` used to glob `results/{dataset}__*.jsonl` and union every match,
+last filename wins. On ScreenSpot-Pro that silently mixed the reported arm with
+an edge-1568 resize arm and a 3x3 tiling arm -- 200 of 1,581 scored items, 9 of
+29 hits -- and two `sonnet-5` files sat in the same glob, ordered one filename
+away from turning the headline into a cross-model average.
+
+The loader now names one arm. Pooling is opt-in, refuses two models outright,
+and refuses to let one tag overwrite an item another tag already answered.
+"""
+
+NATIVE_PRED = [0.11, 0.11]
+EDGE_PRED = [0.22, 0.22]
+SONNET_PRED = [0.33, 0.33]
+
+
+@pytest.fixture
+def pooled_results(tmp_path, monkeypatch):
+    """A scratch `results/` holding one canonical run plus two impostors.
+
+    The impostors are exactly the two shapes that contaminated ScreenSpot-Pro:
+    a different image-resize protocol under an unstamped tag, and a different
+    model. Both sort *after* the canonical tag, so a last-wins union would take
+    them.
+    """
+    monkeypatch.setattr(bs_eval, "RESULTS", tmp_path)
+    uids = [e.uid for e in _load(bs_eval.DS) if e.answer_type == "point"][:6]
+    assert len(uids) == 6, "fixture needs six committed point examples"
+
+    def write(tag, us, pred):
+        (tmp_path / f"{bs_eval.DS}__{tag}.jsonl").write_text(
+            "\n".join(json.dumps({"uid": u, "pred": pred}) for u in us) + "\n")
+
+    write(bs_eval.CANONICAL_TAG, uids, NATIVE_PRED)
+    write("think2000_edge1568_r0", uids[:3], EDGE_PRED)
+    write("sonnet-5_think2000_native_r0", uids[:2], SONNET_PRED)
+    return uids
+
+
+def test_load_rows_does_not_silently_pool_protocols_or_models(pooled_results):
+    """The default read is the canonical arm and nothing else."""
+    uids = pooled_results
+    assert bs_eval.resolve_tags(bs_eval.DS) == [bs_eval.CANONICAL_TAG]
+    assert len(bs_eval.run_tags(bs_eval.DS)) == 3, "all three files are visible"
+
+    rows = bs_eval.load_rows(bs_eval.DS)
+
+    assert len(rows) == len(uids)
+    assert all(r["pred"] == NATIVE_PRED for r in rows), (
+        "a row came from a protocol the report does not name")
+    assert not any(r["pred"] in (EDGE_PRED, SONNET_PRED) for r in rows)
+
+
+def test_pooling_across_models_is_refused_even_when_asked_for(pooled_results):
+    """The opt-in union is not an escape hatch for a cross-model average."""
+    with pytest.raises(ValueError, match="different models"):
+        bs_eval.load_rows(bs_eval.DS, tag=bs_eval.CANONICAL_TAG,
+                          extra_tags=("sonnet-5_think2000_native_r0",),
+                          allow_mixed_protocol=True)
+
+
+def test_pooling_across_protocols_needs_an_explicit_opt_in(pooled_results, tmp_path):
+    """A second protocol is an error by default, and still an error once opted
+    in if it would overwrite an item the first tag already answered -- that is
+    two experiments on one item, not two halves of one run."""
+    same_model_other_protocol = "haiku-4-5_think2000_edge1568_r0"
+    (tmp_path / f"{bs_eval.DS}__{same_model_other_protocol}.jsonl").write_text(
+        "\n".join(json.dumps({"uid": u, "pred": EDGE_PRED})
+                  for u in pooled_results[:3]) + "\n")
+
+    with pytest.raises(ValueError, match="different protocols"):
+        bs_eval.load_rows(bs_eval.DS, tag=bs_eval.CANONICAL_TAG,
+                          extra_tags=(same_model_other_protocol,))
+
+    with pytest.raises(ValueError, match="answered by both"):
+        bs_eval.load_rows(bs_eval.DS, tag=bs_eval.CANONICAL_TAG,
+                          extra_tags=(same_model_other_protocol,),
+                          allow_mixed_protocol=True)
+
+    with pytest.raises(ValueError, match="different models"):
+        bs_eval.load_rows(bs_eval.DS, tag=bs_eval.CANONICAL_TAG,
+                          extra_tags=("think2000_edge1568_r0",))
+
+
+def test_a_genuinely_split_run_still_reassembles(pooled_results, tmp_path):
+    """The capability the old glob was justified by, kept and scoped: one run
+    written to two files, same model, same protocol, disjoint items."""
+    uids = pooled_results
+    half = tmp_path / f"{bs_eval.DS}__haiku-4-5_think2000_native_r1.jsonl"
+    canon = tmp_path / f"{bs_eval.DS}__{bs_eval.CANONICAL_TAG}.jsonl"
+    canon.write_text("\n".join(json.dumps({"uid": u, "pred": NATIVE_PRED})
+                               for u in uids[:4]) + "\n")
+    half.write_text("\n".join(json.dumps({"uid": u, "pred": NATIVE_PRED})
+                              for u in uids[4:]) + "\n")
+
+    rows = bs_eval.load_rows(bs_eval.DS, tag=bs_eval.CANONICAL_TAG,
+                             extra_tags=("haiku-4-5_think2000_native_r1",))
+    assert {r["uid"] for r in rows} == set(uids)
+
+
+def test_an_ambiguous_results_directory_is_an_error_not_a_union(tmp_path, monkeypatch):
+    """With the canonical arm absent and two candidates present, there is no
+    defensible default -- so the loader refuses instead of picking one."""
+    monkeypatch.setattr(bs_eval, "RESULTS", tmp_path)
+    for tag in ("think2000_edge1568_r0", "tiled3x3_r0"):
+        (tmp_path / f"{bs_eval.DS}__{tag}.jsonl").write_text("")
+
+    with pytest.raises(ValueError, match="Refusing to guess"):
+        bs_eval.resolve_tags(bs_eval.DS)
+
+    assert bs_eval.resolve_tags("a_dataset_that_never_ran") == [], (
+        "an absent dataset stays empty rather than raising")
+
+
+def test_tag_model_and_tag_protocol_read_the_filename_convention():
+    assert bs_eval.tag_model("haiku-4-5_think2000_native_r0") == "haiku-4-5"
+    assert bs_eval.tag_model("blind_haiku-4-5_think2000_native_r0") == "haiku-4-5"
+    assert bs_eval.tag_model("sonnet-5_think2000_edge1568_r0") == "sonnet-5"
+    assert bs_eval.tag_model("tiled3x3_r0") == "", "unstamped is its own identity"
+
+    assert bs_eval.tag_protocol("haiku-4-5_think2000_native_r0") == "think2000_native"
+    assert (bs_eval.tag_protocol("haiku-4-5_think2000_native_r1")
+            == bs_eval.tag_protocol("haiku-4-5_think2000_native_r0")), (
+        "a repeat of one protocol is the same protocol")
+    assert bs_eval.tag_protocol("tiled3x3_r0") == "tiled3x3"
+    assert bs_eval.tag_protocol("haiku-4-5_official_r0") == "official"
+
+
+# #############################################################################
+# #                                                                           #
+# #   SUBJECT C -- the package surface and the launcher                       #
+# #                                                                           #
+# #############################################################################
+"""Three promises that are made to a *reader* rather than to a caller, and so
+have no natural home in a test of one function: what `blindspot` exports, what
+`--help` tells you to type, and what happens when a pipeline's prerequisite was
+never run. Each of them was wrong in a way no unit test could see.
+"""
+
+
+# =============================================================================
+# C1. `__all__` -- the package's advertised surface
+# =============================================================================
+
+
+def test_star_importing_the_package_works_and_binds_every_advertised_name():
+    """`__all__` listed four subpackages, three of which had been consolidated
+    away, so `from blindspot import *` raised ImportError. The names in
+    `__all__` are submodules, and `from package import *` imports them -- which
+    makes this the one place a stale entry is guaranteed to be caught."""
+    ns: dict = {}
+    exec("from blindspot import *", ns)                                  # noqa: S102
+    import blindspot
+
+    for name in blindspot.__all__:
+        assert name in ns, f"{name} is in __all__ but `import *` did not bind it"
+        assert ns[name] is importlib.import_module(f"blindspot.{name}")
+
+
+def test_dunder_all_is_exactly_the_modules_the_package_contains():
+    """Not a hand-kept subset. A new module that is not exported, or an exported
+    module that was deleted, both fail here rather than at someone's REPL."""
+    import blindspot
+
+    on_disk = sorted(p.stem for p in Path(blindspot.__file__).parent.glob("*.py")
+                     if p.stem != "__init__")
+    assert blindspot.__all__ == on_disk
+
+
+def test_the_package_docstring_describes_the_modules_that_exist():
+    """It used to describe `core / judging / analysis / reporting`, a layout
+    that no longer exists -- three of those four were not importable.
+
+    The docstring is a two-column list of `name  what it does`. Read that column
+    back and it must be the export list exactly: a module missing from it is
+    undocumented, and an entry with nothing behind it is the old bug returning.
+    """
+    import blindspot
+
+    documented = re.findall(r"^ {4}(\w+) {2,}\S", blindspot.__doc__ or "", re.M)
+    assert sorted(documented) == blindspot.__all__
+    assert len(documented) == len(set(documented)), "a module is described twice"
+
+
+# =============================================================================
+# C2. `--help` -- the command it prints must be the command that runs it
+# =============================================================================
+
+
+def _usage_prog(pipeline: str) -> str:
+    """The program name argparse advertises, taken from real `--help` output."""
+    r = subprocess.run([sys.executable, "-m", "blindspot.pipelines", pipeline, "--help"],
+                       cwd=ROOT, capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+    first = r.stdout.splitlines()[0]
+    assert first.startswith("usage: "), first
+    # argparse wraps long usage lines; the prog is everything before the first
+    # option group, which starts at " [".
+    return first[len("usage: "):].split(" [")[0].strip()
+
+
+@pytest.mark.parametrize("pipeline", sorted(pipelines.PIPELINES))
+def test_help_advertises_a_command_that_actually_exists(pipeline):
+    """`prog` was `python -m {flow}.run`, left over from when each pipeline was
+    its own package. Every `--help` therefore named a module that cannot be
+    imported. Asserted by *running* what it prints, not by matching a string."""
+    prog = _usage_prog(pipeline)
+    assert prog == flow.prog_for(pipeline)
+    assert not prog.endswith(".run"), f"{prog}: the dead <flow>.run form is back"
+
+    # Retype it. `python` on PATH need not be this interpreter, so only the
+    # module path and pipeline name are taken from the advertised command.
+    argv = prog.split()
+    assert argv[:3] == ["python", "-m", "blindspot.pipelines"], prog
+    r = subprocess.run([sys.executable, *argv[1:], "--list"],
+                       cwd=ROOT, capture_output=True, text=True)
+    assert r.returncode == 0, f"{prog} is not runnable:\n{r.stderr}"
+    assert f"flow: {pipeline}" in r.stdout
+
+
+# =============================================================================
+# C3. A prerequisite that was never run is a precondition, not a crash
+# =============================================================================
+"""`synth_localization_eval`'s `eval/localization:ablations` step reads
+`results/svgloc_ablation_uids.json`, which only the `run` stage's API pass
+writes. docs/runme/SYNTHETIC.md offers `--from eval --offline` as a plain
+command with no stated precondition, and it used to die there -- before the
+`report` stage ran at all -- on a FileNotFoundError traceback.
+"""
+
+
+def _synth_stages() -> dict:
+    opts = {"tasks": list(pipelines.TASKS), "out": None}
+    return {k: v for k, v in pipelines.synth_localization_eval(opts).items() if v}
+
+
+def test_the_ablations_eval_step_declares_what_it_needs():
+    step = next(s for s in _synth_stages()["eval"] if s.name == "localization:ablations")
+    assert step.optional, "a step whose input only an API run produces cannot be mandatory"
+    assert "ablations were never run" in step.note
+    assert "run_api ablations" in step.note
+
+
+def test_the_pipeline_reaches_the_report_stage_when_the_ablations_never_ran(monkeypatch, capsys):
+    """The whole point of the fix: one absent artifact must cost one step, not
+    the rest of the run. `subprocess.call` is replaced so this drives the real
+    step list and the real launcher without executing anything."""
+    stages = _synth_stages()
+    ran: list[list[str]] = []
+
+    def fake_call(cmd, **_):
+        ran.append(list(cmd))
+        # exactly the step whose artifact is missing, and nothing else
+        return 1 if cmd[-2:] == ["blindspot.eval", "ablations"] else 0
+
+    monkeypatch.setattr(flow.subprocess, "call", fake_call)
+    monkeypatch.setattr(sys, "argv", ["blindspot.pipelines synth_localization_eval",
+                                      "--from", "eval", "--offline"])
+    rc = flow.main("synth_localization_eval", stages)
+
+    assert rc == 0, "a missing ablation artifact aborted the run"
+    assert any("blindspot.report" in c for c in ran), "the report stage was never reached"
+
+    out = capsys.readouterr().out
+    assert "the ablations were never run" in out, \
+        "the failure is not explained where the reader will see it"
+    assert "run_api ablations" in out, "no remedy offered"
+
+
+def test_a_mandatory_step_still_aborts_and_still_explains_itself(monkeypatch, capsys):
+    """The counterpart. Making one step optional must not have made failure
+    silent: a required step still stops the run, and now also prints its note."""
+    stages = {"eval": [flow.Step("required", ["-m", "nothing"], note="needs X first")]}
+    monkeypatch.setattr(flow.subprocess, "call", lambda *_a, **_k: 3)
+    monkeypatch.setattr(sys, "argv", ["prog", "--all"])
+
+    assert flow.main("testflow", stages) == 3
+    assert "needs X first" in capsys.readouterr().err
+
+
+def test_running_the_ablations_eval_without_its_artifact_really_does_fail():
+    """The premise of the two tests above, taken from the real module rather
+    than assumed. Skipped once the artifact exists, because then there is
+    nothing to reproduce."""
+    artifact = ROOT / "results" / "svgloc_ablation_uids.json"
+    if artifact.exists():
+        pytest.skip(f"{artifact.relative_to(ROOT)} exists; the ablations were run here")
+    r = subprocess.run([sys.executable, "-m", "blindspot.eval", "ablations"],
+                       cwd=ROOT, capture_output=True, text=True)
+    assert r.returncode != 0
+    assert "svgloc_ablation_uids.json" in r.stderr
+
+
+# =============================================================================
+# C4. The environment this suite's pixel-exact assertions assume
+# =============================================================================
+
+
+def test_pillow_has_the_text_layout_engine_the_shipped_boxes_were_measured_with():
+    """`make test` runs `PY ?= python`, whatever that resolves to, and under a
+    different interpreter's Pillow wheel `test_exactink_reproduces_the_shipped_
+    sft_boxes` fails on a one-pixel difference in a box the report sells as
+    exact.
+
+    The cause is not the Python version: it is that the wheel for one of them
+    was built without Raqm, so Pillow falls back to BASIC text layout and places
+    a glyph one pixel over. `data/svg_localization` was rendered with Raqm, and
+    at these sizes one pixel per side is ~0.2 IoU. Asserted here so the
+    environment says so plainly, instead of a pixel assertion failing
+    mysteriously several files away.
+    """
+    from PIL import features
+
+    assert features.check("raqm"), (
+        "Pillow was built without Raqm, so text layout falls back to BASIC and the "
+        "exact-ink boxes shift by a pixel. Run the suite with the interpreter the "
+        "dataset was built with (./.venv/bin/python -m pytest), not whatever `python` "
+        "resolves to on PATH."
+    )

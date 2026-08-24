@@ -101,9 +101,19 @@ regenerating in place would rebind uids to different questions.
 See docs/runme/SYNTHETIC.md section 0.                                     [exit 1]
 ```
 
-The bare subcommands do **not** enforce it — `python -m blindspot.generate scenes`
-defaults `--out` to `data/svg_localization`, and `make dataset` calls it that way.
-Always pass `--out` yourself.
+The generator enforces it too, which it did not used to: `scenes --out` has **no
+default**. A bare `python -m blindspot.generate scenes` writes nothing and exits
+non-zero — it used to default `--out` to `data/svg_localization`, so typing the
+command by hand went straight past the pipeline's guard and the Makefile's.
+
+```
+$ python -m blindspot.generate scenes --count 200
+scenes: --out is required and has no default.
+It used to default to data/svg_localization -- the committed dataset and
+the source of truth for every published number. ...                        [exit 1]
+```
+
+`--list-types` writes nothing and still runs on its own.
 
 ## 1. Generate
 

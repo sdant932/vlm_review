@@ -2103,14 +2103,24 @@ def run_dataset(client, dataset: str, args, budget: Budget) -> Path:
     # __exit__ blocks until the queue drains, so Ctrl-C and the budget stop both
     # appear to hang.
     pending = iter(todo)
-    window = max(args.concurrency * 4, 16)
+    # The window is what actually bounds an overspend, not `--max-spend`: every
+    # call already in flight when the ceiling trips still completes and still
+    # bills. A 4x multiplier over --concurrency put 128 requests in the air at
+    # the default, and a measured run crossed a $0.029 cap at record 15 and did
+    # not stop until 140 -- 12.8x over.
+    #
+    # One wave, not four. On top of that, do not open a wave larger than the
+    # budget can plausibly cover: until a call has returned there is no cost
+    # estimate, so start narrow and widen once one is known.
+    window = max(args.concurrency, 1)
+    first_wave = min(window, 8)
 
     with open(out, "a") as fh, ThreadPoolExecutor(max_workers=args.concurrency) as pool:
         def submit(e):
             return pool.submit(run_one, client, e, budget, args.thinking_budget,
                                args.max_edge, model)
 
-        inflight = {submit(e) for e in itertools.islice(pending, window)}
+        inflight = {submit(e) for e in itertools.islice(pending, first_wave)}
         while inflight:
             done_set, inflight = wait(inflight, return_when=FIRST_COMPLETED)
             for fut in done_set:
@@ -2137,6 +2147,12 @@ def run_dataset(client, dataset: str, args, budget: Budget) -> Path:
                 if len(recent) >= 200 and sum(recent) / len(recent) > 0.5:
                     print("  !! >50% of the last 200 calls failed -- aborting", flush=True)
                     stop.set()
+                # Widen to the full window only once a call has priced itself
+                # and the remaining budget can cover a whole wave.
+                if written and budget.limit:
+                    per_call = budget.spent / written
+                    afford = int((budget.limit - budget.spent) / per_call) if per_call else window
+                    window = max(1, min(max(args.concurrency, 1), afford))
                 if budget.exhausted():
                     print(f"  !! spend cap ${budget.limit} reached -- stopping cleanly", flush=True)
                     stop.set()

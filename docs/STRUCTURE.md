@@ -56,7 +56,7 @@ haiku-perception-blindspots/
 │   ├── eval.py           1998     results/*.jsonl -> JSON. One subcommand per artifact
 │   ├── report.py         2786     the live report chain + the per-dataset pages
 │   ├── report_finetune.py 665     the Part 3 gallery, figures and example strip
-│   ├── report_worked.py   132     GRPO group statistics over real samples (CALLS THE API)
+│   ├── report_worked.py   185     GRPO group statistics over real samples (CALLS THE API)
 │   ├── render_markdown.py 382     markdown -> self-contained HTML, any document
 │   ├── run_api.py        1194     official protocol · controls · probes · ablations
 │   ├── judge.py           590     CharXiv judge · equivalence · ground-truth audit
@@ -148,8 +148,9 @@ set would join answers to the wrong questions.
 
 → **`data/svg_localization` stays committed and is the source of truth.** Do not
 regenerate it in place. `python -m blindspot.generate scenes` is for building a
-*new* set into a *new* `--out` directory, and the pipeline refuses an `--out` that
-resolves to the committed set. See
+*new* set into a *new* `--out` directory: `--out` is required and has no default,
+and the pipeline additionally refuses an `--out` that resolves to the committed
+set. See
 [runme/SYNTHETIC.md §0](runme/SYNTHETIC.md#0-do-not-regenerate-in-place).
 
 **Measured constants in source.** `report.py`'s `gold_quality()` hardcodes

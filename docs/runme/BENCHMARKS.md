@@ -243,8 +243,8 @@ python -m blindspot.report paste       # → outputs/report/paste_into_docs.html
 ```
 
 `python -m blindspot.report all` runs exactly that chain. `data` reads
-`outputs/aug22/summary.json` as a **file**, not an import, so run
-`python -m blindspot.report aug22` first if that file is stale or absent.
+`outputs/report/summary.json` as a **file**, not an import, so run
+`python -m blindspot.report summary` first if that file is stale or absent.
 
 The cross-study document that combines these results with Part 2's is
 `blindspots.md`, a separate deliverable that is not in this repository.

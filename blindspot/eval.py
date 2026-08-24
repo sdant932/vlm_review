@@ -55,7 +55,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 from blindspot.core import load
 from blindspot.core import classify as classify_failure, classify_point
-from blindspot.core import Budget, MODEL, RESULTS as RUNNER_RESULTS
+from blindspot.core import Budget, MODEL, MODELS, RESULTS as RUNNER_RESULTS
+from blindspot.core import short_name
 from blindspot.core import point_in_bbox, score, token_f1
 from blindspot.core import wilson, cell_of, centre_cell, bbox_cells, quantiles
 from blindspot.core import LABELS, is_not_applicable, primitive_for
@@ -116,26 +117,146 @@ def by(rows, keyfn) -> dict:
 #  aggregate -- results/*.jsonl -> outputs/summary.json
 # ===========================================================================
 
-def load_rows(dataset: str, with_judge: bool = True) -> list[dict]:
-    """All usable rows for a dataset, unioned across tag schemes.
+# The one arm the study reports. Every headline in Table 1 is this protocol:
+# Haiku 4.5, thinking at 2,000 tokens, images sent at native resolution, first
+# repeat. `load_rows` reads THIS AND ONLY THIS unless a caller names another.
+CANONICAL_TAG = "haiku-4-5_think2000_native_r0"
 
-    ScreenSpot-Pro results ended up split across two differently-tagged files
-    mid-project; unioning here (best row per uid wins) is what stops the report
-    silently counting half a dataset.
+# Files that share the `{dataset}__*.jsonl` shape but are not run outputs.
+SIDECAR_MARKERS = (".judged", "_excluded", "__gtaudit", "__equiv",
+                   ".todo", ".missing")
+
+
+def run_tags(dataset: str) -> list[str]:
+    """Every run tag that has a results file for `dataset`, sidecars excluded."""
+    out = []
+    for f in sorted(glob.glob(str(RESULTS / f"{dataset}__*.jsonl"))):
+        name = Path(f).name
+        if any(m in name for m in SIDECAR_MARKERS):
+            continue
+        out.append(name[len(dataset) + 2:-len(".jsonl")])
+    return out
+
+
+def tag_model(tag: str) -> str:
+    """The model short name a run tag was produced by; "" when unstamped.
+
+    Tags are built as `{short_name(model)}_think{budget}_{condition}_r{n}`, so
+    the model is a component of the filename. A few early files predate that
+    convention (`think2000_edge1568_r0`, `tiled3x3_r0`) and report "" -- which
+    is its own identity here, not a wildcard: an unstamped tag will not union
+    with a stamped one.
+    """
+    for m in sorted({short_name(x) for x in MODELS}, key=len, reverse=True):
+        if tag == m or tag.startswith(f"{m}_") or f"_{m}_" in tag:
+            return m
+    return ""
+
+
+def tag_protocol(tag: str) -> str:
+    """The tag with its model stamp and repeat index removed.
+
+    `haiku-4-5_think2000_native_r0` and `haiku-4-5_think2000_native_r1` are the
+    same protocol run twice; `think2000_edge1568_r0` and `tiled3x3_r0` are
+    different protocols and must never be averaged into one accuracy.
+    """
+    m = tag_model(tag)
+    body = tag
+    if m:
+        body = body.replace(f"{m}_", "", 1)
+    parts = body.split("_")
+    if parts and parts[-1].startswith("r") and parts[-1][1:].isdigit():
+        parts = parts[:-1]
+    return "_".join(parts)
+
+
+def resolve_tags(dataset: str, tag: str | None = None,
+                 extra_tags: tuple[str, ...] = (),
+                 allow_mixed_protocol: bool = False) -> list[str]:
+    """Which run tags `load_rows` will read, or a loud refusal.
+
+    Pooling rules, in one place because getting them wrong silently rewrites a
+    published accuracy:
+
+    * No tag named -> the canonical arm alone. If that arm has no file and
+      exactly one other run exists, that one is used (unambiguous, still a
+      single protocol). More than one candidate and no way to choose is an
+      error, never a union.
+    * `extra_tags` is the opt-in union, and it is scoped: same model always,
+      and a different protocol additionally needs `allow_mixed_protocol=True`.
+    """
+    available = run_tags(dataset)
+    if tag is None and not extra_tags:
+        if CANONICAL_TAG in available:
+            return [CANONICAL_TAG]
+        if not available:
+            return []
+        if len(available) == 1:
+            return available
+        raise ValueError(
+            f"{dataset}: no {CANONICAL_TAG!r} results file, and {len(available)} "
+            f"other runs are present: {available}. Refusing to guess or to pool "
+            f"them -- pass tag= to name the arm to report.")
+
+    tags = ([tag] if tag else []) + list(extra_tags)
+    models = {tag_model(t) for t in tags}
+    if len(models) > 1:
+        named = sorted(m or "<no model in tag>" for m in models)
+        raise ValueError(
+            f"{dataset}: refusing to pool run tags from different models "
+            f"{named}: {tags}. A cross-model union is not a benchmark number "
+            f"for either model.")
+    protocols = {tag_protocol(t) for t in tags}
+    if len(protocols) > 1 and not allow_mixed_protocol:
+        raise ValueError(
+            f"{dataset}: refusing to pool run tags from different protocols "
+            f"{sorted(protocols)}: {tags}. If these are two halves of one run "
+            f"that was split mid-project, pass allow_mixed_protocol=True; the "
+            f"union will still refuse to overwrite any item scored twice.")
+    return tags
+
+
+def load_rows(dataset: str, with_judge: bool = True, tag: str | None = None,
+              extra_tags: tuple[str, ...] = (),
+              allow_mixed_protocol: bool = False) -> list[dict]:
+    """All usable rows for a dataset, from ONE named run arm.
+
+    This used to glob `results/{dataset}__*.jsonl` and union every match, last
+    file wins. The rationale on record was that ScreenSpot-Pro results ended up
+    split across two differently-tagged files mid-project, so unioning stopped
+    the report counting half a dataset. That is not what the files show: the
+    canonical arm covers all 1,581 ScreenSpot-Pro items on its own, and the
+    union's only effect was to overwrite 200 of them (12.7%) with predictions
+    from an edge-1568 resize arm and a 3x3 tiling arm -- two protocols the
+    report does not name, one of which it explicitly disowns. Two `sonnet-5`
+    files sat in the same glob, one filename away from making the headline a
+    cross-model average.
+
+    So: one tag, chosen explicitly, defaulting to the arm the study reports.
+    The split-run recovery survives as `extra_tags`, scoped by `resolve_tags`
+    to one model and (unless overridden) one protocol, and refusing outright to
+    let one tag overwrite an item another tag already answered -- because that
+    is pooling experiments, not reassembling one.
     """
     examples = {e.uid: e for e in load(dataset)}
+    tags = resolve_tags(dataset, tag, extra_tags, allow_mixed_protocol)
     best: dict[str, dict] = {}
-    for f in sorted(glob.glob(f"results/{dataset}__*.jsonl")):
-        if ".judged" in f or "_excluded" in f or "__gtaudit" in f or "__equiv" in f:
-            continue
-        for line in open(f):
-            try:
-                rec = json.loads(line)
-            except Exception:
+    source: dict[str, str] = {}
+    for t in tags:
+        for rec in read_jsonl(RESULTS / f"{dataset}__{t}.jsonl"):
+            if "uid" not in rec:
                 continue
-            prev = best.get(rec["uid"])
+            uid = rec["uid"]
+            prev = best.get(uid)
+            if prev is not None and source[uid] != t \
+                    and prev.get("pred") is not None and rec.get("pred") is not None:
+                raise ValueError(
+                    f"{dataset}: {uid} was answered by both {source[uid]!r} and "
+                    f"{t!r}. These are not two halves of one run; taking either "
+                    f"would silently pick a protocol. Score them separately.")
             if prev is None or prev.get("pred") is None or rec.get("pred") is not None:
-                best[rec["uid"]] = rec
+                best[uid] = rec
+                source[uid] = t
 
     judge = judged_scores(dataset) if with_judge else {}
     equiv = equiv_verdicts(dataset)
@@ -198,7 +319,7 @@ def equiv_verdicts(dataset: str) -> dict[str, dict]:
 def judged_scores(dataset: str) -> dict[str, float]:
     """uid -> official LLM-judge score, when a judge pass exists."""
     out = {}
-    for f in glob.glob(f"results/{dataset}__*.judged.jsonl"):
+    for f in glob.glob(str(RESULTS / f"{dataset}__*.judged.jsonl")):
         for line in open(f):
             try:
                 r = json.loads(line)
