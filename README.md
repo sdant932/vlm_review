@@ -17,7 +17,7 @@ deliverable and is not in this repository.
 ## Quickstart
 
 ```bash
-git clone <this repo> && cd haiku-perception-blindspots
+git clone https://github.com/sdant932/vlm_review.git && cd vlm_review
 ./setup.sh                     # installs deps, creates runtime dirs, verifies the install
 $EDITOR .env                   # ANTHROPIC_API_KEY=sk-ant-...
 

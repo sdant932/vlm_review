@@ -43,7 +43,7 @@ Split the report by pipeline and the argument breaks in half.
 ## 2. The tree
 
 ```
-haiku-perception-blindspots/
+vlm_review/
 │
 ├── blindspot/                     one flat package, sixteen modules
 │   ├── core.py           2209     adapters · prompts · runner · scoring · sampling
