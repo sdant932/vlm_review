@@ -37,3 +37,6 @@ data/*
 
 # Pre-consolidation module copies, kept locally for reference only.
 legacy
+
+# Working review notes -- not part of the deliverable
+reviews/
